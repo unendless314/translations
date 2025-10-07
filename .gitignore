@@ -1,0 +1,35 @@
+# 輸入檔案（原始 SRT）
+input/raw/*.srt
+
+# 輸出檔案
+output/preprocessed/*.md
+output/preprocessed/*.txt
+output/translated/*.md
+output/final/*.md
+
+# 已完成專案歸檔
+archive/*/
+
+# 但保留目錄結構的 .gitkeep
+!**/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+
+# 編輯器
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# 測試和臨時檔案
+*.tmp
+*.bak
+test_*.py
