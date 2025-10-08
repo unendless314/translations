@@ -18,7 +18,6 @@
 ```yaml
 episode_id: S01-E12
 source_file: input/raw/ENG-S01-E12Bridget Nielson_SRT_English.srt
-generated_at: 2025-02-20T12:00:00Z
 segments:
   - segment_id: 1
     speaker_group: 1
