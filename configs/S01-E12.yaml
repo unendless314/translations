@@ -1,0 +1,7 @@
+episode_id: S01-E12
+input:
+  srt: input/S01-E12/ENG-S01-E12Bridget Nielson_SRT_English.srt
+output:
+  main_yaml: data/S01-E12/main.yaml
+logging:
+  path: logs/S01-E12/srt_to_yaml.log

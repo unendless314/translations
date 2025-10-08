@@ -1,0 +1,451 @@
+#!/usr/bin/env python3
+"""
+SRT to main.yaml converter
+Parses SRT subtitle files, merges broken sentences, and generates main.yaml
+"""
+
+import re
+import argparse
+import logging
+import sys
+from pathlib import Path
+from dataclasses import dataclass, field
+from typing import List, Optional, Dict, Any
+import yaml
+
+
+@dataclass
+class SRTEntry:
+    """Raw SRT entry"""
+    index: int
+    start: str  # HH:MM:SS,mmm
+    end: str    # HH:MM:SS,mmm
+    text: str
+
+
+@dataclass
+class ProcessedSegment:
+    """Segment after text cleaning and speaker detection"""
+    srt_index: int
+    start: str
+    end: str
+    text: str
+    speaker_hint: Optional[str] = None
+
+
+@dataclass
+class MergedSegment:
+    """Final merged segment for output"""
+    segment_id: int
+    speaker_group: int
+    start: str
+    end: str
+    source_text: str
+    topic_id: Optional[str] = None
+    speaker_hint: Optional[str] = None
+    source_entries: List[int] = field(default_factory=list)
+
+
+class SRTParser:
+    """Parse SRT format into structured entries"""
+
+    TIMECODE_PATTERN = re.compile(
+        r'(\d{2}:\d{2}:\d{2},\d{3})\s*-->\s*(\d{2}:\d{2}:\d{2},\d{3})'
+    )
+
+    @staticmethod
+    def parse(srt_path: Path) -> List[SRTEntry]:
+        """Parse SRT file into entries"""
+        entries = []
+
+        # Read with UTF-8 and remove BOM if present
+        content = srt_path.read_text(encoding='utf-8-sig')
+
+        # Split by double newlines (SRT entry separator)
+        blocks = re.split(r'\n\s*\n', content.strip())
+
+        for block in blocks:
+            if not block.strip():
+                continue
+
+            lines = block.strip().split('\n')
+            if len(lines) < 3:
+                continue
+
+            try:
+                # First line: index
+                index = int(lines[0].strip())
+
+                # Second line: timecode
+                timecode_match = SRTParser.TIMECODE_PATTERN.search(lines[1])
+                if not timecode_match:
+                    logging.warning(f"Invalid timecode in entry {index}: {lines[1]}")
+                    continue
+
+                start, end = timecode_match.groups()
+
+                # Remaining lines: text
+                text = '\n'.join(lines[2:])
+
+                entries.append(SRTEntry(
+                    index=index,
+                    start=start,
+                    end=end,
+                    text=text
+                ))
+
+            except (ValueError, IndexError) as e:
+                logging.warning(f"Failed to parse SRT block: {e}\n{block}")
+                continue
+
+        logging.info(f"Parsed {len(entries)} SRT entries from {srt_path}")
+        return entries
+
+
+class TextCleaner:
+    """Clean and normalize text from SRT entries"""
+
+    @staticmethod
+    def clean(entry: SRTEntry) -> ProcessedSegment:
+        """Clean text and detect metadata"""
+        text = entry.text
+
+        # Merge multiple lines into single string (replace newlines with spaces)
+        text = ' '.join(line.strip() for line in text.split('\n'))
+
+        # Trim whitespace
+        text = text.strip()
+
+        return ProcessedSegment(
+            srt_index=entry.index,
+            start=entry.start,
+            end=entry.end,
+            text=text
+        )
+
+
+class SpeakerDetector:
+    """Detect speaker hints (>> prefix)"""
+
+    @staticmethod
+    def detect(segment: ProcessedSegment) -> ProcessedSegment:
+        """Detect and remove >> prefix, mark speaker_hint"""
+        text = segment.text
+
+        if text.startswith('>>'):
+            segment.speaker_hint = '>>'
+            # Remove >> prefix and trim
+            segment.text = text[2:].strip()
+
+        return segment
+
+
+class SegmentMerger:
+    """Merge segments based on sentence completeness and punctuation"""
+
+    TERMINAL_PUNCTUATION = re.compile(r'[.!?…]$')
+    MAX_SAFETY_LIMIT = 10  # Safety limit to prevent infinite merging
+
+    def merge(self, segments: List[ProcessedSegment]) -> List[MergedSegment]:
+        """Merge segments into complete sentences
+
+        Strategy:
+        1. MUST merge: Continue until sentence is complete (has terminal punctuation)
+        2. STOP when:
+           - Next entry starts a new sentence (uppercase, not a conjunction)
+           - Speaker change detected
+           - Safety limit reached
+
+        Guarantees:
+        - Every entry appears in exactly one segment (no splitting)
+        - Every segment contains complete sentences
+        """
+        if not segments:
+            return []
+
+        merged = []
+        segment_id = 1
+        speaker_group = 1
+
+        i = 0
+        while i < len(segments):
+            current = segments[i]
+
+            # Check for speaker change
+            if current.speaker_hint == '>>' and i > 0:
+                speaker_group += 1
+
+            # Start a new merged segment
+            merge_buffer = [current]
+
+            # Try to merge with following segments
+            j = i + 1
+            while j < len(segments):
+                next_seg = segments[j]
+
+                # Stop condition 1: Speaker change
+                if next_seg.speaker_hint == '>>':
+                    break
+
+                # Stop condition 2: Safety limit
+                if len(merge_buffer) >= self.MAX_SAFETY_LIMIT:
+                    logging.warning(
+                        f"Reached safety limit ({self.MAX_SAFETY_LIMIT}) at segment {segment_id}, "
+                        f"stopping merge even though sentence may be incomplete"
+                    )
+                    break
+
+                # Check if last entry in buffer has terminal punctuation
+                last_entry_text = merge_buffer[-1].text
+                has_terminal_punct = self.TERMINAL_PUNCTUATION.search(last_entry_text)
+
+                # Case 1: Sentence incomplete - MUST merge
+                if not has_terminal_punct:
+                    merge_buffer.append(next_seg)
+                    j += 1
+                    continue
+
+                # Case 2: Sentence complete - check if next entry starts new sentence
+                next_text = next_seg.text.strip()
+
+                # Empty entry - merge it
+                if not next_text:
+                    merge_buffer.append(next_seg)
+                    j += 1
+                    continue
+
+                # Check if next entry starts a new sentence
+                # New sentence indicator: starts with uppercase letter
+                # (we treat all uppercase starts as new sentences, including conjunctions)
+                if next_text[0].isupper():
+                    # Next entry is a new sentence - stop here
+                    break
+                else:
+                    # Next entry continues current sentence (lowercase start)
+                    # Merge it and continue checking
+                    merge_buffer.append(next_seg)
+                    j += 1
+                    continue
+
+            # Create merged segment
+            merged_text = ' '.join(seg.text for seg in merge_buffer)
+
+            merged_segment = MergedSegment(
+                segment_id=segment_id,
+                speaker_group=speaker_group,
+                start=merge_buffer[0].start,
+                end=merge_buffer[-1].end,
+                source_text=merged_text,
+                speaker_hint=current.speaker_hint,
+                source_entries=[seg.srt_index for seg in merge_buffer]
+            )
+
+            merged.append(merged_segment)
+
+            logging.debug(
+                f"Merged segment {segment_id}: "
+                f"SRT entries {merged_segment.source_entries} -> "
+                f"'{merged_text[:50]}...'"
+            )
+
+            segment_id += 1
+            i = j
+
+        logging.info(f"Merged {len(segments)} segments into {len(merged)} final segments")
+        return merged
+
+    @staticmethod
+    def _calculate_gap_ms(end_time: str, start_time: str) -> int:
+        """Calculate gap in milliseconds between two timecodes"""
+        def timecode_to_ms(tc: str) -> int:
+            # HH:MM:SS,mmm
+            time_part, ms_part = tc.split(',')
+            h, m, s = map(int, time_part.split(':'))
+            ms = int(ms_part)
+            return ((h * 3600 + m * 60 + s) * 1000) + ms
+
+        try:
+            end_ms = timecode_to_ms(end_time)
+            start_ms = timecode_to_ms(start_time)
+            return start_ms - end_ms
+        except (ValueError, IndexError):
+            return 999999  # Large number to prevent merging on error
+
+
+class YAMLGenerator:
+    """Generate main.yaml output"""
+
+    @staticmethod
+    def generate(
+        episode_id: str,
+        source_file: str,
+        segments: List[MergedSegment]
+    ) -> Dict[str, Any]:
+        """Generate YAML structure"""
+
+        yaml_segments = []
+        for seg in segments:
+            yaml_seg = {
+                'segment_id': seg.segment_id,
+                'speaker_group': seg.speaker_group,
+                'timecode': {
+                    'start': seg.start,
+                    'end': seg.end
+                },
+                'source_text': seg.source_text,
+                'translation': {
+                    'text': None,
+                    'status': 'pending',
+                    'confidence': None,
+                    'notes': None
+                },
+                'metadata': {
+                    'topic_id': seg.topic_id,
+                    'speaker_hint': seg.speaker_hint,
+                    'source_entries': seg.source_entries
+                }
+            }
+
+            yaml_segments.append(yaml_seg)
+
+        return {
+            'episode_id': episode_id,
+            'source_file': source_file,
+            'segments': yaml_segments
+        }
+
+    @staticmethod
+    def write(data: Dict[str, Any], output_path: Path):
+        """Write YAML to file with proper formatting"""
+
+        # Create output directory if needed
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+
+        # Configure YAML formatting
+        yaml.add_representer(
+            type(None),
+            lambda dumper, value: dumper.represent_scalar('tag:yaml.org,2002:null', 'null')
+        )
+
+        with output_path.open('w', encoding='utf-8') as f:
+            yaml.dump(
+                data,
+                f,
+                default_flow_style=False,
+                allow_unicode=True,
+                sort_keys=False,
+                width=float('inf')  # Prevent line wrapping
+            )
+
+        logging.info(f"Wrote {len(data['segments'])} segments to {output_path}")
+
+
+def load_config(config_path: Path) -> Dict[str, Any]:
+    """Load YAML configuration file"""
+    if not config_path.exists():
+        raise FileNotFoundError(f"Config file not found: {config_path}")
+
+    with config_path.open('r', encoding='utf-8') as f:
+        config = yaml.safe_load(f)
+
+    return config
+
+
+def setup_logging(log_path: Optional[Path] = None, verbose: bool = False):
+    """Setup logging configuration"""
+    level = logging.DEBUG if verbose else logging.INFO
+
+    handlers = [logging.StreamHandler(sys.stdout)]
+
+    if log_path:
+        log_path.parent.mkdir(parents=True, exist_ok=True)
+        handlers.append(logging.FileHandler(log_path, encoding='utf-8'))
+
+    logging.basicConfig(
+        level=level,
+        format='%(asctime)s [%(levelname)s] %(message)s',
+        handlers=handlers
+    )
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description='Convert SRT subtitle files to main.yaml format'
+    )
+    parser.add_argument(
+        '--config',
+        type=Path,
+        required=True,
+        help='Path to YAML configuration file'
+    )
+    parser.add_argument(
+        '--force',
+        action='store_true',
+        help='Overwrite existing output file'
+    )
+    parser.add_argument(
+        '--verbose',
+        action='store_true',
+        help='Enable verbose logging'
+    )
+
+    args = parser.parse_args()
+
+    # Load configuration
+    try:
+        config = load_config(args.config)
+    except Exception as e:
+        print(f"Error loading config: {e}", file=sys.stderr)
+        sys.exit(1)
+
+    # Setup logging
+    log_path = None
+    if 'logging' in config and 'path' in config['logging']:
+        log_path = Path(config['logging']['path'])
+
+    setup_logging(log_path, args.verbose)
+    logging.info(f"Starting SRT to YAML conversion for episode {config['episode_id']}")
+
+    # Get paths
+    srt_path = Path(config['input']['srt'])
+    output_path = Path(config['output']['main_yaml'])
+
+    # Check if output exists
+    if output_path.exists() and not args.force:
+        logging.error(f"Output file already exists: {output_path}")
+        logging.error("Use --force to overwrite")
+        sys.exit(1)
+
+    try:
+        # Parse SRT
+        srt_entries = SRTParser.parse(srt_path)
+
+        # Clean text
+        cleaned_segments = [TextCleaner.clean(entry) for entry in srt_entries]
+
+        # Detect speakers
+        processed_segments = [SpeakerDetector.detect(seg) for seg in cleaned_segments]
+
+        # Merge segments
+        merger = SegmentMerger()
+        merged_segments = merger.merge(processed_segments)
+
+        # Generate YAML
+        yaml_data = YAMLGenerator.generate(
+            episode_id=config['episode_id'],
+            source_file=str(srt_path),
+            segments=merged_segments
+        )
+
+        # Write output
+        YAMLGenerator.write(yaml_data, output_path)
+
+        logging.info("Conversion completed successfully!")
+
+    except Exception as e:
+        logging.error(f"Conversion failed: {e}", exc_info=True)
+        sys.exit(1)
+
+
+if __name__ == '__main__':
+    main()

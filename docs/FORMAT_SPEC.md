@@ -9,6 +9,16 @@
 | `terminology.yaml` | 術語表 | 優先用詞與說明 |
 | `guidelines.md` | 翻譯風格指引 | 當作 system prompt 載入 |
 
+**目錄慣例**
+
+```
+input/<episode>/                  # 原始 SRT（可能多語系）
+data/<episode>/                   # YAML/Markdown 來源資料
+output/<episode>/                 # 匯出成果（SRT/MD/報表）
+```
+
+例如：`configs/S01-E12.yaml` 可對應 `input/S01-E12/…`、`data/S01-E12/…`、`output/S01-E12/…` 等路徑。
+
 ---
 
 ## `main.yaml`
@@ -17,7 +27,7 @@
 
 ```yaml
 episode_id: S01-E12
-source_file: input/raw/ENG-S01-E12Bridget Nielson_SRT_English.srt
+source_file: input/S01-E12/ENG-S01-E12Bridget Nielson_SRT_English.srt
 segments:
   - segment_id: 1
     speaker_group: 1
@@ -33,15 +43,15 @@ segments:
       notes: null
     metadata:
       topic_id: intro
-      has_music_tag: false
-      raw_speaker_hint: ">>"
+      speaker_hint: ">>"
+      source_entries: [2, 3]
 ```
 
 **基本原則**
 - `segments` 必填且按 `segment_id` 遞增；`speaker_group` 遇到話者切換時加一。
-- `source_text` 為原文句段，保持 SRT 的句讀與特殊標記。
+- `source_text` 為原文句段，優先保證句子完整性，避免斷句。
 - `translation` 由翻譯腳本填寫；流程不得直接覆蓋 `source_text`。
-- `metadata.topic_id` 對應 `topics.yaml`；可視需要新增其他布林或字串旗標。
+- `metadata.topic_id` 對應 `topics.yaml`；`source_entries` 記錄來源 SRT 索引，用於追溯。
 
 ---
 

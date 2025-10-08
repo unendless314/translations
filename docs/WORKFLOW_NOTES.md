@@ -117,3 +117,28 @@ translation:
    - 若初次生成後發現段落邊界需微調，可再人工或程式調整 `segment_start`/`segment_end`，保持 `segment_id` 與摘要對應。
 
 此流程確保 `topics.yaml` 與 `main.yaml` 同步，一旦主題切分完成，即可沿用在翻譯批次與術語索引中。
+
+---
+
+## 資料夾慣例
+
+- 原始字幕來源：`input/<episode>/...`
+- 工作資料（YAML/Markdown）：`data/<episode>/...`
+- 模型與匯出成果：`output/<episode>/...`
+  
+工具以 episode ID 為主鍵尋找檔案，設定 `configs/<episode>.yaml` 時亦遵循此結構。
+
+---
+
+## 待實作工具清單
+
+- `srt_to_main_yaml.py`（支援 `--config configs/<episode>.yaml`）
+- `main_yaml_to_plaintext.py`
+- `topics_markdown_to_yaml.py`
+- `terminology_mapper.py`
+- `translation_driver.py`（含模型輸出解析與合併）
+- `qa_checker.py`
+- `export_srt.py`
+- `export_markdown.py`
+
+建議依此順序逐一實現，先完成 SRT 轉換及純文字輸出，以建立 `data/<episode>/main.yaml` 與大模型所需上下文，之後再串接主題解析、翻譯批次與 QA/匯出流程。
