@@ -45,13 +45,18 @@ segments:
       topic_id: intro
       speaker_hint: ">>"
       source_entries: [2, 3]
+      truncated: false
 ```
 
 **基本原則**
 - `segments` 必填且按 `segment_id` 遞增；`speaker_group` 遇到話者切換時加一。
-- `source_text` 為原文句段，優先保證句子完整性，避免斷句。
+- `source_text` 為原文句段，**盡可能**保證句子完整性，避免斷句。
+  - **已知限制**：
+    - 引號、括號或音效標籤開頭的句子可能被誤判為前句延續
+    - 當合併達到 10-entry 安全上限時會強制停止，此時設置 `metadata.truncated: true`
+    - 帶有 `truncated: true` 的段落應由 QA 工具自動標記為 `needs_review` 狀態
 - `translation` 由翻譯腳本填寫；流程不得直接覆蓋 `source_text`。
-- `metadata.topic_id` 對應 `topics.yaml`；`source_entries` 記錄來源 SRT 索引，用於追溯。
+- `metadata.topic_id` 對應 `topics.yaml`；`source_entries` 記錄來源 SRT 索引，用於追溯；`truncated` 預設為 `false`，僅在達到安全上限時設為 `true`。
 
 ---
 

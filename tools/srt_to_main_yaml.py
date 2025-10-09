@@ -44,6 +44,7 @@ class MergedSegment:
     topic_id: Optional[str] = None
     speaker_hint: Optional[str] = None
     source_entries: List[int] = field(default_factory=list)
+    truncated: bool = False
 
 
 class SRTParser:
@@ -143,22 +144,73 @@ class SpeakerDetector:
 class SegmentMerger:
     """Merge segments based on sentence completeness and punctuation"""
 
-    TERMINAL_PUNCTUATION = re.compile(r'[.!?…]$')
+    # Match terminal punctuation, optionally followed by closing quotes/brackets
+    # Supports: .!?… followed by optional ", ', ", ', ), ], etc.
+    TERMINAL_PUNCTUATION = re.compile(r'[.!?…]+["\'\u201d\u2019\)\]]*$')
     MAX_SAFETY_LIMIT = 10  # Safety limit to prevent infinite merging
 
+    @staticmethod
+    def _normalize_sentence_start(text: str) -> str:
+        """Remove leading quotes, brackets, and whitespace to check actual content
+
+        Handles common SRT patterns:
+        - "Hello world -> Hello world
+        - (whispers) Hello -> whispers) Hello (then checked again)
+        - [MUSIC] The journey -> MUSIC] The journey
+        """
+        text = text.lstrip()
+
+        # Strip opening quotes and brackets iteratively
+        # Support both English and Chinese punctuation
+        opening_chars = '"\'""\'((['
+
+        while text and text[0] in opening_chars:
+            text = text[1:].lstrip()
+
+        return text
+
+    def _is_new_sentence_start(self, text: str) -> bool:
+        """Check if text starts a new sentence
+
+        Strategy:
+        1. Normalize: Remove leading quotes, brackets, whitespace
+        2. Check: Does normalized text start with uppercase letter?
+
+        Examples:
+        - "Hello world" -> True (uppercase H)
+        - (whispers) Come here -> True (uppercase C)
+        - and then... -> False (lowercase a)
+        - [MUSIC] -> True (uppercase M, treated as content)
+        """
+        normalized = self._normalize_sentence_start(text)
+
+        if not normalized:
+            return False
+
+        return normalized[0].isupper()
+
     def merge(self, segments: List[ProcessedSegment]) -> List[MergedSegment]:
-        """Merge segments into complete sentences
+        """Merge segments into complete sentences (best effort)
 
         Strategy:
         1. MUST merge: Continue until sentence is complete (has terminal punctuation)
         2. STOP when:
-           - Next entry starts a new sentence (uppercase, not a conjunction)
+           - Next entry starts a new sentence (uppercase after normalization)
            - Speaker change detected
            - Safety limit reached
 
         Guarantees:
         - Every entry appears in exactly one segment (no splitting)
-        - Every segment contains complete sentences
+        - Best effort to keep sentences complete; truncated segments flagged with metadata.truncated=True
+
+        Known limitations:
+        - Lowercase stage directions may be treated as continuation (e.g., "(whispers) hello")
+        - Safety limit (10 entries) may force incomplete merge, flagged as truncated
+
+        Improvements (Phase 2A):
+        - Handles quoted sentences: "Hello world.", 'Oh, my past life.'
+        - Handles multiple punctuation: ...., !!!, ?!?
+        - Handles sound effect tags: [MUSIC], [LAUGHS]
         """
         if not segments:
             return []
@@ -177,6 +229,7 @@ class SegmentMerger:
 
             # Start a new merged segment
             merge_buffer = [current]
+            is_truncated = False
 
             # Try to merge with following segments
             j = i + 1
@@ -189,10 +242,12 @@ class SegmentMerger:
 
                 # Stop condition 2: Safety limit
                 if len(merge_buffer) >= self.MAX_SAFETY_LIMIT:
+                    source_indices = [seg.srt_index for seg in merge_buffer]
                     logging.warning(
-                        f"Reached safety limit ({self.MAX_SAFETY_LIMIT}) at segment {segment_id}, "
-                        f"stopping merge even though sentence may be incomplete"
+                        f"Reached safety limit ({self.MAX_SAFETY_LIMIT}) at segment_id={segment_id}, "
+                        f"source_entries={source_indices}, stopping merge even though sentence may be incomplete"
                     )
+                    is_truncated = True
                     break
 
                 # Check if last entry in buffer has terminal punctuation
@@ -215,9 +270,8 @@ class SegmentMerger:
                     continue
 
                 # Check if next entry starts a new sentence
-                # New sentence indicator: starts with uppercase letter
-                # (we treat all uppercase starts as new sentences, including conjunctions)
-                if next_text[0].isupper():
+                # Use improved heuristic that handles quotes, brackets, etc.
+                if self._is_new_sentence_start(next_text):
                     # Next entry is a new sentence - stop here
                     break
                 else:
@@ -237,7 +291,8 @@ class SegmentMerger:
                 end=merge_buffer[-1].end,
                 source_text=merged_text,
                 speaker_hint=current.speaker_hint,
-                source_entries=[seg.srt_index for seg in merge_buffer]
+                source_entries=[seg.srt_index for seg in merge_buffer],
+                truncated=is_truncated
             )
 
             merged.append(merged_segment)
@@ -302,7 +357,8 @@ class YAMLGenerator:
                 'metadata': {
                     'topic_id': seg.topic_id,
                     'speaker_hint': seg.speaker_hint,
-                    'source_entries': seg.source_entries
+                    'source_entries': seg.source_entries,
+                    'truncated': seg.truncated
                 }
             }
 

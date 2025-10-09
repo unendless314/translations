@@ -124,8 +124,8 @@ All tools should accept:
 Tools to be implemented (per docs/TOOL_SPEC.md and docs/WORKFLOW_NOTES.md):
 
 1. `srt_to_main_yaml.py` - Parse SRT, merge segments, generate main.yaml
-2. `main_yaml_to_plaintext.py` - Export for topic analysis
-3. `topics_markdown_to_yaml.py` - Convert LLM topic analysis to YAML
+2. `main_yaml_to_json.py` - Export minimal segments array for topic analysis
+3. `topics_analysis_driver.py` - Call LLM with segments JSON and emit topics.yaml
 4. `terminology_mapper.py` - Auto-populate term occurrence indices
 5. `translation_driver.py` - Orchestrate batch translation with model I/O
 6. `qa_checker.py` - Validate translations, flag confidence/consistency issues

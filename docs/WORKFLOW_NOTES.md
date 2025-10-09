@@ -105,15 +105,21 @@ translation:
 
 ## `topics.yaml` 生成流程
 
-1. **準備純文字稿**  
-   - 撰寫轉換腳本，讀取 `main.yaml`，依序輸出形如 `[SEG 021] 原文內容` 的純文字檔，必要時保留音效或說話者提示。
-   - 目的在於讓 LLM 聚焦內容，不必解析 YAML 結構。
+1. **準備段落 JSON**  
+   - 透過 `main_yaml_to_json.py` 讀取 `main.yaml`，輸出僅含 `segment_id`、`speaker_group`、`source_text` 的精簡 JSON 陣列。
+   - 目的在於讓 LLM 聚焦語義內容，同時保留段落編號以便後續對應。
 
 2. **大模型分析**  
-   - 將純文字稿餵給 Gemini 2.5 Pro（或類似大 context 模型），指示它用階層式章節（H1/H2/H3 或清單）整理主題，要求每個主題註明 `SEG 起–SEG 迄`、摘要與 2–3 個關鍵詞。
+   - 透過 `topics_analysis_driver.py` 呼叫 LLM，載入 JSON 段落後輸出符合 `topics.yaml` 的 YAML 結構。
+   - System prompt 模板請使用 `prompts/topic_analysis_system.txt`，確保輸出結構一致。
+   - API 呼叫流程：  
+     1. 讀取 `prompts/topic_analysis_system.txt`，作為 system message。  
+     2. 將 `main_yaml_to_json.py` 產出的段落 JSON（完整陣列）塞入 user message，必要時加上一句簡短說明（例：「Below is the episode transcript in JSON array form.」）。  
+     3. 若需要調整模型溫度、max tokens 等參數，於 API request 中設定，但不改動模板內容。  
+     4. 接收回覆後立即以 parser 驗證 YAML 結構，確保符合 `topics.yaml` schema；失敗時記錄原始回應並酌情重試。
 
 3. **解析輸出**  
-   - 寫 parser 讀取模型回覆，抽取各節點的 `segment_start`、`segment_end`、`summary`、`keywords`，轉換成 `topics.yaml` 的 `topics` 陣列；全域概述填入 `global_summary`。
+   - `topics_analysis_driver.py` 解析模型回覆、驗證欄位，並寫回 `data/<episode>/topics.yaml`。
    - 若初次生成後發現段落邊界需微調，可再人工或程式調整 `segment_start`/`segment_end`，保持 `segment_id` 與摘要對應。
 
 此流程確保 `topics.yaml` 與 `main.yaml` 同步，一旦主題切分完成，即可沿用在翻譯批次與術語索引中。
@@ -133,12 +139,12 @@ translation:
 ## 待實作工具清單
 
 - `srt_to_main_yaml.py`（支援 `--config configs/<episode>.yaml`）
-- `main_yaml_to_plaintext.py`
-- `topics_markdown_to_yaml.py`
+- `main_yaml_to_json.py`
+- `topics_analysis_driver.py`
 - `terminology_mapper.py`
 - `translation_driver.py`（含模型輸出解析與合併）
 - `qa_checker.py`
 - `export_srt.py`
 - `export_markdown.py`
 
-建議依此順序逐一實現，先完成 SRT 轉換及純文字輸出，以建立 `data/<episode>/main.yaml` 與大模型所需上下文，之後再串接主題解析、翻譯批次與 QA/匯出流程。
+建議依此順序逐一實現，先完成 SRT 轉換與 JSON 段落輸出，以建立 `data/<episode>/main.yaml` 與大模型所需上下文，之後再串接主題解析、翻譯批次與 QA/匯出流程。
