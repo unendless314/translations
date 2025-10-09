@@ -13,6 +13,10 @@ archive/*/
 # 但保留目錄結構的 .gitkeep
 !**/.gitkeep
 
+# Environment variables and secrets
+.env
+.env.local
+
 # Python
 __pycache__/
 *.py[cod]

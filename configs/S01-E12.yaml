@@ -1,7 +1,38 @@
 episode_id: S01-E12
+
 input:
   srt: input/S01-E12/ENG-S01-E12Bridget Nielson_SRT_English.srt
+
 output:
   main_yaml: data/S01-E12/main.yaml
+  json: data/S01-E12/main_segments.json
+  topics_json: data/S01-E12/topics.json
+
+prompts:
+  topic_analysis_system: prompts/topic_analysis_system.txt
+
+# Model configuration for topic analysis
+topic_analysis:
+  provider: openai                # gemini, openai, or anthropic
+  model: gpt-5-mini               # Model identifier (e.g., gpt-5-mini, gemini-2.5-pro)
+  temperature: 1                  # Creativity (0.0-2.0, lower = more deterministic)
+  max_output_tokens: 8192         # Maximum response length
+  timeout: 120                    # API timeout (seconds)
+  max_retries: 3                  # Retry attempts on failure
+  strict_validation: true         # Fail on YAML validation errors
+  dry_run: false                  # Skip API call, validate inputs only
+
+# Model configuration for translation
+translation:
+  provider: gemini
+  model: gemini-2.5-pro
+  temperature: 1
+  max_output_tokens: 4096
+  timeout: 120
+  max_retries: 3
+  batch_size: 10                  # Segments per translation batch
+  resume: true                    # Skip completed segments
+
 logging:
-  path: logs/S01-E12/srt_to_yaml.log
+  level: INFO                     # DEBUG / INFO / WARNING / ERROR
+  path: logs/S01-E12/workflow.log

@@ -173,34 +173,35 @@ python tools/main_yaml_to_json.py --config configs/S01-E12.yaml
 
 - **設定檔**（建議）
   ```yaml
-  # configs/S01-E12.topic.yaml
+  # configs/S01-E12.yaml (扁平結構)
   episode_id: S01-E12
-  input:
-    segments_json: data/S01-E12/main_segments.json
-    system_prompt: prompts/topic_analysis_system.txt
+
   output:
-    topics_yaml: data/S01-E12/topics.yaml
-  model:
-    provider: gemini
-    name: gemini-2.5-pro
-    temperature: 0.2
-    max_output_tokens: 2048
-    top_p: 0.9
-  options:
-    retry:
-      attempts: 2
-      delay_seconds: 3
-    strict_validation: true
-    dry_run: false
+    json: data/S01-E12/main_segments.json
+    topics_json: data/S01-E12/topics.json
+
+  prompts:
+    topic_analysis_system: prompts/topic_analysis_system.txt
+
+  # 扁平結構：所有 model 參數直接放在 topic_analysis 下
+  topic_analysis:
+    provider: gemini                # gemini, openai, anthropic
+    model: gemini-2.5-pro           # 模型識別符
+    temperature: 1                  # 0.0-2.0
+    max_output_tokens: 8192
+    timeout: 120
+    max_retries: 3                  # 重試次數（內建指數退避）
+    strict_validation: true         # 驗證警告視為錯誤
+    dry_run: false                  # 測試模式（不調用 API）
   ```
 
 **執行介面**
 ```bash
-python tools/topics_analysis_driver.py --config configs/S01-E12.topic.yaml
+python3 tools/topics_analysis_driver.py --config configs/S01-E12.yaml [--dry-run] [--verbose]
 ```
-- `--segments data/S01-E12/main_segments.json` 指定輸入 JSON；`--prompt prompts/topic_analysis_system.txt` 指定 system prompt。
-- `--output data/S01-E12/topics.yaml` 指定輸出檔。
-- `--dry-run` 僅檢查輸入與 prompt，不發送 API。
+- `--config` 配置檔案路徑（必需）
+- `--dry-run` 僅檢查輸入與 prompt，不發送 API
+- `--verbose` 顯示 DEBUG 級別日誌
 
 **流程概述**
 1. 載入段落 JSON（必須為陣列；驗證每項包含 `segment_id`, `speaker_group`, `source_text`）。
@@ -210,15 +211,14 @@ python tools/topics_analysis_driver.py --config configs/S01-E12.topic.yaml
 5. 取得模型回覆（預期為 YAML），立即送入解析流程；若啟用額外日誌，可自行記錄回應供除錯。
 6. 使用 YAML parser 解析回覆，檢查結構符合下列 schema：
    ```yaml
-   global_summary: str (必填，非空)
+   global_summary: str (必填，非空，≤600 words)
    topics: list(必填，至少一項)
-     - topic_id: str（格式 `topic_\\d{2}`，遞增且唯一）
+     - topic_id: str（格式建議 `topic_\\d{2}`，或語意化 ID）
        segment_start: int
        segment_end: int
-       title: str（非空）
-       summary: str（非空）
-       highlights: list[str]
-       keywords: list[str]
+       title: str（非空，≤20 words）
+       summary: str（非空，≤200 words）
+       terminology: list[str]（3-10 項，無術語時為空陣列 []）
    ```
 7. 進行數值驗證：
    - `segment_start` ≤ `segment_end`

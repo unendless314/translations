@@ -10,7 +10,7 @@ This is a modular subtitle translation pipeline that processes SRT files through
 
 The project uses a **three-layer file structure**:
 - `input/<episode>/` - Original SRT files
-- `data/<episode>/` - Working YAML/Markdown files (main.yaml, topics.yaml, terminology.yaml, guidelines.md)
+- `data/<episode>/` - Working YAML/Markdown files (main.yaml, topics.json, terminology.yaml, guidelines.md)
 - `output/<episode>/` - Exported results (SRT/Markdown/reports)
 
 ### Primary Data Files (per episode)
@@ -20,7 +20,7 @@ The project uses a **three-layer file structure**:
 - Translation results and status tracking
 - Segment-level metadata (topic_id, speaker_group, music tags, etc.)
 
-**`data/<episode>/topics.yaml`** - Thematic structure:
+**`data/<episode>/topics.json`** - Thematic structure:
 - Topics with segment ranges (`segment_start`, `segment_end`)
 - Per-topic summaries and keywords
 - Global episode summary for context
@@ -45,22 +45,20 @@ input:
   srt: input/S01-E12/ENG-S01-E12Bridget Nielson_SRT_English.srt
 output:
   main_yaml: data/S01-E12/main.yaml
-preprocessing:
-  min_gap_ms: 800
-  max_sentence_merge: 3
-  max_length: 280
+logging:
+  path: logs/S01-E12/srt_to_yaml.log
 ```
 
 ## Translation Workflow Concepts
 
 ### Batch Translation by Topic
-- Process segments grouped by `topic_id` from topics.yaml
+- Process segments grouped by `topic_id` from topics.json
 - Each batch includes: global summary, topic summary, relevant terminology, guidelines
 - Avoid sending entire YAML to models - extract and format only necessary context
 
 ### Context Assembly
 For each translation batch:
-1. Load topic summary and keywords from `topics.yaml`
+1. Load topic summary and keywords from `topics.json`
 2. Filter terminology entries that match current segments/topics
 3. Include translation guidelines from `guidelines.md`
 4. Extract source segments from `main.yaml`
@@ -90,10 +88,10 @@ When converting SRT to main.yaml:
 - **No redundancy**: `speaker_group` only at top level, not in metadata
 
 ### Topics Generation Flow
-1. Export `main.yaml` to plaintext with segment markers (`[SEG 021] text...`)
-2. Feed to large-context LLM (e.g., Gemini 2.5 Pro) for hierarchical topic analysis
+1. Export `main.yaml` to JSON with segment markers (`segment_id`, `speaker_group`, `source_text`)
+2. Feed to large-context LLM (e.g., Gemini 2.5 Pro) using `prompts/topic_analysis_system.txt`
 3. Parse LLM output to extract segment ranges, summaries, keywords
-4. Generate `topics.yaml` structure
+4. Generate `topics.json` structure with validation (no gaps, no overlaps, sequential ranges)
 
 ### Terminology Mapping
 - Pre-scan `main.yaml` to populate `segments`/`topics` arrays in terminology entries
@@ -107,30 +105,109 @@ All tools should accept:
 - `--config configs/<episode>.yaml` as primary configuration
 - Optional CLI overrides for specific parameters
 - `--force` to overwrite existing outputs
-- `--resume` to continue from last checkpoint
+- `--resume` to continue from last checkpoint (where applicable)
 
 ### Error Handling
 - Log unparseable timecodes but continue processing
-- Mark problematic segments with `status: error` or `metadata.is_empty: true`
+- Mark problematic segments with `status: error` or `metadata.truncated: true`
 - Never silently fail; provide actionable error messages
+- Use non-zero exit codes for failures
 
 ### Incremental Writing
 - Write results back to `main.yaml` after each batch
 - Avoid accumulating large amounts in memory
 - Support partial completion and recovery
 
-## Planned Tools
+## Project Architecture
 
-Tools to be implemented (per docs/TOOL_SPEC.md and docs/WORKFLOW_NOTES.md):
+### Directory Structure
+```
+src/                    # 🆕 Shared modules
+├── clients/           # LLM API clients
+│   ├── base_client.py      # Abstract base class
+│   ├── gemini_client.py    # Gemini (google-genai SDK)
+│   ├── openai_client.py    # OpenAI (planned)
+│   └── anthropic_client.py # Anthropic (planned)
+├── models.py          # Data models (@dataclass)
+└── exceptions.py      # Custom exceptions
 
-1. `srt_to_main_yaml.py` - Parse SRT, merge segments, generate main.yaml
-2. `main_yaml_to_json.py` - Export minimal segments array for topic analysis
-3. `topics_analysis_driver.py` - Call LLM with segments JSON and emit topics.yaml
-4. `terminology_mapper.py` - Auto-populate term occurrence indices
-5. `translation_driver.py` - Orchestrate batch translation with model I/O
-6. `qa_checker.py` - Validate translations, flag confidence/consistency issues
-7. `export_srt.py` - Convert main.yaml back to SRT format
-8. `export_markdown.py` - Generate human-readable translation reports
+tools/                 # CLI tool scripts
+├── srt_to_main_yaml.py       ✅
+├── main_yaml_to_json.py      ✅
+├── topics_analysis_driver.py ✅
+└── ...                       (planned)
+```
+
+### Key Design Decisions
+- **Synchronous execution**: Tools run sequentially, no async/await complexity
+- **Client abstraction**: Unified interface for multiple LLM providers
+- **Data models**: Type-safe @dataclass structures (APIResponse, TokenUsage)
+- **Smart retry logic**: Distinguish retryable (timeout, 429) vs non-retryable (401, 400) errors
+
+See `docs/ARCHITECTURE.md` for detailed architectural documentation.
+
+## Development Commands
+
+### Setup
+```bash
+# Install dependencies (includes google-genai 0.1.0+)
+pip install -r requirements.txt
+
+# Configure API keys
+cp .env.example .env
+# Edit .env and add your API keys:
+# - GEMINI_API_KEY (recommended for topic analysis)
+# - OPENAI_API_KEY (alternative)
+# - ANTHROPIC_API_KEY (alternative)
+```
+
+### Run Tools
+```bash
+# Step 1: Convert SRT to main.yaml
+python3 tools/srt_to_main_yaml.py --config configs/S01-E12.yaml [--force] [--verbose]
+
+# Step 2: Export segments to JSON
+python3 tools/main_yaml_to_json.py --config configs/S01-E12.yaml [--pretty] [--verbose]
+
+# Step 3: Generate topics.json (requires API key)
+python3 tools/topics_analysis_driver.py --config configs/S01-E12.yaml [--dry-run] [--verbose]
+
+# Step 4: Translate (coming soon)
+# python3 tools/translation_driver.py --config configs/S01-E12.yaml [--resume]
+```
+
+## Implementation Status
+
+### Currently Implemented
+**Tools:**
+- `tools/srt_to_main_yaml.py` - SRT parser with intelligent sentence merging ✅
+- `tools/main_yaml_to_json.py` - Export minimal segments for LLM analysis ✅
+- `tools/topics_analysis_driver.py` - LLM-based topic analysis ✅
+
+**Shared Modules:**
+- `src/clients/base_client.py` - Abstract LLM client interface ✅
+- `src/clients/gemini_client.py` - Gemini API (google-genai SDK 0.1.0+) ✅
+- `src/clients/openai_client.py` - OpenAI API (GPT-5, Responses API) ✅
+- `src/models.py` - Data models (APIResponse, TokenUsage) ✅
+- `src/exceptions.py` - Custom exceptions ✅
+
+**Configuration:**
+- `configs/S01-E12.yaml` - Episode config with model settings ✅
+- `.env.example` - API key template ✅
+- `prompts/topic_analysis_system.txt` - Topic analysis prompt ✅
+
+**Documentation:**
+- `docs/ARCHITECTURE.md` - Architectural design document ✅
+- `CLAUDE.md` - This file ✅
+
+### Planned Tools (see docs/TOOL_SPEC.md)
+1. ~~`main_yaml_to_json.py`~~ - ✅ Completed
+2. ~~`topics_analysis_driver.py`~~ - ✅ Completed
+3. `terminology_mapper.py` - Auto-populate term occurrence indices
+4. `translation_driver.py` - Orchestrate batch translation with model I/O
+5. `qa_checker.py` - Validate translations, flag confidence/consistency issues
+6. `export_srt.py` - Convert main.yaml back to SRT format
+7. `export_markdown.py` - Generate human-readable translation reports
 
 ## Translation Quality Checks
 
@@ -140,6 +217,7 @@ QA tools should validate:
 - Text length ratios (source vs. translation)
 - Timecode integrity
 - Status completeness (all segments translated)
+- Segments with `metadata.truncated: true` should be flagged as `needs_review`
 
 ## Important Notes
 
@@ -147,3 +225,6 @@ QA tools should validate:
 - **Episode ID is the primary key** - all file operations use this identifier
 - **YAML block scalars** - use `>` for multiline text to preserve readability
 - **Chinese conventions** - music/sound tags use full-width brackets 【】 at sentence start
+- **All documentation is in Traditional Chinese** - except this CLAUDE.md file and code comments
+- **API Keys Required** - LLM tools need `.env` file with provider API keys (see `.env.example`)
+- **Model Configuration** - Each episode config specifies model provider, name, and parameters

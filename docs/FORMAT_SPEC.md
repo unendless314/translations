@@ -74,9 +74,10 @@ topics:
     summary: |
       Establishes the contemplative tone with philosophical questions and hints at
       forthcoming discussions about reality and personal transformation.
-    keywords:
+    terminology:
       - reality
       - personal journey
+      - transformation
   - topic_id: sedona_experience
     title: Experiences in Sedona, Arizona
     segment_start: 21
@@ -84,9 +85,10 @@ topics:
     summary: |
       Covers repeated trips to Sedona, community gatherings, and the speaker's
       research into ET contact. Sets the thematic context for spiritual guidance.
-    keywords:
+    terminology:
       - Sedona
-      - ET research
+      - ET contact
+      - spiritual guidance
 global_summary: |
   The episode follows the narrator's journey to understand reality through
   repeated spiritual experiences in Sedona, touching on ET contact, community
