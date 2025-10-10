@@ -168,8 +168,12 @@ class OpenAIClient(BaseLLMClient):
     def _call_api(self, system_prompt: str, user_message: str):
         """調用 OpenAI Responses API
 
-        使用新版 Responses API（非 Chat Completions API）
-        參考：Phase18 驗證成功的方法
+        使用官方推薦的 Responses API 格式：
+        - instructions 參數承載系統指令（等同於 system role）
+        - input 參數承載用戶訊息（可以是純字串）
+        - timeout 已在 client 初始化時設定
+
+        參考：OpenAI Python SDK 官方 README
 
         Args:
             system_prompt: 系統指令
@@ -182,22 +186,17 @@ class OpenAIClient(BaseLLMClient):
             APIError: API 調用失敗
         """
         try:
-            # 準備 messages（Responses API 格式）
-            messages = [
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": user_message}
-            ]
-
-            # 構建 API 配置（參考 Phase18）
-            api_config = {
-                "model": self.model_name,
-                "input": messages,
-                "timeout": self.timeout,
-                "reasoning": {"effort": "low"},  # 降低推理深度以減少 token 使用
-            }
-
-            # 使用 Responses API（同步調用）
-            response = self.client.responses.create(**api_config)
+            # 使用官方推薦的 Responses API 格式
+            response = self.client.responses.create(
+                model=self.model_name,
+                instructions=system_prompt,              # 系統行為設定
+                input=user_message,                      # 用戶訊息（純字串；未來可擴展為結構化輸入）
+                temperature=self.temperature,            # 從 config 傳入溫度參數
+                max_output_tokens=self.max_output_tokens,# 從 config 傳入最大輸出 tokens
+                reasoning={"effort": "low"}              # 降低推理深度以減少 token 使用
+            )
+            # TODO: 若未來需要多模態輸入（圖片、多段內容），改用結構化格式：
+            #       input=[{"role": "user", "content": [{"type": "input_text", "text": "..."}]}]
 
             return response
 
@@ -208,7 +207,7 @@ class OpenAIClient(BaseLLMClient):
     def _extract_content(self, response) -> str:
         """從 OpenAI Responses API 回應提取內容
 
-        參考 Phase15/Phase18 成功實作
+        優先使用官方便捷屬性 output_text，失敗時才解析深層結構
 
         Args:
             response: OpenAI API 回應物件
@@ -217,28 +216,33 @@ class OpenAIClient(BaseLLMClient):
             str: 生成的文字內容
         """
         try:
-            # Responses API 回應結構（Phase18 驗證成功的方法）
-            # response.output[] 包含多個項目，需要找到 message 類型
-            if hasattr(response, 'output') and response.output:
+            # 1) 優先：使用官方便捷屬性 output_text（最穩定）
+            text = getattr(response, "output_text", None)
+            if isinstance(text, str) and text.strip():
+                logger.debug("Extracted content from response.output_text")
+                return text
+
+            # 2) Fallback：解析 output 深層結構
+            if hasattr(response, "output") and response.output:
                 for output_item in response.output:
                     # 尋找 message 類型的輸出
-                    if hasattr(output_item, 'type') and output_item.type == 'message':
-                        if hasattr(output_item, 'content') and output_item.content:
-                            # content 是列表，包含 text 項目
-                            for content_item in output_item.content:
-                                if hasattr(content_item, 'type') and content_item.type == 'output_text':
-                                    if hasattr(content_item, 'text'):
-                                        logger.debug("Successfully extracted content from response.output")
-                                        return content_item.text
+                    if getattr(output_item, "type", None) == "message" and getattr(output_item, "content", None):
+                        # content 是列表，包含 text 項目
+                        for content_item in output_item.content:
+                            if getattr(content_item, "type", None) == "output_text":
+                                text = getattr(content_item, "text", "")
+                                if text:
+                                    logger.debug("Extracted content from response.output structure")
+                                    return text
 
                 # 記錄 output 類型用於 debug
-                output_types = [getattr(item, 'type', 'unknown') for item in response.output]
+                output_types = [getattr(item, "type", "unknown") for item in response.output]
                 logger.debug(f"Output types found: {output_types}")
 
-            # 備用：嘗試舊版 API 格式（Chat Completions API）
-            if hasattr(response, 'choices') and response.choices:
+            # 3) 備用：嘗試舊版 API 格式（Chat Completions API）
+            if hasattr(response, "choices") and response.choices:
                 choice = response.choices[0]
-                if hasattr(choice, 'message') and hasattr(choice.message, 'content'):
+                if hasattr(choice, "message") and hasattr(choice.message, "content"):
                     logger.debug("Extracted content from choices format (legacy)")
                     return choice.message.content
 
@@ -252,7 +256,8 @@ class OpenAIClient(BaseLLMClient):
     def _extract_token_usage(self, response) -> TokenUsage:
         """從 OpenAI response 提取 token 統計
 
-        支援 Responses API 和 Chat Completions API
+        優先讀取 Responses API 格式（input_tokens/output_tokens），
+        舊版 Chat Completions API 格式（prompt_tokens/completion_tokens）作為 fallback
 
         Args:
             response: OpenAI API 回應物件
@@ -261,22 +266,40 @@ class OpenAIClient(BaseLLMClient):
             TokenUsage: Token 使用統計
         """
         try:
-            # Responses API 格式
-            if hasattr(response, 'usage') and response.usage:
+            # Responses API 格式：優先（input_tokens / output_tokens / total_tokens）
+            if hasattr(response, "usage") and response.usage:
                 usage = response.usage
+
+                # 嘗試 Responses API 標準欄位名稱
+                input_tokens = getattr(usage, "input_tokens", None)
+                output_tokens = getattr(usage, "output_tokens", None)
+                total_tokens = getattr(usage, "total_tokens", None)
+
+                if any(v is not None for v in (input_tokens, output_tokens, total_tokens)):
+                    return TokenUsage(
+                        input_tokens=input_tokens or 0,
+                        output_tokens=output_tokens or 0,
+                        total_tokens=total_tokens or 0
+                    )
+
+                # Fallback：Chat Completions API 舊命名（prompt_tokens / completion_tokens）
+                prompt_tokens = getattr(usage, "prompt_tokens", 0)
+                completion_tokens = getattr(usage, "completion_tokens", 0)
+                total_tokens_compat = getattr(usage, "total_tokens", prompt_tokens + completion_tokens)
+
                 return TokenUsage(
-                    input_tokens=getattr(usage, 'prompt_tokens', 0),
-                    output_tokens=getattr(usage, 'completion_tokens', 0),
-                    total_tokens=getattr(usage, 'total_tokens', 0)
+                    input_tokens=prompt_tokens,
+                    output_tokens=completion_tokens,
+                    total_tokens=total_tokens_compat
                 )
 
-            # 備用：檢查其他可能的屬性
-            elif hasattr(response, 'token_usage'):
+            # 備用：檢查其他可能的屬性（罕見情況）
+            elif hasattr(response, "token_usage"):
                 usage = response.token_usage
                 return TokenUsage(
-                    input_tokens=getattr(usage, 'input_tokens', 0),
-                    output_tokens=getattr(usage, 'output_tokens', 0),
-                    total_tokens=getattr(usage, 'total_tokens', 0)
+                    input_tokens=getattr(usage, "input_tokens", 0),
+                    output_tokens=getattr(usage, "output_tokens", 0),
+                    total_tokens=getattr(usage, "total_tokens", 0)
                 )
 
             else:

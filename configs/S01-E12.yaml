@@ -13,9 +13,9 @@ prompts:
 
 # Model configuration for topic analysis
 topic_analysis:
-  provider: openai                # gemini, openai, or anthropic
-  model: gpt-5-mini               # Model identifier (e.g., gpt-5-mini, gemini-2.5-pro)
-  temperature: 1                  # Creativity (0.0-2.0, lower = more deterministic)
+  provider: gemini                # gemini, openai, or anthropic
+  model: gemini-2.5-pro           # Model identifier (e.g., gpt-5-mini, gemini-2.5-pro)
+  temperature: 0.2                # Creativity (0.0-2.0, lower = more deterministic)
   max_output_tokens: 8192         # Maximum response length
   timeout: 120                    # API timeout (seconds)
   max_retries: 3                  # Retry attempts on failure

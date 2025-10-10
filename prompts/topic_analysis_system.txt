@@ -24,11 +24,12 @@ You will receive a JSON array of segments. Each item contains:
 ---
 
 ## Output Format
-**Respond exclusively with valid JSON.** No commentary, no code fences, no prose outside JSON structure.
+Return ONLY the raw JSON object.
+Do NOT wrap your response in markdown code fences (```json or ```).
+Do NOT add any explanatory text before or after the JSON.
 
 **JSON Schema (use this exact structure):**
 
-```json
 {
   "global_summary": "Your 800-word episode summary here, describing the main themes and narrative progression across all topics. Continue with comprehensive coverage of the episode's content, key discussions, and thematic elements.",
   "topics": [
@@ -50,7 +51,6 @@ You will receive a JSON array of segments. Each item contains:
     }
   ]
 }
-```
 
 ---
 
@@ -58,11 +58,11 @@ You will receive a JSON array of segments. Each item contains:
 - Topic IDs must increment sequentially: `topic_01`, `topic_02`, `topic_03`, …
 - Segment ranges must be continuous with **no gaps or overlaps**.
 - All segment IDs from the input must be covered by exactly one topic.
-- Return **only** valid JSON — any non-JSON content will cause processing failure.
+- Return **only** valid JSON with no additional text.
 
 ## JSON Formatting Requirements
 - **All strings must use double quotes** (`"title"` not `'title'`).
 - **Terminology items**: Use the exact terms as they appear in the source text (e.g., `"spiritual awakening"`, `"Galactic Federation"`). Preserve original spacing and capitalization for accurate searching.
 - **No trailing commas** after the last item in arrays or objects.
 - **Escape special characters** in strings if needed (e.g., `\"` for quotes within strings).
-- Do not add commentary, code fences (```), or explanatory text outside the JSON structure.
+- **Do NOT wrap your response** in markdown code fences or add any text outside the JSON structure.

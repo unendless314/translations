@@ -176,10 +176,12 @@ class GeminiClient(BaseLLMClient):
         """
         try:
             # 構建生成配置
+            # 使用 response_mime_type 強制 JSON 輸出，避免 markdown 包裝
             config = types.GenerateContentConfig(
                 system_instruction=system_prompt,
                 temperature=self.temperature,
-                max_output_tokens=self.max_output_tokens
+                max_output_tokens=self.max_output_tokens,
+                response_mime_type="application/json"  # 官方推薦：防止 markdown 包裝
             )
 
             # 使用新版 SDK 調用
@@ -198,16 +200,21 @@ class GeminiClient(BaseLLMClient):
     def _extract_content(self, response) -> str:
         """從 Gemini response 提取生成的內容
 
+        Gemini 經常會用 markdown 代碼塊包裝 JSON 回應（即使 prompt 禁止）。
+        此方法會自動清理這些包裝。
+
         Args:
             response: Gemini API 回應物件
 
         Returns:
-            str: 生成的文字內容
+            str: 生成的文字內容（已清理 markdown 包裝）
         """
         try:
+            content = ""
+
             # 新版 SDK 的回應格式
             if hasattr(response, 'text') and response.text:
-                return response.text
+                content = response.text
             elif hasattr(response, 'candidates') and response.candidates:
                 # 嘗試從 candidates 中提取
                 for candidate in response.candidates:
@@ -215,10 +222,33 @@ class GeminiClient(BaseLLMClient):
                         if hasattr(candidate.content, 'parts') and candidate.content.parts:
                             for part in candidate.content.parts:
                                 if hasattr(part, 'text') and part.text:
-                                    return part.text
+                                    content = part.text
+                                    break
 
-            logger.warning("No text content found in Gemini response")
-            return ""
+            if not content:
+                logger.warning("No text content found in Gemini response")
+                return ""
+
+            # 清理 Gemini 常見的 markdown 代碼塊包裝
+            content = content.strip()
+
+            # 處理 ```json ... ``` 包裝
+            if content.startswith("```json"):
+                logger.debug("Removing ```json markdown wrapper from Gemini response")
+                content = content[7:]  # 移除 "```json" 和可能的換行
+                if content.endswith("```"):
+                    content = content[:-3]
+                content = content.strip()
+
+            # 處理通用 ``` ... ``` 包裝
+            elif content.startswith("```"):
+                logger.debug("Removing generic ``` markdown wrapper from Gemini response")
+                content = content[3:]
+                if content.endswith("```"):
+                    content = content[:-3]
+                content = content.strip()
+
+            return content
 
         except Exception as e:
             logger.error(f"Failed to extract content from Gemini response: {e}")
