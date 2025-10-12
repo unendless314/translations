@@ -19,7 +19,7 @@
 - **明確介面**：透過抽象基類定義 API 客戶端規範
 
 ### 3. 配置驅動
-- **YAML 配置**：每個 episode 一個配置檔（`configs/<episode>.yaml`）
+- **YAML 配置**：共用 `configs/default.yaml` 定義模板，`configs/<episode>.yaml` 只覆寫差異
 - **環境變數**：API keys 透過 `.env` 管理
 - **靈活切換**：可在配置中指定不同的 LLM provider 和模型
 
@@ -30,9 +30,12 @@
 ```
 .
 ├── configs/              # Episode 配置檔
-│   └── S01-E12.yaml
+│   ├── default.yaml
+│   ├── S01-E12.yaml
+│   └── SXX-EXX.yaml
 ├── data/                 # 工作資料（YAML/Markdown）
 │   └── <episode>/
+│       ├── main_segments.json
 │       ├── main.yaml
 │       ├── topics.yaml
 │       ├── terminology.yaml
@@ -57,12 +60,13 @@
 │   │   ├── gemini_client.py
 │   │   ├── openai_client.py
 │   │   └── anthropic_client.py
+│   ├── config_loader.py  # Default+override 設定合併與路徑模板解析
 │   ├── exceptions.py     # 自訂異常
 │   └── models.py         # 資料模型
 ├── tools/                # 工具腳本
 │   ├── srt_to_main_yaml.py         ✅
 │   ├── main_yaml_to_json.py        ✅
-│   ├── topics_analysis_driver.py   🚧
+│   ├── topics_analysis_driver.py   ✅
 │   ├── terminology_mapper.py       ⏳
 │   ├── translation_driver.py       ⏳
 │   ├── qa_checker.py               ⏳
@@ -71,6 +75,7 @@
 ├── .env.example          # API keys 範本
 ├── .gitignore
 ├── CLAUDE.md
+├── AGENTS.md
 ├── README.md
 └── requirements.txt
 ```
@@ -241,48 +246,74 @@ topic_analysis:
 
 ## 配置結構
 
+### `configs/default.yaml`
+
+共用配置負責定義路徑模板與模型預設值：
+
+```yaml
+variables:
+  input_root: input
+  data_root: data
+  output_root: output
+  logs_root: logs
+  prompts_root: prompts
+  main_yaml_filename: main.yaml
+  segments_json_filename: main_segments.json
+  topics_json_filename: topics.json
+  log_filename: workflow.log
+
+episode_id: "{episode}"
+
+input:
+  srt: "{input_root}/{episode}"
+  main_yaml: "{data_root}/{episode}/{main_yaml_filename}"
+
+output:
+  main_yaml: "{data_root}/{episode}/{main_yaml_filename}"
+  json: "{data_root}/{episode}/{segments_json_filename}"
+  topics_json: "{data_root}/{episode}/{topics_json_filename}"
+
+prompts:
+  topic_analysis_system: "{prompts_root}/topic_analysis_system.txt"
+
+topic_analysis:
+  provider: gemini
+  model: gemini-2.5-pro
+  temperature: 1
+  max_output_tokens: 8192
+  timeout: 180
+  max_retries: 3
+  strict_validation: true
+  dry_run: false
+
+translation:
+  provider: gemini
+  model: gemini-2.5-pro
+  temperature: 1
+  max_output_tokens: 16384
+  timeout: 180
+  max_retries: 3
+  batch_size: 10
+  resume: true
+
+logging:
+  level: INFO
+  path: "{logs_root}/{episode}/{log_filename}"
+```
+
 ### `configs/<episode>.yaml`
+
+Episode 覆寫檔僅保留差異，例如自訂 SRT 檔名或模型參數：
 
 ```yaml
 episode_id: S01-E12
 
 input:
-  srt: input/S01-E12/ENG-S01-E12Bridget Nielson_SRT_English.srt
-
-output:
-  main_yaml: data/S01-E12/main.yaml
-  json: data/S01-E12/main_segments.json
-  topics_json: data/S01-E12/topics.json
-
-prompts:
-  topic_analysis_system: prompts/topic_analysis_system.txt
-
-# 主題分析模型配置（扁平結構）
-topic_analysis:
-  provider: gemini                # gemini / openai / anthropic
-  model: gemini-2.5-pro           # 模型識別符
-  temperature: 1                  # 創造性（0.0-2.0）
-  max_output_tokens: 8192         # 最大輸出長度
-  timeout: 120                    # API 超時（秒）
-  max_retries: 3                  # 最大重試次數（內建指數退避）
-  strict_validation: true         # 驗證警告視為錯誤
-  dry_run: false                  # 測試模式（不調用 API）
-
-# 翻譯模型配置（扁平結構）
-translation:
-  provider: gemini
-  model: gemini-2.5-pro
-  temperature: 1
-  max_output_tokens: 4096
-  timeout: 120
-  max_retries: 3
-  batch_size: 10                  # 每批次段落數
-  resume: true                    # 斷點續傳
-
-logging:
-  path: logs/S01-E12/workflow.log
-  level: INFO                     # DEBUG / INFO / WARNING / ERROR
+  # 可選：若資料夾內有多個 SRT，可明確指定檔案
+  # srt: input/S01-E12/ENG-S01-E12Bridget Nielson_SRT_English.srt
 ```
+
+> 預設情況下 `srt_to_main_yaml.py` 會自動偵測 `input/<episode>/` 內唯一的 `.srt` 檔案；只有當資料夾包含多個 `.srt` 時才需要覆寫 `input.srt`。
 
 ---
 
@@ -292,6 +323,7 @@ logging:
 - **輸入**：原始 SRT 檔案
 - **輸出**：`data/<episode>/main.yaml`
 - **依賴**：無（純文字處理）
+- **特點**：自動從 `input/<episode>/` 偵測唯一的 `.srt` 檔案（必要時可在配置中覆寫）
 - **執行**：
   ```bash
   python3 tools/srt_to_main_yaml.py --config configs/S01-E12.yaml
@@ -306,7 +338,7 @@ logging:
   python3 tools/main_yaml_to_json.py --config configs/S01-E12.yaml
   ```
 
-### 3. `topics_analysis_driver.py` 🚧
+### 3. `topics_analysis_driver.py` ✅
 - **輸入**：`main_segments.json` + `topic_analysis_system.txt`
 - **輸出**：`topics.yaml`
 - **依賴**：`src/clients/`, `src/models.py`

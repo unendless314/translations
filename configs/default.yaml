@@ -1,0 +1,69 @@
+# Default configuration shared by all tools.
+# Override only the parts you need in configs/<episode>.yaml.
+
+# ----- Directory and filename templates ------------------------------------
+# These variables can be referenced elsewhere using {placeholder} syntax.
+# Most users only need to adjust values here when restructuring folders.
+variables:
+  input_root: input
+  data_root: data
+  output_root: output
+  logs_root: logs
+  prompts_root: prompts
+  main_yaml_filename: main.yaml
+  segments_json_filename: main_segments.json
+  topics_json_filename: topics.json
+  log_filename: workflow.log
+
+# `episode_id` is filled by the loader (or episode override) and reused across tools.
+episode_id: "{episode}"
+
+# ----- Input / output paths -------------------------------------------------
+# `input.srt` points to the episode folder; srt_to_main_yaml.py will auto-detect
+# the single .srt file in that directory. Override with an explicit file path if needed.
+input:
+  srt: "{input_root}/{episode}"
+  main_yaml: "{data_root}/{episode}/{main_yaml_filename}"
+
+output:
+  main_yaml: "{data_root}/{episode}/{main_yaml_filename}"
+  json: "{data_root}/{episode}/{segments_json_filename}"
+  topics_json: "{data_root}/{episode}/{topics_json_filename}"
+
+# ----- Prompt templates -----------------------------------------------------
+prompts:
+  topic_analysis_system: "{prompts_root}/topic_analysis_system.txt"
+
+# ----- LLM configuration: topic analysis -----------------------------------
+# Adjust provider/model/settings here if the defaults suit all episodes.
+topic_analysis:
+  provider: gemini
+  model: gemini-2.5-pro
+  temperature: 1
+  max_output_tokens: 8192
+  timeout: 180
+  max_retries: 3
+  strict_validation: true
+  dry_run: false
+
+# ----- LLM configuration: translation --------------------------------------
+translation:
+  provider: gemini
+  model: gemini-2.5-pro
+  temperature: 1
+  max_output_tokens: 16384
+  timeout: 180
+  max_retries: 3
+  batch_size: 10
+  resume: true
+
+# ----- Logging --------------------------------------------------------------
+# Tools write logs to this location unless overridden per episode.
+logging:
+  level: INFO
+  path: "{logs_root}/{episode}/{log_filename}"
+
+# ----- Tool options --------------------------------------------------------
+# Shared CLI defaults (e.g., pretty-printing JSON exports).
+options:
+  pretty: false

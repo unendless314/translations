@@ -17,7 +17,6 @@ Topics Analysis Driver
 """
 
 import json
-import yaml  # 保留用於讀取 config 檔案
 import argparse
 import logging
 import sys
@@ -31,6 +30,7 @@ load_dotenv()
 # 導入共用模組
 from src.clients.gemini_client import GeminiClient
 from src.clients.openai_client import OpenAIClient
+from src.config_loader import load_config as load_project_config
 from src.exceptions import ConfigError, APIError, ValidationError
 
 
@@ -48,34 +48,15 @@ def setup_logging(level: str = "INFO"):
 
 
 def load_config(config_path: Path) -> Dict[str, Any]:
-    """載入配置檔
+    """載入並驗證配置檔"""
+    config = load_project_config(config_path)
 
-    Args:
-        config_path: 配置檔路徑
+    required = ['episode_id', 'output', 'prompts', 'topic_analysis']
+    for field in required:
+        if field not in config:
+            raise ConfigError(f"Missing required field: {field}", str(config_path))
 
-    Returns:
-        Dict: 配置資料
-
-    Raises:
-        ConfigError: 配置檔不存在或格式錯誤
-    """
-    if not config_path.exists():
-        raise ConfigError(f"Config file not found: {config_path}", str(config_path))
-
-    try:
-        with config_path.open('r', encoding='utf-8') as f:
-            config = yaml.safe_load(f)
-
-        # 驗證必要欄位
-        required = ['episode_id', 'output', 'prompts', 'topic_analysis']
-        for field in required:
-            if field not in config:
-                raise ConfigError(f"Missing required field: {field}", str(config_path))
-
-        return config
-
-    except yaml.YAMLError as e:
-        raise ConfigError(f"Failed to parse config YAML: {e}", str(config_path))
+    return config
 
 
 def load_segments_json(json_path: Path) -> List[Dict[str, Any]]:

@@ -1,0 +1,6 @@
+2025-10-12 16:54:04,821 [INFO] Starting SRT to YAML conversion for episode S01-E12
+2025-10-12 16:54:04,822 [INFO] SRT source resolved to: input/S01-E12/ENG-S01-E12Bridget Nielson_SRT_English.srt
+2025-10-12 16:54:04,826 [INFO] Parsed 1518 SRT entries from input/S01-E12/ENG-S01-E12Bridget Nielson_SRT_English.srt
+2025-10-12 16:54:04,832 [INFO] Merged 1518 segments into 1013 final segments
+2025-10-12 16:54:05,390 [INFO] Wrote 1013 segments to data/S01-E12/main.yaml
+2025-10-12 16:54:05,390 [INFO] Conversion completed successfully!

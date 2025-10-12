@@ -38,16 +38,13 @@ The project uses a **three-layer file structure**:
 
 ### Configuration Files
 
-`configs/<episode>.yaml` - Episode configuration linking all file paths and processing parameters:
+`configs/default.yaml` 提供所有共用路徑與模型設定，`configs/<episode>.yaml` 通常只需要：
 ```yaml
 episode_id: S01-E12
-input:
-  srt: input/S01-E12/ENG-S01-E12Bridget Nielson_SRT_English.srt
-output:
-  main_yaml: data/S01-E12/main.yaml
-logging:
-  path: logs/S01-E12/srt_to_yaml.log
+# input:
+#   srt: input/S01-E12/custom_file.srt  # 若資料夾中有多個 SRT 才需要覆寫
 ```
+腳本會自動於 `input/<episode>/` 中尋找唯一 `.srt` 檔案，輸出與日誌則落在 `data/<episode>/...`、`logs/<episode>/workflow.log`。
 
 ## Translation Workflow Concepts
 

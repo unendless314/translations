@@ -43,7 +43,11 @@ GEMINI_API_KEY=your_actual_api_key_here
 
 ### 3. Process Subtitles
 
+> 所有指令請在專案根目錄執行，若未啟用虛擬環境，記得先設定 `PYTHONPATH=.`
+
 ```bash
+export PYTHONPATH=.
+
 # Step 1: Convert SRT to structured YAML
 python3 tools/srt_to_main_yaml.py --config configs/S01-E12.yaml
 
@@ -67,7 +71,8 @@ python3 tools/topics_analysis_driver.py --config configs/S01-E12.yaml
 │   ├── terminology.yaml     # Term definitions
 │   └── guidelines.md        # Translation style guide
 ├── output/<episode>/         # Exported results
-├── configs/<episode>.yaml    # Episode configuration
+├── configs/default.yaml     # Shared defaults and path templates
+├── configs/<episode>.yaml    # Episode-specific overrides (usually just episode_id)
 ├── prompts/                 # LLM system prompts
 └── tools/                   # Processing scripts
 ```
@@ -97,49 +102,46 @@ Translation style guide loaded as system prompt.
 
 ## Configuration
 
-Edit `configs/<episode>.yaml` to customize:
+Configuration is now **default + override**:
+
+1. `configs/default.yaml` defines path templates, logging, and model defaults.
+2. `configs/<episode>.yaml` only overrides differences—most episodes just set the ID:
 
 ```yaml
 episode_id: S01-E12
 
-# Model for topic analysis
-topic_analysis:
-  provider: gemini                # gemini, openai, or anthropic
-  model: gemini-2.5-pro           # Model identifier
-  temperature: 1                  # Creativity (0.0-2.0)
-  max_output_tokens: 8192
-  timeout: 120
-  max_retries: 3
-  strict_validation: true         # Fail on validation warnings
-  dry_run: false                  # Skip API call for testing
-
-# Model for translation
-translation:
-  provider: gemini
-  model: gemini-2.5-pro
-  temperature: 1
-  max_output_tokens: 4096
-  timeout: 120
-  max_retries: 3
-  batch_size: 10                  # Segments per batch
-  resume: true                    # Skip completed segments
+# Optional: override default path or flags when needed
+# input:
+#   srt: input/S01-E12/custom_file.srt
+# options:
+#   pretty: true
 ```
+
+When `srt_to_main_yaml.py` runs, it automatically finds the lone `.srt` file inside `input/<episode>/`. Only specify `input.srt` when multiple subtitle files coexist.
+
+### New Episode Checklist
+
+1. Create a folder `input/<episode>/` and place the raw SRT inside.
+2. Copy `configs/S01-E12.yaml` to `configs/<episode>.yaml` and update `episode_id`.
+3. (Optional) Copy `configs/terminology_example.yaml` to `data/<episode>/terminology.yaml` and customize terms.
+4. Run the tools in order with `PYTHONPATH=. python3 tools/<...> --config configs/<episode>.yaml`.
+
+Every tool writes output directories automatically (`data/<episode>/...`, `logs/<episode>/...`), so only the input folder needs to exist up front.
 
 ## Tools
 
 ### Implemented ✅
-- **srt_to_main_yaml.py** - Parse SRT with intelligent sentence merging
-- **main_yaml_to_json.py** - Export minimal segments for LLM analysis
-- **topics_analysis_driver.py** - Generate topic structure using LLM
-- **OpenAI client** - Support for GPT-5 models (A/B testing)
+- **srt_to_main_yaml.py** — Parse SRT with intelligent sentence merging (auto-detects episode SRT)
+- **main_yaml_to_json.py** — Export minimal segments for LLM analysis (`--pretty` optional)
+- **topics_analysis_driver.py** — Generate topic structure using LLM
+- **OpenAI / Gemini clients** — Unified client abstraction for providers
 
 ### Planned 🚧
-- **topics_analysis_driver.py** - Generate topic structure
-- **terminology_mapper.py** - Auto-populate term occurrences
-- **translation_driver.py** - Orchestrate batch translation
-- **qa_checker.py** - Validate translation quality
-- **export_srt.py** - Convert back to SRT format
-- **export_markdown.py** - Generate readable reports
+- **terminology_mapper.py** — Auto-populate term occurrences
+- **translation_driver.py** — Orchestrate batch translation
+- **qa_checker.py** — Validate translation quality
+- **export_srt.py** — Convert back to SRT format
+- **export_markdown.py** — Generate readable reports
 
 ## Documentation
 

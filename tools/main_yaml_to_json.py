@@ -12,27 +12,7 @@ from pathlib import Path
 from typing import List, Dict, Any, Optional
 import yaml
 
-
-class ConfigLoader:
-    """Load and validate configuration files"""
-
-    @staticmethod
-    def load(config_path: Path) -> Dict[str, Any]:
-        """Load YAML configuration file"""
-        if not config_path.exists():
-            raise FileNotFoundError(f"Config file not found: {config_path}")
-
-        try:
-            with config_path.open('r', encoding='utf-8') as f:
-                config = yaml.safe_load(f)
-        except yaml.YAMLError as e:
-            raise ValueError(f"Failed to parse config YAML: {e}")
-
-        # Validate required fields
-        if 'episode_id' not in config:
-            raise ValueError("Config missing required field: episode_id")
-
-        return config
+from src.config_loader import load_config
 
 
 class MainYAMLValidator:
@@ -252,7 +232,7 @@ def main():
     config = {}
     if args.config:
         try:
-            config = ConfigLoader.load(args.config)
+            config = load_config(args.config)
             logging.info(f"Loaded config for episode {config['episode_id']}")
         except Exception as e:
             logging.error(f"Error loading config: {e}")

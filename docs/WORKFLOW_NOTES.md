@@ -132,13 +132,13 @@ translation:
 - 工作資料（YAML/Markdown）：`data/<episode>/...`
 - 模型與匯出成果：`output/<episode>/...`
   
-工具以 episode ID 為主鍵尋找檔案，設定 `configs/<episode>.yaml` 時亦遵循此結構。
+工具透過 `src.config_loader` 讀取 `configs/default.yaml` + `configs/<episode>.yaml`，以 episode ID 推導路徑（例如 `data/<episode>/main.yaml`）並自動建目錄。
 
 ---
 
 ## 待實作工具清單
 
-- `srt_to_main_yaml.py`（支援 `--config configs/<episode>.yaml`）
+- `srt_to_main_yaml.py`（透過 `--config` 讀取 override，並自動偵測 `input/<episode>/` 內的單一 `.srt`）
 - `main_yaml_to_json.py`
 - `topics_analysis_driver.py`
 - `terminology_mapper.py`

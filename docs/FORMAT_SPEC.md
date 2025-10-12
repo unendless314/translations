@@ -144,14 +144,4 @@ terms:
 
 ## Loader 建議
 
-在 `configs/<episode>.yaml`（可選）紀錄各檔案路徑，腳本只需讀取配置即可：
-
-```yaml
-episode_id: S01-E12
-main: data/S01-E12/main.yaml
-topics: data/S01-E12/topics.yaml
-terminology: data/S01-E12/terminology.yaml
-guidelines: data/S01-E12/guidelines.md
-```
-
-此設計讓短篇內容可以僅建立 `main.yaml` + `topics.yaml`，其他檔案視需要新增，不會造成過度工程化。若需要視覺化大綱，再以工具將 `topics.yaml` 轉成 Markdown 發佈。
+使用 `configs/default.yaml` 維護共用路徑模板（`data/{episode}/main.yaml` 等），每個 episode 只需在 `configs/<episode>.yaml` 指定 `episode_id`；需要自訂時再覆寫個別欄位（例如有多個 `.srt` 檔時設定 `input.srt`）。此做法兼顧「零設定即可啟動」與「個案調整」。

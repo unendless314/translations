@@ -9,17 +9,16 @@
 **目的**  
 解析原始 `.srt` 字幕，合併破碎句段，生成 `data/<episode>/main.yaml`。此檔為後續所有流程的資料來源。
 
-- **設定檔**（建議）
+- **設定檔**  
+  利用 `configs/default.yaml` 的模板，episode 覆寫通常只需設定 `episode_id`，若資料夾內有多個 `.srt` 檔再覆寫 `input.srt`：
   ```yaml
   # configs/S01-E12.yaml
   episode_id: S01-E12
-  input:
-    srt: input/S01-E12/ENG-S01-E12Bridget Nielson_SRT_English.srt
-  output:
-    main_yaml: data/S01-E12/main.yaml
-  logging:
-    path: logs/S01-E12/srt_to_yaml.log
+  # input:
+  #   srt: input/S01-E12/custom_file.srt
   ```
+
+  工具會自動從 `input/<episode>/` 中尋找唯一的 `.srt` 檔案；若存在多個檔案才需要指定完整路徑。
 
 **執行介面**
 ```bash
@@ -27,7 +26,7 @@ python tools/srt_to_main_yaml.py --config configs/S01-E12.yaml
 ```
 - 可加 `--force` 覆蓋已存在的 `main.yaml` 檔案。
 - 可加 `--verbose` 顯示詳細的合併日誌。
-- 日誌輸出位置由 config 檔案的 `logging.path` 決定（非命令列參數）。
+- 日誌輸出位置由 `logging.path`（預設為 `logs/<episode>/workflow.log`）決定，可在 override 中調整。
 
 **核心步驟**
 1. **解析 SRT**：讀取 `index + timecode + text`，整理為結構化物件。

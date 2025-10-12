@@ -13,6 +13,35 @@ from dataclasses import dataclass, field
 from typing import List, Optional, Dict, Any
 import yaml
 
+from src.config_loader import load_config
+from src.exceptions import ConfigError
+
+def resolve_srt_path(raw_path: Path) -> Path:
+    """Resolve the effective SRT file.
+
+    Supports either a direct file path or a directory that contains exactly one .srt file.
+    """
+    if raw_path.is_file():
+        return raw_path
+
+    if raw_path.is_dir():
+        candidates = sorted(
+            p for p in raw_path.iterdir()
+            if p.is_file() and p.suffix.lower() == '.srt'
+        )
+
+        if not candidates:
+            raise ConfigError(f"No SRT file found in directory: {raw_path}")
+        if len(candidates) > 1:
+            names = ', '.join(p.name for p in candidates)
+            raise ConfigError(
+                f"Multiple SRT files found in directory {raw_path}: {names}. "
+                "Please specify the file path explicitly via input.srt."
+            )
+        return candidates[0]
+
+    raise ConfigError(f"SRT input path does not exist: {raw_path}")
+
 
 @dataclass
 class SRTEntry:
@@ -396,17 +425,6 @@ class YAMLGenerator:
         logging.info(f"Wrote {len(data['segments'])} segments to {output_path}")
 
 
-def load_config(config_path: Path) -> Dict[str, Any]:
-    """Load YAML configuration file"""
-    if not config_path.exists():
-        raise FileNotFoundError(f"Config file not found: {config_path}")
-
-    with config_path.open('r', encoding='utf-8') as f:
-        config = yaml.safe_load(f)
-
-    return config
-
-
 def setup_logging(log_path: Optional[Path] = None, verbose: bool = False):
     """Setup logging configuration"""
     level = logging.DEBUG if verbose else logging.INFO
@@ -463,7 +481,9 @@ def main():
     logging.info(f"Starting SRT to YAML conversion for episode {config['episode_id']}")
 
     # Get paths
-    srt_path = Path(config['input']['srt'])
+    raw_srt_path = Path(config['input']['srt'])
+    srt_path = resolve_srt_path(raw_srt_path)
+    logging.info(f"SRT source resolved to: {srt_path}")
     output_path = Path(config['output']['main_yaml'])
 
     # Check if output exists
@@ -498,6 +518,9 @@ def main():
 
         logging.info("Conversion completed successfully!")
 
+    except ConfigError as e:
+        logging.error(f"Configuration error: {e}")
+        sys.exit(1)
     except Exception as e:
         logging.error(f"Conversion failed: {e}", exc_info=True)
         sys.exit(1)
