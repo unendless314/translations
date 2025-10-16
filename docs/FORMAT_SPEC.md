@@ -6,6 +6,7 @@
 | --- | --- | --- |
 | `main.yaml` | 逐段原始資料與翻譯結果 | SRT 解析後的主檔 |
 | `topics.yaml` | 主題索引 + 摘要 | 定義段落範圍與主題重點 |
+| `terminology_candidates.yaml` | 術語候選清單 | mapper 輸出，列出每個 term 的段落出現處 |
 | `terminology.yaml` | 術語表 | 優先用詞與說明 |
 | `guidelines.md` | 翻譯風格指引 | 當作 system prompt 載入 |
 
@@ -99,24 +100,25 @@ global_summary: |
 
 ---
 
-## `terminology.yaml`
+## Terminology 資料
 
-管理專有名詞及偏好譯法。支援一個英文詞對應多種語義，利用 `senses` 陣列描述各情境。
+術語相關檔案分為三層，分別對應模板、候選標記與完成後的翻譯用詞表。候選檔會同時合併 template 直接命中的段落與 `topics.json` 中大模型建議的關鍵詞，並在 occurrence 內以 `sources` 標註來源。
+
+### `configs/terminology_template.yaml`
+- **用途**：跨集共用的術語知識庫，由人工維護。
+- **內容**：只定義 `term`、`senses`、`preferred_translation`、`definition`、`notes` 等語義資訊，不含 `episode_id`、`segments`。
 
 ```yaml
-episode_id: S01-E12
 terms:
   - term: channel
     senses:
       - id: channel_broadcast
         definition: 指電視頻道或節目來源
         preferred_translation: 頻道
-        segments: [12, 15, 48]
         notes: 主持人介紹節目時採用
       - id: channel_spiritual
         definition: 指通靈、接收訊息
         preferred_translation: 通靈
-        topics: [guidance_session]
         notes: 提到能量或訊息引導時使用
   - term: Sedona
     senses:
@@ -125,6 +127,75 @@ terms:
         preferred_translation: 塞多納
         notes: 保留音譯，必要時加註「亞利桑那州」
 ```
+
+### `data/<episode>/terminology_candidates.yaml`
+- **來源**：`terminology_mapper.py` 解析模板與 `main.yaml` 後自動產生。
+- **目的**：列出每個術語在本集出現的全部段落，供人工或 LLM 後續分類。
+
+```yaml
+episode_id: S01-E12
+terms:
+  - term: channel
+    occurrences:
+      - segment_id: 15
+        sources: [template]
+        source_text: "We channel messages from non-physical guides."
+      - segment_id: 45
+        sources: [template, topic]
+        source_text: "This channel airs every Friday night."
+  - term: UFO
+    occurrences:
+      - segment_id: 67
+        sources: [topic]
+        source_text: "I witnessed a glowing UFO above Sedona."
+```
+
+**欄位規則**
+- `episode_id`：對應配置中的 `episode_id`。
+- `terms`：列表；每個項目包含：
+  - `term`：英文字詞。
+  - `occurrences`：段落清單；每筆至少含 `segment_id` 與 `sources`。
+    - `sources`：來源標記（如 `template`、`topic`），指出此詞由 template 匹配或 topics.json 建議或兩者皆有。
+    - 可選 `source_text` 供審查時參考；只有實際在字幕中找到的段落才會包含文字，topic-only 建議找不到對應句子時不會輸出 occurrence。
+- 未出現的術語會被移除，確保候選表不帶入無效詞。
+
+### `data/<episode>/terminology.yaml`
+- **來源**：人工或 `terminology_classifier.py` 將候選段落分配到模板 sense 後產生。
+- **用途**：翻譯流程的唯一術語表輸入。
+
+```yaml
+episode_id: S01-E12
+terms:
+  - term: channel
+    senses:
+      - id: channel_spiritual
+        definition: 指通靈、接收訊息
+        preferred_translation: 通靈
+        segments: [15, 28]
+        notes: 提到能量或訊息引導時使用
+      - id: channel_broadcast
+        definition: 電視或串流頻道
+        preferred_translation: 頻道
+        segments: [45]
+        notes: 用於介紹節目或平台時
+  - term: UFO
+    senses:
+      - id: ufo_general
+        definition: 不明飛行物或外星飛行器的通稱
+        preferred_translation: 不明飛行物
+        segments: [67, 89]
+```
+
+**欄位規則**
+- `terms`：列表，每個項目需對應模板中的 `term`。
+- `senses`：至少一項；每個 sense 應保留模板的 `id`、`definition`、`preferred_translation`，並新增：
+  - `segments`：指向 `main.yaml` 的 `segment_id` 陣列，必須非空。
+  - `topics`（可選）：若整段落對應單一 topic，可補充 `topic_id`。
+  - `notes`：補充上下文或審核記錄。
+- **互斥要求**：同一 `term` 底下的不同 sense，其 `segments` 不得重疊；所有 sense 的 `segments` 聯集需完整覆蓋候選檔中的出現段落。
+- 產生翻譯前，請確認不存在空的 `segments` 或殘留 `occurrences` 欄位，否則視為尚未完成分類。
+- `segments` 由分類階段填入；若某個 sense 最終沒有命中段落，請自檔案中移除該 sense。
+- `notes` 用於補充上下文或人工審核事項。
 
 ---
 

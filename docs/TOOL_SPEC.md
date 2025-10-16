@@ -234,4 +234,85 @@ python3 tools/topics_analysis_driver.py --config configs/S01-E12.yaml [--dry-run
 
 ---
 
-> 其他工具（plaintext exporter、topics parser、terminology mapper 等）待確定細節後，將依相同格式補充於此檔案。
+## `terminology_mapper.py`
+
+**目的**  
+根據共用模板與 `main.yaml`，產生 `terminology_candidates.yaml`。候選檔列出每個術語在本集的所有出現處，供後續分類使用。
+
+- **建議設定**
+  ```yaml
+  # configs/default.yaml
+  terminology:
+    template: configs/terminology_template.yaml
+    candidates: "{data_root}/{episode}/terminology_candidates.yaml"
+    output: "{data_root}/{episode}/terminology.yaml"
+  ```
+  - `template`：術語模板路徑，可在 episode override 中改成專案自訂檔案。
+  - `candidates`：候選檔輸出位址，預設 `data/<episode>/terminology_candidates.yaml`。
+  - `output`：完成分類後的最終檔案位址，預設 `data/<episode>/terminology.yaml`（由 classifier 或人工寫入）。
+
+- **執行介面**
+  ```bash
+  python tools/terminology_mapper.py --config configs/S01-E12.yaml [--template configs/custom_template.yaml] [--dry-run] [--verbose]
+  ```
+  - `--template` 覆寫設定檔中的模板路徑。
+  - `--dry-run` 僅列出將保留/移除的詞條與命中段落，不寫出檔案。
+  - `--verbose` 顯示比對過程與候選段落。
+
+- **輸入來源**
+  1. 術語模板（預設 `configs/terminology_template.yaml`）
+  2. `data/<episode>/main.yaml`
+  3. `data/<episode>/topics.json`（若存在，提供 LLM 的 terminology 建議）
+
+- **輸出**
+  - `data/<episode>/terminology_candidates.yaml`：列出每個 term 的 `occurrences`（段落 ID、`sources` 標記與可選文字）。
+  - 統計資訊：stdout 或 log，包含命中段落數、被移除的術語清單與原因。
+
+- **核心流程**
+  1. **載入模板**：解析 `terms`/`senses` 結構，建立候選術語清單（支援別名或 regex 欄位，若模板有定義）。
+  2. **建構索引**：從 `main.yaml` 取得 `segment_id -> source_text` 映射，並將段落依 topics.json 的範圍分組以利比對。
+  3. **比對與標記**：
+     - Template 輪：在整份字幕中搜尋術語（可選大小寫忽略、正規化），對命中段落建立 `occurrences`，`sources` 初始為 `template`。
+     - Topic 輪：解析 `topics.json` 的 `terminology` 清單，在對應的段落範圍內重試搜尋；若匹配成功，`sources` 包含 `topic`（若已存在 template 匹配則合併）。若仍找不到文字，也會將 topic 起始段落記錄為 `sources: [topic]` 的候選，方便人工後續確認。
+  4. **輸出整理**：將兩輪產生的結果合併，依首度命中的順序輸出；每筆 occurrence 皆包含 `sources` 及（視需求）`source_text`（若使用 `--omit-text` 則省略）。
+
+- **錯誤處理**
+  - 找不到模板或 `main.yaml` 時立即終止；`topics.json` 不存在時僅記錄資訊訊息。
+  - 模板 schema 不符時報錯並顯示錯誤欄位。
+  - 若沒有任何術語被保留（常見於模型尚未跑完 topics），工具會警告並可選擇輸出空檔案或直接中止。
+
+---
+
+## `terminology_classifier.py`
+
+**目的**  
+讀取 `terminology_candidates.yaml`，將各段落分配到正確的 sense，輸出最終可供翻譯使用的 `terminology.yaml`。
+
+- **預計設定**
+  ```yaml
+  terminology:
+    template: configs/terminology_template.yaml
+    candidates: "{data_root}/{episode}/terminology_candidates.yaml"
+    output: "{data_root}/{episode}/terminology.yaml"
+  ```
+- **執行介面**
+  ```bash
+  python tools/terminology_classifier.py --config configs/S01-E12.yaml [--auto] [--dry-run]
+  ```
+  - `--auto`：啟用 LLM 分類；若省略則提示人工審查程序。
+  - `--dry-run`：僅列出待分類項目，不寫出檔案。
+
+- **核心流程（概念稿）**
+  1. 讀取模板與候選檔，建立 `term -> sense` 對應。
+  2. 偵測哪些 term 擁有多個 sense，且 `occurrences` 尚未分配。
+  3. 對每個 term 調用 LLM 或輸出人工審查清單，根據段落內容分配 sense。
+  4. 寫入 `terminology.yaml`，確保每個 sense 的 `segments` 互斥、非空；缺乏上下文的段落需回報待人工確認。
+  5. 可加上簡單 validator（例如檢查 `segments` 是否覆蓋全部 occurrences）。
+
+- **後續驗證**
+  - 完成後可搭配 `terminology_validator.py`（待定）檢查重複段落或缺漏。
+  - 翻譯流程在啟動前應確認 `terminology.yaml` 存在且未檢測到待分類項目。
+
+---
+
+> 其他工具（plaintext exporter、topics parser 等）待確定細節後，將依相同格式補充於此檔案。

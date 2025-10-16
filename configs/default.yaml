@@ -30,6 +30,11 @@ output:
   json: "{data_root}/{episode}/{segments_json_filename}"
   topics_json: "{data_root}/{episode}/{topics_json_filename}"
 
+terminology:
+  template: configs/terminology_template.yaml
+  candidates: "{data_root}/{episode}/terminology_candidates.yaml"
+  output: "{data_root}/{episode}/terminology.yaml"
+
 # ----- Prompt templates -----------------------------------------------------
 prompts:
   topic_analysis_system: "{prompts_root}/topic_analysis_system.txt"

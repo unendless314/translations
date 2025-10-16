@@ -9,10 +9,10 @@
 - **單位：Topic**  
   以 `topics.yaml` 中的 `topic_id` 為批次單位，一次處理同一主題下的多個段落。可再依段落數量（例如 5–12 段）調整子批次。
 
-- **上下文組合**  
+- **上下文組合**
   前處理工具先載入：
   1. `topics.yaml`：取全域摘要(`global_summary`)與當前 topic 的 `summary`、關鍵字。
-  2. `terminology.yaml`：篩出命中當前批次 `segment_id` 或 `topic_id` 的術語。建議在翻譯前由腳本先遍歷 `main.yaml`，自動填寫各術語的 `segments` / `topics` 陣列，未命中的詞保持空陣列，避免不必要的術語被載入。
+  2. `terminology.yaml`：由候選檔分類後取得的最終術語表（每個 sense 具備互斥的 `segments`），確保批次翻譯只讀取真正會用到的詞。
   3. `guidelines.md`：提取翻譯風格與特殊指示。
   4. `main.yaml`：抓出目標段落的 `segment_id`, `speaker_group`, `timecode`, `source_text`, `metadata.topic_id` 等。
 
@@ -21,6 +21,38 @@
 
 - **模型輸出**  
   要求模型以結構化格式回傳每個段落的翻譯與狀態欄位。程式再解析結果、填回 `main.yaml` 的 `translation` 欄位。
+
+---
+
+## Terminology 生成流程
+
+1. **建立模板**  
+   - 將所有潛在的全域術語維護在 `configs/terminology_template.yaml`。可依主題分類、加入別名或搜尋關鍵字。
+   - 模板欄位需遵循 `FORMAT_SPEC.md` 的 `terms`/`senses` 結構；未來擴充時請同步更新文檔。
+
+2. **執行 `terminology_mapper.py`**
+   ```bash
+   python tools/terminology_mapper.py --config configs/S01-E12.yaml
+   ```
+   - 工具會讀取模板與 `main.yaml`，若 `topics.json` 存在則同時合併其中的 terminology 建議，輸出 `data/<episode>/terminology_candidates.yaml`。
+   - 候選檔紀錄 `term` 與所有 `occurrences`（段落編號、來源 `sources`、可選摘錄/主題），不處理 sense 分類。
+   - 未命中任何段落的術語會被排除，避免候選表過度膨脹。
+
+3. **分類候選段落**
+   - 選項 A：人工分類  
+     - 依照候選檔列出的段落，在 `data/<episode>/terminology.yaml` 建立 sense 對應並填寫 `segments`。  
+     - 確認同一 term 下的各 sense 互斥、且聯集涵蓋所有 occurrences。
+   - 選項 B：`terminology_classifier.py`（待實作）  
+     ```bash
+     python tools/terminology_classifier.py --config configs/S01-E12.yaml --auto
+     ```
+     - 工具讀取候選檔與模板，調用 LLM 或輸出指引，協助完成段落分類。
+     - 分類完成後寫回 `data/<episode>/terminology.yaml`。
+
+4. **驗證並啟動翻譯**
+   - 確認 `terminology.yaml` 存在且所有 sense 的 `segments` 都非空且互斥。
+   - 若候選檔為空，通常代表 `topics` 尚未完成或模板與字幕語料不符；請先排查再進行翻譯。
+   - 之後的翻譯批次只載入 `terminology.yaml`，候選檔僅供審查與追蹤使用。
 
 ---
 

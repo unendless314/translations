@@ -123,7 +123,7 @@ When `srt_to_main_yaml.py` runs, it automatically finds the lone `.srt` file ins
 
 1. Create a folder `input/<episode>/` and place the raw SRT inside.
 2. Copy `configs/S01-E12.yaml` to `configs/<episode>.yaml` and update `episode_id`.
-3. (Optional) Copy `configs/terminology_example.yaml` to `data/<episode>/terminology.yaml` and customize terms.
+3. Review `configs/terminology_template.yaml` 並新增/調整術語，確保 mapper 能找到潛在詞彙。
 4. Run the tools in order with `PYTHONPATH=. python3 tools/<...> --config configs/<episode>.yaml`.
 
 Every tool writes output directories automatically (`data/<episode>/...`, `logs/<episode>/...`), so only the input folder needs to exist up front.
@@ -138,6 +138,7 @@ Every tool writes output directories automatically (`data/<episode>/...`, `logs/
 
 ### Planned 🚧
 - **terminology_mapper.py** — Auto-populate term occurrences
+- **terminology_classifier.py** — Assign occurrences to the correct sense before translation
 - **translation_driver.py** — Orchestrate batch translation
 - **qa_checker.py** — Validate translation quality
 - **export_srt.py** — Convert back to SRT format

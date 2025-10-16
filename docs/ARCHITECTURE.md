@@ -22,6 +22,7 @@
 - **YAML 配置**：共用 `configs/default.yaml` 定義模板，`configs/<episode>.yaml` 只覆寫差異
 - **環境變數**：API keys 透過 `.env` 管理
 - **靈活切換**：可在配置中指定不同的 LLM provider 和模型
+- **模板共享**：`terminology.template` 預設指向 `configs/terminology_template.yaml`，`terminology.candidates` / `terminology.output` 分別對應候選與完成檔案，由術語工具鏈串接
 
 ---
 
@@ -29,8 +30,9 @@
 
 ```
 .
-├── configs/              # Episode 配置檔
+├── configs/              # Episode 配置檔與共用模板
 │   ├── default.yaml
+│   ├── terminology_template.yaml
 │   ├── S01-E12.yaml
 │   └── SXX-EXX.yaml
 ├── data/                 # 工作資料（YAML/Markdown）
@@ -38,6 +40,7 @@
 │       ├── main_segments.json
 │       ├── main.yaml
 │       ├── topics.yaml
+│       ├── terminology_candidates.yaml
 │       ├── terminology.yaml
 │       └── guidelines.md
 ├── docs/                 # 文檔
@@ -67,7 +70,8 @@
 │   ├── srt_to_main_yaml.py         ✅
 │   ├── main_yaml_to_json.py        ✅
 │   ├── topics_analysis_driver.py   ✅
-│   ├── terminology_mapper.py       ⏳
+│   ├── terminology_mapper.py       (template -> terminology_candidates)
+│   ├── terminology_classifier.py   ⏳ terminology_candidates -> terminology
 │   ├── translation_driver.py       ⏳
 │   ├── qa_checker.py               ⏳
 │   ├── export_srt.py               ⏳
@@ -348,8 +352,25 @@ input:
   python3 tools/topics_analysis_driver.py --config configs/S01-E12.yaml
   ```
 
-### 4. `translation_driver.py` ⏳
-- **輸入**：`main.yaml` + `topics.yaml` + `terminology.yaml` + `guidelines.md`
+### 4. `terminology_mapper.py` ⏳
+- **輸入**：`configs/terminology_template.yaml`（或配置覆寫）、`main.yaml`、`topics.json`（若存在）
+- **輸出**：`data/<episode>/terminology_candidates.yaml`
+- **特點**：
+  - 蒐集模板中每個術語在字幕內的所有出現段落，必要時附上片段文字供後續分類參考
+  - 併入 `topics.json` 的 terminology 建議，並以 `sources` 標註候選來源（template/topic）
+  - 未命中的術語自動排除；若僅由 topic 建議仍會記錄第一個相關段落，方便後續人工審查
+- **狀態**：設計已定稿，實作進行中
+
+### 5. `terminology_classifier.py` ⏳
+- **輸入**：`terminology_candidates.yaml` 與 `main.yaml`（必要時搭配其他上下文）
+- **輸出**：`data/<episode>/terminology.yaml`
+- **特點**：
+  - 透過人工或 LLM 協助，將候選段落分配到正確的 sense，使 `segments` 互斥且覆蓋全部出現位置
+  - 可與 validator 搭配，阻擋仍在待分類狀態的術語
+- **狀態**：規格定義中
+
+### 6. `translation_driver.py` ⏳
+- **輸入**：`main.yaml` + `topics.yaml` + `terminology.yaml`（分類完成）+ `guidelines.md`
 - **輸出**：更新 `main.yaml` 的 `translation` 欄位
 - **依賴**：`src/clients/`
 - **API 調用**：是（批量調用）

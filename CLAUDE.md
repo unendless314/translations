@@ -200,11 +200,12 @@ python3 tools/topics_analysis_driver.py --config configs/S01-E12.yaml [--dry-run
 ### Planned Tools (see docs/TOOL_SPEC.md)
 1. ~~`main_yaml_to_json.py`~~ - ✅ Completed
 2. ~~`topics_analysis_driver.py`~~ - ✅ Completed
-3. `terminology_mapper.py` - Auto-populate term occurrence indices
-4. `translation_driver.py` - Orchestrate batch translation with model I/O
-5. `qa_checker.py` - Validate translations, flag confidence/consistency issues
-6. `export_srt.py` - Convert main.yaml back to SRT format
-7. `export_markdown.py` - Generate human-readable translation reports
+3. `terminology_mapper.py` - Produce terminology_candidates.yaml with per-term occurrences
+4. `terminology_classifier.py` - Assign occurrences to senses and write terminology.yaml
+5. `translation_driver.py` - Orchestrate batch translation with model I/O
+6. `qa_checker.py` - Validate translations, flag confidence/consistency issues
+7. `export_srt.py` - Convert main.yaml back to SRT format
+8. `export_markdown.py` - Generate human-readable translation reports
 
 ## Translation Quality Checks
 
