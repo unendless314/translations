@@ -163,12 +163,12 @@ python tools/main_yaml_to_json.py --config configs/S01-E12.yaml
 
 ## `topics_analysis_driver.py`
 
-**目的**  
-接收 `main_yaml_to_json.py` 產出的段落 JSON，呼叫 LLM 產生主題結構 YAML，並寫入 `topics.yaml`。此工具負責：
+**目的**
+接收 `main_yaml_to_json.py` 產出的段落 JSON，呼叫 LLM 產生主題結構，並寫入 `topics.json`。此工具負責：
 - 統一載入 system prompt（`prompts/topic_analysis_system.txt`）
 - 建立 API 請求（system/user messages）
 - 解析模型回覆、驗證 schema
-- 輸出符合 `FORMAT_SPEC.md` 定義的 `topics.yaml`
+- 輸出符合 `FORMAT_SPEC.md` 定義的 `topics.json`（JSON 格式）
 
 - **設定檔**（建議）
   ```yaml
@@ -206,29 +206,34 @@ python3 tools/topics_analysis_driver.py --config configs/S01-E12.yaml [--dry-run
 1. 載入段落 JSON（必須為陣列；驗證每項包含 `segment_id`, `speaker_group`, `source_text`）。
 2. 讀取 system prompt 檔案，作為第一則訊息 (`role=system`)。
 3. 將 JSON 內容序列化為 user message，前置簡短說明（預設：「Below is the episode transcript in JSON array form.」）；若 JSON 超過 API 限制，可自動切分或報錯。
-4. 送出 API 請求；支援多種提供者（OpenAI, Gemini 等），由 `model.provider` 控制。失敗時依 `retry` 設定重試。
-5. 取得模型回覆（預期為 YAML），立即送入解析流程；若啟用額外日誌，可自行記錄回應供除錯。
-6. 使用 YAML parser 解析回覆，檢查結構符合下列 schema：
-   ```yaml
-   global_summary: str (必填，非空，≤600 words)
-   topics: list(必填，至少一項)
-     - topic_id: str（格式建議 `topic_\\d{2}`，或語意化 ID）
-       segment_start: int
-       segment_end: int
-       title: str（非空，≤20 words）
-       summary: str（非空，≤200 words）
-       terminology: list[str]（3-10 項，無術語時為空陣列 []）
+4. 送出 API 請求；支援多種提供者（OpenAI, Gemini 等），由 `topic_analysis.provider` 控制。失敗時依 `max_retries` 設定重試。
+5. 取得模型回覆（預期為 JSON），立即送入解析流程；若啟用額外日誌，可自行記錄回應供除錯。
+6. 使用 JSON parser 解析回覆，檢查結構符合下列 schema：
+   ```json
+   {
+     "global_summary": "str (必填，非空，≤600 words)",
+     "topics": [
+       {
+         "topic_id": "str（格式建議 topic_\\d{2}，或語意化 ID）",
+         "segment_start": "int",
+         "segment_end": "int",
+         "title": "str（非空，≤20 words）",
+         "summary": "str（非空，≤200 words）",
+         "terminology": ["list[str]（3-10 項，無術語時為空陣列 []）"]
+       }
+     ]
+   }
    ```
 7. 進行數值驗證：
    - `segment_start` ≤ `segment_end`
    - 範圍彼此不重疊且依序排列（上一個 `segment_end + 1 ==` 下一個 `segment_start` ）。
    - `segment_id` 覆蓋度：預設需涵蓋輸入 JSON 的全部段落；若 `strict_validation=false`，空缺會以警告標註。
-8. 驗證通過後，依 `FORMAT_SPEC.md` 輸出 `topics.yaml`，欄位順序及縮排需一致。可於結尾補上 `global_summary`。
+8. 驗證通過後，依 `FORMAT_SPEC.md` 輸出 `topics.json`（JSON 格式），欄位順序及縮排需一致。
 
 **錯誤處理**
 - **輸入檔錯誤**：找不到 JSON/prompt 時立即終止；JSON 解析失敗或 schema 缺失則報錯並列出問題段落索引。
 - **API 失敗**：網路/權限錯誤時回報 HTTP 狀態；達到最大重試仍失敗則終止。
-- **輸出格式錯誤**：YAML 解析失敗、欄位缺失、topic 重疊等狀況時，在 stderr 提供可行修正建議並輸出部分回覆摘要，退出碼非零。
+- **輸出格式錯誤**：JSON 解析失敗、欄位缺失、topic 重疊等狀況時，在 stderr 提供可行修正建議並輸出部分回覆摘要，退出碼非零。
 - **乾跑模式**：`--dry-run` 時檢查輸入與設定完整性，不呼叫 API；若驗證失敗同樣報錯。
 - **日誌**：若指定 `logs/` 目錄，紀錄 API request metadata（移除 JSON 正文以避免重複儲存）、重試資訊與驗證結果。
 
@@ -283,9 +288,11 @@ python3 tools/topics_analysis_driver.py --config configs/S01-E12.yaml [--dry-run
 
 ---
 
-## `terminology_classifier.py`
+## `terminology_classifier.py` ⚙️
 
-**目的**  
+> **注意**：此工具為**可選自動化工具**，目前允許透過人工分類完成（直接編輯 `terminology.yaml` 或使用 Claude Code 協助）。
+
+**目的**
 讀取 `terminology_candidates.yaml`，將各段落分配到正確的 sense，輸出最終可供翻譯使用的 `terminology.yaml`。
 
 - **預計設定**
@@ -295,24 +302,76 @@ python3 tools/topics_analysis_driver.py --config configs/S01-E12.yaml [--dry-run
     candidates: "{data_root}/{episode}/terminology_candidates.yaml"
     output: "{data_root}/{episode}/terminology.yaml"
   ```
-- **執行介面**
-  ```bash
-  python tools/terminology_classifier.py --config configs/S01-E12.yaml [--auto] [--dry-run]
-  ```
-  - `--auto`：啟用 LLM 分類；若省略則提示人工審查程序。
-  - `--dry-run`：僅列出待分類項目，不寫出檔案。
+
+- **執行方式**
+  - **方案 A：人工分類**（現行推薦）
+    - 參考 `terminology_candidates.yaml` 中的 `occurrences`
+    - 根據 `source_text` 判斷每個段落應歸屬哪個 sense
+    - 直接編輯或透過 Claude Code 協助生成 `terminology.yaml`
+    - 適合測試階段與小規模內容
+
+  - **方案 B：自動化工具**（待實作）
+    ```bash
+    python tools/terminology_classifier.py --config configs/S01-E12.yaml [--auto] [--dry-run]
+    ```
+    - `--auto`：啟用 LLM 分類；若省略則提示人工審查程序
+    - `--dry-run`：僅列出待分類項目，不寫出檔案
 
 - **核心流程（概念稿）**
-  1. 讀取模板與候選檔，建立 `term -> sense` 對應。
-  2. 偵測哪些 term 擁有多個 sense，且 `occurrences` 尚未分配。
-  3. 對每個 term 調用 LLM 或輸出人工審查清單，根據段落內容分配 sense。
-  4. 寫入 `terminology.yaml`，確保每個 sense 的 `segments` 互斥、非空；缺乏上下文的段落需回報待人工確認。
-  5. 可加上簡單 validator（例如檢查 `segments` 是否覆蓋全部 occurrences）。
+  1. 讀取模板與候選檔，建立 `term -> sense` 對應
+  2. 偵測哪些 term 擁有多個 sense，且 `occurrences` 尚未分配
+  3. 對每個 term 調用 LLM 或輸出人工審查清單，根據段落內容分配 sense
+  4. 寫入 `terminology.yaml`，確保每個 sense 的 `segments` 互斥、非空
+  5. 可加上簡單 validator（例如檢查 `segments` 是否覆蓋全部 occurrences）
 
-- **後續驗證**
-  - 完成後可搭配 `terminology_validator.py`（待定）檢查重複段落或缺漏。
-  - 翻譯流程在啟動前應確認 `terminology.yaml` 存在且未檢測到待分類項目。
+- **驗證要求**
+  - 翻譯流程啟動前應確認 `terminology.yaml` 存在
+  - 所有 sense 的 `segments` 非空且互斥
+  - `segments` 聯集應覆蓋候選檔中的所有 occurrences
 
 ---
 
-> 其他工具（plaintext exporter、topics parser 等）待確定細節後，將依相同格式補充於此檔案。
+## `translation_driver.py` ⚙️
+
+> **注意**：此工具為**可選自動化工具**，目前推薦透過 Claude Code 互動式翻譯完成（詳見 `WORKFLOW_NOTES.md` 的「翻譯執行流程」章節）。
+
+**目的**
+自動化批次翻譯流程，按 topic 或段落數量分批處理，載入 context 並調用 LLM API 進行翻譯。
+
+- **預計設定**
+  ```yaml
+  translation:
+    batch_size: 10                    # 每批處理的段落數
+    model:
+      provider: gemini                # gemini, openai, anthropic
+      model: gemini-2.5-flash
+      temperature: 0.7
+      max_output_tokens: 4096
+  ```
+
+- **執行介面（概念）**
+  ```bash
+  python tools/translation_driver.py --config configs/S01-E12.yaml [--resume] [--batch-size 10] [--topic topic_01]
+  ```
+  - `--resume`：根據 `translation.status` 續跑未完成的段落
+  - `--batch-size`：覆寫批次大小
+  - `--topic`：只處理特定 topic
+
+- **核心流程（概念稿）**
+  1. 讀取 `topics.json` 取得段落範圍
+  2. 從 `main_segments.json` 載入原文
+  3. 從 `terminology.yaml` 篩選相關術語
+  4. 載入 `guidelines.md` 風格指引
+  5. 組裝標準化 prompt
+  6. 批次調用 LLM API
+  7. 解析結果並更新 `main.yaml`（包含 `translation.*` 與 `metadata.topic_id`）
+  8. 支援斷點續跑（檢查 `translation.status`）
+
+- **錯誤處理**
+  - API 失敗時重試（指數退避）
+  - 解析失敗時標記為 `needs_review`
+  - 記錄詳細日誌供除錯
+
+---
+
+> 其他工具（QA checker、exporter 等）待確定細節後，將依相同格式補充於此檔案。

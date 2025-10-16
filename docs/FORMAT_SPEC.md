@@ -5,7 +5,7 @@
 | 檔名 | 角色 | 備註 |
 | --- | --- | --- |
 | `main.yaml` | 逐段原始資料與翻譯結果 | SRT 解析後的主檔 |
-| `topics.yaml` | 主題索引 + 摘要 | 定義段落範圍與主題重點 |
+| `topics.json` | 主題索引 + 摘要 | 定義段落範圍與主題重點（JSON 格式） |
 | `terminology_candidates.yaml` | 術語候選清單 | mapper 輸出，列出每個 term 的段落出現處 |
 | `terminology.yaml` | 術語表 | 優先用詞與說明 |
 | `guidelines.md` | 翻譯風格指引 | 當作 system prompt 載入 |
@@ -43,7 +43,7 @@ segments:
       confidence: null       # 0.0 ~ 1.0，可選
       notes: null
     metadata:
-      topic_id: intro
+      topic_id: null         # 初始為 null，翻譯時才寫入
       speaker_hint: ">>"
       source_entries: [2, 3]
       truncated: false
@@ -56,47 +56,57 @@ segments:
     - 引號、括號或音效標籤開頭的句子可能被誤判為前句延續
     - 當合併達到 10-entry 安全上限時會強制停止，此時設置 `metadata.truncated: true`
     - 帶有 `truncated: true` 的段落應由 QA 工具自動標記為 `needs_review` 狀態
-- `translation` 由翻譯腳本填寫；流程不得直接覆蓋 `source_text`。
-- `metadata.topic_id` 對應 `topics.yaml`；`source_entries` 記錄來源 SRT 索引，用於追溯；`truncated` 預設為 `false`，僅在達到安全上限時設為 `true`。
+- `translation` 由翻譯流程填寫；不得直接覆蓋 `source_text`。
+- `metadata` 欄位說明：
+  - `topic_id`：初始為 `null`，由**翻譯流程寫入**（記錄實際使用的 topic context），而非 topics.json 生成時寫入。
+  - `speaker_hint`：記錄 SRT 原始的 `>>` 標記。
+  - `source_entries`：記錄來源 SRT 索引，用於追溯。
+  - `truncated`：預設為 `false`，僅在達到安全上限時設為 `true`。
 
 ---
 
-## `topics.yaml`
+## `topics.json`
 
-提供主題分段索引與摘要，翻譯批次可依此載入相鄰上下文；同時承載原先的 summary 功能。
+提供主題分段索引與摘要，作為翻譯批次的輔助工具。採用 JSON 格式以便於程式解析與 LLM 生成。
 
-```yaml
-episode_id: S01-E12
-topics:
-  - topic_id: intro
-    title: Opening reflections on reality
-    segment_start: 1
-    segment_end: 20
-    summary: |
-      Establishes the contemplative tone with philosophical questions and hints at
-      forthcoming discussions about reality and personal transformation.
-    terminology:
-      - reality
-      - personal journey
-      - transformation
-  - topic_id: sedona_experience
-    title: Experiences in Sedona, Arizona
-    segment_start: 21
-    segment_end: 60
-    summary: |
-      Covers repeated trips to Sedona, community gatherings, and the speaker's
-      research into ET contact. Sets the thematic context for spiritual guidance.
-    terminology:
-      - Sedona
-      - ET contact
-      - spiritual guidance
-global_summary: |
-  The episode follows the narrator's journey to understand reality through
-  repeated spiritual experiences in Sedona, touching on ET contact, community
-  gatherings, and guidance for seekers.
+**重要設計原則**：
+- `topics.json` 是**獨立的輔助索引**，不寫回 `main.yaml`
+- `segment_start`/`segment_end` 允許有偏差，主題劃分本質上是主觀的
+- `main.yaml` 的 `topic_id` 由翻譯流程寫入，記錄實際使用的 context
+
+```json
+{
+  "global_summary": "The episode follows the narrator's journey to understand reality through repeated spiritual experiences in Sedona, touching on ET contact, community gatherings, and guidance for seekers.",
+  "topics": [
+    {
+      "topic_id": "intro",
+      "title": "Opening reflections on reality",
+      "segment_start": 1,
+      "segment_end": 20,
+      "summary": "Establishes the contemplative tone with philosophical questions and hints at forthcoming discussions about reality and personal transformation.",
+      "terminology": [
+        "reality",
+        "personal journey",
+        "transformation"
+      ]
+    },
+    {
+      "topic_id": "sedona_experience",
+      "title": "Experiences in Sedona, Arizona",
+      "segment_start": 21,
+      "segment_end": 60,
+      "summary": "Covers repeated trips to Sedona, community gatherings, and the speaker's research into ET contact. Sets the thematic context for spiritual guidance.",
+      "terminology": [
+        "Sedona",
+        "ET contact",
+        "spiritual guidance"
+      ]
+    }
+  ]
+}
 ```
 
-如需多主題重疊，可新增 `overlaps` 或於 `main.yaml` 的 `metadata.topic_id` 改為陣列。若需要供人工閱讀的 Markdown 摘要，可由此檔案自動轉出。
+如需多主題重疊，可新增 `overlaps` 欄位或於 `main.yaml` 的 `metadata.topic_id` 改為陣列。若需要供人工閱讀的 Markdown 摘要，可由此檔案自動轉出。
 
 ---
 
@@ -160,7 +170,7 @@ terms:
 - 未出現的術語會被移除，確保候選表不帶入無效詞。
 
 ### `data/<episode>/terminology.yaml`
-- **來源**：人工或 `terminology_classifier.py` 將候選段落分配到模板 sense 後產生。
+- **來源**：人工分類（或透過 `terminology_classifier.py` 輔助）將候選段落分配到模板 sense 後產生。
 - **用途**：翻譯流程的唯一術語表輸入。
 
 ```yaml

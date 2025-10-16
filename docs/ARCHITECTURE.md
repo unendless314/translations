@@ -26,6 +26,72 @@
 
 ---
 
+## 資料流向
+
+工具鏈採用**順序執行**模式，每個工具處理特定階段的資料轉換：
+
+```
+┌─────────────┐
+│ input/      │  原始 SRT 字幕
+│ episode.srt │
+└──────┬──────┘
+       │ srt_to_main_yaml.py
+       ▼
+┌─────────────┐
+│ main.yaml   │  段落資料 + 翻譯欄位（初始為空）
+└──────┬──────┘
+       │ main_yaml_to_json.py
+       ▼
+┌─────────────┐
+│ segments    │  精簡 JSON（僅 segment_id, speaker_group, source_text）
+│ .json       │
+└──────┬──────┘
+       │ topics_analysis_driver.py (LLM)
+       ▼
+┌─────────────┐
+│ topics.json │  主題結構 + 摘要 + 關鍵詞
+└──────┬──────┘
+       │
+       ├──────────────────────────────┐
+       │                              │
+       │ terminology_mapper.py        │
+       ▼                              │
+┌─────────────────┐                  │
+│ terminology     │                  │
+│ _candidates     │                  │
+│ .yaml           │                  │
+└──────┬──────────┘                  │
+       │ (人工或 LLM 分類)            │
+       ▼                              │
+┌─────────────────┐                  │
+│ terminology     │                  │
+│ .yaml           │                  │
+└──────┬──────────┘                  │
+       │                              │
+       └──────────┬───────────────────┘
+                  │
+                  │ + guidelines.md
+                  │ translation_driver.py (LLM 批次調用)
+                  ▼
+           ┌─────────────┐
+           │ main.yaml   │  translation 欄位已填寫
+           │ (updated)   │
+           └──────┬──────┘
+                  │ export_srt.py
+                  ▼
+           ┌─────────────┐
+           │ output/     │  最終翻譯字幕
+           │ episode.srt │
+           └─────────────┘
+```
+
+**關鍵特性**：
+- 每個工具輸出獨立檔案，支援斷點續跑
+- `main.yaml` 為核心資料檔，隨翻譯進度更新 `translation.status`
+- LLM 調用集中在兩處：主題分析（一次性）、翻譯（批次處理）
+
+---
+
 ## 目錄結構
 
 ```
@@ -35,14 +101,14 @@
 │   ├── terminology_template.yaml
 │   ├── S01-E12.yaml
 │   └── SXX-EXX.yaml
-├── data/                 # 工作資料（YAML/Markdown）
+├── data/                 # 工作資料（YAML/Markdown/JSON）
 │   └── <episode>/
-│       ├── main_segments.json
-│       ├── main.yaml
-│       ├── topics.yaml
-│       ├── terminology_candidates.yaml
-│       ├── terminology.yaml
-│       └── guidelines.md
+│       ├── main_segments.json        # 精簡段落 JSON（供 LLM 分析）
+│       ├── main.yaml                 # 主資料檔（SRT 解析結果 + 翻譯）
+│       ├── topics.json               # 主題結構（LLM 生成）
+│       ├── terminology_candidates.yaml  # 術語候選（待分類）
+│       ├── terminology.yaml          # 術語表（已分類）
+│       └── guidelines.md             # 翻譯風格指引
 ├── docs/                 # 文檔
 │   ├── ARCHITECTURE.md   # 本文檔
 │   ├── TOOL_SPEC.md
@@ -66,16 +132,16 @@
 │   ├── config_loader.py  # Default+override 設定合併與路徑模板解析
 │   ├── exceptions.py     # 自訂異常
 │   └── models.py         # 資料模型
-├── tools/                # 工具腳本
-│   ├── srt_to_main_yaml.py         ✅
-│   ├── main_yaml_to_json.py        ✅
-│   ├── topics_analysis_driver.py   ✅
-│   ├── terminology_mapper.py       (template -> terminology_candidates)
-│   ├── terminology_classifier.py   ⏳ terminology_candidates -> terminology
-│   ├── translation_driver.py       ⏳
-│   ├── qa_checker.py               ⏳
-│   ├── export_srt.py               ⏳
-│   └── export_markdown.py          ⏳
+├── tools/                # 工具腳本（詳見 WORKFLOW_NOTES.md）
+│   ├── srt_to_main_yaml.py         # SRT 解析與句段合併
+│   ├── main_yaml_to_json.py        # 匯出精簡 JSON
+│   ├── topics_analysis_driver.py   # LLM 主題分析
+│   ├── terminology_mapper.py       # 術語候選生成
+│   ├── terminology_classifier.py   # 術語分類（規劃中）
+│   ├── translation_driver.py       # 批次翻譯（規劃中）
+│   ├── qa_checker.py               # 品質檢查（規劃中）
+│   ├── export_srt.py               # SRT 匯出（規劃中）
+│   └── export_markdown.py          # Markdown 匯出（規劃中）
 ├── .env.example          # API keys 範本
 ├── .gitignore
 ├── CLAUDE.md
@@ -86,421 +152,100 @@
 
 ---
 
-## 核心模組設計
+## 核心模組職責
 
-### `src/exceptions.py` - 自訂異常
+### `src/clients/` - LLM 客戶端層
 
-提供專案特定的異常類別，用於錯誤處理和重試邏輯。
+**職責**：提供統一的 LLM API 調用介面，支援多個 Provider。
 
-```python
-class TranslationError(Exception):
-    """基礎異常類別"""
-    pass
+**設計**：
+- `BaseLLMClient` - 抽象基類，定義統一介面（`generate_content`, `get_client_info`）
+- 子類別實作具體 Provider（Gemini, OpenAI, Anthropic）
+- 同步方法設計，符合順序執行需求
+- 內建智能重試機制（指數退避、錯誤分類）
+- 統一返回 `APIResponse` 格式
 
-class ConfigError(TranslationError):
-    """配置錯誤"""
-    pass
+**支援的 Provider**：
+- **Gemini**：使用最新 `google-genai` SDK (0.1.0+)，支援 Gemini 2.0/2.5 系列
+- **OpenAI**：支援 GPT-4o、o1 系列
+- **Anthropic**：支援 Claude 3.5 系列，適合大型上下文
 
-class APIError(TranslationError):
-    """API 調用錯誤"""
-    def __init__(self, provider: str, message: str, retryable: bool = True):
-        self.provider = provider
-        self.retryable = retryable
-        super().__init__(message)
-
-class ValidationError(TranslationError):
-    """資料驗證錯誤"""
-    pass
-```
-
-**重試邏輯**：
-- `retryable=True`：網路錯誤、timeout、rate limit (429/503)
-- `retryable=False`：API key 錯誤 (401/403)、格式錯誤 (400)
+**錯誤處理**：
+- 自動區分可重試錯誤（timeout, 429, 5xx）與不可重試錯誤（401, 400）
+- 指數退避重試策略
+- Token 使用統計與處理時間記錄
 
 ---
 
-### `src/models.py` - 資料模型
+### `src/models.py` - 資料模型層
 
-使用 `@dataclass` 定義結構化資料，提供型別安全和自動序列化。
+**職責**：定義結構化資料格式，提供型別安全。
 
-```python
-@dataclass
-class TokenUsage:
-    """Token 使用統計"""
-    input_tokens: int
-    output_tokens: int
-    total_tokens: int
+**核心模型**：
+- `APIResponse` - 統一的 API 回應格式（provider, success, content, token_usage, error_message）
+- `TokenUsage` - Token 使用統計（input_tokens, output_tokens, total_tokens）
 
-@dataclass
-class APIResponse:
-    """API 回應統一格式"""
-    provider: str          # "gemini" / "openai" / "anthropic"
-    success: bool
-    content: str
-    token_usage: TokenUsage
-    error_message: Optional[str] = None
-    processing_time: float = 0.0
-```
-
-**為什麼使用 dataclass？**
-- ✅ 自動產生 `__init__`, `__repr__`, `__eq__`
-- ✅ Type hints 提供 IDE 自動補全
-- ✅ 易於序列化（可轉換為 dict）
+**技術選型**：使用 `@dataclass` 提供自動序列化與型別檢查。
 
 ---
 
-### `src/clients/base_client.py` - 抽象基類
+### `src/exceptions.py` - 異常處理層
 
-定義所有 LLM 客戶端的統一介面。
+**職責**：提供專案特定的異常類別，支援智能錯誤處理。
 
-```python
-from abc import ABC, abstractmethod
-from typing import Dict, Any
-from ..models import APIResponse
+**異常類別**：
+- `TranslationError` - 基礎異常
+- `ConfigError` - 配置錯誤
+- `APIError` - API 調用錯誤（包含 `retryable` 屬性）
+- `ValidationError` - 資料驗證錯誤
 
-class BaseLLMClient(ABC):
-    """LLM 客戶端抽象基類"""
-
-    @abstractmethod
-    def generate_content(self, system_prompt: str, user_message: str) -> APIResponse:
-        """生成內容（同步方法）"""
-        pass
-
-    @abstractmethod
-    def get_client_info(self) -> Dict[str, Any]:
-        """取得客戶端資訊"""
-        pass
-```
-
-**設計考量**：
-- 使用**同步方法**（非 async），符合工具鏈順序執行的需求
-- 返回統一的 `APIResponse` 格式
-- 子類別實作具體的 API 調用邏輯
+**重試邏輯**：透過 `APIError.retryable` 屬性決定是否重試。
 
 ---
 
-### `src/clients/gemini_client.py` - Gemini 客戶端
+### `src/config_loader.py` - 配置管理
 
-實作 Google Gemini API 調用，使用**最新的 `google-genai` SDK**。
+**職責**：載入並合併配置檔案，解析路徑模板變數。
 
-**主要功能**：
-1. **新版 SDK 支援**（2024+）
-   ```python
-   from google import genai
-   from google.genai import types
-
-   client = genai.Client(api_key=api_key)
-   response = client.models.generate_content(
-       model="gemini-2.0-flash-exp",
-       contents=user_message,
-       config=types.GenerateContentConfig(
-           system_instruction=system_prompt
-       )
-   )
-   ```
-
-2. **智能重試機制**
-   - 指數退避（exponential backoff）
-   - 區分可重試 / 不可重試錯誤
-   - 最大重試次數可配置
-
-3. **Token 統計**
-   - 自動提取 `usage_metadata`
-   - 記錄 input/output/total tokens
-
-4. **環境變數管理**
-   - 從 `GEMINI_API_KEY` 讀取 API key
-   - 啟動時驗證 API key 存在
+**功能**：
+- 讀取 `configs/default.yaml` 與 `configs/<episode>.yaml`
+- 自動合併配置（episode 覆寫 default）
+- 解析路徑模板變數（如 `{data_root}/{episode}/main.yaml`）
+- 驗證必要欄位存在
 
 ---
 
-### `src/clients/openai_client.py` - OpenAI 客戶端
+## 配置管理
 
-實作 OpenAI API 調用（備用選項）。
+### 設計原則
 
-**支援模型**：
-- `gpt-4o`
-- `gpt-4o-mini`
-- `o1-preview`（推理模型）
+**Default + Override 模式**：
+- `configs/default.yaml` - 定義路徑模板、模型預設值、共用參數
+- `configs/<episode>.yaml` - 只覆寫差異（通常僅需 `episode_id`）
+- `src/config_loader.py` - 自動合併配置並解析路徑模板變數
 
-**配置範例**（扁平結構）：
+**路徑模板化**：
+使用 `{變數}` 語法自動推導檔案路徑，避免每個 episode 重複定義：
 ```yaml
-topic_analysis:
-  provider: openai
-  model: gpt-5-mini
-  temperature: 1
-  max_output_tokens: 8192
-```
-
----
-
-### `src/clients/anthropic_client.py` - Anthropic 客戶端
-
-實作 Anthropic Claude API 調用（備用選項）。
-
-**支援模型**：
-- `claude-3-5-sonnet-20241022`
-- `claude-3-5-haiku-20241022`
-
-**特點**：
-- 支援長上下文（200K tokens）
-- 適合處理大型 segments JSON
-
----
-
-## 配置結構
-
-### `configs/default.yaml`
-
-共用配置負責定義路徑模板與模型預設值：
-
-```yaml
-variables:
-  input_root: input
-  data_root: data
-  output_root: output
-  logs_root: logs
-  prompts_root: prompts
-  main_yaml_filename: main.yaml
-  segments_json_filename: main_segments.json
-  topics_json_filename: topics.json
-  log_filename: workflow.log
-
-episode_id: "{episode}"
-
-input:
-  srt: "{input_root}/{episode}"
-  main_yaml: "{data_root}/{episode}/{main_yaml_filename}"
-
+# default.yaml 定義模板
+data_root: data
 output:
-  main_yaml: "{data_root}/{episode}/{main_yaml_filename}"
-  json: "{data_root}/{episode}/{segments_json_filename}"
-  topics_json: "{data_root}/{episode}/{topics_json_filename}"
+  topics_json: "{data_root}/{episode}/topics.json"
 
-prompts:
-  topic_analysis_system: "{prompts_root}/topic_analysis_system.txt"
-
-topic_analysis:
-  provider: gemini
-  model: gemini-2.5-pro
-  temperature: 1
-  max_output_tokens: 8192
-  timeout: 180
-  max_retries: 3
-  strict_validation: true
-  dry_run: false
-
-translation:
-  provider: gemini
-  model: gemini-2.5-pro
-  temperature: 1
-  max_output_tokens: 16384
-  timeout: 180
-  max_retries: 3
-  batch_size: 10
-  resume: true
-
-logging:
-  level: INFO
-  path: "{logs_root}/{episode}/{log_filename}"
-```
-
-### `configs/<episode>.yaml`
-
-Episode 覆寫檔僅保留差異，例如自訂 SRT 檔名或模型參數：
-
-```yaml
+# S01-E12.yaml 只需指定 episode_id
 episode_id: S01-E12
-
-input:
-  # 可選：若資料夾內有多個 SRT，可明確指定檔案
-  # srt: input/S01-E12/ENG-S01-E12Bridget Nielson_SRT_English.srt
+# 自動展開為：data/S01-E12/topics.json
 ```
 
-> 預設情況下 `srt_to_main_yaml.py` 會自動偵測 `input/<episode>/` 內唯一的 `.srt` 檔案；只有當資料夾包含多個 `.srt` 時才需要覆寫 `input.srt`。
-
----
-
-## 工具執行流程
-
-### 1. `srt_to_main_yaml.py` ✅
-- **輸入**：原始 SRT 檔案
-- **輸出**：`data/<episode>/main.yaml`
-- **依賴**：無（純文字處理）
-- **特點**：自動從 `input/<episode>/` 偵測唯一的 `.srt` 檔案（必要時可在配置中覆寫）
-- **執行**：
-  ```bash
-  python3 tools/srt_to_main_yaml.py --config configs/S01-E12.yaml
-  ```
-
-### 2. `main_yaml_to_json.py` ✅
-- **輸入**：`main.yaml`
-- **輸出**：`main_segments.json`（精簡格式）
-- **依賴**：無
-- **執行**：
-  ```bash
-  python3 tools/main_yaml_to_json.py --config configs/S01-E12.yaml
-  ```
-
-### 3. `topics_analysis_driver.py` ✅
-- **輸入**：`main_segments.json` + `topic_analysis_system.txt`
-- **輸出**：`topics.yaml`
-- **依賴**：`src/clients/`, `src/models.py`
-- **API 調用**：是（需要 API key）
-- **執行**：
-  ```bash
-  python3 tools/topics_analysis_driver.py --config configs/S01-E12.yaml
-  ```
-
-### 4. `terminology_mapper.py` ⏳
-- **輸入**：`configs/terminology_template.yaml`（或配置覆寫）、`main.yaml`、`topics.json`（若存在）
-- **輸出**：`data/<episode>/terminology_candidates.yaml`
-- **特點**：
-  - 蒐集模板中每個術語在字幕內的所有出現段落，必要時附上片段文字供後續分類參考
-  - 併入 `topics.json` 的 terminology 建議，並以 `sources` 標註候選來源（template/topic）
-  - 未命中的術語自動排除；若僅由 topic 建議仍會記錄第一個相關段落，方便後續人工審查
-- **狀態**：設計已定稿，實作進行中
-
-### 5. `terminology_classifier.py` ⏳
-- **輸入**：`terminology_candidates.yaml` 與 `main.yaml`（必要時搭配其他上下文）
-- **輸出**：`data/<episode>/terminology.yaml`
-- **特點**：
-  - 透過人工或 LLM 協助，將候選段落分配到正確的 sense，使 `segments` 互斥且覆蓋全部出現位置
-  - 可與 validator 搭配，阻擋仍在待分類狀態的術語
-- **狀態**：規格定義中
-
-### 6. `translation_driver.py` ⏳
-- **輸入**：`main.yaml` + `topics.yaml` + `terminology.yaml`（分類完成）+ `guidelines.md`
-- **輸出**：更新 `main.yaml` 的 `translation` 欄位
-- **依賴**：`src/clients/`
-- **API 調用**：是（批量調用）
-
----
-
-## API 客戶端使用範例
-
-### 基本用法
-
-```python
-from src.clients.gemini_client import GeminiClient
-from src.models import APIResponse
-
-# 初始化客戶端
-config = {
-    'model': 'gemini-2.0-flash-exp',
-    'timeout': 120,
-    'max_retries': 3
-}
-client = GeminiClient(config)
-
-# 調用 API
-system_prompt = "You are a subtitle translator."
-user_message = "Translate this text to Chinese."
-
-response: APIResponse = client.generate_content(system_prompt, user_message)
-
-if response.success:
-    print(f"Content: {response.content}")
-    print(f"Tokens: {response.token_usage.total_tokens}")
-else:
-    print(f"Error: {response.error_message}")
-```
-
-### 錯誤處理
-
-```python
-from src.exceptions import APIError, ConfigError
-
-try:
-    response = client.generate_content(system_prompt, user_message)
-    if not response.success:
-        logger.error(f"API failed: {response.error_message}")
-except APIError as e:
-    if e.retryable:
-        logger.warning(f"Retryable error: {e}")
-        # 可以重試
-    else:
-        logger.error(f"Non-retryable error: {e}")
-        # 立即終止
-except ConfigError as e:
-    logger.error(f"Configuration error: {e}")
-    sys.exit(1)
-```
-
----
-
-## 重試策略
-
-### 指數退避演算法
-
-```python
-for attempt in range(max_retries + 1):
-    try:
-        response = call_api()
-        return response
-    except Exception as e:
-        if not is_retryable(e) or attempt == max_retries:
-            raise
-
-        # 指數退避：2^attempt 秒，最大 60 秒
-        delay = min(2 ** attempt, 60)
-        logger.info(f"Retrying in {delay}s... (attempt {attempt + 1})")
-        time.sleep(delay)
-```
-
-### 可重試的錯誤
-
-- `timeout` - API 請求超時
-- `connection` - 網路連線問題
-- `rate limit` / `429` - 請求過於頻繁
-- `500` / `502` / `503` / `504` - 伺服器錯誤
-
-### 不可重試的錯誤
-
-- `invalid api key` / `401` - API key 無效
-- `403` - 權限不足
-- `400` - 請求格式錯誤
-- `404` - 資源不存在
-
----
-
-## 開發指南
-
-### 新增 LLM Provider
-
-1. 在 `src/clients/` 創建新檔案（如 `cohere_client.py`）
-2. 繼承 `BaseLLMClient` 並實作抽象方法
-3. 更新 `.env.example` 加入新的 API key
-4. 更新 `requirements.txt` 加入對應 SDK
-
-### 新增工具
-
-1. 在 `tools/` 創建新腳本
-2. 使用 `argparse` 處理命令列參數
-3. 從 `configs/<episode>.yaml` 讀取配置
-4. 匯入 `src/clients/` 如需 API 調用
-5. 更新 `docs/TOOL_SPEC.md` 文檔
-
----
-
-## 測試策略
-
-### 單元測試
-- `tests/test_clients.py` - 測試 API 客戶端（使用 mock）
-- `tests/test_models.py` - 測試資料模型
-- `tests/test_parsers.py` - 測試 SRT 解析邏輯
-
-### 整合測試
-- `tests/test_workflow.py` - 端到端測試（需要真實 API key）
-
-### 執行測試
+**API Key 管理**：
+透過 `.env` 檔案管理敏感資訊，與配置檔分離：
 ```bash
-# 單元測試（不需 API key）
-pytest tests/test_models.py -v
-
-# 整合測試（需要 .env）
-pytest tests/test_workflow.py -v --api
+GEMINI_API_KEY=your_key_here
+OPENAI_API_KEY=your_key_here
+ANTHROPIC_API_KEY=your_key_here
 ```
+
+詳細配置範例請參考 `docs/TOOL_SPEC.md`。
 
 ---
 
@@ -524,20 +269,38 @@ pytest tests/test_workflow.py -v --api
 
 ## 未來擴展方向
 
-### 短期（Phase 2-3）
-- ✅ 完成 `topics_analysis_driver.py`
-- ⏳ 實作 `translation_driver.py`（批量翻譯）
-- ⏳ 實作 `qa_checker.py`（品質檢查）
+### 當前狀態
+- ✅ SRT 解析與句段合併（`srt_to_main_yaml.py`）
+- ✅ JSON 段落匯出（`main_yaml_to_json.py`）
+- ✅ 主題分析（`topics_analysis_driver.py`）
+- ✅ 術語候選生成（`terminology_mapper.py`）
+- ⚙️ 術語分類（現行：人工處理或 Claude Code 協助）
+- ⚙️ 批次翻譯（現行：Claude Code 互動式翻譯）
 
-### 中期（Phase 4-5）
-- 支援更多 LLM providers（Cohere, Mistral）
-- 實作快取機制（避免重複 API 調用）
-- 增加進度條顯示（rich library）
+### 短期（視需求開發）
+- `qa_checker.py` - 翻譯品質檢查
+  - 驗證術語一致性
+  - 檢查 confidence 與 status
+  - 標記需人工審查的段落
+- `export_srt.py` / `export_markdown.py` - 匯出工具
+  - 將 main.yaml 轉回 SRT 格式
+  - 生成人工檢閱用報告
 
-### 長期（可選）
+### 中期（流程穩定後）
+- **可選自動化工具**
+  - `terminology_classifier.py` - LLM 輔助術語分類
+  - `translation_driver.py` - 批次翻譯自動化
+- **基礎設施增強**
+  - 實作快取機制（避免重複 API 調用）
+  - 增加進度條顯示（rich library）
+  - 支援更多 LLM providers（Cohere, Mistral）
+
+### 長期（大規模需求時）
 - 如需並行處理多個 episode → 引入 async
 - 如需 A/B 測試模型 → 引入 APIManager
 - 如需 Web UI → 整合 FastAPI/Streamlit
+
+**設計原則**：優先保持流程簡單與靈活，只在實際需求出現時才引入自動化與複雜度。
 
 ---
 

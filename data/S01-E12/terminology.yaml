@@ -1,0 +1,264 @@
+episode_id: S01-E12
+terms:
+  # ===== A =====
+  - term: Align
+    senses:
+      - id: align_harmony
+        definition: 指身心或能量與特定頻率、目標保持一致
+        preferred_translation: 對齊
+        segments: [794]
+        notes: 亦可視語境譯為「調準」、「對頻」、「同調」
+
+  - term: Ancient Aliens
+    senses:
+      - id: ancient_aliens_series
+        definition: 指遠古文明與外星種族互動的概念或相關節目
+        preferred_translation: 遠古外星人
+        segments: [512]
+
+  - term: Astral
+    senses:
+      - id: astral_plane
+        definition: 指星光層或非物質維度的形容詞
+        preferred_translation: 星光
+        segments: [775]
+        notes: 搭配名詞時可譯為「星光界」、「星光層」
+
+  # ===== B =====
+  - term: Being
+    senses:
+      - id: being_conscious
+        definition: 具意識或靈性的存在體（泛指人類、外星、靈體等有覺知的生命）
+        preferred_translation: 存有
+        segments: [432, 476]
+        notes: 強調主體性與意識狀態，視語境可譯為「生命體」、「存在」；外星語境可加註「外星存有」。本集僅保留複數名詞 "beings" 用法，動名詞 "being" 與口語連接詞 "being like" 已排除。
+
+  # ===== C =====
+  - term: channel
+    senses:
+      - id: channel_spiritual_verb
+        definition: 透過靈性方法接收並傳遞非物質訊息的行為（動詞/動名詞）
+        preferred_translation: 通靈
+        segments: [46]
+        notes: 涵蓋 "channeling" 的所有用法，如「他正在通靈」、「通靈訊息」
+
+  - term: Clairvoyant
+    senses:
+      - id: clairvoyant_psychic
+        definition: 具備超感官視覺，能看見非物質訊息的人
+        preferred_translation: 靈視者
+        segments: [85, 777]
+        notes: 可簡化為「靈視」、「透視」
+
+  - term: Collective consciousness
+    senses:
+      - id: collective_consciousness_shared
+        definition: 群體或物種共享的意識場域與記憶庫
+        preferred_translation: 集體意識
+        segments: [665]
+        notes: 常與阿卡西記錄、形態場、共同潛意識等概念相關
+
+  - term: Compassion
+    senses:
+      - id: compassion_spiritual
+        definition: 對眾生抱持慈愛與同理的心境，超越個人利益的無條件關懷
+        preferred_translation: 慈悲
+        segments: [331, 981]
+        notes: 視語境亦可譯為「慈愛」、「同理心」；靈性語境強調無分別的悲憫
+
+  - term: Conduit
+    senses:
+      - id: conduit_spiritual_channel
+        definition: 充當能量或訊息傳遞媒介的個體或工具
+        preferred_translation: 媒介
+        segments: [388, 399, 767, 906]
+        notes: 亦可譯為「渠道」，若語境涉及外星接觸可補充為「通訊管道」
+
+  - term: Consciousness
+    senses:
+      - id: consciousness_awareness
+        definition: 個體或集體的覺知狀態與意識層次
+        preferred_translation: 意識
+        segments: [520, 665]
+        notes: 常與「擴展意識」、「意識進化」、「集體意識」搭配
+
+  # ===== D =====
+  - term: Dimension
+    senses:
+      - id: dimension_spiritual_plane
+        definition: 超越物理三度空間的存在層級或頻率
+        preferred_translation: 維度
+        segments: [131, 474, 601, 859, 865, 896, 924]
+        notes: 視語境可譯為「次元」
+
+  # ===== E =====
+  - term: Earthbound spirits
+    senses:
+      - id: earthbound_spirits
+        definition: 尚未離開地球層面的靈魂或靈體
+        preferred_translation: 留滯的靈魂
+        segments: [41, 94, 111]
+
+  - term: Ego
+    senses:
+      - id: ego_lower_self
+        definition: 為本我之外、強調自我意識與分離感的心理結構
+        preferred_translation: 小我
+        segments: [231, 487, 923, 925]
+        notes: 若語境偏心理學可譯為「自我」
+
+  - term: Energy
+    senses:
+      - id: energy_spiritual
+        definition: 非物質層面的振動力量或生命力
+        preferred_translation: 能量
+        segments: [116, 315, 432, 435, 968]
+        notes: 靈性語境常指氣場、脈輪、療癒能量等
+
+  - term: Existence
+    senses:
+      - id: existence_state_of_being
+        definition: 存在本身或萬物實存的狀態
+        preferred_translation: 存在
+        segments: [12]
+        notes: 靈性語境常與「存有」互換
+
+  # ===== F =====
+  - term: Family Constellation
+    senses:
+      - id: family_constellation_therapy
+        definition: 一種揭露家族動力的心理/靈性療法
+        preferred_translation: 家庭系統排列
+        segments: [78]
+
+  # ===== G =====
+  - term: Guides
+    senses:
+      - id: guides_spiritual
+        definition: 在靈性層面提供指引的存在
+        preferred_translation: 指導靈
+        segments: [41, 47, 383, 392, 688]
+
+  # ===== H =====
+  - term: Healing
+    senses:
+      - id: healing_spiritual
+        definition: 通過能量、意識或靈性方法促進整體療癒的過程
+        preferred_translation: 療癒
+        segments: [41, 92, 158, 256, 273, 300, 314, 367, 381, 437]
+
+  - term: Higher self
+    senses:
+      - id: higher_self_inner_guidance
+        definition: 個體更高維的意識、本質或導引面向
+        preferred_translation: 高我
+        segments: [388, 389]
+
+  - term: Hybrid
+    senses:
+      - id: hybrid_starfamily
+        definition: 由人類與外星基因結合而成的族群
+        preferred_translation: 混種
+        segments: [12, 13, 364, 366, 368, 457, 495, 526, 542, 633, 693, 700, 703, 704, 716, 717, 719, 723, 726, 744, 769, 827, 833, 835, 923]
+        notes: 星際家族脈絡常見
+
+  # ===== I =====
+  - term: Incarnation
+    senses:
+      - id: incarnation_cycle
+        definition: 靈魂進入肉身展開生命的過程
+        preferred_translation: 轉世
+        segments: [644]
+        notes: 若語境強調化身可改譯為「化身」
+
+  # ===== M =====
+  - term: Metaphysical
+    senses:
+      - id: metaphysical_beyond_physical
+        definition: 超越物質層面，探討存在本質的學說或觀點
+        preferred_translation: 形上學的
+        segments: [75, 241, 273, 573]
+        notes: 視語境可譯為「玄學的」、「抽象的」
+
+  # ===== N =====
+  - term: Nature
+    senses:
+      - id: nature_essence
+        definition: 事物的核心特質或本來面貌
+        preferred_translation: 本質
+        segments: [2]
+        notes: 僅保留抽象概念「本質」用法（the true nature of reality）；段落 67、73 為一般物理意義的「自然」（nature as wilderness），不符合模板定義已排除
+
+  # ===== O =====
+  - term: Oneness
+    senses:
+      - id: oneness_unity_consciousness
+        definition: 萬物彼此一體、無分離的意識狀態
+        preferred_translation: 合一
+        segments: [601]
+        notes: 亦可譯為「全一」
+
+  # ===== P =====
+  - term: Pendulum
+    senses:
+      - id: pendulum_divination_tool
+        definition: 用於能量測試或占卜的擺錘工具
+        preferred_translation: 靈擺
+        segments: [126]
+        notes: 一般語境可稱「擺錘」
+
+  - term: Phoenix Lights
+    senses:
+      - id: phoenix_lights_event
+        definition: 1997 年發生於鳳凰城的大規模 UFO 目擊事件
+        preferred_translation: 鳳凰城光點
+        segments: [696]
+
+  # ===== R =====
+  - term: Reality
+    senses:
+      - id: reality_subjective
+        definition: 個體或集體創造的經驗世界與存在狀態
+        preferred_translation: 實相
+        segments: [2, 332, 473, 584, 685, 904]
+        notes: 新時代語境常見於「創造你的實相」、「多重實相」、「平行實相」等概念
+
+  # ===== S =====
+  - term: Shalanaya
+    senses:
+      - id: shalanaya_race
+        definition: 與人類有交流記錄的亞耶爾系外星族群
+        preferred_translation: 夏來納亞
+        segments: [697, 699, 706]
+        notes: 原文發音近似 /ʃæləˈnaɪə/，部分通靈文獻亦譯為「莎拉娜雅」
+
+  - term: Spiritual
+    senses:
+      - id: spiritual_adjective
+        definition: 與靈性、意識、非物質層面相關的形容詞
+        preferred_translation: 靈性的
+        segments: [173, 235]
+        notes: 視語境可譯為「精神的」、「心靈的」
+
+  - term: Star Family
+    senses:
+      - id: star_family_collective
+        definition: 與個體靈魂有關聯的星際族群或靈性家族
+        preferred_translation: 星際家族
+        segments: [209]
+
+  # ===== T =====
+  - term: The Fourth Kind
+    senses:
+      - id: the_fourth_kind_film
+        definition: 2009 年以外星綁架為題材的電影
+        preferred_translation: 第四類接觸
+        segments: [357, 358]
+
+  # ===== Z =====
+  - term: Zeta Reticuli
+    senses:
+      - id: zeta_reticuli_race
+        definition: 來自網罟座ζ星系的灰人族群
+        preferred_translation: 網罟座
+        segments: [473, 529, 561]
