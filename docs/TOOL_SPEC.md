@@ -358,20 +358,163 @@ python3 tools/topics_analysis_driver.py --config configs/S01-E12.yaml [--dry-run
   - `--topic`：只處理特定 topic
 
 - **核心流程（概念稿）**
+  0. 檢查 `data/<episode>/drafts/` 是否存在對應的 `topic_id` 工作檔；若缺少則依 `topics.json` + `main_segments.json` 先生成 Markdown
   1. 讀取 `topics.json` 取得段落範圍
-  2. 從 `main_segments.json` 載入原文
+  2. 從 `drafts/<topic_id>.md` 載入原文段落（或在缺席工作檔時從 `main_segments.json` 切片）
   3. 從 `terminology.yaml` 篩選相關術語
   4. 載入 `guidelines.md` 風格指引
   5. 組裝標準化 prompt
   6. 批次調用 LLM API
-  7. 解析結果並更新 `main.yaml`（包含 `translation.*` 與 `metadata.topic_id`）
-  8. 支援斷點續跑（檢查 `translation.status`）
+  7. 將模型回覆寫入 `data/<episode>/drafts/<topic_id>.md`（或生成對應的回填 JSON）
+  8. 解析 Markdown／回覆檔並回填 `main.yaml`（更新 `translation.*` 與 `metadata.topic_id`），成功後清理工作檔
+  9. 支援斷點續跑（檢查 `translation.status` 與 drafts 目錄）
 
 - **錯誤處理**
   - API 失敗時重試（指數退避）
   - 解析失敗時標記為 `needs_review`
   - 記錄詳細日誌供除錯
 
+> 其他工具（QA checker、exporter 等）待確定細節後，將依相同格式補充於此檔案。
+
 ---
 
-> 其他工具（QA checker、exporter 等）待確定細節後，將依相同格式補充於此檔案。
+## `prepare_topic_drafts.py`
+
+**目的**
+根據 `topics.json` 與 `main_segments.json` 生成 `data/<episode>/drafts/<topic_id>.md`，每行包含 `segment_id`、原文與空白翻譯欄位（JSON 物件），供人工或 LLM 填寫。
+
+- **設定檔**
+  ```yaml
+  # configs/S01-E12.yaml
+  episode_id: S01-E12
+  output:
+    json: data/S01-E12/main_segments.json
+    topics_json: data/S01-E12/topics.json
+    drafts_dir: data/S01-E12/drafts
+  ```
+
+**執行介面**
+```bash
+python tools/prepare_topic_drafts.py --config configs/S01-E12.yaml [--force] [--verbose]
+```
+- `--config` 配置檔案路徑（必需）
+- `--force` 覆寫已存在的 Markdown 檔案
+- `--verbose` 顯示詳細日誌
+- 可選：`--topic topic_01` 只生成特定 topic
+- 可選：`--range 1-50` 只生成特定段落範圍
+
+**核心流程**
+1. 載入 `topics.json` 與 `main_segments.json`
+2. 對每個 topic 執行：
+   - 讀取 `segment_start` 與 `segment_end`
+   - 從 `main_segments.json` 切片出對應的段落
+   - 生成 Markdown 內容：
+     ```markdown
+     ## Speaker Group 2
+
+     21. There are many paths to figuring out the true nature of our reality.
+     → {"text": "", "confidence": "", "notes": ""}
+
+     22. The path of my journey has taken me to Sedona, Arizona several times.
+     → {"text": "", "confidence": "", "notes": ""}
+
+     ## Speaker Group 3
+
+     23. So what happened next?
+     → {"text": "", "confidence": "", "notes": ""}
+     ```
+   - 追蹤 `speaker_group` 變化，在切換時插入 `## Speaker Group N` 標題
+   - 寫入 `data/<episode>/drafts/<topic_id>.md`
+3. 驗證所有段落都被至少一個 topic 覆蓋，若有遺漏段落則警告
+
+**輸出格式**
+- **Speaker Group 標題**：`## Speaker Group <N>`
+  - 只在 `speaker_group` 變化時插入
+  - 編號來自 `main_segments.json` 的 `speaker_group` 欄位
+  - 編號可能很大（如 127），這是話輪計數而非實際說話者數量
+- **段落內容**（每個段落佔兩行）：
+  - 第一行：`<segment_id>. <source_text>`
+  - 第二行：`→ {"text": "", "confidence": "", "notes": ""}`
+- 段落之間空一行
+- `segment_id`：對應 `main.yaml` 的段落編號
+- `source_text`：原文（單行，若有換行會以空格連接）
+- JSON 物件：空白框架，等待填寫
+
+**錯誤處理**
+- `topics.json` 或 `main_segments.json` 不存在 → 報錯並終止
+- Segment 範圍超出 JSON 邊界 → 警告並跳過該 topic
+- 檔案已存在且無 `--force` → 跳過並警告
+- 目錄不存在 → 自動建立
+
+---
+
+## `backfill_translations.py`
+
+**目的**
+解析填妥的 `data/<episode>/drafts/<topic_id>.md` 檔案，驗證翻譯欄位，並寫回 `main.yaml` 的 `translation.*` 欄位。
+
+- **設定檔**
+  ```yaml
+  # configs/S01-E12.yaml
+  episode_id: S01-E12
+  data:
+    main_yaml: data/S01-E12/main.yaml
+    drafts_dir: data/S01-E12/drafts
+  ```
+
+**執行介面**
+```bash
+python tools/backfill_translations.py --config configs/S01-E12.yaml [--dry-run] [--archive] [--verbose]
+```
+- `--config` 配置檔案路徑（必需）
+- `--dry-run` 驗證檔案但不寫入 `main.yaml`
+- `--archive` 回填成功後將 `.md` 移至 `drafts/archive/`
+- `--verbose` 顯示詳細驗證日誌
+- 可選：`--topic topic_01` 只處理特定 topic
+
+**核心流程**
+1. 掃描 `data/<episode>/drafts/*.md`（或指定的 `--topic`）
+2. 對每個 Markdown 檔案：
+   - 追蹤當前 `speaker_group`（從 `## Speaker Group N` 標題讀取）
+   - 逐段解析（每段兩行）：
+     - 第一行：`<segment_id>. <source_text>`
+     - 第二行：`→ <JSON>`
+   - 驗證 JSON 格式：
+     - `text`：**必填**，非空字串
+     - `confidence`：**必填**，枚舉值 `high`/`medium`/`low`（大小寫不敏感）
+     - `notes`：可選
+   - 驗證 `segment_id` 存在於 `main.yaml`
+   - 驗證 `speaker_group` 與 `main.yaml` 中的記錄一致（可選檢查，不一致時警告）
+3. 回填 `main.yaml`：
+   - 更新 `translation.text`、`translation.confidence`（轉小寫）、`translation.notes`
+   - 驗證通過 → `translation.status: completed`
+   - 驗證失敗 → `translation.status: needs_review`
+   - 記錄 `metadata.topic_id`（從檔案名稱推導，如 `topic_01.md` → `topic_01`）
+   - 注意：不需要更新 `speaker_group`，因為 `main.yaml` 已經有正確的值
+4. 若 `--archive`，移動已處理的 `.md` 至 `drafts/archive/`
+
+**驗證規則**
+| 狀況 | 處理 |
+|------|------|
+| JSON 格式錯誤 | 標記為 `needs_review`，記錄錯誤於日誌 |
+| `text` 缺失或空字串 | 標記為 `needs_review` |
+| `confidence` 缺失 | 標記為 `needs_review` |
+| `confidence` 不在枚舉值內 | 標記為 `needs_review` |
+| `segment_id` 對不上 | 報錯並跳過該行 |
+| `notes` 缺失 | 接受（設為 `null`） |
+
+**正規化處理**
+- `confidence` 統一轉小寫（`High` → `high`）
+- `notes` 為空字串時轉為 `null`
+
+**錯誤處理**
+- `main.yaml` 不存在 → 終止
+- Markdown 檔案為空或格式錯誤 → 跳過並警告
+- 寫入失敗 → 保留原檔案並報錯
+
+**輸出**
+- 更新後的 `main.yaml`
+- 日誌統計：成功/失敗/needs_review 的段落數量
+- 若 `--archive`，清理 `drafts/` 目錄
+
+> 搭配 `prepare_topic_drafts.py` 使用，形成完整的翻譯工作流程。

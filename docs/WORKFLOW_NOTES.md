@@ -79,42 +79,90 @@
 - ✅ `topics.json` - 主題結構與摘要
 - ✅ `terminology.yaml` - 術語表（已完成 sense 分類）
 - ✅ `guidelines.md` - 翻譯風格指引
+- ♻️ `drafts/` - 保留既有草稿（若存在）或確認目錄乾淨以便新批次輸出
+
+### Topic 草稿生成（建議）
+
+在呼叫 LLM 之前，可先執行 `python tools/prepare_topic_drafts.py --config configs/<episode>.yaml`，根據 `topics.json` 的 `segment_start`/`segment_end` 範圍切分 `main_segments.json`，為每個 topic 建立一份 Markdown 工作檔：
+1. 讀取 `topics.json`，逐一處理 `topics` 陣列中的 `topic_id`。
+2. 依 `segment_start`–`segment_end` 從 `main_segments.json` 抽出對應的 `segment_id` 與 `source_text`。
+3. 組成如下結構並儲存為 `data/<episode>/drafts/<topic_id>.md`：
+   ```markdown
+   ## Speaker Group 2
+
+   21. There are many paths to figuring out the true nature of our reality.
+   → {"text": "", "confidence": "", "notes": ""}
+
+   22. The path of my journey has taken me to Sedona, Arizona several times.
+   → {"text": "", "confidence": "", "notes": ""}
+
+   ## Speaker Group 3
+
+   23. So what happened next?
+   → {"text": "", "confidence": "", "notes": ""}
+   ```
+   - 自動插入 `## Speaker Group N` 標題標記話輪切換
+   - 編號可能很大（話輪計數器，非實際說話者數量）
+4. 確保所有 `segment_id` 都至少落在一個草稿檔內；若 topic 範圍重疊，可在 promote 階段決定哪個 context 為主。
+
+此步驟降低後續每次翻譯的 token 消耗，也讓工作檔格式在翻譯前後保持一致。若 topics 調整，只需重新生成 Markdown 檔即可。
 
 ### 互動式翻譯流程（使用 Claude Code）
 
 1. **載入 Context**
    - 讀取 `topics.json` 取得 global_summary 與當前 topic 的 summary、keywords、segment 範圍
-   - 從 `main_segments.json` 提取目標段落（根據 segment_start/segment_end 範圍）
+   - 從 `drafts/<topic_id>.md` 取得當前批次的段落；若工作檔尚未生成，可退而從 `main_segments.json` 切片
    - 從 `terminology.yaml` 篩選當前批次相關的術語
    - 載入 `guidelines.md` 風格指引
 
-   **注意**：優先使用 `main_segments.json` 而非 `main.yaml`，因為前者只包含翻譯所需的核心欄位（segment_id, speaker_group, source_text），可大幅減少 token 消耗與處理時間。
+   **注意**：若草稿已生成，優先使用 `drafts/<topic_id>.md`；否則再從 `main_segments.json` 切出所需段落，兩者皆比直接載入 `main.yaml` 省 token。
 
 2. **組裝 Prompt**
    - 參考下方的 Prompt 範例
-   - 確保上下文簡潔（避免整份 YAML 傳入）
-   - 段落清單置於最後
+   - 若想減少重複欄位，可直接提供 Markdown 工作檔：
+     ```markdown
+     ## Speaker Group 5
+
+     158. So that led you into dabbling into healing others.
+     → {"text": "", "confidence": "", "notes": ""}
+
+     159. You said assisting others with alien abductions?
+     → {"text": "", "confidence": "", "notes": ""}
+
+     ## Speaker Group 6
+
+     160. Yeah, I did.
+     → {"text": "", "confidence": "", "notes": ""}
+     ```
+   - Speaker Group 標題幫助 LLM 理解對話脈絡與話輪切換
+   - 模型翻譯時只修改第二行的 JSON 值；完成後再用轉換工具寫回 `main.yaml`
 
 3. **調用 LLM 翻譯**
    - 使用適合的模型（Gemini 2.5 Flash / GPT-4o 等）
    - 要求模型以結構化格式回傳（YAML/JSON）
 
-4. **解析與寫回**
-   - 解析模型輸出的翻譯結果
-   - 更新 `main.yaml` 中對應 segment 的欄位：
+4. **更新草稿 (`data/<episode>/drafts/`)**
+   - 將模型回覆直接填入 Markdown 工作檔（修改 `drafts/<topic_id>.md` 箭頭右側的 JSON 欄位）
+   - 填寫 `text`（翻譯內容）、`confidence`（high/medium/low）、`notes`（可選）
+   - 人工或 Claude Code 可在此階段審核、diff、或套上自動驗證
+
+5. **解析並回填 `main.yaml`**
+   - 執行 `backfill_translations.py` 驗證並解析草稿檔（schema 正確、段落存在、欄位格式）
+   - 將資料套用到 `main.yaml` 的對應段落：
      - `translation.text` - 翻譯文字
-     - `translation.status` - 設為 `completed` 或 `needs_review`
-     - `translation.confidence` - 可選的信心度評分
+     - `translation.status` - 驗證通過設為 `completed`，失敗設為 `needs_review`
+     - `translation.confidence` - 枚舉值（high/medium/low），統一轉小寫
      - `translation.notes` - 可選的備註
      - `metadata.topic_id` - 記錄實際使用的 topic（如 "topic_01"）
+   - 套用成功後刪除或封存草稿，避免重複寫入
 
-5. **迭代與調整**
+6. **迭代與調整**
    - 檢視翻譯品質
    - 即時調整 prompt 或術語使用
    - 繼續下一批次
 
 ### 斷點續跑
-- 根據 `translation.status` 篩選 `pending` 或 `needs_review` 的段落
+- 根據 `translation.status` 篩選 `pending` 或 `needs_review` 的段落；若草稿仍存在，優先 promote 或捨棄後再重新組批。
 - 可隨時中斷與恢復
 
 ### 為何記錄 topic_id？
@@ -125,7 +173,7 @@
 
 ---
 
-## Prompt 範例
+## Prompt 範例 (僅參考示意，未確定規格)
 
 ```text
 You are a professional subtitle translator. Translate the following segments into Traditional Chinese.
@@ -133,7 +181,7 @@ You are a professional subtitle translator. Translate the following segments int
 Global summary:
 - The episode explores the narrator's search for reality through repeated visits to Sedona.
 
-Topic intro (segments 1-20):
+Topic topic_01 (segments 1-20):
 - Establishes a contemplative tone and hints at personal transformation.
 
 Terminology reminders:
@@ -145,10 +193,10 @@ Guidelines:
 - 噪音/音樂提示採【...】格式置於句首。
 
 Segments:
-1. topic=intro, speaker_group=1
+1. topic=topic_01, speaker_group=1
    EN: There are many paths to figuring out the true nature of our reality.
 
-2. topic=intro, speaker_group=1
+2. topic=topic_01, speaker_group=1
    EN: The path of my journey has taken me to Sedona, Arizona several times.
 ```
 
@@ -158,7 +206,7 @@ Segments:
 
 ## 模型輸出格式建議
 
-請模型回傳易於解析的 YAML/JSON。範例：
+請模型回傳易於解析的 YAML/JSON，供草稿層直接保存。範例：
 
 ```yaml
 segments:
@@ -176,7 +224,7 @@ segments:
       notes: "Sedona 保留音譯。"
 ```
 
-程式解析後，更新 `main.yaml` 中 `segment_id` 對應的 `translation` 欄位：
+promote 階段解析草稿後，更新 `main.yaml` 中 `segment_id` 對應的 `translation` 欄位：
 ```yaml
 translation:
   text: ...
@@ -189,9 +237,10 @@ translation:
 
 ## Merge 與斷點續傳
 
-- 每批翻譯完成後即時寫回 `main.yaml`，避免大量堆積於記憶體。
-- 若模型回傳錯誤或格式不完整，可使用備援 parser（例如嘗試修正、只使用成功的段落），並將未完成的段落維持 `status: pending`。
-- 斷點續跑時，程式根據 `translation.status` 篩選 `pending` / `needs_review` 段落，繼續批次翻譯。
+- 每批翻譯完成後先將結果寫入 `drafts/*.json`，確認無誤或通過驗證後再回填 `main.yaml`。
+- 若模型回傳錯誤或格式不完整，可直接修正草稿或重送 API；未回填的段落維持 `status: pending`。
+- promote 階段失敗時保留草稿以利重試，成功後刪除或搬到 `drafts/archive/` 避免重複套用。
+- 斷點續跑時，同步檢查剩餘的草稿與 `translation.status`，僅對 `pending` / `needs_review` 的段落重新組批。
 
 ---
 

@@ -169,7 +169,17 @@ python3 tools/main_yaml_to_json.py --config configs/S01-E12.yaml [--pretty] [--v
 # Step 3: Generate topics.json (requires API key)
 python3 tools/topics_analysis_driver.py --config configs/S01-E12.yaml [--dry-run] [--verbose]
 
-# Step 4: Translate (coming soon)
+# Step 4: Generate translation drafts (Markdown work files)
+python3 tools/prepare_topic_drafts.py --config configs/S01-E12.yaml [--force] [--verbose]
+
+# Step 5: Translate (manual with Claude Code or LLM)
+# Fill in the JSON fields in data/<episode>/drafts/*.md
+# Provide context: guidelines.md + terminology.yaml + topics.json
+
+# Step 6: Backfill translations to main.yaml
+python3 tools/backfill_translations.py --config configs/S01-E12.yaml [--dry-run] [--archive] [--verbose]
+
+# Alternative: Automated batch translation (optional)
 # python3 tools/translation_driver.py --config configs/S01-E12.yaml [--resume]
 ```
 

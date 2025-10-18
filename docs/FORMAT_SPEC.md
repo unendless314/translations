@@ -9,6 +9,7 @@
 | `terminology_candidates.yaml` | 術語候選清單 | mapper 輸出，列出每個 term 的段落出現處 |
 | `terminology.yaml` | 術語表 | 優先用詞與說明 |
 | `guidelines.md` | 翻譯風格指引 | 當作 system prompt 載入 |
+| `drafts/*.md` | 翻譯工作檔 | 每個 topic 的翻譯情境檔（Markdown） |
 
 **目錄慣例**
 
@@ -79,7 +80,7 @@ segments:
   "global_summary": "The episode follows the narrator's journey to understand reality through repeated spiritual experiences in Sedona, touching on ET contact, community gatherings, and guidance for seekers.",
   "topics": [
     {
-      "topic_id": "intro",
+      "topic_id": "topic_01",
       "title": "Opening reflections on reality",
       "segment_start": 1,
       "segment_end": 20,
@@ -91,7 +92,7 @@ segments:
       ]
     },
     {
-      "topic_id": "sedona_experience",
+      "topic_id": "topic_02",
       "title": "Experiences in Sedona, Arizona",
       "segment_start": 21,
       "segment_end": 60,
@@ -220,6 +221,71 @@ terms:
 - 保留第一人稱視角；遇到不確定的固有名詞，於 notes 標記待確認。
 - 音效或音樂提示搬到句首，使用全形括號，如【冥想音樂】。
 ```
+
+---
+
+## 翻譯工作檔（`drafts/*.md`）
+
+批次翻譯會在 `data/<episode>/drafts/` 下生成每個 topic 的 Markdown 工作檔（命名為 `topic_01.md`, `topic_02.md` 等）。此檔案保留原文與空白翻譯欄位，供人工或 LLM 填寫；完成後再回填 `main.yaml`。
+
+**檔案格式**
+```markdown
+## Speaker Group 5
+
+158. So that led you into dabbling into healing others.
+→ {"text": "", "confidence": "", "notes": ""}
+
+159. You said assisting others with alien abductions?
+→ {"text": "", "confidence": "", "notes": ""}
+
+## Speaker Group 6
+
+160. Yeah.
+→ {"text": "", "confidence": "", "notes": ""}
+
+161. I started working with people who had similar experiences.
+→ {"text": "", "confidence": "", "notes": ""}
+```
+
+**欄位規則**
+- **Speaker Group 標題**：`## Speaker Group <N>`，標記話輪切換
+  - 只在 `speaker_group` 變化時插入
+  - 編號可能很大（如 127），這是話輪計數而非實際說話者數量
+- **段落內容**（每個段落兩行）：
+  - 第一行：`<segment_id>. <source_text>`（原文）
+  - 第二行：`→ <JSON>`（翻譯欄位，JSON 物件）
+- 段落之間空一行以提高可讀性
+- 翻譯完成後填入：
+  - `text`：**必填**，非空字串，實際翻譯內容
+  - `confidence`：**必填**，枚舉值 `"high"` / `"medium"` / `"low"`（大小寫不敏感，回填時統一轉小寫）
+  - `notes`：**可選**，可以是空字串或省略
+- `backfill_translations.py` 將解析此檔案並更新 `main.yaml`
+
+**驗證與錯誤處理**
+- JSON 格式錯誤 → 標記該段為 `needs_review`
+- `text` 缺失或空字串 → 標記為 `needs_review`
+- `confidence` 缺失或不在枚舉值內 → 標記為 `needs_review`
+- segment_id 對不上 `main.yaml` → 報錯並跳過該行
+
+**工作流程**
+1. 執行 `prepare_topic_drafts.py` 從 `main_segments.json` + `topics.json` 生成空框架 Markdown 檔
+   - 自動插入 `## Speaker Group N` 標題標記話輪切換
+2. 人工或 LLM 在箭頭右邊填入翻譯（配合 `guidelines.md` + `terminology.yaml` + `topics.json` 作為 context）
+   - Speaker Group 標題幫助理解對話脈絡
+3. 執行 `backfill_translations.py` 解析 `.md` 並寫回 `main.yaml`：
+   - 追蹤 Speaker Group 標題，可選驗證與 `main.yaml` 的一致性
+   - 驗證通過 → `translation.status: completed`
+   - 驗證失敗 → `translation.status: needs_review`
+   - 注意：`speaker_group` 不需要回填，`main.yaml` 已有正確值
+4. 成功回填後可封存或刪除 `.md`，避免重複套用
+
+**Speaker Group 說明**
+- `speaker_group` 是**話輪計數器**，不代表實際說話者身份
+- 編號遞增表示偵測到話輪切換（SRT 中的 `>>` 標記）
+- 可能出現大編號（如 `## Speaker Group 127`），因為無法識別說話者，只能累加計數
+- 實際對話者可能只有 2-3 人，但話輪切換可能上百次
+
+如需保留進度分段，可自行將 `.md` 拷貝為階段備份，或在生成時指定不同輸出檔名。
 
 ---
 

@@ -29,6 +29,7 @@ output:
   main_yaml: "{data_root}/{episode}/{main_yaml_filename}"
   json: "{data_root}/{episode}/{segments_json_filename}"
   topics_json: "{data_root}/{episode}/{topics_json_filename}"
+  drafts_dir: "{data_root}/{episode}/drafts"
 
 terminology:
   template: configs/terminology_template.yaml
