@@ -201,7 +201,6 @@ terms:
 - `terms`：列表，每個項目需對應模板中的 `term`。
 - `senses`：至少一項；每個 sense 應保留模板的 `id`、`definition`、`preferred_translation`，並新增：
   - `segments`：指向 `main.yaml` 的 `segment_id` 陣列，必須非空。
-  - `topics`（可選）：若整段落對應單一 topic，可補充 `topic_id`。
   - `notes`：補充上下文或審核記錄。
 - **互斥要求**：同一 `term` 底下的不同 sense，其 `segments` 不得重疊；所有 sense 的 `segments` 聯集需完整覆蓋候選檔中的出現段落。
 - 產生翻譯前，請確認不存在空的 `segments` 或殘留 `occurrences` 欄位，否則視為尚未完成分類。

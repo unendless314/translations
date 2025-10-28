@@ -16,7 +16,7 @@
   3. `terminology.yaml`：由候選檔分類後取得的最終術語表（每個 sense 具備互斥的 `segments`），確保批次翻譯只讀取真正會用到的詞。
   4. `guidelines.md`：提取翻譯風格與特殊指示。
 
-  **重要**：優先使用 `main_segments.json` 而非 `main.yaml` 載入原文，因為前者只包含翻譯所需的核心欄位，可大幅減少 token 消耗。`main.yaml` 僅用於寫回翻譯結果。
+  **重要**：LLM 處理時優先使用 `main_segments.json` 而非 `main.yaml` 載入原文，因為前者只包含翻譯所需的核心欄位，可大幅減少 token 消耗。`main.yaml` 僅用於寫回翻譯結果。本地程序處理（如 `terminology_mapper.py`）則直接使用 `main.yaml`，因為不涉及 API 成本。
 
 - **翻譯方式**
   - 選項 A：**人工翻譯**（透過 Claude Code 互動式處理）
