@@ -43,13 +43,13 @@
 → {"text": "所以這不是我原本預期的。", "confidence": "high", "notes": ""}
 
 41. And it started with doing a bunch of healing, different trainings that I was doing-- like I told you earlier-- doing different past life stuff, Earthbound spirits, mediumship, of those kind of things-- angels, guides.
-→ {"text": "這一切始於我做的各種療癒工作、不同的訓練——就像我之前跟你說的——處理前世相關的東西、留滯的靈魂、靈媒工作，那些東西——天使、指導靈之類的。", "confidence": "high", "notes": ""}
+→ {"text": "這一切始於我做的各種療癒工作、不同的訓練，就像我之前跟你說的，處理前世相關的東西、留滯的靈魂、靈媒工作，那些東西，天使、指導靈之類的。", "confidence": "high", "notes": ""}
 
 42. And a part of that was abduction.
-→ {"text": "而其中一部分涉及綁架。", "confidence": "high", "notes": ""}
+→ {"text": "而其中一部分涉及外星人綁架。", "confidence": "high", "notes": ""}
 
 43. And I thought, I was cool with all the other inter-dimensional stuff, but not abduction.
-→ {"text": "我當時想，其他跨維度的東西我都能接受，但綁架不行。", "confidence": "high", "notes": ""}
+→ {"text": "我當時想，其他跨維度的東西我都能接受，但外星人綁架不行。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 8
@@ -67,7 +67,7 @@
 → {"text": "所以我會通靈傳遞這些訊息。", "confidence": "high", "notes": ""}
 
 47. So I would, like, connect with their other lives and bring that through, or connect with their guides and communicate from them-- those kinds of things.
-→ {"text": "我會連結他們的其他生世並把訊息帶過來，或者連結他們的指導靈、從指導靈那裡傳達訊息——就是那類的事。", "confidence": "high", "notes": ""}
+→ {"text": "我會連結他們的其他生世並把訊息帶過來，或者連結他們的指導靈、從指導靈那裡傳達訊息，就是那類的事。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 10
@@ -76,7 +76,7 @@
 → {"text": "在我們繼續之前，你能告訴我，你是怎麼踏入這個領域的嗎？", "confidence": "high", "notes": ""}
 
 49. Because that realm, it's not common for people to-- it's becoming more common, I guess.
-→ {"text": "因為這個領域，對一般人來說並不常見——雖然我想現在越來越普遍了。", "confidence": "high", "notes": ""}
+→ {"text": "因為這個領域，對一般人來說並不常見，雖然我想現在越來越普遍了。", "confidence": "high", "notes": ""}
 
 50. But what led you into that path?
 → {"text": "但是什麼引導你走上這條路的？", "confidence": "high", "notes": ""}
@@ -91,16 +91,16 @@
 → {"text": "所以那就打開了那扇門。", "confidence": "high", "notes": ""}
 
 53. Two-- you know, it was right after I got out of college.
-→ {"text": "第二——你知道的，那是在我大學畢業之後。", "confidence": "high", "notes": ""}
+→ {"text": "第二，你知道的，那是在我大學畢業之後。", "confidence": "high", "notes": ""}
 
 54. And then I went immediately into, like, advertising, big time corporate advertising.
-→ {"text": "然後我馬上就進入廣告業，那種大型企業廣告。", "confidence": "high", "notes": ""}
+→ {"text": "我馬上就進入廣告業，那種大型企業廣告。", "confidence": "high", "notes": ""}
 
 55. And just like really dove into the corporate world.
 → {"text": "就真的完全投入了企業界。", "confidence": "high", "notes": ""}
 
 56. And then after that experience, as well as, like, boyfriends and my own stuff, I just went so deep into something energetically that I wasn't, that I just catapulted to another extreme of I'm going, I need to, like, look at what I really am passionate about, and look at what my gifts are.
-→ {"text": "然後在那段經歷之後，加上像是男朋友和我自己的問題，我在能量上深陷於一個不屬於我的東西裡，結果就彈射到另一個極端，我想，我需要去看看我真正熱愛的是什麼，看看我的天賦是什麼。", "confidence": "high", "notes": ""}
+→ {"text": "在那段經歷之後，加上像是男朋友和我自己的問題，我在能量上深陷於一個不屬於我的東西裡，結果就彈射到另一個極端，我想，我需要去看看我真正熱愛的是什麼，看看我的天賦是什麼。", "confidence": "high", "notes": ""}
 
 57. And, like, fix my own personal stuff.
 → {"text": "還有，去處理我自己的個人問題。", "confidence": "high", "notes": ""}
@@ -124,7 +124,7 @@
 ## Speaker Group 14
 
 61. So you were doing the 9:00 to 5:00--
-→ {"text": "所以你當時是朝九晚五——", "confidence": "high", "notes": ""}
+→ {"text": "所以你當時是朝九晚五", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 15
@@ -163,10 +163,10 @@
 → {"text": "我有那些額外的敏感度。", "confidence": "high", "notes": ""}
 
 71. And then over the years and years and years of schooling, they started to dwindle, and dwindle, go away.
-→ {"text": "然後經過多年、多年、多年的學校教育，那些敏感度開始減弱，減弱，消失了。", "confidence": "high", "notes": ""}
+→ {"text": "然後經過多年、多年、多年的學校教育，那些敏感度開始減弱，衰退，消失了。", "confidence": "high", "notes": ""}
 
 72. And then once I hit the extreme of then going corporate after all the schooling, it was just so far, that I knew exactly where to go.
-→ {"text": "然後當我走到極端，在所有學校教育之後進入企業界，那已經太遠了，我很清楚該往哪裡走。", "confidence": "high", "notes": ""}
+→ {"text": "然後當我走到極端，在所有學校教育之後進入企業界，那已經太過頭了，我很清楚該往哪裡走。", "confidence": "high", "notes": ""}
 
 73. I was like, let's go back to nature.
 → {"text": "我想，讓我們回到自然吧。", "confidence": "high", "notes": ""}
@@ -211,13 +211,13 @@
 → {"text": "然後我就開始學習他們所做的一切。", "confidence": "high", "notes": ""}
 
 87. And then I could see that I had these sensitivities too.
-→ {"text": "然後我發現我也有這些敏感度。", "confidence": "high", "notes": ""}
+→ {"text": "接著我發現我也有這些敏感度。", "confidence": "high", "notes": ""}
 
 88. Once I could see them doing all of that stuff, I went, oh I can do that too.
 → {"text": "一旦我看到他們做那些事，我就想，喔，我也可以做到。", "confidence": "high", "notes": ""}
 
 89. But it was so natural, that I didn't know I was doing it.
-→ {"text": "但那太自然了，我都不知道自己在做。", "confidence": "high", "notes": ""}
+→ {"text": "但那太自然了，我甚至都感受不到自己在工作。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 18
@@ -235,13 +235,13 @@
 → {"text": "所以我就去做了各種療癒訓練。", "confidence": "high", "notes": ""}
 
 93. And at that time, I didn't believe fully-- I didn't have the visceral experience of other lives, like other simultaneous incarnations.
-→ {"text": "而在那個時候，我並沒有完全相信——我沒有對其他生世的切身體驗，像是其他同時發生的轉世。", "confidence": "high", "notes": ""}
+→ {"text": "而在那個時候，我並沒有完全相信，我沒有對其他生世的切身體驗，像是其他同時發生的轉世。", "confidence": "high", "notes": ""}
 
 94. I didn't really believe in Earthbound spirits.
 → {"text": "我並不真的相信留滯的靈魂。", "confidence": "high", "notes": ""}
 
 95. It wasn't, like intellectually, it wasn't matched with my experience.
-→ {"text": "在理智上，那沒有跟我的經驗相符。", "confidence": "high", "notes": ""}
+→ {"text": "在理智上，那跟我的經驗不相符。", "confidence": "high", "notes": ""}
 
 96. So that was one of the primary reasons that I went to do the training, was to see if it actually hit to have an experience with these different segments that people just flippantly, like, throw around.
 → {"text": "所以那是我去參加訓練的主要原因之一，就是要看看這些人隨口說說的不同概念，是否真的能讓我有實際體驗。", "confidence": "high", "notes": ""}
@@ -259,7 +259,7 @@
 → {"text": "那背後的知曉來自哪裡？", "confidence": "high", "notes": ""}
 
 101. So I wanted to know that for myself before I just went around just saying stuff.
-→ {"text": "所以我想在到處亂說之前，先親自了解那個。", "confidence": "high", "notes": ""}
+→ {"text": "所以我想在到處分享之前，先親自了解看看。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 20
@@ -271,7 +271,7 @@
 ## Speaker Group 21
 
 103. And so then at that training, I experienced crazy things that were-- I mean, even backed up by like Google-- certain things I was channeling of different, like, spirits and crazy things that were just--
-→ {"text": "所以在那個訓練中，我經歷了一些瘋狂的事，甚至連 Google 都能查證——我通靈接收到的某些東西，關於不同的靈魂和一些瘋狂的事，那些就是——", "confidence": "high", "notes": ""}
+→ {"text": "所以在那個訓練中，我經歷了一些瘋狂的事，甚至用 Google 就能查證，我通靈接收到的某些東西，關於不同的靈魂和一些瘋狂的事，那些就是——", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 22
@@ -367,10 +367,10 @@
 → {"text": "所以我們兩個一起來回確認。", "confidence": "high", "notes": ""}
 
 129. And what came through, through me-- that I could hear from them-- is that there were three little girls that had been murdered on this property by this religious group, by this, like-- I guess he was some kind of bishop or something that ran a center.
-→ {"text": "然後通過我傳來的訊息——我能聽到她們說的——是有三個小女孩在這塊地上被這個宗教團體謀殺了，被這個，像是——我想他是某種主教之類的，經營一個中心。", "confidence": "high", "notes": ""}
+→ {"text": "然後通過我傳來的訊息，我能聽到她們說的，是有三個小女孩在這塊地上被這個宗教團體謀殺了，被這個經營中心的某位主教之類的。", "confidence": "high", "notes": ""}
 
 130. And he murdered them.
-→ {"text": "而他謀殺了她們。", "confidence": "high", "notes": ""}
+→ {"text": "他謀殺了她們。", "confidence": "high", "notes": ""}
 
 131. And they just were stuck in this dimension, because if it's an abrupt ending or if it's unfinished, then of course, you kind of stay bound to this until it's complete.
 → {"text": "而她們就被困在這個維度裡，因為如果是突然結束或未完成的，那當然，你會一直被束縛在這裡直到完結。", "confidence": "high", "notes": ""}
@@ -418,13 +418,13 @@
 → {"text": "我們協助了她們。", "confidence": "high", "notes": ""}
 
 141. And then, I got on my phone on Google, and they gave me the year, they gave that it was some kind of religious guy that did it.
-→ {"text": "然後，我用手機上 Google，她們給了我年份，她們說是某種宗教人士幹的。", "confidence": "high", "notes": ""}
+→ {"text": "然後，我用手機上 Google 查詢，她們給了我年份，她們說是某位宗教人士幹的。", "confidence": "high", "notes": ""}
 
 142. We knew the location, three little girls.
 → {"text": "我們知道地點，三個小女孩。", "confidence": "high", "notes": ""}
 
 143. And I Googled it, and it was like on Google.
-→ {"text": "我 Google 了，結果真的在 Google 上。", "confidence": "high", "notes": ""}
+→ {"text": "我 Google 搜尋，結果真的可以用 Google 查到。", "confidence": "high", "notes": ""}
 
 144. Like, three little girls murdered by this guy at this location.
 → {"text": "就像，三個小女孩在這個地點被這個人謀殺。", "confidence": "high", "notes": ""}
@@ -445,7 +445,7 @@
 → {"text": "Google。", "confidence": "high", "notes": ""}
 
 149. We can do that now on the phone.
-→ {"text": "我們現在可以在手機上做到這個。", "confidence": "high", "notes": ""}
+→ {"text": "我們現在可以在手機上做這事。", "confidence": "high", "notes": ""}
 
 150. You didn't even wait till you got home.
 → {"text": "你甚至沒等到回家。", "confidence": "high", "notes": ""}
@@ -472,7 +472,7 @@
 ## Speaker Group 35
 
 156. Nice.
-→ {"text": "太好了。", "confidence": "high", "notes": ""}
+→ {"text": "真不得了。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 36

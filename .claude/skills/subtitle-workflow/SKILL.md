@@ -316,33 +316,5 @@ python3 tools/backfill_translations.py --config configs/<episode>.yaml --verbose
 
 ---
 
-## 工具限制
-
-此 Skill 允許使用的工具：
-- `Read` - 讀取檔案內容
-- `Glob` - 搜尋檔案模式
-- `Bash` - 執行工作流工具
-- `Grep` - 搜尋內容
-- `Edit` / `Write` - 必要時修正設定檔
-
-這些工具足以完成工作流管理，但不會執行危險操作（如刪除檔案）。
-
-## 進階功能
-
-### 檢查翻譯完成度
-掃描 `main.yaml` 中的 `translation.status` 欄位：
-- `pending` - 待翻譯
-- `completed` - 已完成
-- `needs_review` - 需要審核
-
-統計各狀態的段落數量，提供進度報告。
-
-### 驗證檔案完整性
-- 檢查 timecode 格式
-- 驗證 YAML 語法
-- 確認 topic 範圍無重疊或空缺
-
----
-
 **建立時間**：2025-10-28
 **適用專案**：SRT 字幕翻譯管線
