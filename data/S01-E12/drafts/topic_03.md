@@ -22,7 +22,7 @@
 → {"text": "但同時，我是開放的，因為我必須保持開放。", "confidence": "high", "notes": ""}
 
 164. That was my mission, was to be open, to understand.
-→ {"text": "那是我的使命——保持開放，去理解。", "confidence": "high", "notes": ""}
+→ {"text": "那是我的使命，保持開放，去理解。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 39
@@ -73,7 +73,7 @@
 → {"text": "對我來說，我很難理解這些人。", "confidence": "high", "notes": ""}
 
 176. Because it's like, if it's one-- I mean, if you're going to let your brain leak out, you might as well just let it--
-→ {"text": "因為就像是，如果你都已經——我是說，如果你都已經準備好打破常規思維了，那不如就乾脆——", "confidence": "high", "notes": ""}
+→ {"text": "因為就像是，如果你都已經準備好打破常規思維了，那不如就乾脆——", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 44
@@ -85,7 +85,7 @@
 ## Speaker Group 45
 
 178. --just go full.
-→ {"text": "——就全盤接受。", "confidence": "high", "notes": ""}
+→ {"text": "就全盤接受。", "confidence": "high", "notes": ""}
 
 179. Full disclosure, full peanut butter, go all the way in.
 → {"text": "完全敞開，完全投入，一路走到底。", "confidence": "high", "notes": ""}
@@ -121,7 +121,7 @@
 ## Speaker Group 49
 
 186. So that's meaning the hardest thing for you to--
-→ {"text": "所以意思是說，這對你來說是最難——", "confidence": "high", "notes": ""}
+→ {"text": "所以意思是說，這對你來說是最難", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 50
@@ -133,7 +133,7 @@
 ## Speaker Group 51
 
 188. --acknowledge that that's the truth.
-→ {"text": "——承認這是真的。", "confidence": "high", "notes": ""}
+→ {"text": "承認這是真的。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 52
@@ -217,7 +217,7 @@
 ## Speaker Group 62
 
 205. Aliens, in essence, aliens or alien abductions?
-→ {"text": "外星人——本質上是說外星人本身，還是外星綁架？", "confidence": "high", "notes": ""}
+→ {"text": "外星人，本質上是說外星人本身，還是外星綁架？", "confidence": "high", "notes": ""}
 
 206. Was it the abduction phenomenon?
 → {"text": "是綁架現象嗎？", "confidence": "high", "notes": ""}
@@ -268,7 +268,7 @@
 → {"text": "但當我開始從事這份工作、接觸不同的客戶後，我發現幾乎所有來找我的人都是被綁架者。", "confidence": "high", "notes": ""}
 
 221. And then I contacted the different people that I was trained with--
-→ {"text": "然後我聯絡了一起受訓的其他人——", "confidence": "high", "notes": ""}
+→ {"text": "然後我聯絡了一起受訓的其他人", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 64
@@ -277,7 +277,7 @@
 → {"text": "男性和女性都有？", "confidence": "high", "notes": ""}
 
 223. Or was it--
-→ {"text": "還是——", "confidence": "high", "notes": ""}
+→ {"text": "還是", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 65
@@ -292,7 +292,7 @@
 → {"text": "我聯絡了一起受訓的其他女性。", "confidence": "high", "notes": ""}
 
 227. And I said, are you getting abductees?
-→ {"text": "我問她們，你們也遇到被綁架者嗎？", "confidence": "high", "notes": ""}
+→ {"text": "我問她們，你們也遇過被綁架者嗎？", "confidence": "high", "notes": ""}
 
 228. And they were like, no.
 → {"text": "她們說，沒有。", "confidence": "high", "notes": ""}
@@ -379,7 +379,7 @@
 ## Speaker Group 72
 
 249. Yeah, and none of them had had this--
-→ {"text": "是的，她們都沒有遇到這種——", "confidence": "high", "notes": ""}
+→ {"text": "是的，她們都沒有遇到這種", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 73
@@ -391,7 +391,7 @@
 ## Speaker Group 74
 
 251. None of them were getting abducted.
-→ {"text": "她們都沒有接到被綁架者的個案。", "confidence": "high", "notes": ""}
+→ {"text": "她們都沒有接觸被綁架者的個案。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 75
@@ -403,7 +403,7 @@
 ## Speaker Group 76
 
 253. Yeah, yeah.
-→ {"text": "聽過，聽過。", "confidence": "high", "notes": ""}
+→ {"text": "有聽過。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 77
@@ -595,7 +595,7 @@
 → {"text": "從舉辦這個課程的女士那裡，她透過 Lisa Royal 和她研究過的其他人獲得這個觀點。", "confidence": "high", "notes": "Lisa Royal 為人名，保留英文"}
 
 299. So there was the Zeta--
-→ {"text": "所以有網罟座——", "confidence": "high", "notes": ""}
+→ {"text": "所以有網罟座", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 95
@@ -670,7 +670,7 @@
 → {"text": "那時候我不會深入太多。", "confidence": "high", "notes": ""}
 
 318. I went into more of the other avenues that were up, but just acknowledging it and going through it in the session was what I did.
-→ {"text": "我會更多地處理其他浮現的議題，但在療程中承認並處理這件事，就是我所做的。", "confidence": "high", "notes": ""}
+→ {"text": "我會更多地處理其他浮現的議題，但在療程中承認並處理這件事，就是我的工作。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 101
@@ -742,7 +742,7 @@
 → {"text": "所以對我來說，就是懷著慈悲心，然後心想，哇。", "confidence": "high", "notes": "compassion 依 terminology.yaml 譯為「慈悲」"}
 
 332. It just solidified that reality for them-- because it wasn't my reality-- was real.
-→ {"text": "這只是鞏固了對他們來說那個實相——因為那不是我的實相——是真實的。", "confidence": "high", "notes": "reality 依 terminology.yaml 譯為「實相」"}
+→ {"text": "這確立了他們的那個實相是真的，因為那不曾是我的實相體驗。", "confidence": "high", "notes": "reality 依 terminology.yaml 譯為「實相」"}
 
 333. And so it just brought that to a deeper place in me.
 → {"text": "所以這讓我內心對此有了更深層的理解。", "confidence": "high", "notes": ""}
@@ -790,10 +790,10 @@
 → {"text": "我同意。", "confidence": "high", "notes": ""}
 
 343. I've spoken to-- I think I mentioned earlier, I've spoken to probably over 100 contactees.
-→ {"text": "我已經交談過——我想我之前提過，我大概交談過超過 100 位接觸者。", "confidence": "high", "notes": ""}
+→ {"text": "我想我之前提過，我大概和超過 100 位接觸者交談過。", "confidence": "high", "notes": ""}
 
 344. Mix match, some abductees, experiencers, contactees, there's whole subcategories of that whole batch.
-→ {"text": "混合在一起的，有些是被綁架者、經歷者、接觸者，這整批人裡有各種子類別。", "confidence": "high", "notes": ""}
+→ {"text": "是一個大雜燴，有些是被綁架者、經歷者、接觸者，這整批人裡有各種子類別。", "confidence": "high", "notes": ""}
 
 345. It's very hard.
 → {"text": "這非常困難。", "confidence": "high", "notes": ""}
@@ -856,25 +856,25 @@
 → {"text": "令人驚訝的是，是正面的。", "confidence": "high", "notes": ""}
 
 361. Because the show completely freaked me out.
-→ {"text": "因為那部片完全嚇壞我了。", "confidence": "high", "notes": ""}
+→ {"text": "因為那部片完全嚇到我了。", "confidence": "high", "notes": ""}
 
 362. So you would think that it would have repelled me even farther from looking at it.
-→ {"text": "所以你會以為這會讓我更加排斥去看待這個議題。", "confidence": "high", "notes": ""}
+→ {"text": "你可能以為這會讓我更加排斥去看待這個議題。", "confidence": "high", "notes": ""}
 
 363. But I'm strange.
 → {"text": "但我很奇怪。", "confidence": "high", "notes": ""}
 
 364. And so then after watching it, I knew about the idea of hybrid children.
-→ {"text": "所以看完之後，我知道了混種孩子這個概念。", "confidence": "high", "notes": "hybrid 依 terminology.yaml 譯為「混種」"}
+→ {"text": "看完影片之後，我知道了混種孩子的概念。", "confidence": "high", "notes": "hybrid 依 terminology.yaml 譯為「混種」"}
 
 365. And so then I went to my room and I just asked, like with my full openness, like full heart-- I will go down whatever road this leads me.
-→ {"text": "所以我回到房間，然後我就問了，帶著完全的開放，全心全意——無論這引領我走向哪條路，我都願意。", "confidence": "high", "notes": ""}
+→ {"text": "所以我回到房間，然後我就問了，帶著完全的開放，全心全意，無論這引領我走向哪條路，我都願意。", "confidence": "high", "notes": ""}
 
 366. Do I have hybrid children?
 → {"text": "我有混種孩子嗎？", "confidence": "high", "notes": ""}
 
 367. And well actually before that, it was through the healing stuff, it showed that you could be abducted in another life that was, like, kind of simultaneous to now, as well as this life.
-→ {"text": "實際上在那之前，是透過療癒的內容，顯示你可能在另一個與現在同時存在的生命中被綁架，也可能是在這一生。", "confidence": "high", "notes": ""}
+→ {"text": "實際上在那之前，是透過療癒的內容，顯示你可能在另一個與現在共存的平行時空中被綁架，也可能是在這一生。", "confidence": "high", "notes": ""}
 
 368. And so I asked first, do I have hybrid kids from another life?
 → {"text": "所以我先問，我有來自另一生的混種孩子嗎？", "confidence": "high", "notes": ""}
@@ -913,7 +913,7 @@
 ## Speaker Group 124
 
 375. --or the universe?
-→ {"text": "——還是向宇宙？", "confidence": "high", "notes": ""}
+→ {"text": "還是向宇宙？", "confidence": "high", "notes": ""}
 
 376. Because a lot of people have different labels for their belief system.
 → {"text": "因為很多人對他們的信仰系統有不同的稱呼。", "confidence": "high", "notes": ""}
@@ -928,7 +928,7 @@
 → {"text": "對。", "confidence": "high", "notes": ""}
 
 379. So by that time for me, I had a pretty clear attunement to many streams of different beings.
-→ {"text": "所以對我來說，到那個時候，我已經對許多不同存有的流有了相當清晰的調頻。", "confidence": "high", "notes": "beings 依 terminology.yaml 譯為「存有」"}
+→ {"text": "所以對我來說，到那個時候，我已經對許多不同存有的類別有了相當清晰的調頻。", "confidence": "high", "notes": "beings 依 terminology.yaml 譯為「存有」"}
 
 380. So I mean, I'm like, I had a very clear awareness of what an angel felt like, or what a guide felt like, or what an ancestor felt like, these different frequencies of asking.
 → {"text": "我的意思是，我對天使的感覺、指導靈的感覺、祖先的感覺，這些不同的詢問頻率，都有非常清晰的覺察。", "confidence": "high", "notes": "guides 依 terminology.yaml 譯為「指導靈」"}
@@ -1018,7 +1018,7 @@
 ## Speaker Group 134
 
 400. And up until this, you hadn't had any conscious sightings or lost time or abduction-type things?
-→ {"text": "而在此之前，你沒有任何有意識的目擊、失去時間或類似綁架的事情？", "confidence": "high", "notes": ""}
+→ {"text": "而在此之前，你沒有任何有意識的目擊、失去時間或類似被綁架的事情？", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 135
@@ -1114,7 +1114,7 @@
 → {"text": "對。", "confidence": "high", "notes": ""}
 
 427. The validation-- I guess this is almost an answer to your question-- but was I could hear them.
-→ {"text": "驗證是——我想這幾乎就是你問題的答案——我能聽到他們。", "confidence": "high", "notes": ""}
+→ {"text": "驗證是，我想這幾乎就是你問題的答案，我能聽到他們。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 140
@@ -1150,7 +1150,7 @@
 → {"text": "這是新的事物。", "confidence": "high", "notes": ""}
 
 437. And so that was validating based on all the other things that had built up my confidence in this healing extrasensory arena.
-→ {"text": "所以這是基於所有其他在療癒超感官領域建立我信心的事物而得到的驗證。", "confidence": "high", "notes": "healing 依 terminology.yaml 譯為「療癒」"}
+→ {"text": "所以這是基於所有其他因素的驗證，他們增強了我對超感官療癒方面的信心。", "confidence": "high", "notes": "healing 依 terminology.yaml 譯為「療癒」"}
 
 
 ## Speaker Group 142
@@ -1204,7 +1204,7 @@
 → {"text": "我明白了。", "confidence": "high", "notes": ""}
 
 450. Did you sit on it with more downloads, or no?
-→ {"text": "你在沉澱的過程中有更多下載嗎，還是沒有？", "confidence": "high", "notes": "downloads 在靈性語境指「下載」（接收訊息）"}
+→ {"text": "你在沉澱的過程中有接收到更多信息嗎，還是沒有？", "confidence": "high", "notes": "downloads 在靈性語境指「下載」（接收訊息）"}
 
 
 ## Speaker Group 147
