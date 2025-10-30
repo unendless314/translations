@@ -1,10 +1,10 @@
 ## Speaker Group 217
 
 633. [LAUGHS] So getting back to the hybrid children-- because that's your focus right now-- can you tell us how that started, and where are we at?
-→ {"text": "【笑聲】那麼回到混種孩子的話題——因為這是你現在的重心——你能告訴我們這一切是如何開始的，以及我們現在進展到哪裡了嗎?", "confidence": "high", "notes": ""}
+→ {"text": "【笑聲】那麼回到混種孩子的話題，因為這是你現在的重心，你能告訴我們這一切是如何開始的，以及我們現在進展到哪裡了嗎?", "confidence": "high", "notes": ""}
 
 634. Catch us up to speed with the whole children project.
-→ {"text": "讓我們跟上整個孩子計劃的進度吧。", "confidence": "high", "notes": ""}
+→ {"text": "讓我們跟上整個混種孩子計劃的進度吧。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 218
@@ -49,31 +49,31 @@
 → {"text": "缺乏養育，你知道的吧?", "confidence": "high", "notes": ""}
 
 644. It's this idea that science and genetics, and even their energetic know-how of, like, creating an energetic template vessel for incarnation, they could do all of that stuff.
-→ {"text": "就是這樣的概念:科學和基因學，甚至他們在能量方面的知識——比如創造一個用於轉世的能量模板載體——他們都能做到這一切。", "confidence": "high", "notes": "energetic template vessel for incarnation 依據 terminology.yaml"}
+→ {"text": "就是這樣的概念:科學和基因學，甚至他們在能量方面的知識，比如創造一個用於轉世的能量模板載體，他們都能做到這一切。", "confidence": "high", "notes": "energetic template vessel for incarnation 依據 terminology.yaml"}
 
 645. But when it came down to it, these kids couldn't make it because of a lack of this missing link of love, of like emotion and of connection.
-→ {"text": "但到頭來，這些孩子無法存活，是因為缺少了這個關鍵的連結——愛，還有情感與連結。", "confidence": "high", "notes": ""}
+→ {"text": "但到頭來，這些孩子無法存活，是因為缺少了這個關鍵的連結：愛，還有情感與連結。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 223
 
 646. So literally, they went so far in their intellect, that their lack of emotions has-- it's like the missing link that they still, even that far advanced, even that far evolved-- thousands, if not millions of years in the future-- they're missing the one component that we all know creates life.
-→ {"text": "所以實際上，他們的智力發展得如此之遠，但他們缺乏情感——這就像是那個缺失的環節，即便他們如此先進，如此進化——來自未來數千年，甚至數百萬年之後——他們仍然缺少我們都知道的那個創造生命的關鍵元素。", "confidence": "high", "notes": ""}
+→ {"text": "所以實際上，他們的智力發展得如此之遠，但他們缺乏情感，這就像是那個缺失的環節，即便他們如此先進，如此進化，來自未來數千年，甚至數百萬年之後，他們仍然缺少我們都知道的那個創造生命的關鍵元素。", "confidence": "high", "notes": ""}
 
 647. Doesn't matter--
-→ {"text": "不管——", "confidence": "high", "notes": ""}
+→ {"text": "不管是", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 224
 
 648. --what planet.
-→ {"text": "——什麼星球。", "confidence": "high", "notes": ""}
+→ {"text": "什麼星球。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 225
 
 649. --what planet we're in, what religion I guess you are, from what part of humanity you're from.
-→ {"text": "——不管我們在什麼星球，你信什麼宗教，你來自人類的哪個部分。", "confidence": "high", "notes": ""}
+→ {"text": "不管我們在什麼星球，你信什麼宗教，你來自人類的哪個部分。", "confidence": "high", "notes": ""}
 
 650. But we all know in every movie, that's the big lesson in everything in all of our stories, and our religions, and our science fiction.
 → {"text": "但我們都知道，在每部電影裡、在我們所有的故事裡、在我們的宗教裡、在我們的科幻作品裡，那都是最重要的教訓。", "confidence": "high", "notes": ""}
@@ -97,7 +97,7 @@
 ## Speaker Group 227
 
 655. --that they have forgotten.
-→ {"text": "——他們已經遺忘的。", "confidence": "high", "notes": ""}
+→ {"text": "他們已經遺忘的。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 228
@@ -106,16 +106,16 @@
 → {"text": "是的。", "confidence": "high", "notes": ""}
 
 657. And the human mothers-- there were some human mothers amongst the fearful scenario of being abducted-- could maintain this love for their alien mutated child.
-→ {"text": "而那些人類母親——在被綁架的恐懼情境中，有一些人類母親——能夠為她們那外星混種的孩子維持這份愛。", "confidence": "high", "notes": ""}
+→ {"text": "而那些人類母親，在被綁架的恐懼情境中，有一些人類母親能夠為她們那外星混種的孩子維持這份愛。", "confidence": "high", "notes": ""}
 
 658. And nurture them to the degree that they could thrive-- well, could survive, and then eventually thrive.
-→ {"text": "並且養育他們到足以讓他們茁壯成長的程度——嗯，能夠存活下來，然後最終茁壯成長。", "confidence": "high", "notes": ""}
+→ {"text": "並且養育他們到足以讓他們茁壯成長的程度，嗯，能夠存活下來，然後最終茁壯成長。", "confidence": "high", "notes": ""}
 
 659. And so that altered the race.
 → {"text": "所以這改變了這個族群。", "confidence": "high", "notes": ""}
 
 660. And it also altered-- I mean, that was a big shift, I think, even in the human collective, to be able to love.
-→ {"text": "而且這也改變了——我的意思是，我認為那是一個巨大的轉變，即便是對人類集體意識而言，能夠去愛。", "confidence": "high", "notes": "collective 依據 terminology.yaml 譯為集體意識"}
+→ {"text": "而且這也改變了，我的意思是，我認為那是一個巨大的轉變，即便是對人類集體意識而言，能夠去愛。", "confidence": "high", "notes": "collective 依據 terminology.yaml 譯為集體意識"}
 
 661. I mean, it is your offspring, but to love something alien, you know?
 → {"text": "我是說，那是你的後代，但要去愛一個外星的存在，你懂嗎?", "confidence": "high", "notes": ""}
@@ -139,16 +139,16 @@
 → {"text": "我想提一下一件事。", "confidence": "high", "notes": ""}
 
 667. So actually, I recently saw TED Talks of this autistic boy who-- or at least, he was diagnosed with autism.
-→ {"text": "所以實際上，我最近看到一個關於自閉症男孩的 TED 演講——或者至少，他被診斷為自閉症。", "confidence": "high", "notes": "TED Talks 保留原文"}
+→ {"text": "所以實際上，我最近看到一個關於自閉症男孩的 TED 演講，或至少，他被診斷為自閉症。", "confidence": "high", "notes": "TED Talks 保留原文"}
 
 668. And he got over his autism.
 → {"text": "而他克服了他的自閉症。", "confidence": "high", "notes": ""}
 
 669. And I'll put a link into this video here.
-→ {"text": "我會在這裡放上這個影片的連結。", "confidence": "high", "notes": ""}
+→ {"text": "我會在這裡放上影片的連結。", "confidence": "high", "notes": ""}
 
 670. But he actually was able to overcome his autism by love-- his parents loving him.
-→ {"text": "但他實際上能夠通過愛克服他的自閉症——他父母對他的愛。", "confidence": "high", "notes": ""}
+→ {"text": "但他實際上能夠通過愛克服他的自閉症，他父母對他的愛。", "confidence": "high", "notes": ""}
 
 671. It wasn't any kind of superfood or anything that they gave him.
 → {"text": "那不是他們給他的什麼超級食物或任何東西。", "confidence": "high", "notes": ""}
@@ -169,7 +169,7 @@
 ## Speaker Group 231
 
 675. And there's videos of him, like-- it was hardcore.
-→ {"text": "而且有他的影片，就是——情況很嚴重。", "confidence": "high", "notes": ""}
+→ {"text": "而且有他的影片，就是情況很嚴重。", "confidence": "high", "notes": ""}
 
 676. It was messed up.
 → {"text": "真的很糟糕。", "confidence": "high", "notes": ""}
@@ -205,13 +205,13 @@
 → {"text": "那麼接下來是什麼呢?", "confidence": "high", "notes": ""}
 
 683. What are they saying?
-→ {"text": "他們在說什麼?", "confidence": "high", "notes": ""}
+→ {"text": "他們還說了哪些?", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 236
 
 684. Well, so now, they're energetically and physically connected to their parents, which are us-- who are us.
-→ {"text": "嗯，所以現在，他們在能量上和物理上都與他們的父母連結——也就是我們。", "confidence": "high", "notes": "energy 依據 terminology.yaml"}
+→ {"text": "嗯，所以現在，他們在能量上和物理上都與他們的父母連結，也就是我們。", "confidence": "high", "notes": "energy 依據 terminology.yaml"}
 
 685. And it is their sole motivation to telepathically just inundate us with these memories, and to connect with us in dream time, and to also just implant in us this reality that we've chosen to go towards.
 → {"text": "而且他們唯一的動機就是用心靈感應的方式，讓我們充滿這些記憶，在夢境時間與我們連結，並且將我們選擇要前往的這個實相植入我們之中。", "confidence": "high", "notes": "reality 依據 terminology.yaml 譯為實相"}
@@ -223,7 +223,7 @@
 → {"text": "再往這個方向多走一點。", "confidence": "high", "notes": ""}
 
 688. So they're really, right now, our guides--
-→ {"text": "所以他們現在真的是我們的指導靈——", "confidence": "high", "notes": "guides 依據 terminology.yaml"}
+→ {"text": "所以他們現在真的是我們的指導靈", "confidence": "high", "notes": "guides 依據 terminology.yaml"}
 
 
 ## Speaker Group 237
@@ -235,7 +235,7 @@
 ## Speaker Group 238
 
 690. --back to ourselves.
-→ {"text": "——引導我們回到我們自己。", "confidence": "high", "notes": ""}
+→ {"text": "引導我們回到我們自己。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 239
@@ -244,7 +244,7 @@
 → {"text": "你知道，我在想第一批到達地球的人類，如果他們是以類似的方式來到這個星球的話。", "confidence": "high", "notes": ""}
 
 692. I wonder if there was that kind of connection to their home world that they had to come in and-- I'm just trying to imagine trying to bring it home, in some way.
-→ {"text": "我在想是否有那種與他們母星的連結，他們必須進入——我只是試著想像，試著以某種方式把這個概念帶回家。", "confidence": "high", "notes": ""}
+→ {"text": "我在想是否有那種與他們母星的連結必須進入，我只是試著想像，試著以某種方式把這個概念帶回家。", "confidence": "high", "notes": ""}
 
 693. So if we can imagine Earth and humans, these first hybrid humans being here and still having, energetically, their parents off world on another planet, and how that connection would happen, it doesn't seem that far out when you start to think of it in those aspects.
 → {"text": "所以如果我們能想像地球和人類，這些最初的混種人類在這裡，並且在能量上仍然擁有他們在另一個星球上的外星父母，以及那種連結如何發生，當你開始從這些角度思考時，這似乎也不是那麼遙不可及。", "confidence": "high", "notes": "hybrid humans 依據 terminology.yaml;energy 依據 terminology.yaml"}
@@ -262,7 +262,7 @@
 → {"text": "但是 1997 年的鳳凰城光點事件，對吧?", "confidence": "high", "notes": "Phoenix Lights 依據 terminology.yaml"}
 
 697. Shalanaya mother ship came over--
-→ {"text": "夏來納亞母艦經過——", "confidence": "high", "notes": "Shalanaya 依據 terminology.yaml"}
+→ {"text": "夏來納亞母艦經過", "confidence": "high", "notes": "Shalanaya 依據 terminology.yaml"}
 
 
 ## Speaker Group 241
@@ -301,7 +301,7 @@
 → {"text": "就像，他們有些人就住在那艘實際的飛船上。", "confidence": "high", "notes": ""}
 
 706. And then Shalanaya ships have actually been seen on this property by one of my good friends.
-→ {"text": "然後夏來納亞的飛船實際上曾經在這片地產上被我的一個好朋友看到過。", "confidence": "high", "notes": "Shalanaya 依據 terminology.yaml"}
+→ {"text": "然後夏來納亞的飛船實際上曾經在這片土地上被我的一個好朋友看到過。", "confidence": "high", "notes": "Shalanaya 依據 terminology.yaml"}
 
 707. And so the kids, I mean, they're right there, you know?
 → {"text": "所以這些孩子，我的意思是，他們就在那裡，你知道嗎?", "confidence": "high", "notes": ""}
@@ -382,7 +382,7 @@
 → {"text": "我甚至不知道我會去幫助其他人與他們的孩子連結。", "confidence": "high", "notes": ""}
 
 729. I didn't know that.
-→ {"text": "我不知道那個。", "confidence": "high", "notes": ""}
+→ {"text": "我當時完全沒概念。", "confidence": "high", "notes": ""}
 
 730. All I was starting with was, like, OK.
 → {"text": "我開始時想的只是，好吧。", "confidence": "high", "notes": ""}
@@ -394,16 +394,16 @@
 → {"text": "我要開始與我的孩子連結。", "confidence": "high", "notes": ""}
 
 733. And I wanted a space to be made for other parents to have this be known, and for it to be findable-- like, for it to be known in that way.
-→ {"text": "而我想要創造一個空間，讓其他父母能夠知道這件事，並且能夠找到——就像，以那種方式讓它為人所知。", "confidence": "high", "notes": ""}
+→ {"text": "而我想要創造一個空間，讓其他父母能夠知道這件事，並且能夠找到，以那種方式讓它為人所知。", "confidence": "high", "notes": ""}
 
 734. And then later, I found out that I was designed to do that, that there would be those online platforms that people would come to.
-→ {"text": "然後後來，我發現我就是被設計來做這件事的，會有那些人們會來到的線上平台。", "confidence": "high", "notes": ""}
+→ {"text": "後來，我發現我就是注定來做這件事的，創立那些人們會使用的線上平台。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 249
 
 735. Interesting.
-→ {"text": "有趣。", "confidence": "high", "notes": ""}
+→ {"text": "真有趣。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 250
@@ -445,22 +445,22 @@
 → {"text": "而在一年之內，它達到了 20，000。", "confidence": "high", "notes": ""}
 
 744. So in one year, hybrid alien children went to 20,000.
-→ {"text": "所以在一年之內，外星混種孩子的訪客數達到了 20，000。", "confidence": "high", "notes": ""}
+→ {"text": "所以在一年之內，外星混種孩子網站的訪客數達到了 20，000。", "confidence": "high", "notes": ""}
 
 745. And now--
-→ {"text": "而現在——", "confidence": "high", "notes": ""}
+→ {"text": "而現在", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 255
 
 746. Is this the Facebook page?
-→ {"text": "這是 Facebook 頁面嗎?", "confidence": "high", "notes": ""}
+→ {"text": "是 Facebook 頁面嗎?", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 256
 
 747. This is the website.
-→ {"text": "這是網站。", "confidence": "high", "notes": ""}
+→ {"text": "是一個網站。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 257
@@ -496,7 +496,7 @@
 → {"text": "然後就像是，我每天都被人們的訊息淹沒。", "confidence": "high", "notes": ""}
 
 755. And so the wake up process and the next step, as you were asking, is that people are gonna remember.
-→ {"text": "所以覺醒的過程以及下一步，就像你所問的，就是人們將會記起來。", "confidence": "high", "notes": ""}
+→ {"text": "所以覺醒的過程以及下一步，像你所問的，人們將會恢復記憶。", "confidence": "high", "notes": ""}
 
 756. People are gonna have dreams about these kids.
 → {"text": "人們將會夢到這些孩子。", "confidence": "high", "notes": ""}
@@ -505,7 +505,7 @@
 → {"text": "人們將會有關於這一切的記憶。", "confidence": "high", "notes": ""}
 
 758. Know the next stages of moving, of the assimilation of moving to these sacred sites.
-→ {"text": "知道搬遷的下一個階段，也就是同化並搬遷到這些聖地。", "confidence": "high", "notes": "sacred sites 依據 terminology.yaml"}
+→ {"text": "知道前往的下一個階段，也就是同化並搬遷到這些聖地。", "confidence": "high", "notes": "sacred sites 依據 terminology.yaml"}
 
 759. All of this information is coming and is already happening.
 → {"text": "所有這些資訊都正在到來，而且已經在發生了。", "confidence": "high", "notes": ""}
@@ -514,7 +514,7 @@
 → {"text": "而我看到這些人。", "confidence": "high", "notes": ""}
 
 761. It's amping up in the collective in such a big and powerful way.
-→ {"text": "它正在集體意識中以如此巨大而強大的方式放大。", "confidence": "high", "notes": "collective 依據 terminology.yaml 譯為集體意識"}
+→ {"text": "它正在集體意識中以如此巨大而強力的方式增長。", "confidence": "high", "notes": "collective 依據 terminology.yaml 譯為集體意識"}
 
 762. It's really fun and crazy for even me to watch.
 → {"text": "即便對我來說，觀察這一切也真的很有趣又瘋狂。", "confidence": "high", "notes": ""}
@@ -523,7 +523,7 @@
 → {"text": "就像，我不知道這會往哪裡去。", "confidence": "high", "notes": ""}
 
 764. And so I'm just kind of-- I'm the driver, but I'm also like the observer.
-→ {"text": "所以我只是有點像——我是駕駛者，但我也像是觀察者。", "confidence": "high", "notes": ""}
+→ {"text": "所以我只是有點像，我是駕駛者，但我也像是觀察者。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 261
@@ -547,7 +547,7 @@
 ## Speaker Group 262
 
 770. I help them connect by, I guess, you can picture it as like a cord, like a plug-in cord-- that, like, I have the cord.
-→ {"text": "我幫助他們連結的方式，我想，你可以把它想像成像是一條線，像是插頭的線——就是，我有這條線。", "confidence": "high", "notes": ""}
+→ {"text": "我幫助他們連結的方式，我想，你可以把它想像成像是一條線，像是插頭的線，就是，我有這條線。", "confidence": "high", "notes": ""}
 
 771. And I just, like, plug it in to them.
 → {"text": "而我就像是，把它插到他們身上。", "confidence": "high", "notes": ""}
@@ -568,16 +568,16 @@
 → {"text": "我不是有意識地去做，但它就是發生了。", "confidence": "high", "notes": ""}
 
 777. And then I also bring through-- I get the clairvoyant image of the child.
-→ {"text": "然後我也帶來——我得到孩子的靈視影像。", "confidence": "high", "notes": "clairvoyant 依據 terminology.yaml"}
+→ {"text": "然後我得到孩子的靈視影像。", "confidence": "high", "notes": "clairvoyant 依據 terminology.yaml"}
 
 778. Or they talk to me through all the different senses that I perceive.
-→ {"text": "或者他們透過我所感知的所有不同感官與我交談。", "confidence": "high", "notes": ""}
+→ {"text": "或者他們透過我所有不同的感官與我交談。", "confidence": "high", "notes": ""}
 
 779. And I deliver whatever messages, deliver about their essence, deliver their image-- whatever the parent needs to know that's going to benefit them in the next stage of their connection with their child.
-→ {"text": "而我傳遞任何訊息，傳遞關於他們本質的資訊，傳遞他們的形象——任何父母需要知道的、將在他們與孩子連結的下一個階段中使他們受益的事情。", "confidence": "high", "notes": ""}
+→ {"text": "而我傳遞任何訊息，傳遞關於他們本質的資訊，傳遞他們的形象，任何父母需要知道的、將在他們與孩子連結的下一個階段中使他們受益的事情。", "confidence": "high", "notes": ""}
 
 780. That's what I bring through.
-→ {"text": "那就是我帶來的。", "confidence": "high", "notes": ""}
+→ {"text": "那就是我帶來的訊息。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 263
@@ -613,10 +613,10 @@
 → {"text": "嗯，我想，也許那甚至不準確。", "confidence": "high", "notes": ""}
 
 788. Because every person-- I've probably done about 50 in the past few years.
-→ {"text": "因為每個人——我在過去幾年大概做了大約 50 次。", "confidence": "high", "notes": ""}
+→ {"text": "因為每個人，我在過去幾年大概做了 50 次。", "confidence": "high", "notes": ""}
 
 789. And every person has completely-- like, it's really hit them on a very deep level.
-→ {"text": "而每個人都完全——就像，這真的在非常深的層面觸動了他們。", "confidence": "high", "notes": ""}
+→ {"text": "而每個人都完全像是，這確實在非常深的層面觸動了他們。", "confidence": "high", "notes": ""}
 
 790. And they've all resonated.
 → {"text": "而他們都產生了共鳴。", "confidence": "high", "notes": ""}
@@ -625,7 +625,7 @@
 → {"text": "也許不是他們想聽到的，是他們需要做出的轉變，才能與他們見面。", "confidence": "high", "notes": ""}
 
 792. Because it's not like you can just stay at your 9:00 to 5:00 job, like, chowing down on a burger, and, like, they're going to move into your house in the neighborhood.
-→ {"text": "因為這不像你可以只是待在你朝九晚五的工作，狼吞虎咽地吃著漢堡，然後他們就會搬進你在社區裡的房子。", "confidence": "high", "notes": ""}
+→ {"text": "因為這不像是你可以只待在朝九晚五的工作，狼吞虎咽地吃著漢堡，然後他們就會搬進你在社區裡的房子。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 267
@@ -637,7 +637,7 @@
 ## Speaker Group 268
 
 794. Some of the shifts that need to take place are, one is for the human parents to follow their excitement-- to, like, really align themselves with their passion.
-→ {"text": "一些需要發生的轉變是，其中一個是讓人類父母追隨他們的興奮——就像，真正讓自己與他們的熱情對齊。", "confidence": "high", "notes": "align 依據 terminology.yaml"}
+→ {"text": "一些需要發生的轉變是，其中一個是讓人類父母追隨他們的興奮，就像，真正讓自己與他們的熱情對齊。", "confidence": "high", "notes": "align 依據 terminology.yaml"}
 
 795. Because only in that state will they be able to shift to where they can actually meet them.
 → {"text": "因為只有在那種狀態下，他們才能夠轉變到可以真正與他們見面的地方。", "confidence": "high", "notes": ""}
@@ -667,25 +667,25 @@
 → {"text": "是的，在某些情況下。", "confidence": "high", "notes": ""}
 
 802. I use my own filter in the way of knowing how much is too much.
-→ {"text": "我用我自己的過濾方式來知道多少是太多了。", "confidence": "high", "notes": ""}
+→ {"text": "我用我自己的過濾方式來判斷訊息是否太多。", "confidence": "high", "notes": ""}
 
 803. Because the kid would push them all the way.
-→ {"text": "因為孩子會一路推動他們。", "confidence": "high", "notes": ""}
+→ {"text": "因為孩子會一路推進。", "confidence": "high", "notes": ""}
 
 804. The kid is like, go, you know?
-→ {"text": "孩子就像是，去吧，你懂嗎?", "confidence": "high", "notes": ""}
+→ {"text": "孩子就像是在說，上啊，你懂嗎?", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 271
 
 805. You look at the person and you're like, where they're at.
-→ {"text": "你看著這個人，然後你就像，他們在哪裡。", "confidence": "high", "notes": ""}
+→ {"text": "你看著這個人，然後你觀察他們的處境。", "confidence": "high", "notes": ""}
 
 806. And you're like, OK, are they resonating with this information?
-→ {"text": "然後你就像，好，他們對這個資訊產生共鳴嗎?", "confidence": "high", "notes": ""}
+→ {"text": "然後你就想，好的，他們會對這個資訊產生共鳴嗎?", "confidence": "high", "notes": ""}
 
 807. Or are they are they taking steps back?
-→ {"text": "或者他們是在往後退?", "confidence": "high", "notes": ""}
+→ {"text": "或者他們是在逃避?", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 272
@@ -694,16 +694,16 @@
 → {"text": "是的。", "confidence": "high", "notes": ""}
 
 809. So I give as much as is going to be helpful.
-→ {"text": "所以我給出的是將會有幫助的量。", "confidence": "high", "notes": ""}
+→ {"text": "所以我只會提供有幫助的訊息量。", "confidence": "high", "notes": ""}
 
 810. Because if say, like, give up your whole life and go to Tibet--
-→ {"text": "因為如果說，放棄你的整個生活然後去西藏——", "confidence": "high", "notes": ""}
+→ {"text": "因為如果說，放棄你的生活然後去西藏", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 273
 
 811. Then they're going to throw the whole out not listen to any of it.
-→ {"text": "那麼他們就會把整個事情拋掉，什麼都不聽了。", "confidence": "high", "notes": ""}
+→ {"text": "那他們就會把整個訊息給忽略，什麼都聽不進去。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 274

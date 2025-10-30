@@ -70,7 +70,7 @@
 → {"text": "是的。", "confidence": "high", "notes": ""}
 
 473. It starts with like the understanding of maybe a negative context through the abduction program, which most people know about, which is a connection of the Zeta Reticuli, which is a parallel reality human, and also is part of our original DNA strand in us, which is kind of freaky.
-→ {"text": "這從對綁架計畫的理解開始，大部分人都知道的那種，可能會覺得是負面的——這跟網罟座有關，他們是平行實相中的人類，而且也是我們原始 DNA 鏈的一部分，這有點詭異。", "confidence": "high", "notes": "Zeta Reticuli 使用術語表的「網罟座」; reality 使用術語表的「實相」"}
+→ {"text": "這從對綁架計畫的理解開始，大部分人都知道的那種，可能會覺得是負面的，這跟網罟座有關，他們是平行實相中的人類，而且也是我們原始 DNA 鏈的一部分，這有點詭異。", "confidence": "high", "notes": "Zeta Reticuli 使用術語表的「網罟座」; reality 使用術語表的「實相」"}
 
 474. So it's like they're taking themselves, because it's themselves in another dimension, as well as we have that genetics in us.
 → {"text": "所以這就像他們在採集他們自己，因為那是另一個維度裡的他們自己，而我們體內也有那份基因。", "confidence": "high", "notes": "dimension 使用術語表的「維度」"}
@@ -79,7 +79,7 @@
 → {"text": "所以這就像是在採集家人。", "confidence": "high", "notes": ""}
 
 476. So it's much more intertwined and at home than seems to be some like beings like from another world, being like, aaaargh.
-→ {"text": "所以這比起那種來自另一個世界的存有、感覺像是「啊啊啊」那樣，要更加交織、更接近家的感覺。", "confidence": "medium", "notes": "beings 使用術語表的「存有」;原文的 aaaargh 保留語氣"}
+→ {"text": "所以這比起那種來自另一個世界的存有、感覺像是更加交織、更接近家的感覺。", "confidence": "medium", "notes": "beings 使用術語表的「存有」;原文的 aaaargh 保留語氣"}
 
 477. It's closer to home.
 → {"text": "這離家更近。", "confidence": "high", "notes": ""}
@@ -91,7 +91,7 @@
 → {"text": "對，但有很多面向。", "confidence": "high", "notes": ""}
 
 479. So it's multi-dimensional as far as them being an aspect of us having their DNA.
-→ {"text": "所以就他們是我們的一個面向、我們擁有他們的 DNA 這件事來說，這是多維度的。", "confidence": "high", "notes": ""}
+→ {"text": "所以他們是我們的一個面向、我們擁有他們的 DNA，這是多維度的。", "confidence": "high", "notes": ""}
 
 480. It's not just one thing.
 → {"text": "這不只是一件事。", "confidence": "high", "notes": ""}
@@ -106,25 +106,25 @@
 ## Speaker Group 161
 
 482. Within that program--
-→ {"text": "在那個計畫裡面——", "confidence": "high", "notes": ""}
+→ {"text": "在那個計畫裡面", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 162
 
 483. --within that program, within all of that stuff--
-→ {"text": "——在那個計畫裡面，在所有那些事情當中——", "confidence": "high", "notes": ""}
+→ {"text": "在那個計畫裡面，在所有那些事情當中", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 163
 
 484. --intergalactic contact.
-→ {"text": "——星際接觸。", "confidence": "high", "notes": ""}
+→ {"text": "星際接觸。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 164
 
 485. --that's gonna wake us up.
-→ {"text": "——那會喚醒我們。", "confidence": "high", "notes": ""}
+→ {"text": "會喚醒我們。", "confidence": "high", "notes": ""}
 
 486. I mean, that's gonna jostle people.
 → {"text": "我是說，那會震撼人們。", "confidence": "high", "notes": ""}
@@ -139,7 +139,7 @@
 → {"text": "嗯，它已經在這樣做了。", "confidence": "high", "notes": ""}
 
 489. I mean, if you talk to any of the thousands of abductees-- hundreds of thousands, and estimated millions-- then, it's rocked some worlds out there.
-→ {"text": "我是說，如果你去跟那些被綁架者中的任何一個談談——數千人、數十萬人，估計有數百萬人——那麼，它確實震撼了不少人的世界。", "confidence": "high", "notes": ""}
+→ {"text": "我是說，如果你去跟那些被綁架者中的任何一個談談，數千人、數十萬人，估計有數百萬人，那麼，它確實震撼了不少人的世界。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 166
@@ -157,16 +157,16 @@
 ## Speaker Group 168
 
 492. Rocked my world.
-→ {"text": "震撼了我的世界。", "confidence": "high", "notes": ""}
+→ {"text": "完全顛覆了我的世界。", "confidence": "high", "notes": ""}
 
 493. Changed my world.
 → {"text": "改變了我的世界。", "confidence": "high", "notes": ""}
 
 494. And in the program, which is commonly known, semen and eggs, genetic material is taken from these abductees.
-→ {"text": "在這個計畫中——這是大家都知道的——精子和卵子，也就是基因物質，會從這些被綁架者身上取得。", "confidence": "high", "notes": ""}
+→ {"text": "在這個計畫中，大家都知道精子和卵子，也就是基因物質，會從這些被綁架者身上取得。", "confidence": "high", "notes": ""}
 
 495. And that is meant to create other beings, meant to create the five hybrid civilizations-- five different hybrid civilizations-- as well as the hybrid children, also known as the freelancers.
-→ {"text": "而這是用來創造其他存有，用來創造五個混種文明——五個不同的混種文明——以及混種孩子，也被稱為自由探索者。", "confidence": "high", "notes": "beings 使用術語表的「存有」;hybrid 使用術語表的「混種」;freelancers 音譯為「自由探索者」"}
+→ {"text": "而這是用來創造其他存有，用來創造五個混種文明以及混種孩子，也被稱為自由探索者。", "confidence": "high", "notes": "beings 使用術語表的「存有」;hybrid 使用術語表的「混種」;freelancers 音譯為「自由探索者」"}
 
 496. And these particular kids are the ones going to be coming to Earth.
 → {"text": "而這些特定的孩子就是那些將要來到地球的。", "confidence": "high", "notes": ""}
@@ -244,7 +244,7 @@
 → {"text": "如果是這樣，那些種族當時是否意識到、知道他們正在播種另一個文明?", "confidence": "high", "notes": ""}
 
 512. So that's the big question you always see on "Ancient Aliens" or something. Are we - we're aliens!
-→ {"text": "所以這就是你在《遠古外星人》之類的節目中總是看到的大問題:我們是——我們就是外星人!", "confidence": "high", "notes": "Ancient Aliens 使用術語表的「遠古外星人」"}
+→ {"text": "所以這就是你在《遠古外星人》之類的節目中總是看到的大問題:我們就是外星人!", "confidence": "high", "notes": "Ancient Aliens 使用術語表的「遠古外星人」"}
 
 513. You know, where do we come from?
 → {"text": "你知道的，我們從哪裡來?", "confidence": "high", "notes": ""}
@@ -271,7 +271,7 @@
 → {"text": "我們是混種。", "confidence": "high", "notes": "hybrid 使用術語表的「混種」"}
 
 520. And distinguishing that-- I guess at this moment, is good-- is that we're all hybrids, and that it's a part of the greater galactic story that we seed each other-- that we seed consciousness, that we seed beings.
-→ {"text": "而要區分的是——我想在此刻說明這點是好的——我們全都是混種，而這是更宏大的星際故事的一部分，我們彼此播種——我們播種意識，我們播種存有。", "confidence": "high", "notes": "consciousness 使用術語表的「意識」;beings 使用術語表的「存有」"}
+→ {"text": "而要區分的是，我想在此刻說明這點沒問題，我們全都是混種，而這是更宏大的星際故事的一部分，我們彼此播種，我們播種意識，我們播種存有。", "confidence": "high", "notes": "consciousness 使用術語表的「意識」;beings 使用術語表的「存有」"}
 
 521. So say, the abduction program taken just in that context, it might seem weird.
 → {"text": "所以說，如果只在那個脈絡下看綁架計畫，可能會覺得很怪。", "confidence": "high", "notes": ""}
@@ -334,13 +334,13 @@
 ## Speaker Group 183
 
 536. So we can say-- and I'm glad you mentioned that.
-→ {"text": "所以我們可以說——我很高興你提到這點。", "confidence": "high", "notes": ""}
+→ {"text": "所以我們可以說，我很高興你提到這點。", "confidence": "high", "notes": ""}
 
 537. So we see these Gray beings, doesn't necessarily mean just like with humans, we have different color skin mean just like with humans, we have different color skin humans.
-→ {"text": "所以我們看到這些灰人存有，並不一定意味著——就像人類一樣，我們有不同膚色的人類。", "confidence": "medium", "notes": "原文有重複,簡化翻譯使其通順"}
+→ {"text": "所以我們看到這些灰人存有，並不一定意味著像人類一樣，我們有不同膚色的人類。", "confidence": "medium", "notes": "原文有重複,簡化翻譯使其通順"}
 
 538. Not all the Grays-- even though they may be grayish-- are there some brown Grays?
-→ {"text": "不是所有灰人——儘管他們可能是灰色的——有沒有一些棕色的灰人?", "confidence": "high", "notes": ""}
+→ {"text": "不是所有灰人，儘管他們膚色都是灰色，有沒有帶一些棕色的灰人?", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 184
@@ -385,7 +385,7 @@
 → {"text": "所以在計畫一開始，情況要激烈得多。", "confidence": "high", "notes": ""}
 
 550. They didn't know how to work with humans because they genetically modified their emotions out of themselves.
-→ {"text": "他們不知道如何與人類合作，因為他們把情感從自己身上基因改造掉了。", "confidence": "high", "notes": ""}
+→ {"text": "他們不知道如何與人類合作，因為他們把情感從自己身上的基因給改造掉了。", "confidence": "high", "notes": ""}
 
 551. But through this program, we sparked something in them that made them, to the best of their ability, understand more of the emotional body, and start to understand how to work with us in a way that doesn't completely freak us out.
 → {"text": "但透過這個計畫，我們在他們身上點燃了某種東西，讓他們盡其所能地更加理解情緒體，並開始理解如何以一種不會完全嚇壞我們的方式與我們合作。", "confidence": "high", "notes": ""}
@@ -394,10 +394,10 @@
 ## Speaker Group 187
 
 552. So probably the abductions that are happening now are less aggressive, a little more compassionate than maybe some of the abductions that were happening 10 or 20 years ago, in the early days.
-→ {"text": "所以現在正在發生的綁架可能比較不激進，多一點慈悲，比起十年或二十年前、早期發生的那些綁架。", "confidence": "high", "notes": "compassionate 使用術語表的「慈悲」"}
+→ {"text": "所以現在正在發生的綁架，比起十年或二十年前可能比較不激進，多一點慈悲。", "confidence": "high", "notes": "compassionate 使用術語表的「慈悲」"}
 
 553. In the Benny and Barney Hill, the Whitney Strieber and some of these early records that we have of this happening.
-→ {"text": "在 Benny and Barney Hill、Whitney Strieber 還有一些我們有的這類早期記錄中。", "confidence": "high", "notes": "Benny and Barney Hill、Whitney Strieber 為人名保留英文,對應 topics.json 術語"}
+→ {"text": "相對於 Benny and Barney Hill、Whitney Strieber 還有一些我們有的這類早期記錄。", "confidence": "high", "notes": "Benny and Barney Hill、Whitney Strieber 為人名保留英文,對應 topics.json 術語"}
 
 
 ## Speaker Group 188
@@ -421,13 +421,13 @@
 ## Speaker Group 191
 
 557. Are there still bad ones out there, you think?
-→ {"text": "你覺得外面還有壞的嗎?", "confidence": "high", "notes": ""}
+→ {"text": "你覺得外面有壞的外星人嗎?", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 192
 
 558. Yeah.
-→ {"text": "有。", "confidence": "high", "notes": ""}
+→ {"text": "有的。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 193
@@ -484,22 +484,22 @@
 → {"text": "下一步。", "confidence": "high", "notes": ""}
 
 572. The next steps are that there's many different possible timelines of what is going to happen.
-→ {"text": "下一步是，有許多不同的可能時間線，關於將要發生什麼。", "confidence": "high", "notes": ""}
+→ {"text": "下一步是，有許多不同的可能時間線將要發生。", "confidence": "high", "notes": ""}
 
 573. So then we get into more of the timeline metaphysical probability of someone's personal incarnational choice.
-→ {"text": "所以接著我們會進入更多關於時間線的形上學機率，關於某人個人的轉世選擇。", "confidence": "high", "notes": "metaphysical 使用術語表的「形上學的」;incarnational 使用術語表 incarnation 概念「轉世」"}
+→ {"text": "所以對個人的轉世選擇，我們會進入更多時間線的形上學機率。", "confidence": "high", "notes": "metaphysical 使用術語表的「形上學的」;incarnational 使用術語表 incarnation 概念「轉世」"}
 
 574. And through that, there's timelines.
-→ {"text": "而透過那個，有時間線。", "confidence": "high", "notes": ""}
+→ {"text": "並穿越那些時間線。", "confidence": "high", "notes": ""}
 
 575. Because right now is when the Grays split off from human.
-→ {"text": "因為現在正是灰人從人類分裂出去的時候。", "confidence": "high", "notes": ""}
+→ {"text": "因為現在正是灰人從人類文明分裂出去的時候。", "confidence": "high", "notes": ""}
 
 576. This is like us right now, in the future, in a certain timeline became a Gray.
 → {"text": "這就像是我們現在，在未來，在某個時間線上變成了灰人。", "confidence": "high", "notes": ""}
 
 577. Genetically modified ourselves, went underground in underground tunnels and, like, evolved in a certain way, with focus on the intellect versus emotion.
-→ {"text": "基因改造了我們自己，在地下隧道裡轉入地下，然後以某種方式演化，著重於智力而非情感。", "confidence": "high", "notes": ""}
+→ {"text": "把我們自己基因改造，轉入地下隧道生活，然後以某種方式演化，著重於智力而非情感。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 198
@@ -541,7 +541,7 @@
 ## Speaker Group 202
 
 586. So if you go out to outer space, you end up bumping into Earth again?
-→ {"text": "所以如果你出去外太空，最後又會碰到地球?", "confidence": "high", "notes": ""}
+→ {"text": "所以如果你前往外太空，最後又會回到地球?", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 203
@@ -550,7 +550,7 @@
 → {"text": "有可能，在未來的時間線上。", "confidence": "high", "notes": ""}
 
 588. I mean, it's all so intertwined, you know?
-→ {"text": "我是說，這一切都如此交織，你知道嗎?", "confidence": "high", "notes": ""}
+→ {"text": "我是說，這一切都如此錯綜複雜，你知道嗎?", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 204
@@ -589,19 +589,19 @@
 → {"text": "對。", "confidence": "high", "notes": ""}
 
 599. And then the other one, the other direction--
-→ {"text": "然後另一個，另一個方向——", "confidence": "high", "notes": ""}
+→ {"text": "然後另一個，另一個方向", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 206
 
 600. The other direction--
-→ {"text": "另一個方向——", "confidence": "high", "notes": ""}
+→ {"text": "另一個方向", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 207
 
 601. --which is my direction, my focus, I would say your focus too, is the complete and utter transformation into the fifth dimension, and the shifting of Earth to a healed space and like a united humanity and oneness.
-→ {"text": "——這是我的方向、我的焦點，我會說也是你的焦點，就是完全徹底地轉化進入第五維度，以及讓地球轉變為一個療癒的空間，像是一個團結的人類和合一。", "confidence": "high", "notes": "fifth dimension 使用術語表的「第五維度」(對應 dimension);oneness 使用術語表的「合一」"}
+→ {"text": "這是我的方向、我的焦點，我會說也是你的焦點，就是完全徹底地轉化進入第五維度，以及讓地球轉變為一個療癒的空間，像是一個團結的人類和合一。", "confidence": "high", "notes": "fifth dimension 使用術語表的「第五維度」(對應 dimension);oneness 使用術語表的「合一」"}
 
 602. And galactic contact.
 → {"text": "還有星際接觸。", "confidence": "high", "notes": ""}
@@ -649,10 +649,10 @@
 ## Speaker Group 213
 
 611. It hits me really deep to think that the most kind of negative-- like, it's like, oh, the government, oh, Monsanto-- that they end up going so far down into the depths of darkness, that they end up coming back full circle, which is a beautiful exercise in, like, darkness to light, you know?
-→ {"text": "想到那些最負面的——就像，噢，政府，噢，孟山都——他們最終深入黑暗的深處如此之遠，最終繞了一圈回來，這是一個美好的練習，就像從黑暗到光明，你知道嗎?這讓我很深刻地感受到。", "confidence": "high", "notes": "Monsanto 保留英文為公司名"}
+→ {"text": "想到那些最負面的，就像，噢，政府，噢，孟山都，他們最終進入黑暗的深處如此之遠，最終繞了一圈回來，這讓我很深刻地感受到是一個美好的練習，就像從黑暗到光明，你知道嗎?。", "confidence": "high", "notes": "Monsanto 保留英文為公司名"}
 
 612. And a different perspective on looking at this simultaneous government that we see.
-→ {"text": "還有一個不同的視角來看待我們所看到的這個同時存在的政府。", "confidence": "high", "notes": ""}
+→ {"text": "還有用一個不同的視角來看待我們所看到的平行政府。", "confidence": "high", "notes": ""}
 
 613. All of the realities are, like, all jumbled right now.
 → {"text": "所有的實相現在都混雜在一起。", "confidence": "high", "notes": "realities 使用術語表的「實相」"}
@@ -673,7 +673,7 @@
 → {"text": "就像，你最終拯救了我，就像，在另一個版本裡，你知道嗎?", "confidence": "high", "notes": ""}
 
 619. And so it puts it into perspective.
-→ {"text": "所以這讓它有了透視的角度。", "confidence": "high", "notes": ""}
+→ {"text": "所以這讓它有了透視的觀點。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 214
@@ -682,19 +682,19 @@
 → {"text": "是的。", "confidence": "high", "notes": ""}
 
 621. Many different perspectives, but yes, a perspective.
-→ {"text": "有很多不同的視角，但是的，一個視角。", "confidence": "high", "notes": ""}
+→ {"text": "有很多不同的視角，但沒錯，那是一種觀點。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 215
 
 622. It puts it into a perspective.
-→ {"text": "這給了它一個視角。", "confidence": "high", "notes": ""}
+→ {"text": "這給了它一個觀點。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 216
 
 623. It does put it into a perspective.
-→ {"text": "這確實給了它一個視角。", "confidence": "high", "notes": ""}
+→ {"text": "這確實給了它一個觀點。", "confidence": "high", "notes": ""}
 
 624. You have a little mothy thing.
 → {"text": "你有隻小飛蛾。", "confidence": "high", "notes": ""}
