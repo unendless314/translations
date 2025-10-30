@@ -733,19 +733,19 @@
 → {"text": "然後他們說，哦，好的。", "confidence": "high", "notes": ""}
 
 819. Do you do have those kind of?
-→ {"text": "你有那種嗎?", "confidence": "high", "notes": ""}
+→ {"text": "你有那種經驗嗎?", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 276
 
 820. Kind of, yeah.
-→ {"text": "有點，是的。", "confidence": "high", "notes": ""}
+→ {"text": "有，是的。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 277
 
 821. The kind of conversation, how it goes?
-→ {"text": "那種對話，是怎麼進行的?", "confidence": "high", "notes": ""}
+→ {"text": "那些對話，是怎麼進行的?", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 278
@@ -757,10 +757,10 @@
 → {"text": "所以我給你一個情境。", "confidence": "high", "notes": ""}
 
 824. One of my childhood friends-- well, our families were friends, I met him maybe once when I was, like, five.
-→ {"text": "我的一個童年朋友——嗯，我們的家庭是朋友，我大概在五歲的時候見過他一次。", "confidence": "high", "notes": ""}
+→ {"text": "我的一個童年朋友，嗯，我們的家庭是朋友，我大概在五歲的時候見過他一次。", "confidence": "high", "notes": ""}
 
 825. And I never met him, but we always knew about each other-- similar age.
-→ {"text": "而我從未見過他，但我們總是知道彼此——年齡相近。", "confidence": "high", "notes": ""}
+→ {"text": "而我從未見過他，但我們總是知道彼此，年齡相近。", "confidence": "high", "notes": ""}
 
 826. And he's an artist too, very creative.
 → {"text": "而他也是藝術家，非常有創意。", "confidence": "high", "notes": ""}
@@ -775,7 +775,7 @@
 → {"text": "所以我們連結了。", "confidence": "high", "notes": ""}
 
 830. And within 10 minutes, he starts telling me about these things-- abduction experiences that started happening right when he hit puberty.
-→ {"text": "而在 10 分鐘內，他開始告訴我這些事情——綁架經歷，就在他進入青春期時開始發生。", "confidence": "high", "notes": ""}
+→ {"text": "而在 10 分鐘內，他開始告訴我這些事情，綁架經歷，就在他進入青春期時開始發生。", "confidence": "high", "notes": ""}
 
 831. I'm like, OK.
 → {"text": "我就像，好的。", "confidence": "high", "notes": ""}
@@ -784,7 +784,7 @@
 → {"text": "我知道那個。", "confidence": "high", "notes": ""}
 
 833. And I very quickly heard and felt that he had these hybrid kids, and that we particularly had hybrid kids together.
-→ {"text": "而我很快地聽到並感覺到他有這些混種孩子，而且我們特別共同擁有混種孩子。", "confidence": "high", "notes": ""}
+→ {"text": "而我很快地聽到並感覺到他有這些混種孩子，而且我們特別地共同擁有混種孩子。", "confidence": "high", "notes": ""}
 
 834. And we were just friends and stuff, but they used our genetic material together.
 → {"text": "而我們只是朋友之類的，但他們一起使用了我們的基因材料。", "confidence": "high", "notes": ""}
@@ -802,34 +802,34 @@
 → {"text": "所以我回到了洛杉磯。", "confidence": "high", "notes": "LA 保留英文"}
 
 839. And I actually channeled the kids that I saw that were ours.
-→ {"text": "而我實際上通靈了我看到的那些屬於我們的孩子。", "confidence": "high", "notes": "channeled 依據 terminology.yaml"}
+→ {"text": "而我實際上通靈看到了那些屬於我們的孩子。", "confidence": "high", "notes": "channeled 依據 terminology.yaml"}
 
 840. And there was a boy and a girl.
-→ {"text": "而有一個男孩和一個女孩。", "confidence": "high", "notes": ""}
+→ {"text": "有一個男孩和一個女孩。", "confidence": "high", "notes": ""}
 
 841. And then I went back two weeks later, and he said that since he had been around me, he had been having these experiences at night where these two kids would come and knock on his door.
-→ {"text": "然後兩週後我回去了，他說自從他在我身邊之後，他一直在夜晚有這些經歷，這兩個孩子會來敲他的門。", "confidence": "high", "notes": ""}
+→ {"text": "兩週後我回去了，他說自從他在我身邊之後，他一直在夜晚有這些經歷，這兩個孩子會來敲他的門。", "confidence": "high", "notes": ""}
 
 842. And every night that week, his dog had been needing to go out at night.
-→ {"text": "而那一週的每個晚上，他的狗一直需要在夜晚出去。", "confidence": "high", "notes": ""}
+→ {"text": "那一週的每個晚上，他的狗一直想在夜晚出去。", "confidence": "high", "notes": ""}
 
 843. And he would go into this kind of dream state.
-→ {"text": "而他會進入這種夢境狀態。", "confidence": "high", "notes": ""}
+→ {"text": "他會進入這種夢境狀態。", "confidence": "high", "notes": ""}
 
 844. And these kids, like, who he was terrified of, would just knock on his door.
-→ {"text": "而這些孩子，就像，他很害怕的，會一直敲他的門。", "confidence": "high", "notes": ""}
+→ {"text": "而這些孩子會一直敲他的門，令他感到很害怕。", "confidence": "high", "notes": ""}
 
 845. And he had these dreams of, like, pushing the door shut as these kids were trying to get in.
-→ {"text": "而他做了這些夢，就像，在這些孩子試圖進來時把門推上。", "confidence": "high", "notes": ""}
+→ {"text": "而他做了這些夢，例如這些孩子試圖推開門進來。", "confidence": "high", "notes": ""}
 
 846. And it was like, no, don't come in.
-→ {"text": "就像是，不，不要進來。", "confidence": "high", "notes": ""}
+→ {"text": "他就說，不，不要進來。", "confidence": "high", "notes": ""}
 
 847. And at that same time right before I knew that in LA, I tried to tune into the kids.
-→ {"text": "而在同一時間，就在我在洛杉磯知道那個之前，我試著與孩子們調頻。", "confidence": "high", "notes": ""}
+→ {"text": "當時，我在洛杉磯知道這事之前，我試著與孩子們調頻。", "confidence": "high", "notes": ""}
 
 848. And they were like, we don't need to be with you, Mom.
-→ {"text": "而他們就像，我們不需要跟你在一起，媽媽。", "confidence": "high", "notes": ""}
+→ {"text": "而他們就像在說，我們不需要跟你在一起，媽媽。", "confidence": "high", "notes": ""}
 
 849. Like, we need to take care of Dad.
 → {"text": "我們需要照顧爸爸。", "confidence": "high", "notes": ""}
@@ -847,10 +847,10 @@
 → {"text": "所以所有這一切都在發生。", "confidence": "high", "notes": ""}
 
 852. And like, it was confirmed by him.
-→ {"text": "而就像，這被他證實了。", "confidence": "high", "notes": ""}
+→ {"text": "這一切都被他證實了。", "confidence": "high", "notes": ""}
 
 853. So there are some people that, they're just like--
-→ {"text": "所以有些人，他們就像是——", "confidence": "high", "notes": ""}
+→ {"text": "所以有些人，他們就像是", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 281
@@ -874,25 +874,25 @@
 → {"text": "嗯，在我們的療程之後，這是很多要加諸在你身上的東西。", "confidence": "high", "notes": ""}
 
 858. It's like all day yesterday, I kept talking to Daniel-- my cameraman here-- about, like, yeah.
-→ {"text": "就像昨天一整天，我一直在跟 Daniel——我的攝影師——談論，就像，是的。", "confidence": "high", "notes": "Daniel 人名保留英文"}
+→ {"text": "就像昨天一整天，我一直在跟我的攝影師 Daniel 談論。", "confidence": "high", "notes": "Daniel 人名保留英文"}
 
 859. Maybe I don't know if I'm ready for real kids here in this third dimension.
 → {"text": "也許我不知道我是否準備好在這第三維度擁有真正的孩子。", "confidence": "high", "notes": "dimension 依據 terminology.yaml"}
 
 860. But I might be ready for--
-→ {"text": "但我可能準備好了——", "confidence": "high", "notes": ""}
+→ {"text": "但我可能準備好了", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 284
 
 861. --for an alien.
-→ {"text": "——準備好要一個外星人。", "confidence": "high", "notes": ""}
+→ {"text": "準備好有一個外星孩子。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 285
 
 862. --for an alien kid.
-→ {"text": "——準備好要一個外星孩子。", "confidence": "high", "notes": ""}
+→ {"text": "準備好有一個外星孩子。", "confidence": "high", "notes": ""}
 
 863. [LAUGHS] As crazy as that sounds.
 → {"text": "【笑聲】儘管這聽起來很瘋狂。", "confidence": "high", "notes": ""}
@@ -901,7 +901,7 @@
 → {"text": "所以是的，我想大多數人會是相反的方式。", "confidence": "high", "notes": ""}
 
 865. Even if you had regular kids on this dimension, even contemplating another kid, that's like a major--
-→ {"text": "即使你在這個維度有了普通的孩子，即使考慮要另一個孩子，那就像是一個重大的——", "confidence": "high", "notes": "dimension 依據 terminology.yaml"}
+→ {"text": "即使你在這個維度有了普通的孩子，即使考慮要另一個孩子，那就像是一個重大的", "confidence": "high", "notes": "dimension 依據 terminology.yaml"}
 
 
 ## Speaker Group 286
@@ -913,7 +913,7 @@
 ## Speaker Group 287
 
 867. That's a thing that you just, like-- I don't need that worry/responsibility.
-→ {"text": "那是你就像——我不需要那種擔憂/責任。", "confidence": "high", "notes": ""}
+→ {"text": "那就像是，我不需要那種擔憂/責任。", "confidence": "high", "notes": ""}
 
 868. But it sounds like these kids can kind of take care of themselves.
 → {"text": "但聽起來這些孩子有點可以照顧他們自己。", "confidence": "high", "notes": ""}
@@ -940,7 +940,7 @@
 ## Speaker Group 289
 
 874. They're getting them up to speed with how to lift up the toilet seat.
-→ {"text": "他們正在讓他們跟上如何掀起馬桶座的速度。", "confidence": "high", "notes": ""}
+→ {"text": "他們正在讓他們學會如何掀起馬桶座。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 290
@@ -955,40 +955,40 @@
 → {"text": "那就是他們的教室。", "confidence": "high", "notes": ""}
 
 878. So they don't go to school, they go to like Earth 101, yeah.
-→ {"text": "所以他們不去學校，他們去像是地球 101，對。", "confidence": "high", "notes": ""}
+→ {"text": "所以他們不去學校，他們去參加像是地球 101 的課程，對吧。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 291
 
 879. Which I've actually talked to several abductees who--
-→ {"text": "我實際上已經跟幾個被綁架者談過，他們——", "confidence": "high", "notes": ""}
+→ {"text": "我實際上已經跟幾個被綁架者談過，他們", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 292
 
 880. --the classroom?
-→ {"text": "——教室?", "confidence": "high", "notes": ""}
+→ {"text": "教室?", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 293
 
 881. --or even, yeah, the classroom.
-→ {"text": "——或甚至，是的，教室。", "confidence": "high", "notes": ""}
+→ {"text": "或甚至，是的，教室。", "confidence": "high", "notes": ""}
 
 882. And they're on ships.
-→ {"text": "而他們在飛船上。", "confidence": "high", "notes": ""}
+→ {"text": "教室在飛船上。", "confidence": "high", "notes": ""}
 
 883. And they see classrooms where they're teaching them how to buy stuff at the supermarket.
-→ {"text": "而他們看到教室，在那裡他們教導他們如何在超市買東西。", "confidence": "high", "notes": ""}
+→ {"text": "他們看到教室，在那裡他們教導混種孩子們如何在超市買東西。", "confidence": "high", "notes": ""}
 
 884. And it's like-- and I heard that like three to five years ago, abductees talking about this and having the same.
-→ {"text": "而這就像——我聽說大約三到五年前，被綁架者談論這個並且有相同的經歷。", "confidence": "high", "notes": ""}
+→ {"text": "而這就像，我聽說大約三到五年前，被綁架者談論這個並且有相同的經歷。", "confidence": "high", "notes": ""}
 
 885. And it's not just one, but several of these abductees saying, hey, I was on a ship, and I saw that too.
-→ {"text": "而不只是一個，而是好幾個這些被綁架者說，嘿，我在一艘飛船上，我也看到了那個。", "confidence": "high", "notes": ""}
+→ {"text": "而且不只是一個，是好幾個這些被綁架者說，嘿，我在一艘飛船上，我也看到了那個。", "confidence": "high", "notes": ""}
 
 886. And that's so bizarre.
-→ {"text": "而那太奇異了。", "confidence": "high", "notes": ""}
+→ {"text": "那太奇異了。", "confidence": "high", "notes": ""}
 
 887. What does that mean?
 → {"text": "那是什麼意思?", "confidence": "high", "notes": ""}
@@ -1048,7 +1048,7 @@
 → {"text": "那就是宏偉的計劃。", "confidence": "high", "notes": ""}
 
 900. The Freelancers are going to join us on Earth.
-→ {"text": "自由行動者將會在地球上加入我們。", "confidence": "high", "notes": "The Freelancers 依據 terminology.yaml"}
+→ {"text": "自由行動者們將會在地球上加入我們。", "confidence": "high", "notes": "The Freelancers 依據 terminology.yaml"}
 
 901. So the other civilizations, they're on their civilizations.
 → {"text": "所以其他文明，他們在他們的文明上。", "confidence": "high", "notes": ""}
@@ -1060,43 +1060,43 @@
 → {"text": "所以他們不會老化。", "confidence": "high", "notes": ""}
 
 904. They're just, like, held in time-- continuing on, but they're going to be inserted into our reality when the time is right.
-→ {"text": "他們只是，像是，被暫停在時間中——持續著，但當時機成熟時，他們將被插入我們的實相。", "confidence": "high", "notes": "reality 依據 terminology.yaml"}
+→ {"text": "他們只是，像是，被暫停在時間中，但當時機成熟時，他們將被插入我們的實相。", "confidence": "high", "notes": "reality 依據 terminology.yaml"}
 
 905. And they will be introduced to Earth as our children.
 → {"text": "而他們將作為我們的孩子被介紹到地球。", "confidence": "high", "notes": ""}
 
 906. And they will be the first step and conduit into contact with other civilizations.
-→ {"text": "而他們將是與其他文明接觸的第一步和媒介。", "confidence": "high", "notes": "conduit 依據 terminology.yaml"}
+→ {"text": "他們將是與其他文明接觸的第一步和媒介。", "confidence": "high", "notes": "conduit 依據 terminology.yaml"}
 
 
 ## Speaker Group 300
 
 907. Right, which makes it a little easier on humanity if there's an actual alien that is part human--
-→ {"text": "對，如果有一個實際的外星人是部分人類的話，這會讓人類稍微容易接受一點——", "confidence": "high", "notes": ""}
+→ {"text": "對，如果有一個實際的外星人是部分人類的話，這會讓人類稍微容易接受一點", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 301
 
 908. --and their child.
-→ {"text": "——而且是他們的孩子。", "confidence": "high", "notes": ""}
+→ {"text": "而且是他們的孩子。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 302
 
 909. --and their child.
-→ {"text": "——而且是他們的孩子。", "confidence": "high", "notes": ""}
+→ {"text": "而且是他們的孩子。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 303
 
 910. --and is a child.
-→ {"text": "——而且是一個孩子。", "confidence": "high", "notes": ""}
+→ {"text": "而且是一個孩子。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 304
 
 911. --and is a child.
-→ {"text": "——而且是一個孩子。", "confidence": "high", "notes": ""}
+→ {"text": "而且是一個孩子。", "confidence": "high", "notes": ""}
 
 912. So you're not going to blow it out of the sky, or we're being attacked by aliens!
 → {"text": "所以你不會把它從天上打下來，或說我們正在被外星人攻擊!", "confidence": "high", "notes": ""}

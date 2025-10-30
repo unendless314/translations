@@ -1,7 +1,7 @@
 ## Speaker Group 305
 
 915. Unless they're maybe perceived through a negative filter, which would be the Black Eyed children.
-→ {"text": "除非他們可能是被透過負面濾鏡看待的，那就是黑眼小孩的情況。", "confidence": "high", "notes": ""}
+→ {"text": "除非他們可能是被負面濾鏡看待，那就是黑眼小孩的情況。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 306
@@ -22,7 +22,7 @@
 ## Speaker Group 307
 
 920. Well, I mean--
-→ {"text": "呃，我的意思是——", "confidence": "high", "notes": ""}
+→ {"text": "呃，我的意思是", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 308
@@ -37,25 +37,25 @@
 ## Speaker Group 309
 
 923. I think it is my belief that Black Eyed children are a hybrid children perceived through a negative ego filter.
-→ {"text": "我認為，我相信黑眼小孩就是混種小孩被透過負面的小我濾鏡所看待。", "confidence": "high", "notes": ""}
+→ {"text": "我認為，我相信黑眼小孩就是混種小孩被負面的小我濾鏡看待的結果。", "confidence": "high", "notes": ""}
 
 924. There could be some freak creepy children coming into this dimension or something that are Black Eyed children too.
 → {"text": "也可能確實有一些詭異恐怖的小孩進入這個維度，也就是真正的黑眼小孩。", "confidence": "high", "notes": ""}
 
 925. But after hearing that experience with the guy that I just told you about, that the kids are knocking on his door, and he perceived their eyes as black-- like black kind of scary eyes-- and I'm going, OK, I know where his ego is at.
-→ {"text": "但在聽到我剛剛跟你說的那個人的經歷後——小孩們敲他的門，他把他們的眼睛看成是黑色的，就像是黑色的那種恐怖眼睛——我就想，好吧，我知道他的小我在什麼狀態了。", "confidence": "high", "notes": ""}
+→ {"text": "但在聽到我剛剛跟你說的那個人的經歷後，小孩們敲他的門，他把他們的眼睛看成是黑色的，就像是黑色的那種恐怖眼睛，我就想，好吧，我知道他的小我在什麼狀態了。", "confidence": "high", "notes": ""}
 
 926. He does not want to look at this.
 → {"text": "他根本不想面對這件事。", "confidence": "high", "notes": ""}
 
 927. And then he is then perceiving them as super creepy and super scary.
-→ {"text": "所以他就把他們看成是超級詭異、超級恐怖的。", "confidence": "high", "notes": ""}
+→ {"text": "所以他就把他們看成是超級詭異、超級恐怖的樣子。", "confidence": "high", "notes": ""}
 
 928. And so I'm going, yeah.
 → {"text": "所以我就想，是啊。", "confidence": "high", "notes": ""}
 
 929. Like, I'm thinking that that is--
-→ {"text": "我覺得那就是——", "confidence": "high", "notes": ""}
+→ {"text": "我覺得那就是", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 310
@@ -97,7 +97,7 @@
 → {"text": "他們會把你的血吸乾。", "confidence": "high", "notes": ""}
 
 940. [LAUGHS] Because that's how, typically, the Black Eyed children are perceived, in a lot of ways.
-→ {"text": "【笑聲】因為這就是黑眼小孩通常被看待的方式，在很多方面都是如此。", "confidence": "high", "notes": ""}
+→ {"text": "【笑聲】因為這就是黑眼小孩通常被聯想的方式，在很多方面都是如此。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 313
@@ -106,13 +106,13 @@
 → {"text": "確實是這樣。", "confidence": "high", "notes": ""}
 
 942. And maybe there are creepy, like-- you know, there are dark energies and spirits that I've worked with.
-→ {"text": "而且也許確實有一些詭異的——你知道，我處理過一些黑暗能量和靈體。", "confidence": "high", "notes": ""}
+→ {"text": "而且也許確實有一些詭異的，你知道，我處理過一些黑暗能量和靈體。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 314
 
 943. You think of maybe a few in the first batch didn't quite go a certain way?
-→ {"text": "你覺得會不會是第一批裡面有幾個沒有按照預期發展？", "confidence": "medium", "notes": "此處指混種計畫第一批可能有失敗案例"}
+→ {"text": "你覺得會不會是第一批混種孩子中裡面有幾個沒有按照預期發展？", "confidence": "medium", "notes": "此處指混種計畫第一批可能有失敗案例"}
 
 
 ## Speaker Group 315
@@ -121,7 +121,7 @@
 → {"text": "也許吧。", "confidence": "high", "notes": ""}
 
 945. Yeah, they dropped them off.
-→ {"text": "是啊，他們把那些小孩放下來了。", "confidence": "high", "notes": ""}
+→ {"text": "是啊，他們放棄了那些小孩。", "confidence": "high", "notes": ""}
 
 946. And they're like, let's just make this a horror show.
 → {"text": "然後他們就想，那就讓這變成一場恐怖秀吧。", "confidence": "high", "notes": ""}
@@ -148,7 +148,7 @@
 ## Speaker Group 318
 
 951. We gotta drop those humans-- yeah, especially the ones that really aren't accepting this information very much.
-→ {"text": "我們得把那些人類放下去——對，尤其是那些真的很不能接受這些資訊的人。", "confidence": "high", "notes": ""}
+→ {"text": "我們得把那些人類放下去，尤其是那些真的很不能接受這些資訊的人。", "confidence": "high", "notes": ""}
 
 952. Let's just give them a little taste.
 → {"text": "就讓他們稍微體驗一下吧。", "confidence": "high", "notes": ""}
@@ -160,7 +160,7 @@
 → {"text": "也許吧。", "confidence": "high", "notes": ""}
 
 954. I mean--
-→ {"text": "我是說——", "confidence": "high", "notes": ""}
+→ {"text": "我是說", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 320
@@ -184,7 +184,7 @@
 → {"text": "我喜歡你對黑眼小孩的這種觀點。", "confidence": "high", "notes": ""}
 
 959. It kind of makes sense.
-→ {"text": "這有點道理。", "confidence": "high", "notes": ""}
+→ {"text": "聽起來有點道理。", "confidence": "high", "notes": ""}
 
 960. So this other guy you're talking about, his perception was kind of the standard Black Eyed children perception?
 → {"text": "所以你說的那個人，他的看法就是那種典型的黑眼小孩看法？", "confidence": "high", "notes": ""}
@@ -220,7 +220,7 @@
 → {"text": "我以前會清除房子裡的騷靈。", "confidence": "high", "notes": ""}
 
 968. Like, I'm OK with that energy.
-→ {"text": "我對那種能量沒問題的。", "confidence": "high", "notes": ""}
+→ {"text": "我可以應付那種能量。", "confidence": "high", "notes": ""}
 
 969. And if it was that, that's cool.
 → {"text": "如果真的是那樣，那也沒關係。", "confidence": "high", "notes": ""}
@@ -232,16 +232,16 @@
 → {"text": "但事實不是那樣。", "confidence": "high", "notes": ""}
 
 972. But in some cases, maybe, you know?
-→ {"text": "但在某些情況下，也許真的是那樣，你知道嗎？", "confidence": "high", "notes": ""}
+→ {"text": "在某些情況下，也許真的是那樣，你知道嗎？", "confidence": "high", "notes": ""}
 
 973. Like we said, it's a little--
-→ {"text": "就像我們說的，這有點——", "confidence": "high", "notes": ""}
+→ {"text": "就像我們說的，這有點", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 326
 
 974. I mean, and even if it is, I think you can transmute it in a sense by-- again, we create our own realities with wherever we project on whatever it is we're going to do.
-→ {"text": "我的意思是，即使真的是那樣，我認為你也可以在某種程度上轉化它——再說一次，我們用自己的投射創造自己的實相，無論我們要投射什麼、要做什麼。", "confidence": "high", "notes": ""}
+→ {"text": "我的意思是，即使真的是那樣，我認為你也可以在某種程度上轉化它，再重申一次，我們用自己的投射創造自己的實相，無論我們要投射什麼、要做什麼。", "confidence": "high", "notes": ""}
 
 975. So if we're going to project that, we're going to create that in our own heads, even if it's not really that.
 → {"text": "所以如果我們要投射那個，我們就會在自己的腦海中創造那個，即使實際上不是那樣。", "confidence": "high", "notes": ""}
@@ -268,7 +268,7 @@
 ## Speaker Group 328
 
 981. So even if these demon kids, black eyes, fangs, and blood sucking-- even if you did show love and compassion, you can still transmute it into something lovely.
-→ {"text": "所以即使這些惡魔小孩、黑眼睛、尖牙、吸血——即使你真的對他們展現愛與慈悲，你仍然可以把它轉化成美好的東西。", "confidence": "high", "notes": ""}
+→ {"text": "所以即使這些惡魔小孩、黑眼睛、尖牙、吸血，只要你真的對他們展現愛與慈悲，你仍然可以把它轉化成美好的東西。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 329
@@ -304,13 +304,13 @@
 → {"text": "一杯果汁。", "confidence": "high", "notes": ""}
 
 989. Every child--
-→ {"text": "每個小孩——", "confidence": "high", "notes": ""}
+→ {"text": "每個小孩", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 333
 
 990. I was going to say glass of milk, but we're going away from-- we're going to go with a glass of juice.
-→ {"text": "我本來要說一杯牛奶，但我們要避開那個——我們就選一杯果汁吧。", "confidence": "high", "notes": ""}
+→ {"text": "我本來要說一杯牛奶，但我們要避開那個，我們就選一杯果汁吧。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 334
@@ -364,7 +364,7 @@
 → {"text": "很好。", "confidence": "high", "notes": ""}
 
 1001. Well, that's a lot of information, and a lot to chew on.
-→ {"text": "好了，這是很多資訊，有很多值得咀嚼的內容。", "confidence": "high", "notes": ""}
+→ {"text": "好了，聽到了很多資訊，有很多值得回味的內容。", "confidence": "high", "notes": ""}
 
 1002. I think the sun's going down.
 → {"text": "我想太陽要下山了。", "confidence": "high", "notes": ""}
@@ -379,7 +379,7 @@
 → {"text": "這些資訊真的很棒。", "confidence": "high", "notes": ""}
 
 1006. And I'd love to continue to see how this develops
-→ {"text": "而且我很期待繼續看到這一切如何發展", "confidence": "high", "notes": ""}
+→ {"text": "而且我很期待繼續看這一切如何發展", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 341
