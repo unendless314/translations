@@ -171,7 +171,7 @@ python3 tools/prepare_topic_drafts.py --config configs/S01-E12.yaml [--force] [-
 
 # Step 6: Backfill completed translations to main.yaml
 # Reads completed topic_XX.md files and updates main.yaml with translations
-python3 tools/backfill_translations.py --config configs/S01-E12.yaml [--dry-run] [--archive] [--verbose]
+python3 tools/backfill_translations.py --config configs/S01-E12.yaml [--dry-run] [--verbose]
 ```
 
 ## Implementation Status

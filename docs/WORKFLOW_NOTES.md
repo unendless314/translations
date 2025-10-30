@@ -149,11 +149,11 @@
 5. **解析並回填 `main.yaml`**
    - 執行 `backfill_translations.py` 驗證並解析草稿檔（schema 正確、段落存在、欄位格式）
    - 將資料套用到 `main.yaml` 的對應段落：
-     - `translation.text` - 翻譯文字
-     - `translation.status` - 驗證通過設為 `completed`，失敗設為 `needs_review`
-     - `translation.confidence` - 枚舉值（high/medium/low），統一轉小寫
-     - `translation.notes` - 可選的備註
-     - `metadata.topic_id` - 記錄實際使用的 topic（如 "topic_01"）
+    - `translation.text` - 翻譯文字
+    - `translation.status` - 驗證通過設為 `completed`，失敗設為 `needs_review`
+    - `translation.confidence` - 枚舉值（high/medium/low），統一轉小寫
+    - `translation.notes` - 可選的備註
+    - `metadata.topic_id` - 記錄實際使用的 topic（如 "topic_01"，每個段落僅對應單一 topic）
    - 套用成功後刪除或封存草稿，避免重複寫入
 
 6. **迭代與調整**
@@ -239,7 +239,7 @@ translation:
 
 - 每批翻譯完成後先將結果寫入 `drafts/*.json`，確認無誤或通過驗證後再回填 `main.yaml`。
 - 若模型回傳錯誤或格式不完整，可直接修正草稿或重送 API；未回填的段落維持 `status: pending`。
-- promote 階段失敗時保留草稿以利重試，成功後刪除或搬到 `drafts/archive/` 避免重複套用。
+- promote 階段失敗時保留草稿以利重試，成功後如需清理請人工移除或另存備份即可。
 - 斷點續跑時，同步檢查剩餘的草稿與 `translation.status`，僅對 `pending` / `needs_review` 的段落重新組批。
 
 ---

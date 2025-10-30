@@ -41,7 +41,7 @@ segments:
     translation:
       text: null
       status: pending        # pending | in_progress | completed | needs_review | approved
-      confidence: null       # 0.0 ~ 1.0，可選
+      confidence: null       # high | medium | low，可選
       notes: null
     metadata:
       topic_id: null         # 初始為 null，翻譯時才寫入
@@ -107,7 +107,7 @@ segments:
 }
 ```
 
-如需多主題重疊，可新增 `overlaps` 欄位或於 `main.yaml` 的 `metadata.topic_id` 改為陣列。若需要供人工閱讀的 Markdown 摘要，可由此檔案自動轉出。
+翻譯流程假設**每個段落只屬於單一 topic**；生成草稿與回填時都以 `metadata.topic_id` 的單一字串值為基準，若要重新分配 topic，應先更新 `topics.json` 再重建草稿。若需要供人工閱讀的 Markdown 摘要，可由此檔案自動轉出。
 
 ---
 

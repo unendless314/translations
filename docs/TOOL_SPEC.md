@@ -464,18 +464,16 @@ python tools/prepare_topic_drafts.py --config configs/S01-E12.yaml [--force] [--
 
 **執行介面**
 ```bash
-python tools/backfill_translations.py --config configs/S01-E12.yaml [--dry-run] [--archive] [--verbose]
+python tools/backfill_translations.py --config configs/S01-E12.yaml [--dry-run] [--verbose]
 ```
 - `--config` 配置檔案路徑（必需）
 - `--dry-run` 驗證檔案但不寫入 `main.yaml`
-- `--archive` 回填成功後將 `.md` 移至 `drafts/archive/`
 - `--verbose` 顯示詳細驗證日誌
-- 可選：`--topic topic_01` 只處理特定 topic
 
 **核心流程**
-1. 掃描 `data/<episode>/drafts/*.md`（或指定的 `--topic`）
+1. 掃描 `data/<episode>/drafts/*.md`（全量處理所有 topic）
 2. 對每個 Markdown 檔案：
-   - 追蹤當前 `speaker_group`（從 `## Speaker Group N` 標題讀取）
+   - 忽略 `## Speaker Group N` 標題行（僅作為翻譯階段的視覺輔助）
    - 逐段解析（每段兩行）：
      - 第一行：`<segment_id>. <source_text>`
      - 第二行：`→ <JSON>`
@@ -484,22 +482,19 @@ python tools/backfill_translations.py --config configs/S01-E12.yaml [--dry-run] 
      - `confidence`：**必填**，枚舉值 `high`/`medium`/`low`（大小寫不敏感）
      - `notes`：可選
    - 驗證 `segment_id` 存在於 `main.yaml`
-   - 驗證 `speaker_group` 與 `main.yaml` 中的記錄一致（可選檢查，不一致時警告）
-3. 回填 `main.yaml`：
-   - 更新 `translation.text`、`translation.confidence`（轉小寫）、`translation.notes`
+3. 回填 `main.yaml`（每處理完一個 topic 立刻寫回，全量覆蓋）：
+   - 對於通過驗證的段落，更新 `translation.text`、`translation.confidence`（轉小寫）、`translation.notes`
    - 驗證通過 → `translation.status: completed`
-   - 驗證失敗 → `translation.status: needs_review`
-   - 記錄 `metadata.topic_id`（從檔案名稱推導，如 `topic_01.md` → `topic_01`）
-   - 注意：不需要更新 `speaker_group`，因為 `main.yaml` 已經有正確的值
-4. 若 `--archive`，移動已處理的 `.md` 至 `drafts/archive/`
-
+   - 驗證失敗 → 僅將 `translation.status` 設為 `needs_review`，保留原本的翻譯欄位（通常為 `null`），以便後續人工處理
+   - 記錄 `metadata.topic_id`（從檔案名稱推導，如 `topic_01.md` → `topic_01`；每個段落僅保留一個 topic）
+4. 草稿檔處理：成功回填後保留原檔案不動（允許重複執行，冪等操作）
 **驗證規則**
 | 狀況 | 處理 |
 |------|------|
-| JSON 格式錯誤 | 標記為 `needs_review`，記錄錯誤於日誌 |
-| `text` 缺失或空字串 | 標記為 `needs_review` |
-| `confidence` 缺失 | 標記為 `needs_review` |
-| `confidence` 不在枚舉值內 | 標記為 `needs_review` |
+| JSON 格式錯誤 | 標記為 `needs_review`（不覆寫翻譯欄位），記錄錯誤於日誌 |
+| `text` 缺失或空字串 | 標記為 `needs_review`，不寫入翻譯欄位 |
+| `confidence` 缺失 | 標記為 `needs_review`，不寫入翻譯欄位 |
+| `confidence` 不在枚舉值內 | 標記為 `needs_review`，不寫入翻譯欄位 |
 | `segment_id` 對不上 | 報錯並跳過該行 |
 | `notes` 缺失 | 接受（設為 `null`） |
 
@@ -513,8 +508,13 @@ python tools/backfill_translations.py --config configs/S01-E12.yaml [--dry-run] 
 - 寫入失敗 → 保留原檔案並報錯
 
 **輸出**
-- 更新後的 `main.yaml`
-- 日誌統計：成功/失敗/needs_review 的段落數量
-- 若 `--archive`，清理 `drafts/` 目錄
+- 更新後的 `main.yaml`（每個 topic 處理完立刻寫回）
+- 統計資訊（stdout）：
+  ```
+  Processed 3 topics (topic_01, topic_02, topic_03)
+  - Successfully translated: 245 segments
+  - Needs review: 5 segments (validation failed)
+  - Skipped: 2 segments (JSON parse error)
+  ```
 
 > 搭配 `prepare_topic_drafts.py` 使用，形成完整的翻譯工作流程。
