@@ -192,7 +192,7 @@ terms:
     senses:
       - id: hybridization_genetic
         definition: 不同物種或文明間的基因混合過程
-        preferred_translation: 雜交
+        preferred_translation: 混血
         segments: [32]
         notes: 本集專用術語，建議反饋到 template。星際語境可譯為「混種化」。
 
@@ -280,7 +280,7 @@ terms:
     senses:
       - id: genetically_alter_modify
         definition: 基因改造或修改
-        preferred_translation: 基因改變
+        preferred_translation: 基因改造
         segments: [124, 125]
         notes: 本集專用術語
 
@@ -328,7 +328,7 @@ terms:
     senses:
       - id: dracos_extraterrestrial
         definition: 類蜥蜴人或天龍座外星族群
-        preferred_translation: 天龍人
+        preferred_translation: 天龍座人
         segments: [197]
         notes: 本集專用術語，建議反饋到 template
 
@@ -376,7 +376,7 @@ terms:
     senses:
       - id: family_tree_genealogy
         definition: 家族譜系或起源追溯
-        preferred_translation: 家族樹
+        preferred_translation: 家譜
         segments: [256]
         notes: 一般術語
 

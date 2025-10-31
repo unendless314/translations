@@ -12,6 +12,9 @@ anthropic>=0.7.0            # Anthropic Claude models
 # HTTP client (for API calls)
 requests>=2.31.0
 
+# SRT subtitle processing
+pysrt>=1.1.2                # SRT file parsing and generation
+
 # Testing (optional)
 pytest>=7.0.0
 pytest-mock>=3.10.0

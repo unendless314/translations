@@ -278,20 +278,58 @@ python3 tools/backfill_translations.py --config configs/<episode>.yaml --verbose
 **檢查條件**：`main.yaml` 中的 `translation.status` 大部分為 `completed`
 
 **建議操作**：
-- QA 檢查（待實作）：
-  ```bash
-  python3 tools/qa_checker.py --config configs/<episode>.yaml
-  ```
-- 匯出 SRT（待實作）：
-  ```bash
-  python3 tools/export_srt.py --config configs/<episode>.yaml
-  ```
-- 匯出 Markdown 報告（待實作）：
-  ```bash
-  python3 tools/export_markdown.py --config configs/<episode>.yaml
-  ```
 
-**說明**：驗證翻譯品質、術語一致性，並匯出最終成果。
+1. **匯出 SRT 字幕**：
+   ```bash
+   PYTHONPATH=. python3 tools/export_srt.py --config configs/<episode>.yaml [--no-speaker-hints] [--fail-on-missing] [--verbose]
+   ```
+
+   **說明**：將 `main.yaml` 中的翻譯結果轉換回 SRT 格式，輸出到 `output/<episode>/<episode>.zh-TW.srt`
+
+   **參數說明**：
+   - `--no-speaker-hints` - 不加入說話者提示標記（預設會在話輪切換時加入 `>>` 標記）
+   - `--fail-on-missing` - 遇到未完成翻譯時報錯並中止（預設會使用原文繼續）
+   - `--verbose` - 顯示詳細的處理進度與統計資訊
+
+   **輸出檔案**：
+   - `output/<episode>/<episode>.zh-TW.srt` - 完整翻譯字幕檔
+   - 日誌記錄在 `logs/<episode>/workflow.log`
+
+2. **分割過長字幕（可選後處理）**：
+   ```bash
+   python3 tools/split_srt.py -i output/<episode>/<episode>.zh-TW.srt \
+                               -o output/<episode>/<episode>.zh-TW.split.srt \
+                               [--max-chars 35] [--gap-ms 100] [--verbose]
+   ```
+
+   **說明**：智慧分割過長字幕段落，基於標點符號優先級（句號 > 分號/冒號 > 逗號 > 空格）重新分配時間碼
+
+   **參數說明**：
+   - `--max-chars` - 超過此字元數時進行分割（預設 35）
+   - `--min-chars` - 每部分最少字元數（預設 10）
+   - `--gap-ms` - 分割片段間的間隔毫秒數（預設 0）
+   - `--dry-run` - 預覽分割結果但不寫入檔案
+   - `--verbose` - 顯示每個分割的詳細資訊
+
+   **使用時機**：
+   - 翻譯後發現部分字幕過長影響閱讀體驗
+   - 需要調整字幕顯示時長以符合觀看習慣
+   - 作為匯出後的最終優化步驟
+
+   **輸出檔案**：
+   - `output/<episode>/<episode>.zh-TW.split.srt` - 分割處理後的字幕檔
+
+3. **QA 檢查（待實作）**：
+   ```bash
+   python3 tools/qa_checker.py --config configs/<episode>.yaml
+   ```
+
+3. **匯出 Markdown 報告（待實作）**：
+   ```bash
+   python3 tools/export_markdown.py --config configs/<episode>.yaml
+   ```
+
+**說明**：匯出最終 SRT 字幕，並驗證翻譯品質、術語一致性。
 
 ---
 

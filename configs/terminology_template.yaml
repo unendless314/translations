@@ -127,6 +127,12 @@ terms:
         notes: 常與「擴展意識」、「意識進化」、「集體意識」搭配
 
   # ===== D =====
+  - term: Dracos
+    senses:
+      - id: dracos_extraterrestrial
+        definition: 類蜥蜴人或天龍座外星族群
+        preferred_translation: 天龍座人
+
   - term: Dimension
     senses:
       - id: dimension_spiritual_plane
@@ -195,6 +201,12 @@ terms:
         notes: 常見於「提升頻率」、「頻率對齊」等新時代語境
 
   # ===== G =====
+  - term: Galactic Federation
+    senses:
+      - id: galactic_federation_council
+        definition: 星際文明的聯盟或議會
+        preferred_translation: 銀河聯邦
+
   - term: Guides
     senses:
       - id: guides_spiritual
@@ -313,6 +325,12 @@ terms:
       - id: phoenix_lights_event
         definition: 1997 年發生於鳳凰城的大規模 UFO 目擊事件
         preferred_translation: 鳳凰城光點
+
+  - term: Pleiadians
+    senses:
+      - id: pleiadians_extraterrestrial
+        definition: 來自昴宿星團的外星族群
+        preferred_translation: 昴宿星人
 
   - term: Physical
     senses:

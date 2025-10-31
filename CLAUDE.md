@@ -172,6 +172,10 @@ python3 tools/prepare_topic_drafts.py --config configs/S01-E12.yaml [--force] [-
 # Step 6: Backfill completed translations to main.yaml
 # Reads completed topic_XX.md files and updates main.yaml with translations
 python3 tools/backfill_translations.py --config configs/S01-E12.yaml [--dry-run] [--verbose]
+
+# Step 7: Export translated SRT subtitles
+# Converts main.yaml translations back to SRT format
+PYTHONPATH=. python3 tools/export_srt.py --config configs/S01-E12.yaml [--no-speaker-hints] [--fail-on-missing] [--verbose]
 ```
 
 ## Implementation Status
@@ -181,8 +185,11 @@ python3 tools/backfill_translations.py --config configs/S01-E12.yaml [--dry-run]
 - `tools/srt_to_main_yaml.py` - SRT parser with intelligent sentence merging ✅
 - `tools/main_yaml_to_json.py` - Export minimal segments for LLM analysis ✅
 - `tools/topics_analysis_driver.py` - LLM-based topic analysis ✅
-- `terminology_mapper.py` - Produce terminology_candidates.yaml with per-term occurrences ✅
+- `tools/terminology_mapper.py` - Produce terminology_candidates.yaml with per-term occurrences ✅
 - `tools/prepare_topic_drafts.py` - Generate topic-based translation work files (topic_XX.md) ✅
+- `tools/backfill_translations.py` - Read completed topic_XX.md files and update main.yaml with translations ✅
+- `tools/export_srt.py` - Convert main.yaml back to SRT format ✅
+- `tools/split_srt.py` - Split long SRT subtitles for better readability ✅
 
 **Shared Modules:**
 - `src/clients/base_client.py` - Abstract LLM client interface ✅
@@ -201,12 +208,10 @@ python3 tools/backfill_translations.py --config configs/S01-E12.yaml [--dry-run]
 - `CLAUDE.md` - This file ✅
 
 ### Planned Tools (see docs/TOOL_SPEC.md)
-1. `backfill_translations.py` - Read completed topic_XX.md files and update main.yaml with translations
-2. `terminology_classifier.py` - Assign occurrences to senses and write terminology.yaml
-3. `translation_driver.py` - Orchestrate batch translation with model I/O (optional automated approach)
-4. `qa_checker.py` - Validate translations, flag confidence/consistency issues
-5. `export_srt.py` - Convert main.yaml back to SRT format
-6. `export_markdown.py` - Generate human-readable translation reports
+1. `terminology_classifier.py` - Assign occurrences to senses and write terminology.yaml
+2. `translation_driver.py` - Orchestrate batch translation with model I/O (optional automated approach)
+3. `qa_checker.py` - Validate translations, flag confidence/consistency issues
+4. `export_markdown.py` - Generate human-readable translation reports
 
 ## Translation Quality Checks
 

@@ -127,6 +127,18 @@ PYTHONPATH=. python3 tools/export_srt.py --config configs/<episode>.yaml
 
 By default the file lands in `output/<episode>/`.
 
+For long subtitle segments (common in translated content), use the SRT splitter to improve readability:
+
+```bash
+python3 tools/split_srt.py \
+  --input output/<episode>/<episode>.zh-TW.srt \
+  --output output/<episode>/<episode>.zh-TW.split.srt \
+  --max-chars 35 \
+  --verbose
+```
+
+This tool intelligently splits subtitles at punctuation marks and redistributes timecodes proportionally.
+
 ### New Episode Checklist
 
 1. Create a folder `input/<episode>/` and place the raw SRT inside.
@@ -142,13 +154,16 @@ Every tool writes output directories automatically (`data/<episode>/...`, `logs/
 - **srt_to_main_yaml.py** — Parse SRT with intelligent sentence merging (auto-detects episode SRT)
 - **main_yaml_to_json.py** — Export minimal segments for LLM analysis (`--pretty` optional)
 - **topics_analysis_driver.py** — Generate topic structure using LLM
-- **export_srt.py** — Convert translated segments back to SRT
+- **terminology_mapper.py** — Auto-populate term occurrences from template and topics
+- **prepare_topic_drafts.py** — Generate topic-based translation work files (Markdown)
+- **backfill_translations.py** — Parse completed drafts and update main.yaml
+- **export_srt.py** — Convert translated segments back to SRT format
+- **split_srt.py** — Intelligent subtitle splitting for long segments (universal tool)
 - **OpenAI / Gemini clients** — Unified client abstraction for providers
 
 ### Planned 🚧
-- **terminology_mapper.py** — Auto-populate term occurrences
 - **terminology_classifier.py** — Assign occurrences to the correct sense before translation
-- **translation_driver.py** — Orchestrate batch translation
+- **translation_driver.py** — Orchestrate batch translation (optional automation)
 - **qa_checker.py** — Validate translation quality
 - **export_markdown.py** — Generate readable reports
 

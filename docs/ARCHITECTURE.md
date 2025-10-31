@@ -159,6 +159,7 @@
 │   ├── translation_driver.py       # 批次翻譯（可選自動化）
 │   ├── qa_checker.py               # 品質檢查（規劃中）
 │   ├── export_srt.py               # SRT 匯出
+│   ├── split_srt.py                # SRT 字幕智能切割（通用工具）
 │   └── export_markdown.py          # Markdown 匯出（規劃中）
 ├── .env.example          # API keys 範本
 ├── .gitignore
