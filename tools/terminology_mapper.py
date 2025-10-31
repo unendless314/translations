@@ -35,6 +35,44 @@ class SegmentInfo:
         return self.source_text.lower()
 
 
+@dataclass
+class TermOccurrence:
+    segment_id: int
+    sources: Set[str]
+    source_text: Optional[str] = None
+
+    def to_dict(self) -> Dict[str, Any]:
+        payload: Dict[str, Any] = {
+            "segment_id": self.segment_id,
+            "sources": sorted(self.sources),
+        }
+        if self.source_text is not None:
+            payload["source_text"] = self.source_text
+        return payload
+
+
+class TermAccumulator:
+    def __init__(self, display_name: str):
+        self.display_name = display_name
+        self.occurrences: "OrderedDict[int, TermOccurrence]" = OrderedDict()
+
+    def add(self, occurrence: TermOccurrence, include_text: bool) -> None:
+        existing = self.occurrences.get(occurrence.segment_id)
+        if existing:
+            existing.sources.update(occurrence.sources)
+            if include_text and occurrence.source_text:
+                if not existing.source_text:
+                    existing.source_text = occurrence.source_text
+        else:
+            self.occurrences[occurrence.segment_id] = occurrence
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "term": self.display_name,
+            "occurrences": [occ.to_dict() for occ in self.occurrences.values()],
+        }
+
+
 def setup_logging(verbose: bool) -> None:
     level = logging.DEBUG if verbose else logging.INFO
     logging.basicConfig(
@@ -478,39 +516,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-@dataclass
-class TermOccurrence:
-    segment_id: int
-    sources: Set[str]
-    source_text: Optional[str] = None
-
-    def to_dict(self) -> Dict[str, Any]:
-        payload: Dict[str, Any] = {
-            "segment_id": self.segment_id,
-            "sources": sorted(self.sources),
-        }
-        if self.source_text is not None:
-            payload["source_text"] = self.source_text
-        return payload
-
-
-class TermAccumulator:
-    def __init__(self, display_name: str):
-        self.display_name = display_name
-        self.occurrences: "OrderedDict[int, TermOccurrence]" = OrderedDict()
-
-    def add(self, occurrence: TermOccurrence, include_text: bool) -> None:
-        existing = self.occurrences.get(occurrence.segment_id)
-        if existing:
-            existing.sources.update(occurrence.sources)
-            if include_text and occurrence.source_text:
-                if not existing.source_text:
-                    existing.source_text = occurrence.source_text
-        else:
-            self.occurrences[occurrence.segment_id] = occurrence
-
-    def to_dict(self) -> Dict[str, Any]:
-        return {
-            "term": self.display_name,
-            "occurrences": [occ.to_dict() for occ in self.occurrences.values()],
-        }

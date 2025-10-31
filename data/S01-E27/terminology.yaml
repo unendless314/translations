@@ -1,0 +1,517 @@
+episode_id: S01-E27
+terms:
+  # ===== Template 中已有的術語 =====
+
+  - term: Being
+    senses:
+      - id: being_conscious
+        definition: 具意識或靈性的存在體（泛指人類、外星、靈體等有覺知的生命）
+        preferred_translation: 存有
+        segments: [149, 166, 267, 274]
+        notes: 強調主體性與意識狀態，視語境可譯為「生命體」、「存在」；外星語境可加註「外星存有」。本集多數 "being" 為動詞用法已排除。
+
+  - term: channel
+    senses:
+      - id: channel_spiritual_noun
+        definition: 通靈管道、靈媒，指具備接收非物質訊息能力的個體
+        preferred_translation: 通靈管道
+        segments: [32]
+        notes: 視語境可譯為「靈媒」、「通靈者」、「管道」
+
+  - term: Collective consciousness
+    senses:
+      - id: collective_consciousness_shared
+        definition: 群體或物種共享的意識場域與記憶庫
+        preferred_translation: 集體意識
+        segments: [97, 180, 227]
+        notes: 常與阿卡西記錄、形態場、共同潛意識等概念相關
+
+  - term: Consciousness
+    senses:
+      - id: consciousness_awareness
+        definition: 個體或集體的覺知狀態與意識層次
+        preferred_translation: 意識
+        segments: [38, 97, 180, 227, 280, 286, 395, 432, 437, 445]
+        notes: 常與「擴展意識」、「意識進化」、「集體意識」搭配
+
+  - term: Energy
+    senses:
+      - id: energy_spiritual
+        definition: 非物質層面的振動力量或生命力
+        preferred_translation: 能量
+        segments: [98]
+        notes: 靈性語境常指氣場、脈輪、療癒能量等
+
+  - term: Existence
+    senses:
+      - id: existence_state_of_being
+        definition: 存在本身或萬物實存的狀態
+        preferred_translation: 存在
+        segments: [39, 113, 224, 323, 382, 386, 452, 453, 454, 456, 457, 459, 461, 462, 469, 473, 475, 493]
+        notes: 靈性語境常與「存有」互換
+
+  - term: Guides
+    senses:
+      - id: guides_spiritual
+        definition: 在靈性層面提供指引的存在
+        preferred_translation: 指導靈
+        segments: [265, 266]
+        notes: Template 原定義，本集用於描述靈性指引
+
+  - term: Hybrid
+    senses:
+      - id: hybrid_starfamily
+        definition: 由人類與外星基因結合而成的族群
+        preferred_translation: 混種
+        segments: [33, 172, 174, 184, 193, 203]
+        notes: 星際家族脈絡常見
+
+  - term: Mind
+    senses:
+      - id: mind_intellect
+        definition: 理性思維、邏輯分析的認知功能
+        preferred_translation: 心智
+        segments: [20, 415, 419]
+        notes: 常與 Heart（心）對比，強調頭腦層面的運作
+
+  - term: Nature
+    senses:
+      - id: nature_essence
+        definition: 事物的核心特質或本來面貌
+        preferred_translation: 本質
+        segments: [19, 45, 321, 322, 323, 339, 341, 347, 450, 469, 487, 491, 507, 523, 524, 528, 529, 533, 537, 542, 548, 553]
+        notes: 本集常見於 "actual nature"（真實本質）語境
+
+  - term: Phoenix Lights
+    senses:
+      - id: phoenix_lights_event
+        definition: 1997 年發生於鳳凰城的大規模 UFO 目擊事件
+        preferred_translation: 鳳凰城光點
+        segments: [210]
+        notes: Template 原定義
+
+  - term: Physical
+    senses:
+      - id: physical_tangible
+        definition: 涉及物質層面或肉身的形容詞
+        preferred_translation: 物質的
+        segments: [36, 139, 140, 149, 150, 154, 249, 262, 264, 265, 266, 267, 268, 269, 270, 272, 275, 396]
+        notes: 視語境亦可譯為「有形的」、「肉身的」
+
+  - term: Reality
+    senses:
+      - id: reality_subjective
+        definition: 個體或集體創造的經驗世界與存在狀態
+        preferred_translation: 實相
+        segments: [99, 116, 280, 365, 386, 392, 500]
+        notes: 新時代語境常見於「創造你的實相」、「多重實相」、「平行實相」等概念
+
+  - term: Spirit Guides
+    senses:
+      - id: spirit_guides_multiple
+        definition: 提供保護或指引的一組靈性存在
+        preferred_translation: 指導靈
+        segments: [265, 266]
+        notes: Template 原定義
+
+  - term: UFO
+    senses:
+      - id: ufo_general
+        definition: 不明飛行物或外星飛行器的通稱
+        preferred_translation: 不明飛行物
+        segments: [97]
+        notes: 可視語境使用「UFO」或「不明飛行物」
+
+  - term: Vibration
+    senses:
+      - id: vibration_energetic
+        definition: 能量或意識的振動狀態，常與頻率互換使用
+        preferred_translation: 振動
+        segments: [38, 150, 339]
+        notes: 亦可譯為「振頻」、「波動」
+
+  - term: Yahyel
+    senses:
+      - id: yahyel_starbeing
+        definition: 新時代通訊中常見的混種外星族群
+        preferred_translation: 亞耶爾
+        segments: [4, 29, 53, 56, 166, 169, 177, 180, 195, 222, 337, 405]
+        notes: 原文發音 /ˈjɑːjeɪl/，部分文獻譯為「雅赫爾」或「雅葉」
+
+  - term: Yauaney
+    senses:
+      - id: yauaney_starbeing
+        definition: 被描述為與亞耶爾相關的外星族群
+        preferred_translation: 亞瓦尼
+        segments: [180, 181, 182, 183, 186, 187, 188, 189]
+        notes: 原文發音 /jaʊˈɑːneɪ/，音譯標準參考 Bashar 通訊資料
+
+  - term: Zeta Reticuli
+    senses:
+      - id: zeta_reticuli_race
+        definition: 來自網罟座ζ星系的灰人族群
+        preferred_translation: 網罟座
+        segments: [166]
+        notes: Template 原定義
+
+  # ===== 本集新增術語 =====
+
+  - term: timelines
+    senses:
+      - id: timelines_temporal
+        definition: 指過去、現在、未來等不同時間線或時間流
+        preferred_translation: 時間線
+        segments: [1, 46, 100]
+        notes: 本集專用術語，建議反饋到 template。常見於跨維度旅行或意識探索語境。
+
+  - term: Ishuwa
+    senses:
+      - id: ishuwa_individual
+        definition: 亞耶爾文明的代表個體，本集通靈對象
+        preferred_translation: 伊舒瓦
+        segments: [22, 27]
+        notes: 本集核心人物名稱，保留音譯
+
+  - term: Reuben Langdon
+    senses:
+      - id: reuben_langdon_host
+        definition: 本節目主持人
+        preferred_translation: 魯本·蘭登
+        segments: [7]
+        notes: 人名保留英文或音譯
+
+  - term: Avatar
+    senses:
+      - id: avatar_film
+        definition: 2009年詹姆斯·卡麥隆執導的科幻電影
+        preferred_translation: 阿凡達
+        segments: [9]
+        notes: 使用慣用中文片名
+
+  - term: hybridization
+    senses:
+      - id: hybridization_genetic
+        definition: 不同物種或文明間的基因混合過程
+        preferred_translation: 雜交
+        segments: [32]
+        notes: 本集專用術語，建議反饋到 template。星際語境可譯為「混種化」。
+
+  - term: DNA
+    senses:
+      - id: dna_genetic
+        definition: 去氧核糖核酸，生物遺傳訊息的載體
+        preferred_translation: DNA
+        segments: [32, 33]
+        notes: 保留英文縮寫
+
+  - term: unconditional love
+    senses:
+      - id: unconditional_love_spiritual
+        definition: 無條件的愛，不帶評判或期待的純粹愛
+        preferred_translation: 無條件的愛
+        segments: [19, 49]
+        notes: 本集專用術語，建議反饋到 template。新時代靈性核心概念。
+
+  - term: channeling mechanisms
+    senses:
+      - id: channeling_mechanisms_method
+        definition: 通靈所使用的技術或方法
+        preferred_translation: 通靈機制
+        segments: [60]
+        notes: 本集專用術語
+
+  - term: telepathic communication
+    senses:
+      - id: telepathic_communication_method
+        definition: 心靈感應式的意識交流
+        preferred_translation: 心電感應溝通
+        segments: [74, 85]
+        notes: 本集專用術語，建議反饋到 template
+
+  - term: behavioral communication
+    senses:
+      - id: behavioral_communication_method
+        definition: 透過行為模式傳達訊息的溝通方式
+        preferred_translation: 行為溝通
+        segments: [77, 79]
+        notes: 本集專用術語
+
+  - term: sign language
+    senses:
+      - id: sign_language_method
+        definition: 手語或肢體語言溝通系統
+        preferred_translation: 手語
+        segments: [77]
+        notes: 一般術語
+
+  - term: artificial constructs
+    senses:
+      - id: artificial_constructs_technology
+        definition: 人工製造的構造物或設備
+        preferred_translation: 人工構造物
+        segments: [94]
+        notes: 本集專用術語
+
+  - term: UFO ET presence
+    senses:
+      - id: ufo_et_presence_disclosure
+        definition: UFO 與外星生命存在的事實
+        preferred_translation: UFO 外星存在
+        segments: [97]
+        notes: 本集專用術語
+
+  - term: organic unfoldment
+    senses:
+      - id: organic_unfoldment_process
+        definition: 自然、有機的發展或展開過程
+        preferred_translation: 有機展開
+        segments: [116]
+        notes: 本集專用術語
+
+  - term: ET reality
+    senses:
+      - id: et_reality_disclosure
+        definition: 外星生命存在的現實
+        preferred_translation: 外星實相
+        segments: [116]
+        notes: 本集專用術語
+
+  - term: genetically alter
+    senses:
+      - id: genetically_alter_modify
+        definition: 基因改造或修改
+        preferred_translation: 基因改變
+        segments: [124, 125]
+        notes: 本集專用術語
+
+  - term: density level
+    senses:
+      - id: density_level_dimension
+        definition: 意識或存在的密度層級（靈性概念）
+        preferred_translation: 密度層級
+        segments: [147]
+        notes: 本集專用術語，建議反饋到 template。常見於 Law of One 靈性體系。
+
+  - term: mirroring
+    senses:
+      - id: mirroring_reflection
+        definition: 鏡像、反映或相似對應
+        preferred_translation: 鏡像
+        segments: [153, 154, 162]
+        notes: 本集專用術語
+
+  - term: Grays
+    senses:
+      - id: grays_extraterrestrial
+        definition: 通稱為灰人的外星族群
+        preferred_translation: 灰人
+        segments: [167]
+        notes: 本集專用術語，建議反饋到 template
+
+  - term: hybrid children
+    senses:
+      - id: hybrid_children_offspring
+        definition: 人類與外星族群的混種後代
+        preferred_translation: 混種孩童
+        segments: [174, 184, 193, 203]
+        notes: 本集專用術語
+
+  - term: Pleiadians
+    senses:
+      - id: pleiadians_extraterrestrial
+        definition: 來自昴宿星團的外星族群
+        preferred_translation: 昴宿星人
+        segments: [196]
+        notes: 本集專用術語，建議反饋到 template
+
+  - term: Dracos
+    senses:
+      - id: dracos_extraterrestrial
+        definition: 類蜥蜴人或天龍座外星族群
+        preferred_translation: 天龍人
+        segments: [197]
+        notes: 本集專用術語，建議反饋到 template
+
+  - term: Arcturians
+    senses:
+      - id: arcturians_extraterrestrial
+        definition: 來自大角星系的外星族群
+        preferred_translation: 大角星人
+        segments: [198]
+        notes: 與 template 中的 Arcturian 相同，使用複數形式
+
+  - term: Galactic family
+    senses:
+      - id: galactic_family_collective
+        definition: 星際層面的家族或族群連結
+        preferred_translation: 銀河家族
+        segments: [202]
+        notes: 本集專用術語，建議反饋到 template
+
+  - term: visual contact
+    senses:
+      - id: visual_contact_sighting
+        definition: 目視接觸或目擊
+        preferred_translation: 視覺接觸
+        segments: [216, 221]
+        notes: 本集專用術語
+
+  - term: super-conscious level
+    senses:
+      - id: superconscious_level_awareness
+        definition: 超意識層級，超越個人意識的覺知狀態
+        preferred_translation: 超意識層級
+        segments: [224]
+        notes: 本集專用術語，建議反饋到 template
+
+  - term: Pleiadian civilizations
+    senses:
+      - id: pleiadian_civilizations_collective
+        definition: 來自昴宿星團的多個文明
+        preferred_translation: 昴宿星文明
+        segments: [241]
+        notes: 本集專用術語
+
+  - term: family tree
+    senses:
+      - id: family_tree_genealogy
+        definition: 家族譜系或起源追溯
+        preferred_translation: 家族樹
+        segments: [256]
+        notes: 一般術語
+
+  - term: angelic realms
+    senses:
+      - id: angelic_realms_dimension
+        definition: 天使或高頻光之存有所在的維度
+        preferred_translation: 天使領域
+        segments: [261]
+        notes: 本集專用術語，建議反饋到 template
+
+  - term: non-physical beings
+    senses:
+      - id: nonphysical_beings_entities
+        definition: 非物質形式的意識存有
+        preferred_translation: 非物質存有
+        segments: [262]
+        notes: 本集專用術語
+
+  - term: consciousness soup
+    senses:
+      - id: consciousness_soup_metaphor
+        definition: 形容意識混合交融的隱喻
+        preferred_translation: 意識之湯
+        segments: [286]
+        notes: 本集專用術語
+
+  - term: Galactic Federation
+    senses:
+      - id: galactic_federation_council
+        definition: 星際文明的聯盟或議會
+        preferred_translation: 銀河聯邦
+        segments: [295]
+        notes: 本集專用術語，建議反饋到 template
+
+  - term: friction-free
+    senses:
+      - id: friction_free_effortless
+        definition: 無摩擦、無阻力的狀態
+        preferred_translation: 無摩擦
+        segments: [348]
+        notes: 本集專用術語
+
+  - term: illusory beliefs
+    senses:
+      - id: illusory_beliefs_false
+        definition: 虛幻或與真實本質不符的信念
+        preferred_translation: 虛幻信念
+        segments: [316, 350]
+        notes: 本集專用術語
+
+  - term: actual nature
+    senses:
+      - id: actual_nature_true_essence
+        definition: 真實本質或本來面目
+        preferred_translation: 真實本質
+        segments: [321, 322, 323, 339, 341, 347]
+        notes: 本集高頻術語，與 Nature 的 nature_essence 語義重疊但更強調「真實」
+
+  - term: four laws
+    senses:
+      - id: four_laws_principles
+        definition: 指存在或宇宙運作的四項法則
+        preferred_translation: 四項法則
+        segments: [367]
+        notes: 本集專用術語
+
+  - term: law of attraction
+    senses:
+      - id: law_of_attraction_manifestation
+        definition: 吸引力法則，同類相吸的宇宙法則
+        preferred_translation: 吸引力法則
+        segments: [389]
+        notes: 本集專用術語，建議反饋到 template
+
+  - term: artificial intelligence
+    senses:
+      - id: artificial_intelligence_technology
+        definition: 人工智慧或AI系統
+        preferred_translation: 人工智慧
+        segments: [395, 410, 430]
+        notes: 本集專用術語
+
+  - term: training wheels
+    senses:
+      - id: training_wheels_metaphor
+        definition: 輔助輪，隱喻學習階段的輔助工具
+        preferred_translation: 輔助輪
+        segments: [427, 430]
+        notes: 本集專用術語
+
+  - term: discordant belief
+    senses:
+      - id: discordant_belief_misaligned
+        definition: 不和諧或與真實本質不一致的信念
+        preferred_translation: 不和諧信念
+        segments: [543, 545]
+        notes: 本集專用術語
+
+  - term: conscious
+    senses:
+      - id: conscious_aware
+        definition: 有意識的、覺知的狀態
+        preferred_translation: 有意識的
+        segments: [567]
+        notes: 一般術語
+
+  - term: backseat
+    senses:
+      - id: backseat_metaphor
+        definition: 後座，隱喻被動或旁觀的狀態
+        preferred_translation: 後座
+        segments: [572]
+        notes: 本集專用術語，口語化比喻
+
+  - term: extraterrestrial civilizations
+    senses:
+      - id: extraterrestrial_civilizations_collective
+        definition: 外星文明的總稱
+        preferred_translation: 外星文明
+        segments: [2, 3]
+        notes: 本集專用術語
+
+  - term: Yahyel civilization
+    senses:
+      - id: yahyel_civilization_society
+        definition: 亞耶爾族群的文明社會
+        preferred_translation: 亞耶爾文明
+        segments: [4, 29, 53, 56]
+        notes: 本集專用術語
+
+  - term: Yahyel-human hybrids
+    senses:
+      - id: yahyel_human_hybrids_offspring
+        definition: 亞耶爾與人類的混種後代
+        preferred_translation: 亞耶爾-人類混種
+        segments: [177]
+        notes: 本集專用術語
