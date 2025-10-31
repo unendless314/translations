@@ -4,84 +4,15 @@ main.yaml to JSON converter
 Exports minimal segment data for LLM topic analysis
 """
 
-import json
 import argparse
+import json
 import logging
 import sys
 from pathlib import Path
 from typing import List, Dict, Any, Optional
-import yaml
 
 from src.config_loader import load_config
-
-
-class MainYAMLValidator:
-    """Validate main.yaml structure and integrity"""
-
-    @staticmethod
-    def load(yaml_path: Path) -> Dict[str, Any]:
-        """Load and validate main.yaml"""
-        if not yaml_path.exists():
-            raise FileNotFoundError(f"Main YAML file not found: {yaml_path}")
-
-        try:
-            with yaml_path.open('r', encoding='utf-8') as f:
-                data = yaml.safe_load(f)
-        except yaml.YAMLError as e:
-            raise ValueError(f"Failed to parse main.yaml: {e}")
-
-        # Validate required top-level fields
-        if 'episode_id' not in data:
-            raise ValueError("main.yaml missing required field: episode_id")
-
-        if 'segments' not in data:
-            raise ValueError("main.yaml missing required field: segments")
-
-        if not isinstance(data['segments'], list):
-            raise ValueError("main.yaml 'segments' must be a list")
-
-        if len(data['segments']) == 0:
-            logging.warning("main.yaml contains zero segments")
-
-        return data
-
-    @staticmethod
-    def validate_segments(segments: List[Dict[str, Any]]) -> List[str]:
-        """Validate segment integrity and return list of warnings
-
-        Checks:
-        - segment_id exists and is monotonically increasing
-        - Required fields present
-        - No gaps in segment_id sequence
-        """
-        warnings = []
-
-        if not segments:
-            return warnings
-
-        expected_id = 1
-        for idx, segment in enumerate(segments):
-            # Check required fields
-            if 'segment_id' not in segment:
-                warnings.append(f"Segment at index {idx} missing 'segment_id'")
-                continue
-
-            if 'source_text' not in segment:
-                warnings.append(f"Segment {segment.get('segment_id', idx)} missing 'source_text'")
-
-            if 'speaker_group' not in segment:
-                warnings.append(f"Segment {segment.get('segment_id', idx)} missing 'speaker_group'")
-
-            # Check segment_id sequence
-            segment_id = segment['segment_id']
-            if segment_id != expected_id:
-                warnings.append(
-                    f"segment_id not sequential: expected {expected_id}, got {segment_id} at index {idx}"
-                )
-
-            expected_id = segment_id + 1
-
-        return warnings
+from src.main_yaml import MainYAMLValidator
 
 
 class JSONConverter:

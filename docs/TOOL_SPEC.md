@@ -161,6 +161,46 @@ python tools/main_yaml_to_json.py --config configs/S01-E12.yaml
 
 ---
 
+## `export_srt.py`
+
+**目的**
+將 `main.yaml` 中的翻譯內容匯出為標準 SRT 字幕。支援保留 `>>` 說話者提示、偵測缺漏翻譯並回退至原文，必要時可以直接覆蓋原始字幕檔。
+
+**設定檔**（建議）
+```yaml
+# configs/S01-E12.yaml
+episode_id: S01-E12
+
+input:
+  main_yaml: data/S01-E12/main.yaml
+
+output:
+  srt: output/S01-E12/S01-E12.zh-TW.srt
+```
+
+**執行介面**
+```bash
+PYTHONPATH=. python3 tools/export_srt.py --config configs/S01-E12.yaml
+```
+- `--output output/S01-E12/custom.srt` 可覆寫輸出路徑。
+- `--no-speaker-hints` 停用 `>>` 提示；預設保留。
+- `--fail-on-missing` 若翻譯缺漏則立刻報錯（預設回退至 `source_text` 並警示）。
+- `--verbose` 顯示 debug 級別日誌。
+
+**輸出格式**
+- 符合 SRT 規範的檔案，段落順序沿用 `segment_id`。
+- 時間戳直接採用 `main.yaml` 的 `timecode.start` / `timecode.end`。
+- 若段落缺翻譯且未啟動 `--fail-on-missing`，會記錄警告並使用原文填充。
+
+**錯誤處理**
+- **main.yaml 缺失**：找不到檔案或結構有誤時即刻終止。
+- **時間戳／段落異常**：略過無效段落並寫入 DEBUG 日誌。
+- **翻譯缺漏**：預設記錄警告並自動回退，可透過 `--fail-on-missing` 改為終止。
+- **輸出寫入失敗**：檔案權限或目錄不存在會直接報錯（不會產生半成品）。
+- **覆蓋保護**：若輸出路徑指向 `main.yaml` 記錄的原始字幕檔，會拒絕執行並要求改用其他位置。
+
+---
+
 ## `topics_analysis_driver.py`
 
 **目的**

@@ -12,6 +12,7 @@ variables:
   prompts_root: prompts
   main_yaml_filename: main.yaml
   segments_json_filename: main_segments.json
+  translated_srt_filename: "{episode}.zh-TW.srt"
   topics_json_filename: topics.json
   log_filename: workflow.log
 
@@ -29,6 +30,7 @@ output:
   main_yaml: "{data_root}/{episode}/{main_yaml_filename}"
   json: "{data_root}/{episode}/{segments_json_filename}"
   topics_json: "{data_root}/{episode}/{topics_json_filename}"
+  srt: "{output_root}/{episode}/{translated_srt_filename}"
   drafts_dir: "{data_root}/{episode}/drafts"
 
 terminology:
