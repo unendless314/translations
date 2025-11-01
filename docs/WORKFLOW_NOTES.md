@@ -146,6 +146,18 @@
    - 填寫 `text`（翻譯內容）、`confidence`（high/medium/low）、`notes`（可選）
    - 人工或 Claude Code 可在此階段審核、diff、或套上自動驗證
 
+4.5. **QA 檢查 - 標點符號修正（推薦）**
+   ```bash
+   # 先預覽將修改的內容
+   python3 tools/fix_chinese_punctuation.py --config configs/S01-E12.yaml --dry-run --verbose
+
+   # 確認無誤後執行修正
+   python3 tools/fix_chinese_punctuation.py --config configs/S01-E12.yaml --verbose
+   ```
+   - LLM 翻譯常見問題：中文文本混用英文逗號 (`,` 而非 `，`)
+   - 此工具自動修正 `"text"` 欄位中的標點符號
+   - 在回填到 `main.yaml` 之前執行，避免將錯誤標點寫入主檔案
+
 5. **解析並回填 `main.yaml`**
    - 執行 `backfill_translations.py` 驗證並解析草稿檔（schema 正確、段落存在、欄位格式）
    - 將資料套用到 `main.yaml` 的對應段落：
@@ -244,12 +256,44 @@ translation:
 
 ---
 
-## QA 與輸出（待定）
+## QA 與輸出
 
-- QA 工具可掃描 `translation.confidence`、術語一致性、字串長度比等指標，標記 `needs_review`。
-- 完成後由 exporter 根據 `segment_id` 與 `timecode` 回輸標準 SRT，或轉為 Markdown/CSV 給人工檢閱。
+### QA 策略：增量式自動化
 
-> QA 與 exporter 的詳規會在實作時補充。
+專案採用**增量式 QA 策略**，而非一次性開發完整 QA 系統：
+
+1. **人工 QA 為主**
+   - 大部分品質檢查仍依賴人工審核
+   - 記錄重複出現的問題模式
+
+2. **針對性工具開發**
+   - 當特定問題重複出現（如標點符號錯誤）
+   - 確認為系統性問題後，開發專用工具
+   - 保持工具獨立性與單一職責
+
+3. **已實現的 QA 工具**
+   - ✅ `fix_chinese_punctuation.py` - 修正中文標點符號
+     - 問題來源：LLM 翻譯時混用英文逗號
+     - 解決方案：自動替換 `"text"` 欄位中的 `,` → `，`
+     - 使用時機：翻譯完成後、回填 `main.yaml` 之前
+
+4. **潛在 QA 檢查項目**（待觀察是否需要自動化）
+   - 翻譯完整性檢查（是否有遺漏段落）
+   - 字數比例異常檢測（中英文長度差異過大）
+   - 術語一致性驗證（同一 topic 內術語使用）
+   - `confidence` 與 `status` 欄位完整性
+   - 時間軸連續性檢查
+
+5. **未來整合計畫**
+   - 當累積 3-5 個成熟的 QA 工具後
+   - 考慮開發 `qa_checker.py` 作為統一入口
+   - 保持各工具仍可獨立執行
+
+### 匯出工具
+
+- ✅ `export_srt.py` - 將翻譯結果匯出為標準 SRT 格式
+- ✅ `split_srt.py` - 智能切割過長字幕段落
+- 🚧 `export_markdown.py` - 生成人工檢閱用的 Markdown 報告（規劃中）
 
 ---
 
@@ -297,6 +341,11 @@ translation:
 - `main_yaml_to_json.py` - 匯出精簡 JSON 供 LLM 分析
 - `topics_analysis_driver.py` - 調用 LLM 生成 topics.json（支援 Gemini、OpenAI 等多模型）
 - `terminology_mapper.py` - 根據模板與 topics.json 產生 terminology_candidates.yaml
+- `prepare_topic_drafts.py` - 生成 topic 翻譯工作檔（Markdown 格式）
+- `backfill_translations.py` - 解析工作檔並回填 main.yaml
+- `fix_chinese_punctuation.py` - QA 工具：修正中文標點符號
+- `export_srt.py` - 將翻譯結果匯出為標準 SRT 格式
+- `split_srt.py` - 智能切割過長字幕段落
 
 ### 可選工具（目前允許人工處理）⚙️
 - `terminology_classifier.py` - 輔助將候選術語分類至各 sense
@@ -306,9 +355,11 @@ translation:
   - **現行方案**：透過 Claude Code 互動式翻譯（可靈活調整 prompt 與風格）
   - **自動化方案**：流程穩定後可將 prompt 模板固化為工具腳本
 
-### 待實作 🚧
-- `qa_checker.py` - 翻譯品質檢查與一致性驗證
-- `export_srt.py` - 將翻譯結果匯出為標準 SRT 格式
+### 規劃中 🚧
+- `qa_checker.py` - 統一 QA 工具執行器
+  - **定位**：整合多個專用 QA 工具的統一入口
+  - **實作時機**：當累積 3-5 個成熟的獨立 QA 工具後
+  - **現行方案**：使用獨立 QA 工具（如 `fix_chinese_punctuation.py`）
 - `export_markdown.py` - 生成人工檢閱用的 Markdown 報告
 
 ### 實作建議

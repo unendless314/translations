@@ -7,6 +7,7 @@
 
 import re
 import sys
+import yaml
 from pathlib import Path
 
 
@@ -70,8 +71,12 @@ def main():
         description='修正翻譯檔案中的中文標點符號'
     )
     parser.add_argument(
+        '--config',
+        help='Episode 配置檔案（如 configs/S01-E27.yaml），自動處理該 episode 的所有 drafts'
+    )
+    parser.add_argument(
         'files',
-        nargs='+',
+        nargs='*',
         help='要處理的檔案路徑（支援 glob pattern，如 topic_*.md）'
     )
     parser.add_argument(
@@ -89,14 +94,50 @@ def main():
 
     # 收集所有檔案
     files_to_process = []
-    for pattern in args.files:
-        path = Path(pattern)
-        if path.is_file():
-            files_to_process.append(path)
-        else:
-            # 支援 glob pattern
-            parent = path.parent if path.parent.exists() else Path('.')
-            files_to_process.extend(parent.glob(path.name))
+
+    if args.config:
+        # 從配置檔讀取 episode_id
+        config_path = Path(args.config)
+        if not config_path.exists():
+            print(f"錯誤：找不到配置檔案 {args.config}")
+            sys.exit(1)
+
+        with open(config_path, 'r', encoding='utf-8') as f:
+            config = yaml.safe_load(f)
+
+        episode_id = config.get('episode_id')
+        if not episode_id:
+            print(f"錯誤：配置檔案中未找到 episode_id")
+            sys.exit(1)
+
+        # 自動定位到 drafts 目錄
+        drafts_dir = Path('data') / episode_id / 'drafts'
+        if not drafts_dir.exists():
+            print(f"錯誤：找不到目錄 {drafts_dir}")
+            sys.exit(1)
+
+        # 收集所有 topic_*.md 檔案
+        files_to_process = sorted(drafts_dir.glob('topic_*.md'))
+
+        if not files_to_process:
+            print(f"錯誤：在 {drafts_dir} 中找不到 topic_*.md 檔案")
+            sys.exit(1)
+
+    elif args.files:
+        # 手動指定檔案模式
+        for pattern in args.files:
+            path = Path(pattern)
+            if path.is_file():
+                files_to_process.append(path)
+            else:
+                # 支援 glob pattern
+                parent = path.parent if path.parent.exists() else Path('.')
+                files_to_process.extend(parent.glob(path.name))
+
+    else:
+        print("錯誤：請提供 --config 參數或指定要處理的檔案")
+        parser.print_help()
+        sys.exit(1)
 
     if not files_to_process:
         print("錯誤：找不到符合的檔案")

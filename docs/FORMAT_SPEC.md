@@ -11,16 +11,6 @@
 | `guidelines.md` | 翻譯風格指引 | 當作 system prompt 載入 |
 | `drafts/*.md` | 翻譯工作檔 | 每個 topic 的翻譯情境檔（Markdown） |
 
-**目錄慣例**
-
-```
-input/<episode>/                  # 原始 SRT（可能多語系）
-data/<episode>/                   # YAML/Markdown 來源資料
-output/<episode>/                 # 匯出成果（SRT/MD/報表）
-```
-
-例如：`configs/S01-E12.yaml` 可對應 `input/S01-E12/…`、`data/S01-E12/…`、`output/S01-E12/…` 等路徑。
-
 ---
 
 ## `main.yaml`
@@ -260,34 +250,9 @@ terms:
   - `notes`：**可選**，可以是空字串或省略
 - `backfill_translations.py` 將解析此檔案並更新 `main.yaml`
 
-**驗證與錯誤處理**
-- JSON 格式錯誤 → 標記該段為 `needs_review`
-- `text` 缺失或空字串 → 標記為 `needs_review`
-- `confidence` 缺失或不在枚舉值內 → 標記為 `needs_review`
-- segment_id 對不上 `main.yaml` → 報錯並跳過該行
-
-**工作流程**
-1. 執行 `prepare_topic_drafts.py` 從 `main_segments.json` + `topics.json` 生成空框架 Markdown 檔
-   - 自動插入 `## Speaker Group N` 標題標記話輪切換
-2. 人工或 LLM 在箭頭右邊填入翻譯（配合 `guidelines.md` + `terminology.yaml` + `topics.json` 作為 context）
-   - Speaker Group 標題幫助理解對話脈絡
-3. 執行 `backfill_translations.py` 解析 `.md` 並寫回 `main.yaml`：
-   - 追蹤 Speaker Group 標題，可選驗證與 `main.yaml` 的一致性
-   - 驗證通過 → `translation.status: completed`
-   - 驗證失敗 → `translation.status: needs_review`
-   - 注意：`speaker_group` 不需要回填，`main.yaml` 已有正確值
-4. 成功回填後可封存或刪除 `.md`，避免重複套用
-
 **Speaker Group 說明**
 - `speaker_group` 是**話輪計數器**，不代表實際說話者身份
 - 編號遞增表示偵測到話輪切換（SRT 中的 `>>` 標記）
 - 可能出現大編號（如 `## Speaker Group 127`），因為無法識別說話者，只能累加計數
 - 實際對話者可能只有 2-3 人，但話輪切換可能上百次
 
-如需保留進度分段，可自行將 `.md` 拷貝為階段備份，或在生成時指定不同輸出檔名。
-
----
-
-## Loader 建議
-
-使用 `configs/default.yaml` 維護共用路徑模板（`data/{episode}/main.yaml` 等），每個 episode 只需在 `configs/<episode>.yaml` 指定 `episode_id`；需要自訂時再覆寫個別欄位（例如有多個 `.srt` 檔時設定 `input.srt`）。此做法兼顧「零設定即可啟動」與「個案調整」。

@@ -4,13 +4,13 @@
 → {"text": "我已經探索並穿越了你們所理解的「時間線」——以你們對過去、現在、未來的感知方式來說，這已經持續了相當漫長的時間。", "confidence": "medium", "notes": "原文句法略有不完整，已依語境修正使譯文通順"}
 
 2. And in doing this type of exploration, it allows me to experience extraterrestrial civilizations from a variety of choices in terms of who they choose to be as individuals, as a society, This, then, for me is a great joy to explore, experience, and learn from other civilizations, other extraterrestrial beings, other worlds, other ways of life, other forms of experiencing the infinite, that we all are, unconditional love, that we all are.
-→ {"text": "在進行這類探索的過程中,我得以體驗各種外星文明——他們作為個體、作為社會所選擇成為的樣貌。對我而言,探索、體驗並學習其他文明、其他外星存有、其他世界、其他生活方式,以及體驗我們共同本質的不同形式——也就是那無條件的愛,是莫大的喜悅。", "confidence": "high", "notes": ""}
+→ {"text": "在進行這類探索的過程中，我得以體驗各種外星文明——他們作為個體、作為社會所選擇成為的樣貌。對我而言，探索、體驗並學習其他文明、其他外星存有、其他世界、其他生活方式，以及體驗我們共同本質的不同形式——也就是那無條件的愛，是莫大的喜悅。", "confidence": "high", "notes": ""}
 
 3. I, in doing this, have developed the type of translation ability that affords me the ability then to speak with a variety of extraterrestrial civilizations in a language they can understand.
-→ {"text": "在這個過程中,我發展出一種翻譯能力,使我能夠以各種外星文明都能理解的語言與他們交流。", "confidence": "high", "notes": ""}
+→ {"text": "在這個過程中，我發展出一種翻譯能力，使我能夠以各種外星文明都能理解的語言與他們交流。", "confidence": "high", "notes": ""}
 
 4. These are some, then, of the activities and functions for me that are fulfilling, that are a part of who I enjoy experiencing and sharing with others in other worlds and in my own Yahyel civilization.
-→ {"text": "這些便是對我而言充滿意義的活動與職能,是我樂於體驗並與其他世界以及我自己的亞耶爾文明分享的一部分。", "confidence": "high", "notes": ""}
+→ {"text": "這些便是對我而言充滿意義的活動與職能，是我樂於體驗並與其他世界以及我自己的亞耶爾文明分享的一部分。", "confidence": "high", "notes": ""}
 
 5. Ever wonder if there's intelligent life elsewhere in the universe?
 → {"text": "你曾經好奇過宇宙中其他地方是否存在智慧生命嗎？", "confidence": "high", "notes": ""}

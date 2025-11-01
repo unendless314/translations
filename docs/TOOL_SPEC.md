@@ -204,13 +204,8 @@ PYTHONPATH=. python3 tools/export_srt.py --config configs/S01-E12.yaml
 ## `split_srt.py`
 
 **目的**
-針對已匯出的 SRT 字幕檔進行後處理，智能切割過長的字幕段落，提升觀看體驗。這是一個**通用工具**，可處理任何來源的 SRT 檔案（不限於本專案產出）。
+針對已匯出的 SRT 字幕檔進行後處理，智能切割過長的字幕段落，提升觀看體驗。這是一個**通用工具**，可處理任何來源的 SRT 檔案（不限於本專案產出），只切割超過閾值的段落，保持原始時間軸邊界，按標點符號優先級與字數比例分配時間。
 
-**設計原則**
-- **獨立工具**：不依賴專案配置檔，可獨立使用
-- **通用性**：支援任何標準 SRT 格式字幕
-- **保守切割**：只切割超過閾值的段落，保持原始時間軸邊界
-- **智能分配**：按標點符號優先級與字數比例分配時間
 
 **執行介面**
 ```bash
@@ -237,10 +232,6 @@ python3 tools/split_srt.py \
 - `--verbose`：顯示詳細切割日誌（切割點、時間分配等）
 - `--dry-run`：僅顯示將被切割的段落，不寫入檔案
 
-**檔案覆蓋行為**
-- **預設行為**：直接覆蓋已存在的輸出檔案（無需額外參數）
-- **安全檢查**：若 `--output` 與 `--input` 指向同一檔案，會拒絕執行並提示修改輸出路徑
-- **使用場景**：支援反覆調整 `--max-chars` 參數並立即查看效果（如上傳 YouTube 測試）
 
 **核心流程**
 
@@ -350,20 +341,6 @@ python3 tools/split_srt.py \
   python3 tools/split_srt.py -i raw.srt -o test.srt --max-chars 30
   # 4. 重新上傳測試（test.srt 已自動更新）
   ```
-
-**與專案整合**
-雖然此工具可獨立使用，但在本專案的典型工作流程中：
-```bash
-# Step 1: 匯出翻譯為 SRT
-python3 tools/export_srt.py --config configs/S01-E12.yaml
-
-# Step 2: 切割過長字幕
-python3 tools/split_srt.py \
-  --input output/S01-E12/S01-E12.zh-TW.srt \
-  --output output/S01-E12/S01-E12.zh-TW.split.srt \
-  --max-chars 35 \
-  --verbose
-```
 
 ---
 
@@ -491,6 +468,97 @@ python3 tools/topics_analysis_driver.py --config configs/S01-E12.yaml [--dry-run
   - 找不到模板或 `main.yaml` 時立即終止；`topics.json` 不存在時僅記錄資訊訊息。
   - 模板 schema 不符時報錯並顯示錯誤欄位。
   - 若沒有任何術語被保留（常見於模型尚未跑完 topics），工具會警告並可選擇輸出空檔案或直接中止。
+
+---
+
+## `fix_chinese_punctuation.py`
+
+**目的**
+自動修正翻譯文本中的英文標點符號為中文標點符號。LLM 翻譯時常見問題是在中文翻譯中混用英文逗號（`,`）而非中文逗號（`，`），此工具提供快速批次修正功能。
+
+**設計定位**
+- **QA 工具**：屬於品質保證流程的一環
+- **獨立工具**：可單獨使用，也可作為未來 `qa_checker.py` 的組成部分
+- **增量開發**：根據實際翻譯過程中發現的重複性問題開發
+
+**設定檔**
+```yaml
+# configs/S01-E12.yaml
+episode_id: S01-E12
+# 其他配置由 default.yaml 繼承
+```
+
+**執行介面**
+```bash
+# 方式 1：使用 episode 配置（推薦）
+python3 tools/fix_chinese_punctuation.py --config configs/S01-E12.yaml [--dry-run] [--verbose]
+
+# 方式 2：手動指定檔案（保留彈性）
+python3 tools/fix_chinese_punctuation.py data/S01-E12/drafts/topic_*.md [--dry-run] [--verbose]
+python3 tools/fix_chinese_punctuation.py data/S01-E12/drafts/topic_01.md [--verbose]
+```
+
+**參數說明**
+- `--config` - Episode 配置檔案，自動處理該 episode 的所有 `drafts/topic_*.md` 檔案
+- `files` - 手動指定檔案路徑（支援 glob pattern），與 `--config` 二選一
+- `--dry-run` - 只檢查不修改，預覽將執行的改變
+- `--verbose` - 顯示詳細處理資訊（修改行數、逗號數量等）
+
+**核心邏輯**
+1. **精確範圍修正**
+   - 只修正 `"text": "..."` 欄位內的標點符號
+   - 不影響 JSON 語法本身的逗號
+   - 不修正 `"notes"` 欄位（給校稿人員看，不會出現在字幕中）
+
+2. **標點替換規則**
+   - 英文逗號 `,` → 中文逗號 `，`
+   - 未來可擴展：`:`→`：`、`;`→`；`、`!`→`！`、`?`→`？`（視需求）
+
+3. **處理流程**
+   - 逐行讀取 Markdown 檔案
+   - 使用正則表達式匹配 `"text": "([^"]*)"`
+   - 在匹配內容中執行替換
+   - 保持原檔案格式完整
+
+**錯誤處理**
+- `--config` 模式：
+  - 配置檔不存在 → 報錯並終止
+  - `episode_id` 缺失 → 報錯並終止
+  - `drafts/` 目錄不存在 → 報錯並終止
+  - 找不到 `topic_*.md` 檔案 → 報錯並終止
+- 手動指定模式：
+  - 找不到符合 pattern 的檔案 → 報錯並終止
+- 通用：
+  - 檔案為空或格式錯誤 → 跳過並警告
+  - 無需修改的檔案 → 顯示為 `(無需修改)` 狀態
+
+**輸出範例**
+```bash
+$ python3 tools/fix_chinese_punctuation.py --config configs/S01-E27.yaml --verbose
+開始處理 9 個檔案...
+
+✓ topic_01.md          (已修改)
+  - 修改行數: 3
+  - 修正逗號: 7
+○ topic_02.md          (無需修改)
+✓ topic_07.md          (已修改)
+  - 修改行數: 46
+  - 修正逗號: 91
+
+==================================================
+總結：
+  處理檔案數: 9
+  已修改檔案數: 2
+  已修改行數: 49
+  已修正逗號數: 98
+```
+
+**設計理念**
+此工具體現了專案的**增量 QA 策略**：
+1. 透過人工 QA 發現重複出現的問題
+2. 確認是系統性問題後開發專用工具
+3. 保持工具獨立性與單一職責
+4. 未來可整合到統一的 `qa_checker.py` 中
 
 ---
 
@@ -722,5 +790,3 @@ python tools/backfill_translations.py --config configs/S01-E12.yaml [--dry-run] 
   - Needs review: 5 segments (validation failed)
   - Skipped: 2 segments (JSON parse error)
   ```
-
-> 搭配 `prepare_topic_drafts.py` 使用，形成完整的翻譯工作流程。

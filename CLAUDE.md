@@ -169,6 +169,13 @@ python3 tools/prepare_topic_drafts.py --config configs/S01-E12.yaml [--force] [-
 #   - data/<episode>/terminology.yaml (terminology reference)
 #   - data/<episode>/topics.json (topic summaries and context)
 
+# Step 5.5: QA - Fix Chinese punctuation (recommended after translation)
+# Automatically corrects English punctuation to Chinese in translation text fields
+# LLM translations often mix English commas (,) instead of Chinese (，)
+python3 tools/fix_chinese_punctuation.py --config configs/S01-E12.yaml [--dry-run] [--verbose]
+# Alternative: manually specify files
+# python3 tools/fix_chinese_punctuation.py data/S01-E12/drafts/topic_*.md [--dry-run] [--verbose]
+
 # Step 6: Backfill completed translations to main.yaml
 # Reads completed topic_XX.md files and updates main.yaml with translations
 python3 tools/backfill_translations.py --config configs/S01-E12.yaml [--dry-run] [--verbose]
@@ -188,6 +195,7 @@ PYTHONPATH=. python3 tools/export_srt.py --config configs/S01-E12.yaml [--no-spe
 - `tools/terminology_mapper.py` - Produce terminology_candidates.yaml with per-term occurrences ✅
 - `tools/prepare_topic_drafts.py` - Generate topic-based translation work files (topic_XX.md) ✅
 - `tools/backfill_translations.py` - Read completed topic_XX.md files and update main.yaml with translations ✅
+- `tools/fix_chinese_punctuation.py` - QA tool to fix English punctuation in Chinese translations ✅
 - `tools/export_srt.py` - Convert main.yaml back to SRT format ✅
 - `tools/split_srt.py` - Split long SRT subtitles for better readability ✅
 
@@ -210,18 +218,23 @@ PYTHONPATH=. python3 tools/export_srt.py --config configs/S01-E12.yaml [--no-spe
 ### Planned Tools (see docs/TOOL_SPEC.md)
 1. `terminology_classifier.py` - Assign occurrences to senses and write terminology.yaml
 2. `translation_driver.py` - Orchestrate batch translation with model I/O (optional automated approach)
-3. `qa_checker.py` - Validate translations, flag confidence/consistency issues
+3. `qa_checker.py` - Unified QA tool runner (integrates multiple specialized QA tools when mature enough)
 4. `export_markdown.py` - Generate human-readable translation reports
+
+**Note on QA Strategy:** The project follows an incremental approach to QA automation. Individual QA tools (like `fix_chinese_punctuation.py`) are developed as specific, repeating issues are identified through manual QA across multiple episodes. Once 3-5 specialized QA tools are established, they may be integrated into a unified `qa_checker.py` runner.
 
 ## Translation Quality Checks
 
 QA tools should validate:
+- **Punctuation consistency** - Chinese translations must use Chinese punctuation (，not ,)
 - Terminology consistency across segments
 - Translation confidence scores
 - Text length ratios (source vs. translation)
 - Timecode integrity
 - Status completeness (all segments translated)
 - Segments with `metadata.truncated: true` should be flagged as `needs_review`
+
+**Note:** LLM translations commonly mix English punctuation in Chinese text. Always run `fix_chinese_punctuation.py` after translation (Step 5.5) before backfilling to main.yaml.
 
 ## Important Notes
 

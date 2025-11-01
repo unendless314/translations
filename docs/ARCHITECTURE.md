@@ -155,9 +155,10 @@
 │   ├── terminology_mapper.py       # 術語候選生成
 │   ├── prepare_topic_drafts.py     # 生成 topic 翻譯工作檔（Markdown）
 │   ├── backfill_translations.py    # 解析工作檔並回填 main.yaml
+│   ├── fix_chinese_punctuation.py  # QA 工具：修正中文標點符號
 │   ├── terminology_classifier.py   # 術語分類（規劃中）
 │   ├── translation_driver.py       # 批次翻譯（可選自動化）
-│   ├── qa_checker.py               # 品質檢查（規劃中）
+│   ├── qa_checker.py               # 統一 QA 執行器（規劃中）
 │   ├── export_srt.py               # SRT 匯出
 │   ├── split_srt.py                # SRT 字幕智能切割（通用工具）
 │   └── export_markdown.py          # Markdown 匯出（規劃中）
@@ -288,23 +289,34 @@ ANTHROPIC_API_KEY=your_key_here
 
 ## 未來擴展方向
 
-- ✅ SRT 解析與句段合併（`srt_to_main_yaml.py`）
-- ✅ JSON 段落匯出（`main_yaml_to_json.py`）
-- ✅ 主題分析（`topics_analysis_driver.py`）
-- ✅ 術語候選生成（`terminology_mapper.py`）
-- 🆕 Topic Markdown 工作檔生成（`prepare_topic_drafts.py` - 待實作）
-- 🆕 翻譯結果回填（`backfill_translations.py` - 待實作）
-- ⚙️ 術語分類（現行：人工處理或 Claude Code 協助）
-- ⚙️ 批次翻譯（現行：Claude Code 互動式翻譯）
+### 已完成 ✅
+- SRT 解析與句段合併（`srt_to_main_yaml.py`）
+- JSON 段落匯出（`main_yaml_to_json.py`）
+- 主題分析（`topics_analysis_driver.py`）
+- 術語候選生成（`terminology_mapper.py`）
+- Topic Markdown 工作檔生成（`prepare_topic_drafts.py`）
+- 翻譯結果回填（`backfill_translations.py`）
+- QA 工具：標點符號修正（`fix_chinese_punctuation.py`）
+- SRT 匯出（`export_srt.py`）
+- SRT 字幕切割（`split_srt.py`）
+
+### 可選自動化 ⚙️
+- 術語分類（現行：人工處理或 Claude Code 協助）
+- 批次翻譯（現行：Claude Code 互動式翻譯）
+
+### QA 工具開發策略
+專案採用**增量式 QA 策略**：
+1. **已實現**：`fix_chinese_punctuation.py` - 修正中文標點符號問題
+   - 基於實際翻譯經驗發現的重複性問題
+   - 獨立工具，可單獨執行
+2. **待觀察**：記錄其他重複出現的 QA 問題
+   - 翻譯完整性、字數異常、術語一致性等
+3. **未來整合**：當累積 3-5 個成熟 QA 工具後
+   - 開發 `qa_checker.py` 作為統一執行器
+   - 保持各工具仍可獨立使用
 
 ### 短期（視需求開發）
-- `qa_checker.py` - 翻譯品質檢查
-  - 驗證術語一致性
-  - 檢查 confidence 與 status
-  - 標記需人工審查的段落
-- `export_srt.py` / `export_markdown.py` - 匯出工具
-  - 將 main.yaml 轉回 SRT 格式
-  - 生成人工檢閱用報告
+- `export_markdown.py` - 生成人工檢閱用的 Markdown 報告
 
 ### 中期（流程穩定後）
 - **可選自動化工具**
