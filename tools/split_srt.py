@@ -242,6 +242,34 @@ def process_srt(
         logging.info(f"Skipped {skip_count} segments (no safe split point)")
     logging.info(f"Total segments: {len(subs)} -> {len(new_subs)} (+{len(new_subs) - len(subs)})")
 
+    # Post-processing statistics: check remaining long segments
+    remaining_long = []
+    for sub in new_subs:
+        text_len = len(sub.text)
+        if text_len > max_chars:
+            remaining_long.append((sub.index, text_len))
+
+    if remaining_long:
+        max_length = max(remaining_long, key=lambda x: x[1])[1]
+        logging.warning("")
+        logging.warning("=" * 70)
+        logging.warning(f"⚠️  POST-SPLIT ANALYSIS")
+        logging.warning(f"   Still {len(remaining_long)} segments exceed {max_chars} chars")
+        logging.warning(f"   Longest segment: {max_length} chars")
+        logging.warning("")
+        logging.warning(f"💡 RECOMMENDATION: Run the tool again on the output file")
+        logging.warning(f"   to further split these remaining long segments.")
+        logging.warning("")
+        logging.warning(f"   Example:")
+        logging.warning(f"   python3 tools/split_srt.py \\")
+        logging.warning(f"     -i <output_file> \\")
+        logging.warning(f"     -o <output_file_v2> \\")
+        logging.warning(f"     --max-chars {max_chars}")
+        logging.warning("=" * 70)
+    else:
+        logging.info("")
+        logging.info("✓ All segments are within the character limit!")
+
     return new_subs
 
 

@@ -183,6 +183,31 @@ python3 tools/backfill_translations.py --config configs/S01-E12.yaml [--dry-run]
 # Step 7: Export translated SRT subtitles
 # Converts main.yaml translations back to SRT format
 PYTHONPATH=. python3 tools/export_srt.py --config configs/S01-E12.yaml [--no-speaker-hints] [--fail-on-missing] [--verbose]
+
+# Step 8: Split long subtitle segments (optional but recommended)
+# Intelligently splits long segments at punctuation marks for better readability
+# IMPORTANT: This tool splits each segment ONCE per run. For very long segments (>100 chars),
+# you may need to run it 2-3 times to achieve the target length.
+# The tool will automatically report remaining long segments and suggest re-running if needed.
+
+python3 tools/split_srt.py \
+  -i output/S01-E12/S01-E12.zh-TW.srt \
+  -o output/S01-E12/S01-E12.zh-TW.split.srt \
+  --max-chars 35 \
+  [--min-chars 10] \
+  [--gap-ms 0] \
+  [--verbose]
+
+# If the tool reports remaining long segments, run it again on the output:
+# python3 tools/split_srt.py \
+#   -i output/S01-E12/S01-E12.zh-TW.split.srt \
+#   -o output/S01-E12/S01-E12.zh-TW.split2.srt \
+#   --max-chars 35
+
+# Typical convergence:
+# - Run 1: 115 long segments (max 140 chars) → 51 long segments (max 71 chars)
+# - Run 2: 51 long segments → 9 long segments (max 47 chars)
+# - Run 3: 9 long segments → ~5 long segments (max 44 chars, usually acceptable)
 ```
 
 ## Implementation Status
