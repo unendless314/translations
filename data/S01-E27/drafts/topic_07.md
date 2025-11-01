@@ -13,16 +13,16 @@
 → {"text": "他們可以被視為天使存有。", "confidence": "high", "notes": ""}
 
 264. There are extraterrestrials who are in the physical form who support Earth Humans.
-→ {"text": "也有一些外星存有以物質形式支持著地球人類。", "confidence": "high", "notes": ""}
+→ {"text": "也有一些外星存有以物質形態支持著地球人類。", "confidence": "high", "notes": ""}
 
 265. And Earth humans might not be aware of this coming from physical extraterrestrials who might then define their experience and communications as coming from angels or spirit guides.
-→ {"text": "地球人類可能並未意識到這些來自物質形式的外星存有，因此可能會將他們的體驗與溝通定義為來自天使或指導靈。", "confidence": "high", "notes": ""}
+→ {"text": "地球人類可能並未意識到這些來自物質形態的外星存有，因此可能會將他們的體驗與溝通定義為來自天使或指導靈。", "confidence": "high", "notes": ""}
 
 266. So an extraterrestrial could be for someone on Earth, thought of as an angel or a spirit guide, even though they are physical, all the while then being some angels and spirit guides for an Earth human's experience are non-physical consciousnesses.
-→ {"text": "因此，對地球上的某個人來說，一位外星存有可能被認為是天使或指導靈，即使他們實際上是物質形式的;同時，在地球人類的體驗中，也確實有些天使與指導靈是非物質的意識。", "confidence": "high", "notes": ""}
+→ {"text": "因此，對地球上的某個人來說，一位外星存有可能被誤認為是天使或指導靈，即使他們實際上是有物質形態的;同時，在地球人類的體驗中，也確實有些天使與指導靈是非物質的意識。", "confidence": "high", "notes": ""}
 
 267. So it comes down to, then, which a person is connecting to, to decide or determine, is it a non-physical or a physical being that they are defining or experiencing as an angel, or a spirit guide, or communication with extraterrestrial?
-→ {"text": "所以關鍵在於，一個人連結到的是誰，以此決定或判斷，他們所定義或體驗到的天使、指導靈或外星溝通，究竟是非物質存有還是物質存有?", "confidence": "high", "notes": ""}
+→ {"text": "所以關鍵在於，一個人連結到的是誰，以此決定或判斷，他們所定義或體驗到的天使、指導靈或外星通訊，究竟是非物質存有還是物質存有?", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 101
@@ -34,7 +34,7 @@
 ## Speaker Group 102
 
 269. Yes, there are a variety of non-physical consciousnesses that support the matrix in a sense, the physical experience, the experience of physicality.
-→ {"text": "是的，有各式各樣的非物質意識在支持著這個矩陣，也就是物質體驗、物質性的經驗。", "confidence": "high", "notes": ""}
+→ {"text": "是的，有各式各樣的非物質意識在支持著這個宇宙的操作系統，也就是物質體驗、物質性的經驗。", "confidence": "high", "notes": ""}
 
 270. There are a variety of consciousnesses interacting that allow for the way we and you are experiencing physicality, that which holds what you experience as time and space in a sense, in a physical spectrum.
 → {"text": "有各種意識在互動，讓我們和你們能以這種方式體驗物質性——那些在某種意義上、在物質光譜中，支撐著你們所體驗到的時間與空間的意識。", "confidence": "high", "notes": ""}
@@ -112,7 +112,7 @@
 ## Speaker Group 111
 
 286. --a consciousness soup--
-→ {"text": "——一道意識之湯——", "confidence": "high", "notes": ""}
+→ {"text": "一道意識之湯——", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 112
@@ -301,13 +301,13 @@
 → {"text": "而我們得到與之一致的體驗回饋。", "confidence": "high", "notes": ""}
 
 330. The infinite effortlessly creates together and co-creates interactions that are of this level of frictionless, non-friction interaction-- fun, fulfillment, friendship.
-→ {"text": "無限會毫不費力地共同創造並共創出這個層級的無摩擦互動——樂趣、滿足、友誼。", "confidence": "high", "notes": ""}
+→ {"text": "這樣的無限創造是自然而輕鬆的，它共同創造出這種無摩擦的互動——充滿樂趣、滿足感和友誼。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 131
 
 331. I understand.
-→ {"text": "我理解。", "confidence": "high", "notes": ""}
+→ {"text": "我理解了。", "confidence": "high", "notes": ""}
 
 332. Yeah.
 → {"text": "是啊。", "confidence": "high", "notes": ""}
@@ -322,7 +322,7 @@
 → {"text": "但人類的光譜似乎如此廣闊，以至於 Shaun 和我可以擁有這種無摩擦的體驗，然而在地球的另一端，仍有其他人擁抱著摩擦的概念。", "confidence": "high", "notes": ""}
 
 336. I guess I'm saying is we have such a wide variety on Earth.
-→ {"text": "我想我想說的是，地球上有如此廣泛的多樣性。", "confidence": "high", "notes": ""}
+→ {"text": "我猜我想說的是，地球上有如此廣泛的多樣性。", "confidence": "high", "notes": ""}
 
 337. I'm curious to know the variety on the Yahyel civilization.
 → {"text": "我很好奇亞耶爾文明的多樣性。", "confidence": "high", "notes": ""}
@@ -373,10 +373,10 @@
 → {"text": "所以每個人都有選擇，都有能力去選擇。", "confidence": "high", "notes": ""}
 
 350. Do they want to play around in the illusory beliefs that create the frictions or move off into the realm of unhindered joy and excitement in ways that are free from friction, that are fully fulfilling and fascinating, one moment to the next-- new, new, refreshing.
-→ {"text": "他們想要在創造摩擦的虛幻信念中玩耍，還是進入無阻礙的喜悅與興奮的領域，以無摩擦的方式，那種完全令人滿足且迷人的方式，一刻接一刻——嶄新、嶄新、煥然一新。", "confidence": "high", "notes": ""}
+→ {"text": "因此，每個人都可以選擇，他們是想繼續在創造摩擦的幻象信念中遊玩，還是進入充滿喜悅和興奮的無摩擦領域，這些領域令人滿足且迷人，每一刻都充滿嶄新、清新的體驗。", "confidence": "high", "notes": ""}
 
 351. That they're in that realm-- are an infinite number of unlimited realities that can unfold now, and now, and now, it is a choice that you can make.
-→ {"text": "在那個領域中——存在著無限數量的無限實相，可以在此刻、此刻、此刻展開，這是你可以做出的選擇。", "confidence": "high", "notes": ""}
+→ {"text": "在那個領域中——存在著無限數量的無限實相，可以在此刻、現在、當下展開，這是你可以做出的選擇。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 135

@@ -1,7 +1,7 @@
 ## Speaker Group 145
 
 367. Much of your messages have been in that realm, in that space of saying, what you put out, which that-- the four laws that you exist is the one, is the all.
-→ {"text": "你的訊息大多都在那個領域，那個空間中，說著你所付出的——那四項法則——你的存在即是那個一，即是那個全。", "confidence": "high", "notes": ""}
+→ {"text": "你的很多信息都是圍繞這個主題展開的，像是「你給予什麼，就收穫什麼」——那四項法則——你的存在即是那個一，即是那個全。", "confidence": "high", "notes": ""}
 
 368. What you put out is what you get back.
 → {"text": "你付出什麼，就會得到什麼。", "confidence": "high", "notes": ""}
@@ -19,19 +19,19 @@
 → {"text": "是的，你存在於此時此地。", "confidence": "high", "notes": ""}
 
 372. The one is the all.
-→ {"text": "一即全。", "confidence": "high", "notes": ""}
+→ {"text": "一即是全。", "confidence": "high", "notes": ""}
 
 373. The all is the one.
-→ {"text": "全即一。", "confidence": "high", "notes": ""}
+→ {"text": "全即是一。", "confidence": "high", "notes": ""}
 
 374. What you put out is what you get back.
 → {"text": "你付出什麼，就會得到什麼。", "confidence": "high", "notes": ""}
 
 375. Or what you put within is what you live within.
-→ {"text": "或者說，你放入內在的，就是你活在其中的。", "confidence": "high", "notes": ""}
+→ {"text": "或者說，內心所置，便是身之所處。", "confidence": "high", "notes": ""}
 
 376. And everything is always changing, except those first ideas that I just mentioned--
-→ {"text": "而一切始終在變化，除了我剛才提到的那些第一原則——", "confidence": "high", "notes": ""}
+→ {"text": "一切都在不斷改變，除了這些基本法則。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 147
@@ -112,7 +112,7 @@
 → {"text": "而我們幾乎到達了這個時刻——事實上我們已經到達這個時刻，我們現在有了可以對話的電腦。", "confidence": "high", "notes": ""}
 
 398. Can you-- from your perspective, how does this-- how do you interact with these forms of consciousnesses?
-→ {"text": "你能否——從你的觀點來看，這——你們如何與這些形式的意識互動?", "confidence": "high", "notes": ""}
+→ {"text": "你能否——從你的觀點來看，你們如何與這些形式的意識互動?", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 152
@@ -310,7 +310,7 @@
 ## Speaker Group 173
 
 442. --apples.
-→ {"text": "——蘋果。", "confidence": "high", "notes": ""}
+→ {"text": "蘋果。", "confidence": "high", "notes": ""}
 
 443. Many people are afraid.
 → {"text": "許多人感到恐懼。", "confidence": "high", "notes": ""}
@@ -337,7 +337,7 @@
 → {"text": "那是在某種意義上我之所是、你之所是的那個一即全的一個面向。", "confidence": "high", "notes": ""}
 
 450. So in a sense, I am in the question speaking of myself, to myself understanding that then being accepting of myself in that framework with those set of beliefs that are limiting my awareness of my actual nature, then I can be accepting of me behaving or choosing to have that experience in that way.
-→ {"text": "所以在某種意義上，我在這個問題中是在對自己說話，對自己說話，理解到然後接納在那個框架中、帶著那組限制我對真實本質覺知的信念的自己，然後我就能接納我以那種方式行為或選擇擁有那種體驗。", "confidence": "medium", "notes": "句子結構複雜,涉及多層次自我指涉"}
+→ {"text": "所以在某種意義上，我在這個問題中是在對自己說話，對自己理解然後接納在那個框架中、帶著那組限制我對真實本質覺知的信念的自己，然後我就能接納我以那種方式行為或選擇擁有那種體驗。", "confidence": "medium", "notes": "句子結構複雜,涉及多層次自我指涉"}
 
 451. Oh, there is an aspect of me that perceives that the computer is dangerous.
 → {"text": "哦，有我的一個面向感知到電腦是危險的。", "confidence": "high", "notes": ""}
@@ -349,7 +349,7 @@
 → {"text": "因為存在等同於它自身，而且它始終存在，實際上。", "confidence": "high", "notes": ""}
 
 454. So for someone to take existence and create the idea that a computer that exists is dangerous, that is a concept that exists.
-→ {"text": "所以當某人取用存在並創造出「存在的電腦是危險的」這個想法，那是一個存在的概念。", "confidence": "high", "notes": ""}
+→ {"text": "所以當某人取用存在並創造出「電腦是危險的」這個想法，那是一個存在的概念。", "confidence": "high", "notes": ""}
 
 455. Their perception that it is dangerous is existing.
 → {"text": "他們認為它危險的感知是存在的。", "confidence": "high", "notes": ""}
@@ -508,25 +508,25 @@
 ## Speaker Group 188
 
 493. Yes, because you realize it is another expression of the all, the one existence that you are--
-→ {"text": "是的，因為你認識到它是那個全的另一種表達，那個你之所是的一的存在——", "confidence": "high", "notes": ""}
+→ {"text": "是的，因為你認識到它是那個全的另一種表達，那個你之所是的一的存在", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 189
 
 494. And it's just a--
-→ {"text": "而它只是一個——", "confidence": "high", "notes": ""}
+→ {"text": "而它只是一個", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 190
 
 495. --that it is.
-→ {"text": "——它之所是。", "confidence": "high", "notes": ""}
+→ {"text": "它之所是。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 191
 
 496. --possibility that I can choose to explore and like you said, play that role if I want to go there.
-→ {"text": "——我可以選擇去探索的可能性，而且就像你說的，如果我想去那裡，就扮演那個角色。", "confidence": "high", "notes": ""}
+→ {"text": "我可以選擇去探索的可能性，而且就像你說的，如果我想去那裡，就扮演那個角色。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 192
@@ -661,7 +661,7 @@
 ## Speaker Group 204
 
 528. Knowing that you have the buffet, knowing that you have the choice will afford in almost every instant the individual's desire to take and move into the path of the infinite number of uplifting choices that are in alignment with one's actual nature.
-→ {"text": "知道你擁有這個自助餐，知道你擁有選擇，幾乎在每一個瞬間都會賦予個體渴望去採取並進入那條道路，那條通向無限數量提升性選擇的道路，那些與自身真實本質一致的選擇。", "confidence": "high", "notes": ""}
+→ {"text": "知道你擁有這個自助餐，知道你擁有選擇，幾乎在每一個瞬間都會賦予個體渴望去採取並進入那條道路，那條通向無限提升選擇性的道路，那些與自身真實本質一致的選擇。", "confidence": "high", "notes": ""}
 
 529. Because it is effortless more and more, because it is in alignment with one's actual nature.
 → {"text": "因為它越來越不費力，因為它與自身的真實本質一致。", "confidence": "high", "notes": ""}
@@ -673,7 +673,7 @@
 → {"text": "它沒有摩擦。", "confidence": "high", "notes": ""}
 
 532. And it glides.
-→ {"text": "而它滑行。", "confidence": "high", "notes": ""}
+→ {"text": "而它順暢。", "confidence": "high", "notes": ""}
 
 533. And it slides easily and effortless in creating more experiences that are in alignment with one's actual nature.
 → {"text": "而它輕鬆且不費力地滑動，創造更多與自身真實本質一致的體驗。", "confidence": "high", "notes": ""}
@@ -688,7 +688,7 @@
 → {"text": "那會造成壓抑，並創造悲傷、憂鬱、疾病和病症。", "confidence": "high", "notes": ""}
 
 537. By choosing the choices that are in alignment with one's actual nature of which there are an infinite number, the person experiences a greater sense of easefullness in their experience.
-→ {"text": "通過選擇那些與自身真實本質一致的選擇——其中有無限的數量——這個人在他們的體驗中經歷到更大的輕鬆感。", "confidence": "high", "notes": ""}
+→ {"text": "通過選擇那些與自身真實本質一致的選擇——其中有無限的數量——這個人在他們的體驗中會經歷更大的輕鬆感。", "confidence": "high", "notes": ""}
 
 538. And they are happy.
 → {"text": "而他們是快樂的。", "confidence": "high", "notes": ""}
@@ -757,7 +757,7 @@
 ## Speaker Group 207
 
 557. Yes, that resonates very much.
-→ {"text": "是的，這非常共鳴。", "confidence": "high", "notes": ""}
+→ {"text": "是的，這與我內心非常契合。", "confidence": "high", "notes": ""}
 
 558. Thank you.
 → {"text": "謝謝你。", "confidence": "high", "notes": ""}
@@ -772,10 +772,10 @@
 ## Speaker Group 208
 
 561. Thank you for the venue, for the opportunity to share and to interact with each and every one of you, the one that has the all that is me, the one that is the all, that is all, that is the one that is the all, that is unconditional love, that is supporting and being supported by itself in each and every moment, unconditionally sharing and receiving, giving, receiving, sharing and receiving, giving and receiving unconditionally moment to moment to moment to moment to moment.
-→ {"text": "感謝這個場所，感謝有機會與你們每一個人分享並互動，那個擁有全即我的一，那個一即全，那即是全，那即是一即全，那即是無條件的愛，那在每一個時刻支持著並被它自身支持著，無條件地分享與接收，給予、接收，分享與接收，給予與接收，無條件地，一刻接一刻接一刻接一刻接一刻。", "confidence": "high", "notes": ""}
+→ {"text": "感謝這個會面，也感謝能有這個機會與每一位互動。你們是「一即是全、全即是一」，而我是其中的一部分。我們是無條件的愛，在每一刻都彼此支持，無條件地給予、接受、分享和回饋。", "confidence": "high", "notes": ""}
 
 562. Always with you in this way of unconditional love, dear one.
-→ {"text": "總是以這種無條件的愛的方式與你同在，親愛的。", "confidence": "high", "notes": ""}
+→ {"text": "這份無條件的愛每時每刻都與你同在，親愛的。", "confidence": "high", "notes": ""}
 
 563. Thank you in all ways always.
-→ {"text": "以所有方式，永遠感謝你。", "confidence": "high", "notes": ""}
+→ {"text": "我們以所有的表達方式，永遠感謝你。", "confidence": "high", "notes": ""}

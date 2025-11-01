@@ -1,16 +1,16 @@
 ## Speaker Group 21
 
 97. We recently had in our collective consciousness-- the US government had made-- brought to the awareness-- programs of studying UFOs and not fully announcing the UFO ET presence, but sort of coming close to sort of seed the collective.
-→ {"text": "最近在我們的集體意識中——美國政府公布了——帶到大眾意識中的——研究 UFO 的計畫，雖然沒有完全宣布 UFO 外星存在，但某種程度上接近於在集體意識中播下種子。", "confidence": "medium", "notes": "原文句法停頓較多，已整理為流暢中文"}
+→ {"text": "我們最近在集體意識中感知到一些改變——美國政府最近揭露了幾項研究 UFO 的計畫，雖然並未完全公開 UFO 或外星存有的存在，但似乎在逐步引導集體意識朝這個方向發展。", "confidence": "medium", "notes": "原文句法停頓較多，已整理為流暢中文"}
 
 98. I wanted to ask how you-- from your perspective, how you guys see this energy or this news affecting...
-→ {"text": "我想問你——從你的角度來看，你們如何看待這股能量或這則新聞帶來的影響……", "confidence": "high", "notes": ""}
+→ {"text": "我想問——從你的角度來看，你們如何看待這股能量或這則新聞帶來的影響……", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 22
 
 99. It can facilitate more of those in your world's willingness to accept this idea of extraterrestrial reality.
-→ {"text": "這可以促進你們世界中更多人願意接受外星實相這個概念。", "confidence": "high", "notes": ""}
+→ {"text": "這可以促進你們世界中更多人願意接受外星人真相的概念。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 23
@@ -64,7 +64,7 @@
 → {"text": "真正來說，這必須更多地從個人內在而來。", "confidence": "high", "notes": ""}
 
 111. And then they can feel more comfortable, in a sense, within what they are sharing.
-→ {"text": "然後他們才能在分享的內容中感到更自在。", "confidence": "high", "notes": ""}
+→ {"text": "然後他們才能安心地分享內容。", "confidence": "high", "notes": ""}
 
 112. They don't fully understand it themselves at this point, even though the understanding is contained within all of your DNA in a sense.
 → {"text": "在這個時間點，他們自己也還沒有完全理解，儘管這種理解在某種意義上已經蘊含在你們所有人的 DNA 之中。", "confidence": "high", "notes": ""}

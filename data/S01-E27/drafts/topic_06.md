@@ -64,10 +64,10 @@
 → {"text": "主要來說，這是我們與你們文明的共同創造，儘管在外星文明方面，並不只有我們參與。", "confidence": "high", "notes": ""}
 
 224. But it was primarily our civilization bringing a larger input into your awareness on a conscious level of our existence at a time and in a way that on a super-conscious level, your civilization knew about in advance, agreed to, co-created, understood, understands, can see what is occurring-- past, present, future timelines and understands the powerful, beneficial results and growth in positive, nurturing ways for all involved in that choice to have that come out, come through, evolve,
-→ {"text": "但主要是我們的文明在意識層面上為你們的覺知帶來更大的訊息，關於我們的存在——在一個時間點、以一種方式，是你們文明在超意識層級上提前知道的、同意的、共同創造的、理解的、能夠看見正在發生什麼——過去、現在、未來的時間線，並且理解這個選擇對所有參與者帶來的強大、有益的結果，以及以正面、滋養的方式成長，讓這一切浮現、穿透、演化……", "confidence": "medium", "notes": "原文句法極長且複雜，已調整為較流暢的中文"}
+→ {"text": "但這次主要是我們文明的行動，目的是在一個你們集體超意識層面已經知曉、同意並共同創造的時機與方式下，將我們文明的存在更強烈地引入你們的意識中。這個過程涉及對過去、現在與未來時間線的深刻理解，並且旨在促進所有參與者的正面成長", "confidence": "medium", "notes": "原文句法極長且複雜，已調整為較流暢的中文"}
 
 225. develop in that way.
-→ {"text": "……以那種方式發展。", "confidence": "high", "notes": ""}
+→ {"text": "與充滿養分的發展。。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 85
@@ -76,7 +76,7 @@
 → {"text": "是的。", "confidence": "high", "notes": ""}
 
 227. Well, it still is a large imprint on the collective consciousness and continues to expand, so thank you.
-→ {"text": "嗯，這在集體意識中仍然是一個很大的印記，並且持續擴展，所以謝謝你們。", "confidence": "high", "notes": ""}
+→ {"text": "嗯，這次事件對集體意識留下了深遠的影響，並且持續擴展，所以謝謝你們。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 86
@@ -121,13 +121,13 @@
 → {"text": "還有其他的。", "confidence": "high", "notes": ""}
 
 239. Yes, but not to come through at this time, simply because you will then, through your own mechanisms, begin focusing and expanding your focus when truly focusing your focus will bring greater connection in a more heartfelt, intelligent way, allowing for clarity through simplification, focus.
-→ {"text": "是的，但此時不會透露，只是因為你們會透過自己的機制開始聚焦和擴展你們的焦點，而真正聚焦你們的焦點將以更發自內心、更智慧的方式帶來更大的連結，透過簡化、聚焦來獲得清晰。", "confidence": "medium", "notes": "原文句法較複雜，已調整為流暢中文"}
+→ {"text": "是的，但此時不會透露，這些是目前需要重點關注和了解的對象。確實還有其他文明，但目前並不會提及，因為你們將通過自身的機制開始聚焦並擴展你們的注意力。", "confidence": "medium", "notes": "原文句法較複雜，已調整為流暢中文"}
 
 240. Pleiadians-- yes.
 → {"text": "昴宿星人——是的。", "confidence": "high", "notes": ""}
 
 241. There are certainly a variety of Pleiadian civilizations that have a very close contact, conversing, communication, co-creation, interrelation with our civilization.
-→ {"text": "當然有各種昴宿星文明與我們的文明有非常密切的接觸、對話、溝通、共同創造、相互關聯。", "confidence": "high", "notes": ""}
+→ {"text": "當然有幾個昴宿星文明與我們的文明有非常密切的接觸、對話、溝通、共同創造、相互關聯。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 89
@@ -154,7 +154,7 @@
 ## Speaker Group 92
 
 246. Learning which then will be most applicable for you in unfolding a future and a present that you most enjoy fulfillingly, will then provide the greatest excitement for you.
-→ {"text": "學習哪些對你們展開最充實、最享受的未來和現在最適用，將為你們帶來最大的興奮。", "confidence": "high", "notes": ""}
+→ {"text": "理解哪些內容對於發掘你最愉悅、最充實的未來和當下最為適用，會為你帶來最大的興奮感。", "confidence": "high", "notes": ""}
 
 247. Understand, then, to know that there are in a sense no end to the numbers to suggest that it is not finite, perhaps allows you to focus more on a finite number of them.
 → {"text": "那麼，理解並知道在某種意義上數量是沒有盡頭的、它不是有限的，也許能讓你們更專注於其中有限的數量。", "confidence": "high", "notes": ""}
@@ -166,7 +166,7 @@
 → {"text": "在這個物質化身中，你們的覺知不會真正體現所有無限數量的文明，也不需要這樣做。", "confidence": "high", "notes": ""}
 
 250. Allow, then, to focus, to know the ones that are of greatest heartfelt support will find you as you open up and focus on those.
-→ {"text": "那麼，允許去聚焦，要知道那些給予最大的內心支持的文明會找到你們，當你們敞開心胸並專注於它們時。", "confidence": "high", "notes": ""}
+→ {"text": "那麼，允許去聚焦，要知道當你們敞開心胸並專注於它們時，那些給予最大的內心支持的文明會找到你們。", "confidence": "high", "notes": ""}
 
 251. But reaching out to uncover new ones can be a joy to do, I understand.
 → {"text": "但我理解，去尋找並發現新的文明可以是一種喜悅。", "confidence": "high", "notes": ""}
@@ -196,7 +196,7 @@
 ## Speaker Group 96
 
 256. It will guide you beyond that which you are aware or have heard of in terms of trying to create a family tree of sorts or a point of origination, for the point changes as you learn of the next one, and then changes as you learn of the next one.
-→ {"text": "當你試圖創建某種家譜或起源點時，它會引導你超越你所覺知或聽說過的，因為當你學習到下一個時，這個點就改變了，然後當你學習到下一個時又再次改變。", "confidence": "high", "notes": ""}
+→ {"text": "它將引導你超越現有的認知，甚至超越你聽說過的內容。試圖建立一種「家譜」或起源點的方式並非固定不變，因為每當你了解到下一個文明時，這個「起源點」就會隨之改變，然後在你了解後續其他文明時再次改變。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 97

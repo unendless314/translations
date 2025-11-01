@@ -44,7 +44,7 @@
 - **Yauaney** → 亞瓦尼（亞耶爾-人類混種文明）
 - **Zeta Reticuli / Grays** → 網罟座 / 灰人
 - **Pleiadians** → 昴宿星人
-- **Dracos** → 天龍人
+- **Dracos** → 天龍座人
 - **Arcturians** → 大角星人
 - 首次出現時使用「中文譯名（English Name）」格式
 - 後續出現僅使用中文譯名

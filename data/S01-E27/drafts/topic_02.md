@@ -55,10 +55,10 @@
 → {"text": "簡單來說——你們的文明和我們的文明，曾經是同一個文明。", "confidence": "high", "notes": ""}
 
 31. There were some in our world who chose to step out into space to explore new worlds, new creations, new evolutions, hybridizations of life forms.
-→ {"text": "我們世界中有一些人選擇踏入太空，去探索新的世界、新的創造、新的進化，以及生命形式的混血。", "confidence": "high", "notes": ""}
+→ {"text": "我們世界中有一些人選擇踏入太空，去探索新的世界、新的創造、新的進化，以及生命形式的混種實驗。", "confidence": "high", "notes": ""}
 
 32. And some of those who embarked on that co-creation from our civilization-- they, over eons and eons of your time in a sense, through the blending, through the hybridization through the evolving with other civilizations some quite different than ours but human, yes... ...have evolved and become your earth human civilization so you do, as the channel was mentioning earlier, you do each of you on Earth in the DNA of your human biology
-→ {"text": "而那些從我們文明出發、踏上共同創造之旅的人——他們在漫長的時間中，以你們的時間感來說是千萬億年，透過融合、透過混血、透過與其他文明的演化——有些文明與我們截然不同但仍屬人類——最終演化成為你們地球人類文明。所以，正如通靈管道稍早提到的，你們每個人在地球上的人類生物學 DNA 中……", "confidence": "medium", "notes": "原文句法不完整，已依語境修正連貫性"}
+→ {"text": "而那些從我們文明出發、踏上共同創造之旅的人——他們在漫長的時間中，以你們的時間感來說是千萬億年，透過融合、透過混血、透過與其他文明的演化——有些文明與我們截然不同但仍屬人類——最終演化成為你們地球人類文明。所以，正如通靈者稍早提到的，你們每個人在地球上的人類生物學 DNA 中……", "confidence": "medium", "notes": "原文句法不完整，已依語境修正連貫性"}
 
 33. all of you without exception born here on Earth have DNA that is then very much that of our civilization. The one in which you in a sense were part of before the time of stepping out into space to explore, to create new hybrid worlds.
 → {"text": "……所有在地球上出生的人，無一例外，都擁有我們文明的 DNA。也就是在踏入太空探索、創造新的混種世界之前，你們在某種意義上曾是其中一部分的那個文明。", "confidence": "high", "notes": ""}
@@ -76,10 +76,10 @@
 → {"text": "但我們可以走在你們之中，這些差異不見得會讓你們認為我們來自另一個世界，也許只會以為我們來自你們世界上某個你們不熟悉的地方。", "confidence": "high", "notes": ""}
 
 38. We are very different in our vibration, our consciousness, our sense of who we are.
-→ {"text": "但我們在振動、在意識、在對自我的認知上，與你們截然不同。", "confidence": "high", "notes": ""}
+→ {"text": "但我們在頻率、在意識、在對自我的認知上，與你們截然不同。", "confidence": "high", "notes": ""}
 
 39. Our knowingness of existence is quite different than that you have in your world at this timing.
-→ {"text": "我們對存在的認知，與你們世界在此刻所擁有的認知非常不同。", "confidence": "high", "notes": ""}
+→ {"text": "我們對造物者的認知，與你們世界在此刻所擁有的認知非常不同。", "confidence": "high", "notes": ""}
 
 40. We all know in that sense who we are.
 → {"text": "在這個意義上，我們都知道自己是誰。", "confidence": "high", "notes": ""}

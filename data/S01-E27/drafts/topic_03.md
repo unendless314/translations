@@ -4,7 +4,7 @@
 → {"text": "關於這個，我還有幾個問題。", "confidence": "high", "notes": ""}
 
 60. For when-- for interacting with other civilizations, do you also-- do they also have the same type of channeling mechanisms that we are using in this case and other-- specifically my series that I'm doing here is utilizing the channeling mechanism or techniques.
-→ {"text": "當你與其他文明互動時，他們是否也使用和我們現在一樣的通靈機制？特別是我正在進行的這個系列，就是運用通靈機制或技術。", "confidence": "medium", "notes": "原文句法略有停頓和重複，已修正為流暢中文"}
+→ {"text": "當你與其他文明互動時，他們是否也使用和我們現在一樣的通靈機制？特別是我正在拍攝的這系列影集，就是運用通靈機制或技術。", "confidence": "medium", "notes": "原文句法略有停頓和重複，已修正為流暢中文"}
 
 
 ## Speaker Group 10

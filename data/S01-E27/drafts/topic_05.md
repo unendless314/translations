@@ -40,13 +40,13 @@
 ## Speaker Group 41
 
 147. Would there be a density level that we could classify Ishuwa in his--
-→ {"text": "有沒有一個密度層級可以讓我們將伊舒瓦歸類在——", "confidence": "high", "notes": ""}
+→ {"text": "有沒有一個密度層級可以讓我們歸類伊舒瓦?", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 42
 
 148. Fourth, fifth, and sixth, primarily, in interacting with your civilization at this timing.
-→ {"text": "主要是第四、第五和第六密度，在此刻與你們文明互動時。", "confidence": "high", "notes": ""}
+→ {"text": "主要是第四、第五和第六密度，在此刻與你們文明互動。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 43
@@ -58,7 +58,7 @@
 ## Speaker Group 44
 
 150. Different than vibration of your physiology yes. Physical for me, all the same in my vibratory world.
-→ {"text": "是的，與你們生理的振動不同。但對我來說，在我的振動世界中，都是物質的。", "confidence": "high", "notes": ""}
+→ {"text": "是的，與你們生理的頻率不同。但對我來說，在我的頻率世界中，都是物質的。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 45
@@ -178,7 +178,7 @@
 ## Speaker Group 58
 
 176. They can be.
-→ {"text": "可以是。", "confidence": "high", "notes": ""}
+→ {"text": "可以是這樣的情況。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 59
@@ -190,7 +190,7 @@
 ## Speaker Group 60
 
 178. Yes.
-→ {"text": "是的。", "confidence": "high", "notes": ""}
+→ {"text": "有的。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 61

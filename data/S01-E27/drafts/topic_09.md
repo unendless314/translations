@@ -46,7 +46,7 @@
 → {"text": "我對正在說的內容有感覺。", "confidence": "high", "notes": ""}
 
 574. But right now, I don't have any sense of what was said.
-→ {"text": "但現在，我對已經說過的內容沒有任何感覺。", "confidence": "high", "notes": ""}
+→ {"text": "但此刻，我並不清楚具體說了什麼。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 215
@@ -55,7 +55,7 @@
 → {"text": "哦，好的。", "confidence": "high", "notes": ""}
 
 576. Yeah, so it's of what's being said, but-- OK, the details are kind of vague.
-→ {"text": "是的，所以是關於正在說的內容，但是——好的，細節有點模糊。", "confidence": "high", "notes": ""}
+→ {"text": "我明白了。所以你知道正在說的內容，但細節有些模糊？", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 216
@@ -82,10 +82,10 @@
 → {"text": "如果我坐下來開始記錄那個夢，那麼更多細節可以回到我腦海中。", "confidence": "high", "notes": ""}
 
 582. But if I go in the kitchen and cook breakfast, I could skip the whole thing.
-→ {"text": "但如果我去廚房做早餐，我可能會跳過整件事。", "confidence": "high", "notes": ""}
+→ {"text": "但如果我去廚房做早餐，我可能會完全忘記。", "confidence": "high", "notes": ""}
 
 583. So right now, when I come out of it, I'm like basically going to breakfast.
-→ {"text": "所以現在，當我從中出來時，我基本上就像是去吃早餐。", "confidence": "high", "notes": ""}
+→ {"text": "所以現在剛離開通靈狀態時，我就像是「去吃早餐」了。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 219
@@ -133,7 +133,7 @@
 → {"text": "——今天的。>> 謝謝你。", "confidence": "high", "notes": ""}
 
 592. I appreciate this.
-→ {"text": "我很感激這個。", "confidence": "high", "notes": ""}
+→ {"text": "我很珍惜這一切。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 226
