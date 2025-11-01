@@ -24,8 +24,8 @@ except ImportError:
 # Punctuation priority levels (higher priority = better split point)
 PUNCTUATION_LEVELS = {
     1: ['。', '！', '？', '…'],  # Sentence terminators
-    2: ['；', '：'],              # Clause separators
-    3: ['，'],                   # Commas
+    2: ['；', '：', '——'],        # Clause separators (including em dash)
+    3: ['，', '、'],              # Commas and enumeration comma
     4: [' ']                     # Spaces (last resort)
 }
 
@@ -69,19 +69,22 @@ def find_split_point(text: str, min_chars: int) -> Optional[Tuple[int, str, int]
 
         # Find all occurrences of this priority level in the search range
         candidates = []
-        for i in range(range_start, range_end):
-            if text[i] in punctuations:
-                # Split after the punctuation mark
-                split_pos = i + 1
+        for punct in punctuations:
+            punct_len = len(punct)
+            for i in range(range_start, range_end + 1):  # +1 to include range_end
+                # Check if punctuation matches at position i
+                if text[i:i+punct_len] == punct:
+                    # Split after the punctuation mark
+                    split_pos = i + punct_len
 
-                # Validate both parts meet min_chars requirement
-                part1_len = split_pos
-                part2_len = text_len - split_pos
+                    # Validate both parts meet min_chars requirement
+                    part1_len = split_pos
+                    part2_len = text_len - split_pos
 
-                if part1_len >= min_chars and part2_len >= min_chars:
-                    # Calculate distance from midpoint (prefer closer to center)
-                    distance = abs(split_pos - midpoint)
-                    candidates.append((distance, split_pos, text[i], priority))
+                    if part1_len >= min_chars and part2_len >= min_chars:
+                        # Calculate distance from midpoint (prefer closer to center)
+                        distance = abs(split_pos - midpoint)
+                        candidates.append((distance, split_pos, punct, priority))
 
         # If we found candidates at this priority level, return the closest to midpoint
         if candidates:

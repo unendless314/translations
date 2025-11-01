@@ -679,13 +679,13 @@
 → {"text": "而它輕鬆且不費力地滑動，創造更多與自身真實本質一致的體驗。", "confidence": "high", "notes": ""}
 
 534. There is no need to hide to create beliefs that prevent one from knowing this or that in order to believe some illusory belief.
-→ {"text": "不需要隱藏來創造信念，那些為了相信某個虛幻信念而阻止人知曉這個或那個的信念。", "confidence": "high", "notes": ""}
+→ {"text": "不需要隱藏自己，也不需要創造一些阻礙認知的信念，去支持某些幻象般的信念。", "confidence": "high", "notes": ""}
 
 535. Don't have to put a lot of weight on oneself with all these illusory beliefs.
-→ {"text": "不必用所有這些虛幻信念在自己身上放上許多重量。", "confidence": "high", "notes": ""}
+→ {"text": "不需要背負這些幻象信念帶來的重負。", "confidence": "high", "notes": ""}
 
 536. That can depress, and create sadness, and depression, and illness, and disease.
-→ {"text": "那會造成壓抑，並創造悲傷、憂鬱、疾病和病症。", "confidence": "high", "notes": ""}
+→ {"text": "因為它們可能導致壓抑，悲傷、憂鬱、疾病和病症。", "confidence": "high", "notes": ""}
 
 537. By choosing the choices that are in alignment with one's actual nature of which there are an infinite number, the person experiences a greater sense of easefullness in their experience.
 → {"text": "通過選擇那些與自身真實本質一致的選擇——其中有無限的數量——這個人在他們的體驗中會經歷更大的輕鬆感。", "confidence": "high", "notes": ""}
