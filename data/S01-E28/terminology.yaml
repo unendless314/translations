@@ -1,0 +1,237 @@
+episode_id: S01-E28
+terms:
+  # ===== A =====
+  - term: Abductee
+    senses:
+      - id: abductee_et_victim
+        definition: 被外星存有綁架或強制接觸的人（帶有被動受害意涵）
+        preferred_translation: 被綁架者
+        segments: [706]
+        notes: 本集專用術語，建議反饋到 template。與 experiencer（體驗者）形成對比，後者強調主動參與而非被動受害
+
+  - term: Anunnaki
+    senses:
+      - id: anunnaki_mythology
+        definition: 美索不達米亞神話中的外星/神祇族群
+        preferred_translation: 阿努納奇
+        segments: [37]
+
+  # ===== B =====
+  - term: Being
+    senses:
+      - id: being_conscious
+        definition: 具意識或靈性的存在體（泛指人類、外星、靈體等有覺知的生命）
+        preferred_translation: 存有
+        segments: [126, 175, 210, 225, 307, 308, 312, 316, 319, 402, 442, 473, 474, 564, 566, 582, 589, 720]
+        notes: 強調主體性與意識狀態，視語境可譯為「生命體」、「存在」；外星語境可加註「外星存有」。本集大量出現 "Mantis being" 用法，應譯為「螳螂存有」
+
+  # ===== C =====
+  - term: Clairvoyant
+    senses:
+      - id: clairvoyant_psychic
+        definition: 具備超感官視覺，能看見非物質訊息的人
+        preferred_translation: 靈視者
+        segments: [156]
+        notes: 可簡化為「靈視」、「透視」
+
+  - term: Collective consciousness
+    senses:
+      - id: collective_consciousness_shared
+        definition: 群體或物種共享的意識場域與記憶庫
+        preferred_translation: 集體意識
+        segments: [158, 245]
+        notes: 常與阿卡西記錄、形態場、共同潛意識等概念相關
+
+  - term: Consciousness
+    senses:
+      - id: consciousness_awareness
+        definition: 個體或集體的覺知狀態與意識層次
+        preferred_translation: 意識
+        segments: [141, 236, 237, 241, 289, 427, 546, 571, 575]
+        notes: 常與「擴展意識」、「意識進化」、「集體意識」搭配
+
+  # ===== D =====
+  - term: Dimension
+    senses:
+      - id: dimension_spiritual_plane
+        definition: 超越物理三度空間的存在層級或頻率
+        preferred_translation: 維度
+        segments: [223]
+        notes: 視語境可譯為「次元」
+
+  # ===== E =====
+  - term: Ego
+    senses:
+      - id: ego_lower_self
+        definition: 為本我之外、強調自我意識與分離感的心理結構
+        preferred_translation: 小我
+        segments: [8, 246, 247, 251]
+        notes: 若語境偏心理學可譯為「自我」
+
+  - term: Energy
+    senses:
+      - id: energy_spiritual
+        definition: 非物質層面的振動力量或生命力
+        preferred_translation: 能量
+        segments: [105, 111, 194, 231, 392, 417]
+        notes: 靈性語境常指氣場、脈輪、療癒能量等
+
+  - term: Experiencer
+    senses:
+      - id: experiencer_et_contact
+        definition: 有過外星接觸或綁架經驗的人（對比 abductee 的中性用詞）
+        preferred_translation: 體驗者
+        segments: [705]
+        notes: 本集專用術語，建議反饋到 template。與 abductee（被綁架者）相對，強調主動參與而非被動受害
+
+  # ===== F =====
+  - term: Frequency
+    senses:
+      - id: frequency_vibrational
+        definition: 存有或事物的振動頻率，與意識層次、能量狀態相關
+        preferred_translation: 頻率
+        segments: [45, 157, 205, 217, 323, 382, 384, 394, 410]
+        notes: 常見於「提升頻率」、「頻率對齊」等新時代語境
+
+  # ===== G =====
+  - term: Grays
+    senses:
+      - id: grays_extraterrestrial
+        definition: 灰人族群（經典外星種族形象）
+        preferred_translation: 小灰人
+        segments: [277]
+        notes: 本集專用術語，建議反饋到 template
+
+  # ===== H =====
+  - term: Hybrid
+    senses:
+      - id: hybrid_starfamily
+        definition: 由人類與外星基因結合而成的族群
+        preferred_translation: 混種
+        segments: [27, 402]
+        notes: 星際家族脈絡常見
+
+  # ===== I =====
+  - term: Implants
+    senses:
+      - id: implants_extraterrestrial
+        definition: 外星存有植入人體的裝置或追蹤器
+        preferred_translation: 植入物
+        segments: [52, 88, 90, 93]
+        notes: 本集專用術語，建議反饋到 template
+
+  - term: Incarnate
+    senses:
+      - id: incarnate_embody
+        definition: 靈魂投胎進入肉身或物質形式
+        preferred_translation: 投生
+        segments: [427, 434]
+        notes: 動詞用法，視語境可譯為「化身」、「轉世」
+
+  # ===== L =====
+  - term: Light language
+    senses:
+      - id: light_language_communication
+        definition: 透過聲音、符號或手勢傳遞高頻能量訊息的靈性溝通方式
+        preferred_translation: 光之語
+        segments: [535]
+        notes: 本集專用術語，建議反饋到 template
+
+  # ===== M =====
+  - term: Mantis beings
+    senses:
+      - id: mantis_beings_extraterrestrial
+        definition: 螳螂形態的外星族群，高度進化且具慈悲心
+        preferred_translation: 螳螂族存有
+        segments: [100]
+        notes: 本集核心主題，建議反饋到 template。亦見於單數 "Mantis being"
+
+  - term: Mind
+    senses:
+      - id: mind_intellect
+        definition: 理性思維、邏輯分析的認知功能
+        preferred_translation: 心智
+        segments: [8, 238]
+        notes: 常與 Heart（心）對比，強調頭腦層面的運作
+
+  # ===== O =====
+  - term: Oneness
+    senses:
+      - id: oneness_unity_consciousness
+        definition: 萬物彼此一體、無分離的意識狀態
+        preferred_translation: 合一
+        segments: [251, 256]
+        notes: 亦可譯為「全一」
+
+  # ===== P =====
+  - term: Physical
+    senses:
+      - id: physical_tangible
+        definition: 涉及物質層面或肉身的形容詞
+        preferred_translation: 物質的
+        segments: [121, 202, 233, 391, 530]
+        notes: 視語境亦可譯為「有形的」、「肉身的」
+
+  - term: Pleiades
+    senses:
+      - id: pleiades_star_cluster
+        definition: 昴宿星團，常被提及的外星文明來源地
+        preferred_translation: 昴宿星
+        segments: [103]
+        notes: 本集專用術語，建議反饋到 template（template 已有 Pleiadians 但沒有 Pleiades）
+
+  # ===== R =====
+  - term: Reality
+    senses:
+      - id: reality_subjective
+        definition: 個體或集體創造的經驗世界與存在狀態
+        preferred_translation: 實相
+        segments: [441, 476, 477, 478, 479, 480]
+        notes: 新時代語境常見於「創造你的實相」、「多重實相」、「平行實相」等概念
+      - id: reality_objective
+        definition: 獨立於觀察者的客觀事實或物質世界
+        preferred_translation: 現實
+        segments: [428]
+        notes: segment 428 的 "in all reality" 為慣用語，意為「事實上」
+
+  - term: Reptilians
+    senses:
+      - id: reptilians_extraterrestrial
+        definition: 爬蟲類外星族群
+        preferred_translation: 爬蟲人
+        segments: [279, 286, 328]
+        notes: 本集專用術語，建議反饋到 template（template 僅有 Dracos）
+
+  # ===== S =====
+  - term: Spirituality
+    senses:
+      - id: spirituality_worldview
+        definition: 關於靈性、意識與存在意義的價值觀或生活方式
+        preferred_translation: 靈性
+        segments: [472]
+
+  # ===== T =====
+  - term: Telepathic
+    senses:
+      - id: telepathic_ability
+        definition: 具備心電感應或遠距溝通能力的形容詞
+        preferred_translation: 心電感應的
+        segments: [501]
+        notes: 本集專用術語，建議反饋到 template
+
+  # ===== V =====
+  - term: Vibration
+    senses:
+      - id: vibration_energetic
+        definition: 能量或意識的振動狀態，常與頻率互換使用
+        preferred_translation: 頻率
+        segments: [413]
+        notes: 亦可譯為「振頻」、「波動」
+
+  # ===== Z =====
+  - term: Zeta Reticuli
+    senses:
+      - id: zeta_reticuli_race
+        definition: 來自網罟座ζ星系的灰人族群
+        preferred_translation: 網罟座
+        segments: [103]

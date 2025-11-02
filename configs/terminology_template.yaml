@@ -19,6 +19,13 @@
 
 terms:
   # ===== A =====
+  - term: Abductee
+    senses:
+      - id: abductee_et_victim
+        definition: 被外星存有綁架或強制接觸的人（帶有被動受害意涵）
+        preferred_translation: 被綁架者
+        notes: 與 Experiencer（體驗者）形成對比，後者強調主動參與而非被動受害
+
   - term: Align
     senses:
       - id: align_harmony
@@ -234,6 +241,13 @@ terms:
         notes: 星際家族脈絡常見
 
   # ===== I =====
+  - term: Implants
+    senses:
+      - id: implants_extraterrestrial
+        definition: 外星存有植入人體的裝置或追蹤器
+        preferred_translation: 植入物
+        notes: 常見於外星接觸經驗中，可能具有追蹤、通訊或生理調整等功能
+
   - term: Incarnation
     senses:
       - id: incarnation_cycle
@@ -370,6 +384,13 @@ terms:
         definition: 獨立於觀察者的客觀事實或物質世界
         preferred_translation: 現實
 
+  - term: Reptilians
+    senses:
+      - id: reptilians_extraterrestrial
+        definition: 爬蟲類外星族群
+        preferred_translation: 爬蟲人
+        notes: 與天龍座人（Dracos）有關聯但為不同族群概念
+
   # ===== S =====
   - term: Shadow
     senses:
@@ -429,6 +450,13 @@ terms:
         preferred_translation: 臣服
 
   # ===== T =====
+  - term: Telepathic
+    senses:
+      - id: telepathic_ability
+        definition: 具備心電感應或遠距溝通能力的形容詞
+        preferred_translation: 心電感應的
+        notes: 視語境亦可譯為「心靈感應的」、「telepathy」（名詞）則為「心電感應」或「心靈感應」
+
   - term: The Fourth Kind
     senses:
       - id: the_fourth_kind_film
