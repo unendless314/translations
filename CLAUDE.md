@@ -85,10 +85,18 @@ When converting SRT to main.yaml:
 3. Parse LLM output to extract segment ranges, summaries, keywords
 4. Generate `topics.json` structure with validation (no gaps, no overlaps, sequential ranges)
 
-### Terminology Mapping
-- Pre-scan `main.yaml` to populate `segments`/`topics` arrays in terminology entries
-- Only load terms relevant to current translation batch
-- Support multi-sense disambiguation based on context
+### Terminology Mapping (Candidate Generation)
+The `terminology_mapper.py` tool generates `terminology_candidates.yaml`:
+- Scans `main.yaml` to find all occurrences of terms from `terminology_template.yaml` and `topics.json` keywords
+- For each term, records all matching segments with `segment_id`, `sources` (template/topic), and `source_text`
+- Outputs `occurrences` arrays (not yet classified into senses)
+- This is the **input** for the manual/AI classification step that produces `terminology.yaml`
+
+The subsequent classification step (manual or via Claude Code):
+- Reviews each occurrence's `source_text` context
+- Assigns each `segment_id` to the appropriate sense based on semantic meaning
+- Produces `terminology.yaml` with `segments` arrays (classified and sense-specific)
+- Performs multi-sense disambiguation based on context
 
 ## Tool Design Principles
 

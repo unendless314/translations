@@ -1,0 +1,617 @@
+episode_id: S01-E29
+terms:
+  # ===== A =====
+  - term: Amethyst crystal ship
+    senses:
+      - id: amethyst_crystal_ship
+        definition: 目擊者描述的紫水晶色飛行器，具有黑水晶金字塔推進系統
+        preferred_translation: 紫晶飛船
+        segments: [155]
+        notes: 本集特殊飛行器描述
+
+  - term: Archangel Michael
+    senses:
+      - id: archangel_michael_protector
+        definition: 基督教傳統中的天使長，常被召喚協助驅離負面能量
+        preferred_translation: 大天使米迦勒
+        segments: [285, 293]
+
+  - term: Ascension
+    senses:
+      - id: ascension_spiritual_evolution
+        definition: 人類意識與振動頻率的集體進化與提升
+        preferred_translation: 揚升
+        segments: [544, 656, 657, 799]
+        notes: 涵蓋「揚升事件」、「揚升室」等概念
+
+  - term: Ascension chamber
+    senses:
+      - id: ascension_chamber_false_light
+        definition: 假光存有偽裝的設施，聲稱能協助靈性進化但實為陷阱
+        preferred_translation: 揚升室
+        segments: [544]
+        notes: 在假光脈絡中為欺騙性設施
+
+  - term: Ascension event
+    senses:
+      - id: ascension_event_galactic
+        definition: 與銀河中心能量波相關的大規模意識躍遷事件
+        preferred_translation: 揚升事件
+        segments: [656, 657]
+        notes: 本集核心概念，與 25,000-26,000 年週期相關
+
+  - term: Avatar
+    senses:
+      - id: avatar_film
+        definition: 2009 年詹姆斯卡麥隆執導的科幻電影
+        preferred_translation: 阿凡達
+        segments: [17]
+
+  # ===== B =====
+  - term: Being
+    senses:
+      - id: being_conscious_entity
+        definition: 具意識或靈性的存在體（泛指人類、外星、靈體等）
+        preferred_translation: 存有
+        segments: [31, 171, 173, 176, 178, 181, 182, 241, 296, 323, 411, 412, 416, 442, 443, 466, 506, 545, 609, 808, 819, 844]
+        notes: 強調主體性與意識狀態；本集大量出現於外星接觸脈絡
+
+  - term: Big Bang theory
+    senses:
+      - id: big_bang_oneness
+        definition: 宇宙起源理論，在靈性語境中被視為萬物合一的科學證據
+        preferred_translation: 大爆炸理論
+        segments: [830]
+        notes: 本集用於連結科學與靈性一體觀
+
+  - term: Bigelow Aerospace
+    senses:
+      - id: bigelow_aerospace_org
+        definition: 美國航太企業，曾主動聯繫 UFO 目擊者進行調查
+        preferred_translation: 畢格羅航太公司
+        segments: [194, 197, 198, 201, 211]
+
+  - term: Black crystal pyramid
+    senses:
+      - id: black_crystal_pyramid_propulsion
+        definition: 目擊飛行器內部的黑水晶金字塔結構，疑為推進系統
+        preferred_translation: 黑水晶金字塔
+        segments: [152]
+
+  - term: Black triangle
+    senses:
+      - id: black_triangle_craft
+        definition: 三角形 UFO，本集中指紫色飛行器的外型
+        preferred_translation: 黑三角
+        segments: [144]
+
+  - term: Blue plasma
+    senses:
+      - id: blue_plasma_energy
+        definition: 環繞飛行器金字塔的藍色能量流，疑為推進能量
+        preferred_translation: 藍色電漿
+        segments: [139, 153, 154]
+
+  # ===== C =====
+  - term: Canister lights
+    senses:
+      - id: canister_lights_ufo
+        definition: UFO 上類似圓柱體罐狀的發光結構
+        preferred_translation: 圓柱光源
+        segments: [139]
+
+  - term: Channel
+    senses:
+      - id: channel_spiritual_comm
+        definition: 透過靈性方法接收並傳遞訊息的管道或行為
+        preferred_translation: 通靈
+        segments: [549]
+        notes: 本集指假光存有可能冒充的訊息來源
+
+  - term: Cloning chambers
+    senses:
+      - id: cloning_chambers_deceptive
+        definition: 假光存有展示的複製設施，用於欺騙與操控
+        preferred_translation: 複製艙
+        segments: [546]
+
+  - term: Collective human consciousness
+    senses:
+      - id: collective_consciousness_humanity
+        definition: 人類整體共享的意識場域與能量記憶
+        preferred_translation: 人類集體意識
+        segments: [378]
+
+  - term: Consciousness
+    senses:
+      - id: consciousness_awareness_state
+        definition: 個體或集體的覺知狀態與意識層次
+        preferred_translation: 意識
+        segments: [296, 378, 780, 802, 820, 837, 844]
+
+  - term: Contactees
+    senses:
+      - id: contactees_experiencers
+        definition: 與外星存有有直接接觸經驗的人類
+        preferred_translation: 接觸者
+        segments: [215]
+
+  - term: Cosmic citizens
+    senses:
+      - id: cosmic_citizens_identity
+        definition: 認知到自己是宇宙大家庭成員的覺醒人類
+        preferred_translation: 宇宙公民
+        segments: [801]
+
+  # ===== D =====
+  - term: Darker energy
+    senses:
+      - id: darker_energy_negative
+        definition: 振動頻率較低、帶有負面特質的能量或存有
+        preferred_translation: 較黑暗的能量
+        segments: [270, 275]
+        notes: 本集強調不以「善惡」二分，而用能量頻率描述
+
+  - term: Dematerializing
+    senses:
+      - id: dematerializing_phase_shift
+        definition: 存有從物質形態轉為光球或消失的過程
+        preferred_translation: 去物質化
+        segments: [176]
+
+  - term: Dimension
+    senses:
+      - id: dimension_plane_of_existence
+        definition: 不同振動頻率的存在層級或空間
+        preferred_translation: 維度
+        segments: [294]
+
+  - term: Divine love and light
+    senses:
+      - id: divine_love_light_source
+        definition: 源自宇宙本源的神聖愛與光的頻率
+        preferred_translation: 神聖之愛與光
+        segments: [566]
+        notes: 用於辨別真假存有的關鍵詞
+
+  # ===== E =====
+  - term: Ego
+    senses:
+      - id: ego_lower_mind
+        definition: 分離意識與小我思維結構
+        preferred_translation: 小我
+        segments: [7]
+
+  - term: Energy
+    senses:
+      - id: energy_vibrational
+        definition: 振動頻率或生命力的非物質表現
+        preferred_translation: 能量
+        segments: [270, 275, 378, 379, 603, 605, 664, 668, 671, 725, 822]
+
+  - term: Energetic wave
+    senses:
+      - id: energetic_wave_galactic
+        definition: 從銀河中心釋放的高頻能量脈衝
+        preferred_translation: 能量波
+        segments: [669, 734, 790]
+
+  - term: Entity
+    senses:
+      - id: entity_being
+        definition: 存在體，常指靈性或跨維度的生命形式
+        preferred_translation: 實體
+        segments: [410, 413, 419, 491, 590]
+        notes: 本集多用於負面存有脈絡
+
+  # ===== F =====
+  - term: False light
+    senses:
+      - id: false_light_deceptive
+        definition: 偽裝成正面存有的欺騙性靈體或外星族群
+        preferred_translation: 假光
+        segments: [530]
+        notes: 本集重要警示概念
+
+  - term: FEMA camps
+    senses:
+      - id: fema_camps_conspiracy
+        definition: 陰謀論中提及的聯邦緊急事務管理署拘留設施
+        preferred_translation: FEMA 集中營
+        segments: [67]
+
+  - term: Fourth density consciousness
+    senses:
+      - id: fourth_density_evolution
+        definition: 超越第三密度物質意識的進化狀態
+        preferred_translation: 第四密度意識
+        segments: [780]
+        notes: 對應揚升後的集體意識層次
+
+  - term: Frequency
+    senses:
+      - id: frequency_vibration
+        definition: 能量或意識的振動頻率
+        preferred_translation: 頻率
+        segments: [297, 305, 678, 686]
+
+  # ===== G =====
+  - term: Galactic wave
+    senses:
+      - id: galactic_wave_ascension
+        definition: 來自銀河中心的能量波，觸發揚升事件
+        preferred_translation: 銀河波
+        segments: [687]
+
+  - term: Golden disc
+    senses:
+      - id: golden_disc_craft
+        definition: 金黃色碟形飛行器
+        preferred_translation: 金色飛碟
+        segments: [96]
+
+  # ===== H =====
+  - term: Harmonic convergence
+    senses:
+      - id: harmonic_convergence_1987
+        definition: 1987 年新時代運動的重要靈性事件
+        preferred_translation: 和諧匯聚
+        segments: [792]
+
+  - term: Healing
+    senses:
+      - id: healing_energy_work
+        definition: 通過能量或意識工作進行的療癒
+        preferred_translation: 療癒
+        segments: [280]
+
+  - term: Humanity
+    senses:
+      - id: humanity_collective
+        definition: 人類整體或人性
+        preferred_translation: 人類
+        segments: [3]
+
+  - term: Hybrid
+    senses:
+      - id: hybrid_human_et
+        definition: 人類與外星基因混合的後代
+        preferred_translation: 混種
+        segments: [42, 808]
+
+  - term: Hybrid children
+    senses:
+      - id: hybrid_children_offspring
+        definition: 接觸者與外星存有共同創造的混種孩子
+        preferred_translation: 混種孩子
+        segments: [42]
+
+  # ===== I =====
+  - term: Interdimensional
+    senses:
+      - id: interdimensional_cross_dimension
+        definition: 能夠跨越不同維度或存在層面的
+        preferred_translation: 跨維度的
+        segments: [323]
+
+  - term: Interdimensional being
+    senses:
+      - id: interdimensional_being_entity
+        definition: 能在多個維度間移動的存有
+        preferred_translation: 跨維度存有
+        segments: [323]
+
+  # ===== J =====
+  - term: Jedi
+    senses:
+      - id: jedi_star_wars
+        definition: 星際大戰中的絕地武士，本集用於比喻高維存有的能力
+        preferred_translation: 絕地武士
+        segments: [417, 421]
+
+  # ===== K =====
+  - term: Karmic wheel
+    senses:
+      - id: karmic_wheel_reincarnation
+        definition: 業力輪迴的循環系統
+        preferred_translation: 業力輪
+        segments: [643]
+
+  # ===== L =====
+  - term: Light language
+    senses:
+      - id: light_language_healing
+        definition: 繞過心智直接作用於能量體的聲音療癒語言
+        preferred_translation: 光語言
+        segments: [6, 9]
+
+  - term: Light warrior mode
+    senses:
+      - id: light_warrior_confrontational
+        definition: 以對抗方式面對負面存有的防護模式
+        preferred_translation: 光戰士模式
+        segments: [321]
+        notes: 本集強調此模式會吸引更多衝突
+
+  - term: Livermore Labs
+    senses:
+      - id: livermore_labs_facility
+        definition: 勞倫斯利佛摩國家實驗室，美國核武研究機構
+        preferred_translation: 利佛摩國家實驗室
+        segments: [188]
+
+  - term: Love and light
+    senses:
+      - id: love_light_protection
+        definition: 愛與光的頻率，作為靈性防護與驅離負面能量的方法
+        preferred_translation: 愛與光
+        segments: [277, 278, 282, 286, 288, 290, 296, 298, 299, 302, 304, 305]
+        notes: 本集核心防護概念，強調以愛取代對抗
+
+  # ===== M =====
+  - term: Mantis beings
+    senses:
+      - id: mantis_beings_race
+        definition: 外型類似螳螂的高維外星種族，通常身高約七英尺
+        preferred_translation: 螳螂族存有
+        segments: [410, 453, 498]
+        notes: 本集主要外星種族之一
+
+  - term: Milky way galaxy
+    senses:
+      - id: milky_way_our_galaxy
+        definition: 我們的銀河系
+        preferred_translation: 銀河系
+        segments: [658]
+
+  - term: Mind
+    senses:
+      - id: mind_mental_body
+        definition: 心智或思維層面
+        preferred_translation: 心智
+        segments: [7, 8, 45, 157, 619]
+
+  - term: Mother Earth
+    senses:
+      - id: mother_earth_gaia
+        definition: 地球作為有意識的生命體
+        preferred_translation: 地球母親
+        segments: [2]
+
+  - term: MUFON
+    senses:
+      - id: mufon_organization
+        definition: 共同 UFO 網絡，民間 UFO 調查組織
+        preferred_translation: MUFON
+        segments: [185, 186, 200, 201]
+        notes: 組織名稱保留原文
+
+  # ===== N =====
+  - term: Nature
+    senses:
+      - id: nature_quality
+        definition: 事物的本質或特性
+        preferred_translation: 本質
+        segments: [281]
+
+  - term: Nature spirits
+    senses:
+      - id: nature_spirits_elementals
+        definition: 自然界的靈體，如精靈、元素靈等
+        preferred_translation: 自然靈體
+        segments: [609]
+
+  - term: New human awakening
+    senses:
+      - id: new_human_awakening_evolution
+        definition: 人類進入新意識狀態的集體覺醒過程
+        preferred_translation: 新人類覺醒
+        segments: [819]
+
+  - term: Nibiru
+    senses:
+      - id: nibiru_planet_x
+        definition: 陰謀論中提及的假想行星
+        preferred_translation: 尼比魯
+        segments: [81]
+
+  # ===== O =====
+  - term: Oneness
+    senses:
+      - id: oneness_unity
+        definition: 萬物一體、無分離的意識狀態
+        preferred_translation: 合一
+        segments: [830]
+
+  # ===== P =====
+  - term: Palladian
+    senses:
+      - id: palladian_nordic
+        definition: 金髮碧眼的北歐型外星種族
+        preferred_translation: 帕拉丁人
+        segments: [462]
+
+  - term: Period of awakening
+    senses:
+      - id: period_awakening_current
+        definition: 人類當前經歷的靈性覺醒時期
+        preferred_translation: 覺醒時期
+        segments: [11]
+
+  - term: Physical
+    senses:
+      - id: physical_material
+        definition: 物質層面的、肉體的
+        preferred_translation: 物質的
+        segments: [323, 332, 333, 492, 661, 836]
+
+  - term: Project Blue Book
+    senses:
+      - id: project_blue_book_usaf
+        definition: 美國空軍 1952-1969 年的 UFO 調查計畫
+        preferred_translation: 藍皮書計畫
+        segments: [30]
+
+  - term: Psychic boundaries
+    senses:
+      - id: psychic_boundaries_protection
+        definition: 靈性層面的能量界限與防護
+        preferred_translation: 靈性界限
+        segments: [314]
+
+  # ===== Q =====
+  - term: Qua Bar
+    senses:
+      - id: qua_bar_star_family
+        definition: 接觸者的星際家族名稱
+        preferred_translation: 夸巴
+        segments: [296]
+
+  # ===== R =====
+  - term: Reading
+    senses:
+      - id: reading_research
+        definition: 閱讀研究
+        preferred_translation: 閱讀
+        segments: [80]
+
+  - term: Reality
+    senses:
+      - id: reality_experience
+        definition: 個體或集體創造的經驗世界
+        preferred_translation: 實相
+        segments: [362, 377]
+
+  - term: Ruben Langdon
+    senses:
+      - id: ruben_langdon_host
+        definition: 本系列節目主持人
+        preferred_translation: 魯本‧蘭登
+        segments: [15]
+
+  # ===== S =====
+  - term: Silver disc
+    senses:
+      - id: silver_disc_craft
+        definition: 銀色碟形飛行器
+        preferred_translation: 銀色飛碟
+        segments: [35]
+
+  - term: Soul contract
+    senses:
+      - id: soul_contract_agreement
+        definition: 靈魂在轉世前設定的生命課題或協議
+        preferred_translation: 靈魂契約
+        segments: [388]
+
+  - term: Spirit realm
+    senses:
+      - id: spirit_realm_dimension
+        definition: 靈體存在的非物質維度
+        preferred_translation: 靈界
+        segments: [554]
+
+  - term: Star beings
+    senses:
+      - id: star_beings_et
+        definition: 來自其他星系的外星存有
+        preferred_translation: 星際存有
+        segments: [267, 275]
+
+  - term: Star seeds
+    senses:
+      - id: star_seeds_incarnated
+        definition: 帶有外星靈魂記憶或使命轉世到地球的人類
+        preferred_translation: 星際種子
+        segments: [296]
+
+  - term: Super massive black hole
+    senses:
+      - id: supermassive_black_hole_galactic
+        definition: 銀河中心的超大質量黑洞
+        preferred_translation: 超大質量黑洞
+        segments: [662, 663]
+
+  - term: Symbiotic relationship
+    senses:
+      - id: symbiotic_negative_feeding
+        definition: 負面存有與人類恐懼之間的互利共生關係
+        preferred_translation: 共生關係
+        segments: [352, 361]
+        notes: 本集指以恐懼餵養負面存有的循環
+
+  # ===== T =====
+  - term: Temporary detainment
+    senses:
+      - id: temporary_detainment_abduction
+        definition: 外星存有對人類進行的暫時性拘留或帶離
+        preferred_translation: 暫時拘留
+        segments: [373, 386]
+        notes: 中性用詞，取代「綁架」一詞
+
+  - term: Third density
+    senses:
+      - id: third_density_material
+        definition: 當前人類所處的物質意識層次
+        preferred_translation: 第三密度
+        segments: [776]
+
+  - term: Timelines
+    senses:
+      - id: timelines_parallel
+        definition: 平行存在的時間軌道或可能性分支
+        preferred_translation: 時間線
+        segments: [771, 772, 795]
+
+  # ===== U =====
+  - term: UFO
+    senses:
+      - id: ufo_craft
+        definition: 不明飛行物體
+        preferred_translation: UFO
+        segments: [28, 29, 33, 58]
+        notes: 保留原文縮寫
+
+  - term: UFO club
+    senses:
+      - id: ufo_club_group
+        definition: UFO 愛好者或研究者的社團組織
+        preferred_translation: UFO 俱樂部
+        segments: [28, 29]
+
+  - term: Unconditional love
+    senses:
+      - id: unconditional_love_pure
+        definition: 不帶條件與評判的純粹之愛
+        preferred_translation: 無條件的愛
+        segments: [4, 5]
+
+  # ===== V =====
+  - term: Vibration
+    senses:
+      - id: vibration_frequency
+        definition: 能量或意識的振動狀態
+        preferred_translation: 頻率
+        segments: [370, 686]
+
+  - term: Vibrational support
+    senses:
+      - id: vibrational_support_assistance
+        definition: 透過振動頻率提供的能量協助
+        preferred_translation: 頻率的支持
+        segments: [1]
+
+  # ===== Z =====
+  - term: Zeta Reticuli
+    senses:
+      - id: zeta_reticuli_star
+        definition: 網罟座ζ星系
+        preferred_translation: 網罟座
+        segments: [371]
+
+  - term: Zeta reticuli beings
+    senses:
+      - id: zeta_reticuli_greys
+        definition: 來自網罟座ζ星系的灰人族群
+        preferred_translation: 網罟座存有
+        segments: [371]

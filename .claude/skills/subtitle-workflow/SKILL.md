@@ -234,26 +234,103 @@ python3 tools/prepare_topic_drafts.py --config configs/<episode>.yaml --verbose
 ### 階段 7：執行翻譯
 **檢查條件**：drafts 目錄存在且有檔案
 
-**建議操作（推薦）**：使用 Claude Code 互動式翻譯
+#### 🎯 建議工作流程（最佳實踐）
+
+**第一步：AI 翻譯前 2-3 個 topics（建立基準）**
+
+- ✅ **掌握語調脈絡** - 理解對話的語氣風格與情緒表達
+- ✅ **發現細節問題** - 實際翻譯會暴露 guidelines 需要補充的地方
+- ✅ **測試術語表** - 確認 terminology.yaml 是否涵蓋所有需要的術語
+- ✅ **建立翻譯範例** - 完成的 topics 可作為後續 agent 的參考樣本
+- ✅ **優化指令品質** - 有了實際經驗後，給 agent 的指令會更精準
+
+**推薦範圍**：
+- **最少**：topic_01 ~ topic_02（掌握基本語調）
+- **建議**：topic_01 ~ topic_03（涵蓋更多語境變化）
+
+**操作方式**：
 1. 載入 Context：
    - `topics.json` - 全域摘要與當前 topic 的 summary、keywords
    - `terminology.yaml` - 篩選當前批次相關的術語
    - `guidelines.md` - 翻譯風格指引
-2. 直接在 `drafts/<topic_id>.md` 中填寫翻譯（修改箭頭右側的 JSON 欄位）
+2. 直接在 `drafts/topic_0X.md` 中填寫翻譯（修改箭頭右側的 JSON 欄位）
 3. 填寫欄位：
    - `text` - 翻譯內容（必填，非空）
    - `confidence` - high/medium/low（必填）
    - `notes` - 備註（可選）
+
+**完成後檢視**：
+- 檢查翻譯品質是否符合 guidelines
+- 記錄翻譯過程中發現的注意事項
+- 如有需要，調整 guidelines.md 或 terminology.yaml
+
+---
+
+**第二步：使用 Task Tool 委派剩餘 topics（提升效率）**
+
+**何時開始委派**：
+- 已完成前 2-3 個 topics 的翻譯
+- 確認翻譯品質符合預期
+- guidelines 與 terminology 已調整完善
+
+**委派策略**：
+
+⚠️ **不建議**：同時並行處理多個 topics
+✅ **建議**：一次委派一個 topic，確認品質後再繼續
+
+**原因**：
+- 避免批次出錯導致大量重翻
+- 可在過程中調整指令
+- 保持對翻譯品質的掌控
+- 降低風險，提升整體效率
+
+**委派方式**：
+1. 使用 Task Tool 啟動 general-purpose agent
+2. 提供詳細的翻譯指令，建議結構：
+   ```
+   請翻譯 data/<episode>/drafts/topic_0X.md
+
+   **必讀參考文檔**（請先閱讀以下檔案）：
+   1. data/<episode>/guidelines.md - 翻譯風格與規範
+   2. data/<episode>/terminology.yaml - 術語翻譯標準
+   3. data/<episode>/topics.json - 全集摘要與當前 topic 的語境
+
+   **額外注意事項**（文檔未涵蓋但重要的補充）：
+   - 本 topic 的特殊語境或主題特色
+   - 特定表達方式的處理建議
+   - 其他在翻譯過程中發現的注意事項
+
+   **成功標準**：
+   - 所有 JSON 欄位填寫完整（text, confidence, notes）
+   - 術語嚴格依照 terminology.yaml
+   - 語氣與風格符合 guidelines 要求
+   - 格式正確無誤
+   ```
+
+3. Agent 完成後檢查品質
+4. 確認無誤後再委派下一個 topic
+
+**逐一委派範例流程**：
+```
+✅ 自行翻譯：topic_01, topic_02, topic_03（建立基準）
+→ 委派 topic_04 → 檢查品質 ✓
+→ 委派 topic_05 → 檢查品質 ✓
+→ 委派 topic_06 → 檢查品質 ✓
+→ 委派 topic_07 → 檢查品質 ✓
+```
+
+---
 
 **替代方案（待實作）**：自動化批次翻譯
 ```bash
 python3 tools/translation_driver.py --config configs/<episode>.yaml --resume
 ```
 
-**優勢**：
+**互動式翻譯的優勢**：
 - 即時調整 prompt 與術語使用
 - 靈活處理特殊情況
-- 適合測試階段與小規模內容
+- 建立高品質翻譯基準
+- 適合測試階段與品質要求高的內容
 
 ---
 
