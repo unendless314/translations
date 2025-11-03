@@ -371,8 +371,8 @@ terms:
     senses:
       - id: reading_divination
         definition: 透過直覺或工具解讀訊息的服務
-        preferred_translation: 占卜
-        notes: 若強調訊息解讀可譯為「靈性解讀」
+        preferred_translation: 靈性解讀
+        notes: 視語境可譯為「占卜」（強調預測）或「解讀」（強調訊息傳遞）
 
   - term: Reality
     senses:
