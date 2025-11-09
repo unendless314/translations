@@ -1,0 +1,470 @@
+# Terminology for S01-E25: Orion Council of Light
+# 本集核心：獵戶座光之議會通靈訪談，探討人類起源、阿努納奇創造、外星DNA與靈性進化
+
+episode_id: S01-E25
+
+terms:
+  # ===== A =====
+  - term: Abrahamic covenant
+    senses:
+      - id: abrahamic_covenant_patriarchal
+        definition: 亞伯拉罕盟約，指以男性血脈傳承為核心的宗教契約，本集指出其源自獵戶座的父權能量
+        preferred_translation: 亞伯拉罕盟約
+        segments: [391]
+
+  - term: Alpha Draconis
+    senses:
+      - id: alpha_draconis_star_system
+        definition: 天龍座α星，蛇族星系的一部分
+        preferred_translation: 天龍座α星
+        segments: [228]
+
+  - term: Antarctica
+    senses:
+      - id: antarctica_gateway
+        definition: 南極洲，被描述為受保護的隔離區域，是通往地心家族的門戶，蘊藏重要歷史
+        preferred_translation: 南極洲
+        segments: [730, 731, 732]
+
+  - term: Anunnaki
+    senses:
+      - id: anunnaki_creators
+        definition: 創造現代人類的外星族群聯盟，並非單一種族，而是包含昴宿星人、爬蟲人、昆蟲族等來自獵戶座區域的混合族群
+        preferred_translation: 阿努納奇
+        segments: [4, 167, 170, 179, 183, 186, 189, 198]
+        notes: 本集強調阿努納奇是多種族聯盟，初衷是建立統治權，後因業力循環而演化為人類的指導者
+
+  - term: Arcturian
+    senses:
+      - id: arcturian_dna_contributor
+        definition: 大角星人，作為人類DNA貢獻者之一被提及
+        preferred_translation: 大角星人
+        segments: [151]
+
+  - term: Atlantis
+    senses:
+      - id: atlantis_fifth_density
+        definition: 亞特蘭提斯，第五維度、第四密度的遠古文明，因意識快速擴展和實驗失控而毀滅
+        preferred_translation: 亞特蘭提斯
+        segments: [34, 95, 116, 123]
+        notes: 本集澄清亞特蘭提斯時期的類人生物與阿努納奇創造的現代人類是不同物種
+
+  - term: Atlantean
+    senses:
+      - id: atlantean_beings
+        definition: 亞特蘭提斯時期的存有，第五維度生物，與現代人類有DNA上的斷層
+        preferred_translation: 亞特蘭提斯人
+        segments: [41, 42, 44, 48, 52, 58, 62, 79, 80, 81, 82, 86, 100, 103, 109]
+
+  - term: Avians
+    senses:
+      - id: avians_bird_beings
+        definition: 鳥族，與爬蟲族在演化上有親緣關係
+        preferred_translation: 鳥族
+        segments: [374]
+
+  # ===== B =====
+  - term: Buddha energy
+    senses:
+      - id: buddha_consciousness_intervention
+        definition: 佛陀能量，作為靈性干預被引入地球，旨在帶來內在平靜
+        preferred_translation: 佛陀能量
+        segments: [505]
+
+  # ===== C =====
+  - term: Christ consciousness
+    senses:
+      - id: christ_last_hope
+        definition: 基督意識，被描述為靈性門戶關閉前的「最後希望」，提醒人類自身力量
+        preferred_translation: 基督意識
+        segments: [497, 511]
+
+  - term: Council of Light
+    senses:
+      - id: council_of_light_orion
+        definition: 光之議會，本集通靈存有所代表的獵戶座靈性議會
+        preferred_translation: 光之議會
+        segments: [767]
+
+  # ===== D =====
+  - term: Draco
+    senses:
+      - id: draco_knowledgeable_being
+        definition: 天龍座存有，本集通靈中出現，對意識被接管的時期有深刻了解
+        preferred_translation: 天龍座存有
+        segments: [31]
+
+  # ===== E =====
+  - term: enslavement programs
+    senses:
+      - id: enslavement_matrix
+        definition: 奴役程式，指第三密度中限制意識的系統性機制
+        preferred_translation: 奴役程式
+        segments: [721]
+
+  - term: evolutionary experiment
+    senses:
+      - id: evolutionary_experiment_humanity
+        definition: 進化實驗，指人類作為多種族DNA混合的宏大實驗，所有參與族群都從中學習成長
+        preferred_translation: 進化實驗
+        segments: [710, 711]
+
+  - term: extinction event
+    senses:
+      - id: extinction_event_reset
+        definition: 滅絕事件，地球歷史上的多次生命重置
+        preferred_translation: 滅絕事件
+        segments: [259, 268]
+
+  # ===== G =====
+  - term: Gaia
+    senses:
+      - id: gaia_earth_being
+        definition: 蓋亞，地球作為有意識存有的稱呼
+        preferred_translation: 蓋亞
+        segments: [279]
+
+  - term: Game Shift
+    senses:
+      - id: game_shift_paradigm
+        definition: 遊戲轉換，指地球上允許的特殊意識範式
+        preferred_translation: 遊戲轉換
+        segments: [6]
+
+  - term: Giza pyramid
+    senses:
+      - id: giza_pyramid_stargate
+        definition: 吉薩金字塔，作為能量門戶或星門運作
+        preferred_translation: 吉薩金字塔
+        segments: [571]
+
+  - term: Gobekli Tepe
+    senses:
+      - id: gobekli_tepe_facility
+        definition: 哥貝克力石陣，非常古老的「促進化合物」或直接通訊轉錄裝置
+        preferred_translation: 哥貝克力石陣
+        segments: [534, 579]
+
+  - term: Grays
+    senses:
+      - id: grays_zeta_beings
+        definition: 灰人，與齊塔星系相關的外星族群
+        preferred_translation: 灰人
+        segments: [539]
+
+  # ===== H =====
+  - term: hierarchical system
+    senses:
+      - id: hierarchical_system_structure
+        definition: 階級系統，本集指出這不僅是爬蟲族特質，也源自獵戶座能量，關鍵在於是否將「高低」轉為「支配」
+        preferred_translation: 階級系統
+        segments: [184]
+
+  - term: hybrid children
+    senses:
+      - id: hybrid_children_zeta
+        definition: 混種孩童，齊塔人與人類DNA結合的後代，作為意識與情感交換的橋樑
+        preferred_translation: 混種孩童
+        segments: [664, 674, 675, 676, 686]
+
+  # ===== I =====
+  - term: Inner Earth families
+    senses:
+      - id: inner_earth_civilizations
+        definition: 地心家族，與人類共存但處於隱藏狀態的遠古文明
+        preferred_translation: 地心家族
+        segments: [743]
+
+  - term: Insectoid
+    senses:
+      - id: insectoid_dna_contributor
+        definition: 昆蟲族，阿努納奇聯盟的一部分，貢獻人類的直覺與同理能力
+        preferred_translation: 昆蟲族
+        segments: [24, 197, 198, 199, 203]
+
+  # ===== K =====
+  - term: karmic cycle
+    senses:
+      - id: karmic_cycle_anunnaki
+        definition: 業力循環，阿努納奇創造人類後因大洪水重置而產生的重複業力模式
+        preferred_translation: 業力循環
+        segments: [147]
+
+  - term: karmic energy
+    senses:
+      - id: karmic_energy_imbalance
+        definition: 業力能量，因行為產生的能量不平衡
+        preferred_translation: 業力能量
+        segments: [115]
+
+  # ===== L =====
+  - term: light beings
+    senses:
+      - id: light_beings_evolved
+        definition: 光之存有，阿努納奇演化後的狀態
+        preferred_translation: 光之存有
+        segments: [142]
+
+  - term: lower consciousness
+    senses:
+      - id: lower_consciousness_gateway
+        definition: 低意識，指第三密度的意識狀態，當地球週期性開啟時成為進入的門戶
+        preferred_translation: 低意識
+        segments: [458]
+
+  - term: Lyran
+    senses:
+      - id: lyran_dna_contributor
+        definition: 天琴座人，人類DNA貢獻者之一
+        preferred_translation: 天琴座人
+        segments: [149]
+
+  # ===== M =====
+  - term: matrix-style living
+    senses:
+      - id: matrix_style_living
+        definition: 母體式生活，指地球第三密度中的受限存在模式
+        preferred_translation: 母體式生活
+        segments: [720]
+
+  # ===== N =====
+  - term: Nazca
+    senses:
+      - id: nazca_teleportation
+        definition: 納斯卡，三指生物協助阿努納奇建立傳送裝置的區域
+        preferred_translation: 納斯卡
+        segments: [596]
+
+  # ===== O =====
+  - term: Orion
+    senses:
+      - id: orion_region
+        definition: 獵戶座區域，阿努納奇聯盟的起源地，包含多種族群
+        preferred_translation: 獵戶座
+        segments: [192, 198]
+
+  - term: Orion star system
+    senses:
+      - id: orion_patriarchal_energy
+        definition: 獵戶座星系，本集指出父權統治概念源自此處的能量
+        preferred_translation: 獵戶座星系
+        segments: [385]
+
+  # ===== P =====
+  - term: Pleiadian
+    senses:
+      - id: pleiadian_dna_contributor
+        definition: 昴宿星人，阿努納奇聯盟的一部分，人類DNA貢獻者
+        preferred_translation: 昴宿星人
+        segments: [149]
+
+  - term: Pleiadians
+    senses:
+      - id: pleiadians_collective
+        definition: 昴宿星人（複數），常被誤解為純粹女性能量，實際上也有階層結構
+        preferred_translation: 昴宿星人
+        segments: [73, 194, 375, 415, 728]
+
+  # ===== R =====
+  - term: Reptilian
+    senses:
+      - id: reptilian_dna_contributor
+        definition: 爬蟲人，阿努納奇聯盟的一部分，貢獻生存技能相關的DNA
+        preferred_translation: 爬蟲人
+        segments: [149, 166, 169, 186, 189, 193, 198, 221]
+
+  - term: Reptilian agenda
+    senses:
+      - id: reptilian_agenda_domination
+        definition: 爬蟲人計畫，指統治與支配的意識模式
+        preferred_translation: 爬蟲人計畫
+        segments: [368]
+
+  - term: Reptilians
+    senses:
+      - id: reptilians_compassionless
+        definition: 爬蟲人（複數），本集指出其特質是缺乏同情心的統治傾向，但不應簡化為「邪惡」
+        preferred_translation: 爬蟲人
+        segments: [188, 286, 413, 429, 452, 728]
+
+  - term: Reptoids
+    senses:
+      - id: reptoids_survival
+        definition: 爬蟲族，強調生存技能與適應惡劣環境的能力來源
+        preferred_translation: 爬蟲族
+        segments: [204, 208]
+
+  - term: rulingship
+    senses:
+      - id: rulingship_patriarchal
+        definition: 統治權，透過男性血脈傳承王權的概念
+        preferred_translation: 統治權
+        segments: [394, 407, 409]
+
+  # ===== S =====
+  - term: serpent race
+    senses:
+      - id: serpent_race_consciousness_takeover
+        definition: 蛇族，指試圖接管意識的存有，不一定是爬蟲形態
+        preferred_translation: 蛇族
+        segments: [451]
+
+  - term: serpent species
+    senses:
+      - id: serpent_species_star_system
+        definition: 蛇族物種，來自蛇星系統的族群，包括但不限於爬蟲形態
+        preferred_translation: 蛇族
+        segments: [223, 233]
+
+  - term: serpent star system
+    senses:
+      - id: serpent_star_system_origin
+        definition: 蛇星系統，包含天龍座α星的更大星系區域，古人所知的蛇族起源地
+        preferred_translation: 蛇星系統
+        segments: [227, 232]
+
+  - term: Sirian energy
+    senses:
+      - id: sirian_dna_water_agreement
+        definition: 天狼星能量，與水域相關的DNA貢獻，作為不統治海洋的交換協議
+        preferred_translation: 天狼星能量
+        segments: [330]
+
+  - term: stargate
+    senses:
+      - id: stargate_portal
+        definition: 星門，能量門戶，如吉薩金字塔的功能
+        preferred_translation: 星門
+        segments: [571]
+
+  # ===== T =====
+  - term: teleportation device
+    senses:
+      - id: teleportation_device_nazca
+        definition: 傳送裝置，納斯卡地區的外星科技結構
+        preferred_translation: 傳送裝置
+        segments: [600, 616]
+
+  - term: The Matrix
+    senses:
+      - id: the_matrix_concept
+        definition: 母體，指限制意識的系統性框架（引用電影《駭客任務》概念）
+        preferred_translation: 母體
+        segments: [7]
+        notes: 《駭客任務》（The Matrix）在華語地區的官方譯名，觀眾能立即理解其「虛假控制系統」的靈性隱喻
+
+  - term: third density
+    senses:
+      - id: third_density_learning
+        definition: 第三密度，人類當前的意識層次，提供獨特的學習經驗
+        preferred_translation: 第三密度
+        segments: [5]
+
+  - term: Tibetan energy
+    senses:
+      - id: tibetan_energy_buddhist
+        definition: 西藏能量，與佛教影響和非洲部落根源相關
+        preferred_translation: 西藏能量
+        segments: [523]
+
+  # ===== Z =====
+  - term: Zeta DNA
+    senses:
+      - id: zeta_dna_indirect
+        definition: 齊塔DNA，可能以間接方式與其他物種共享而存在於人類中
+        preferred_translation: 齊塔DNA
+        segments: [288, 290]
+
+  - term: Zeta star system
+    senses:
+      - id: zeta_star_system_hybrid
+        definition: 齊塔星系，長期與地球互動，進行混種計畫以獲得情感理解和繁殖方案
+        preferred_translation: 齊塔星系
+        segments: [667]
+
+  # ===== 通用術語 (來自 template，本集高頻使用) =====
+  - term: consciousness
+    senses:
+      - id: consciousness_evolution
+        definition: 意識，個體或集體的覺知狀態與進化層次
+        preferred_translation: 意識
+        segments: [4, 32, 44, 66, 133, 167, 181, 220, 234, 237, 280, 337, 339, 343, 352, 369, 446, 449, 451, 454, 458, 469, 482, 497, 511, 671, 690, 694, 696, 700, 705, 712]
+
+  - term: dimension
+    senses:
+      - id: dimension_density
+        definition: 維度，超越物質三度空間的存在層級
+        preferred_translation: 維度
+        segments: [88, 145]
+
+  - term: energy
+    senses:
+      - id: energy_spiritual_force
+        definition: 能量，非物質層面的振動力量或意識傾向
+        preferred_translation: 能量
+        segments: [5, 42, 61, 80, 84, 85, 109, 115, 116, 178, 185, 186, 210, 306, 330, 373, 375, 393, 398, 403, 414, 415, 424, 455, 483, 505, 523, 573, 673, 684, 686, 716]
+
+  - term: frequency
+    senses:
+      - id: frequency_vibrational
+        definition: 頻率，存有或區域的振動狀態
+        preferred_translation: 頻率
+        segments: [85, 463, 478, 639]
+
+  - term: guides
+    senses:
+      - id: guides_evolved_anunnaki
+        definition: 指導靈，本集指演化後的阿努納奇協助人類揚升
+        preferred_translation: 指導靈
+        segments: [7, 41, 134, 724]
+
+  - term: 5th dimensional beings
+    senses:
+      - id: fifth_dimensional_atlantean
+        definition: 第五維度存有，指亞特蘭提斯時期的類人生物
+        preferred_translation: 第五維度存有
+        segments: [58]
+
+  - term: 3D world
+    senses:
+      - id: third_density_world
+        definition: 3維世界，第三密度的物質實相
+        preferred_translation: 3維世界
+        segments: [435]
+
+  - term: dream experiences
+    senses:
+      - id: dream_contact
+        definition: 夢境體驗，當前許多人接收外星接觸的方式
+        preferred_translation: 夢境體驗
+        segments: [461]
+
+  - term: God source energy
+    senses:
+      - id: god_source_unity
+        definition: 神源能量，萬物統一的本源，每個存有在其中有特殊角色
+        preferred_translation: 神源能量
+        segments: [185]
+
+  - term: highest good
+    senses:
+      - id: highest_good_intention
+        definition: 最高福祉，符合靈魂演化與集體福祉的意圖或選擇
+        preferred_translation: 最高福祉
+        segments: [767, 775]
+        notes: 新時代靈性語境中指符合靈魂最高利益、與宇宙意志一致的道路
+
+  - term: source energy
+    senses:
+      - id: source_energy_expansion
+        definition: 源頭能量，所有存有試圖理解與擴展的根本能量
+        preferred_translation: 源頭能量
+        segments: [5]
+
+  # ===== 人物與地點 =====
+  - term: Reuben Langdon
+    senses:
+      - id: reuben_host
+        definition: 本集主持人
+        preferred_translation: 魯本·蘭登
+        notes: 首次出現使用「魯本·蘭登（Reuben Langdon）」，後續可簡稱「主持人」或「魯本」
