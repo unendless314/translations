@@ -161,6 +161,38 @@ python tools/main_yaml_to_json.py --config configs/S01-E12.yaml
 
 ---
 
+## `sbv_to_srt.py`
+
+**目的**  
+YouTube 下載的字幕若為 `.sbv` 格式，必須先轉換成標準 `.srt` 才能送進主流程。此工具提供最小轉檔步驟，不修改既有 SRT → YAML → 翻譯的鏈條。
+
+**執行介面**
+```bash
+python tools/sbv_to_srt.py \
+  --input sbv/captions.sbv \
+  --output input/S01-E99/source.srt \
+  [--encoding utf-8] \
+  [--force] \
+  [--verbose]
+```
+- `--input` / `-i`：必填，來源 `.sbv` 檔案。
+- `--output` / `-o`：選填，輸出 `.srt` 路徑；未指定時使用輸入檔改副檔名。
+- `--encoding`：預設 `utf-8-sig`，可手動覆蓋。
+- `--force`：允許覆蓋既有輸出。
+- `--verbose`：顯示 debug 級別日誌，含段落計數。
+
+**核心流程**
+1. 以串流方式解析 SBV，每個段落由「時間戳」+「多行字幕」組成，空行為區隔。
+2. 將 `H:MM:SS.mmm` 或 `MM:SS.mmm` 形式的時間碼轉成 `HH:MM:SS,mmm`，支援長於 1 小時的內容。
+3. 產出標準 SRT 段落：連號索引、`start --> end` 時間條、原樣文字（保留換行）。
+4. 若輸出檔已存在且未加 `--force`，將立即終止，避免覆蓋原始字幕。
+
+**適用情境**
+- 正式流程仍以 SRT 為唯一來源，此工具僅作為入口前處理。
+- 轉檔完成後，直接把輸出的 `.srt` 放進 `input/<episode>/`，即可照常執行 `srt_to_main_yaml.py`。
+
+---
+
 ## `export_srt.py`
 
 **目的**

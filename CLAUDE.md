@@ -4,11 +4,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a modular subtitle translation pipeline that processes SRT files through a YAML-based workflow. The system uses LLMs for translation with structured context (topics, terminology, guidelines) to ensure consistent, high-quality subtitle translations.
+This is a modular subtitle translation pipeline that processes SRT files through a YAML-based workflow. When a download arrives as YouTube `.sbv`, place it under `sbv/` and run `tools/sbv_to_srt.py` to produce the SRT that feeds the standard sequence. The system uses LLMs for translation with structured context (topics, terminology, guidelines) to ensure consistent, high-quality subtitle translations.
 
 ## Core Data Architecture
 
 The project uses a **three-layer file structure**:
+- `sbv/` - Optional holding area for raw `.sbv` captions before conversion
 - `input/<episode>/` - Original SRT files
 - `data/<episode>/` - Working YAML/Markdown files (main.yaml, topics.json, terminology.yaml, guidelines.md)
 - `data/<episode>/drafts/` - Topic-based translation work files (topic_01.md, topic_02.md, etc.)
@@ -155,18 +156,20 @@ cp .env.example .env
 ### Run Tools
 ```bash
 # Step 1: Convert SRT to main.yaml
-python3 tools/srt_to_main_yaml.py --config configs/S01-E12.yaml [--force] [--verbose]
+# (Optional) If the source is SBV, run:
+# PYTHONPATH=. python3 tools/sbv_to_srt.py --input sbv/captions.sbv --output input/S01-E12/source.srt
+PYTHONPATH=. python3 tools/srt_to_main_yaml.py --config configs/S01-E12.yaml [--force] [--verbose]
 
 # Step 2: Export segments to JSON
-python3 tools/main_yaml_to_json.py --config configs/S01-E12.yaml [--pretty] [--verbose]
+PYTHONPATH=. python3 tools/main_yaml_to_json.py --config configs/S01-E12.yaml [--pretty] [--verbose]
 
 # Step 3: Generate topics.json (requires API key)
-python3 tools/topics_analysis_driver.py --config configs/S01-E12.yaml [--dry-run] [--verbose]
+PYTHONPATH=. python3 tools/topics_analysis_driver.py --config configs/S01-E12.yaml [--dry-run] [--verbose]
 
 # Step 4: Generate translation drafts (Markdown work files)
 # This creates data/<episode>/drafts/topic_01.md, topic_02.md, etc.
 # Each file contains source text with empty JSON translation fields
-python3 tools/prepare_topic_drafts.py --config configs/S01-E12.yaml [--force] [--verbose]
+PYTHONPATH=. python3 tools/prepare_topic_drafts.py --config configs/S01-E12.yaml [--force] [--verbose]
 
 # Step 5: Translate (manual editing or with Claude Code/LLM assistance)
 # Work files: data/<episode>/drafts/topic_XX.md
@@ -180,13 +183,13 @@ python3 tools/prepare_topic_drafts.py --config configs/S01-E12.yaml [--force] [-
 # Step 5.5: QA - Fix Chinese punctuation (recommended after translation)
 # Automatically corrects English punctuation to Chinese in translation text fields
 # LLM translations often mix English commas (,) instead of Chinese (，)
-python3 tools/fix_chinese_punctuation.py --config configs/S01-E12.yaml [--dry-run] [--verbose]
+PYTHONPATH=. python3 tools/fix_chinese_punctuation.py --config configs/S01-E12.yaml [--dry-run] [--verbose]
 # Alternative: manually specify files
-# python3 tools/fix_chinese_punctuation.py data/S01-E12/drafts/topic_*.md [--dry-run] [--verbose]
+# PYTHONPATH=. python3 tools/fix_chinese_punctuation.py data/S01-E12/drafts/topic_*.md [--dry-run] [--verbose]
 
 # Step 6: Backfill completed translations to main.yaml
 # Reads completed topic_XX.md files and updates main.yaml with translations
-python3 tools/backfill_translations.py --config configs/S01-E12.yaml [--dry-run] [--verbose]
+PYTHONPATH=. python3 tools/backfill_translations.py --config configs/S01-E12.yaml [--dry-run] [--verbose]
 
 # Step 7: Export translated SRT subtitles
 # Converts main.yaml translations back to SRT format
@@ -198,7 +201,7 @@ PYTHONPATH=. python3 tools/export_srt.py --config configs/S01-E12.yaml [--no-spe
 # you may need to run it 2-3 times to achieve the target length.
 # The tool will automatically report remaining long segments and suggest re-running if needed.
 
-python3 tools/split_srt.py \
+PYTHONPATH=. python3 tools/split_srt.py \
   -i output/S01-E12/S01-E12.zh-TW.srt \
   -o output/S01-E12/S01-E12.zh-TW.split.srt \
   --max-chars 35 \
@@ -207,7 +210,7 @@ python3 tools/split_srt.py \
   [--verbose]
 
 # If the tool reports remaining long segments, run it again on the output:
-# python3 tools/split_srt.py \
+# PYTHONPATH=. python3 tools/split_srt.py \
 #   -i output/S01-E12/S01-E12.zh-TW.split.srt \
 #   -o output/S01-E12/S01-E12.zh-TW.split2.srt \
 #   --max-chars 35
@@ -231,6 +234,7 @@ python3 tools/split_srt.py \
 - `tools/fix_chinese_punctuation.py` - QA tool to fix English punctuation in Chinese translations ✅
 - `tools/export_srt.py` - Convert main.yaml back to SRT format ✅
 - `tools/split_srt.py` - Split long SRT subtitles for better readability ✅
+- `tools/sbv_to_srt.py` - Convert YouTube SBV captions into standard SRT before entering the pipeline ✅
 
 **Shared Modules:**
 - `src/clients/base_client.py` - Abstract LLM client interface ✅

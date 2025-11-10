@@ -74,6 +74,7 @@
 
 ### 翻譯前準備
 確認以下檔案已完成：
+- ♻️ 若原始字幕為 SBV，先執行 `python tools/sbv_to_srt.py --input sbv/<file>.sbv --output input/<episode>/<name>.srt` 轉成 SRT，再進行後續步驟
 - ✅ `main.yaml` - 主資料檔（用於寫回翻譯結果）
 - ✅ `main_segments.json` - 精簡段落資料（用於載入原文）
 - ✅ `topics.json` - 主題結構與摘要

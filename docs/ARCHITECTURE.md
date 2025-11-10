@@ -99,6 +99,8 @@
            └─────────────┘
 ```
 
+若原始素材來自 YouTube 的 `.sbv` 字幕，可先使用附加工具 `tools/sbv_to_srt.py` 轉換為 `.srt` 並置於 `input/<episode>/`，再進行後續流程。這個前處理不會改變主線模組。
+
 **關鍵特性**：
 - 每個工具輸出獨立檔案，支援斷點續跑
 - `main.yaml` 為核心資料檔，隨翻譯進度更新 `translation.status`
