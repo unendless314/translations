@@ -1,0 +1,384 @@
+episode_id: S01-E30
+terms:
+  # ===== 人名與存有 =====
+  - term: Sekino Ayako
+    senses:
+      - id: sekino_ayako_person
+        definition: 本集受訪者，日本通靈者，Bashar 的通靈管道之一
+        preferred_translation: 關野綾子
+        notes: 日文名「関野あや子」，英文順序為 Ayako Sekino
+        segments: [23, 24]
+
+  - term: Bashar
+    senses:
+      - id: bashar_entity
+        definition: 來自 Essassani 星球的外星存有，透過 Darryl Anka 和 Ayako 通靈傳遞訊息
+        preferred_translation: 巴夏
+        notes: Bashar Communications 的核心存有，在台灣靈性社群中已有固定譯名
+        segments: [29, 36, 40, 87, 116, 119, 413, 423, 440, 443, 451, 456, 461, 487, 502, 513, 516, 523, 566]
+
+  - term: Darryl Anka
+    senses:
+      - id: darryl_anka_channeler
+        definition: Bashar 的主要通靈者，美國特效藝術家
+        preferred_translation: 達瑞爾·安卡
+        notes: 首次出現時使用全名，後續可簡稱「達瑞爾」或「Darryl」
+        segments: [29]
+
+  - term: Darryl
+    senses:
+      - id: darryl_short_name
+        definition: Darryl Anka 的簡稱
+        preferred_translation: 達瑞爾
+        segments: [409, 493, 494, 495, 502, 516, 524, 526, 528]
+
+  - term: Dreamer
+    senses:
+      - id: dreamer_dolphin
+        definition: 澳洲海豚，Bashar 的三個通靈管道之一
+        preferred_translation: 夢行者
+        notes: 海豚名字，Bashar 透過此海豚傳遞訊息
+        segments: [529, 530]
+
+  # ===== 地名與星球 =====
+  - term: Essassani
+    senses:
+      - id: essassani_planet
+        definition: Bashar 的母星，混種文明所在的星球
+        preferred_translation: 艾莎莎尼
+        notes: 在 Bashar 通訊中的標準譯名
+        segments: [46, 120, 461]
+
+  # ===== 意識與覺醒 =====
+  - term: Consciousness
+    senses:
+      - id: consciousness_awareness
+        definition: 個體或集體的覺知狀態與意識層次
+        preferred_translation: 意識
+        notes: 本集核心概念，常與「擴展」、「無限」、「宇宙」等詞搭配
+        segments: [1, 13, 104, 112, 130, 131, 144, 145, 146, 153, 154, 162, 164, 165, 166, 168, 176, 204, 220, 223, 241, 245, 260, 287, 298, 306, 322, 329, 353, 458, 474, 490, 491, 533, 572, 576, 592]
+
+  - term: infinite consciousness
+    senses:
+      - id: infinite_consciousness_original
+        definition: 人類的原初狀態，無限的意識本質
+        preferred_translation: 無限意識
+        notes: 本集開場主題，強調回歸原初無限狀態
+        segments: [1, 13, 245, 306, 353]
+
+  - term: universal consciousness
+    senses:
+      - id: universal_consciousness_vastness
+        definition: 與宇宙同等廣闊的意識狀態
+        preferred_translation: 宇宙意識
+        segments: [176]
+
+  - term: collective consciousness
+    senses:
+      - id: collective_consciousness_shared
+        definition: 群體或物種共享的意識場域
+        preferred_translation: 集體意識
+        segments: [474, 592]
+
+  - term: awakening
+    senses:
+      - id: awakening_process
+        definition: 將注意力從外在轉回內在，意識擴展的過程
+        preferred_translation: 覺醒
+        segments: [12]
+
+  - term: limiting beliefs
+    senses:
+      - id: limiting_beliefs_constraints
+        definition: 限制人類潛能的信念系統
+        preferred_translation: 限制性信念
+        segments: [2]
+
+  - term: separation
+    senses:
+      - id: separation_illusion
+        definition: 個體與他人、與宇宙分離的幻象狀態
+        preferred_translation: 分離
+        segments: [3]
+
+  - term: common sense
+    senses:
+      - id: common_sense_societal
+        definition: 社會集體認定的「常識」或「正常」標準
+        preferred_translation: 常識
+        notes: 本集中 Ayako 描述覺醒後常識崩解的經驗
+        segments: [134, 137, 165]
+
+  # ===== 通靈與溝通 =====
+  - term: channel
+    senses:
+      - id: channel_spiritual_noun
+        definition: 通靈管道、靈媒，指具備接收非物質訊息能力的個體
+        preferred_translation: 通靈管道
+        notes: 名詞用法，指稱通靈者本身
+        segments: [423, 451, 487]
+
+      - id: channel_spiritual_verb
+        definition: 透過靈性方法接收並傳遞非物質訊息的行為
+        preferred_translation: 通靈
+        notes: 動詞用法，描述通靈行為
+        segments: [35, 413, 440, 443, 523]
+
+  - term: channeling
+    senses:
+      - id: channeling_activity
+        definition: 通靈活動或通靈會議
+        preferred_translation: 通靈
+        notes: 動名詞用法
+        segments: [32, 116, 516]
+
+  - term: telepathy
+    senses:
+      - id: telepathy_communication
+        definition: 心電感應溝通方式
+        preferred_translation: 心電感應
+        segments: [412]
+
+  - term: Telepathic
+    senses:
+      - id: telepathic_ability
+        definition: 具備心電感應或遠距溝通能力的形容詞
+        preferred_translation: 心電感應的
+        segments: [443, 461]
+
+  - term: Trance
+    senses:
+      - id: trance_state
+        definition: 進入意識改變、介於醒與睡之間的狀態
+        preferred_translation: 出神
+        notes: 本集討論完全出神（full trance）vs 保持意識的通靈方式
+        segments: [465, 470, 471, 473]
+
+  - term: trance channels
+    senses:
+      - id: trance_channels_type
+        definition: 採用完全出神狀態進行通靈的管道
+        preferred_translation: 出神通靈者
+        segments: [471]
+
+  # ===== 阿卡西與下載 =====
+  - term: Akashic Records
+    senses:
+      - id: akashic_records_universal
+        definition: 宇宙的記憶庫，記錄所有事件與知識的非物質資料庫
+        preferred_translation: 阿卡西記錄
+        notes: 本集中 Ayako 描述存取阿卡西記錄的經驗
+        segments: [179, 188]
+
+  - term: downloading information
+    senses:
+      - id: downloading_info_process
+        definition: 從高維或阿卡西記錄接收資訊的過程
+        preferred_translation: 下載資訊
+        notes: Ayako 描述為期一個月的資訊下載經驗
+        segments: [181, 207, 215, 221]
+
+  - term: higher information
+    senses:
+      - id: higher_information_frequency
+        definition: 來自高維度或高頻率的訊息
+        preferred_translation: 高頻資訊
+        segments: [215, 221, 473]
+
+  - term: pipe cleaning
+    senses:
+      - id: pipe_cleaning_metaphor
+        definition: 清理通靈管道的準備過程，移除阻礙訊息流動的障礙
+        preferred_translation: 清理管道
+        notes: Ayako 用來描述為成為通靈管道所做的準備
+        segments: [213, 214]
+
+  # ===== 高我與指引 =====
+  - term: Higher Self
+    senses:
+      - id: higher_self_inner_guidance
+        definition: 個體更高維的意識、本質或導引面向
+        preferred_translation: 高我
+        segments: [454, 456, 457, 589]
+
+  # ===== UFO 與外星接觸 =====
+  - term: UFO
+    senses:
+      - id: ufo_general
+        definition: 不明飛行物或外星飛行器
+        preferred_translation: 不明飛行物
+        notes: 可視語境使用「UFO」或「不明飛行物」
+        segments: [61, 65, 66, 108, 117, 614]
+
+  - term: triangular UFOs
+    senses:
+      - id: triangular_ufos_essassani
+        definition: 三角形的 UFO，Ayako 在 Essassani 經驗中看到的飛行器
+        preferred_translation: 三角形 UFO
+        segments: [61, 64, 108]
+
+  - term: mother ship
+    senses:
+      - id: mother_ship_spacecraft
+        definition: 大型母艦，可容納多個小型飛行器的太空船
+        preferred_translation: 母艦
+        segments: [47]
+
+  # ===== 能量與頻率 =====
+  - term: Frequency
+    senses:
+      - id: frequency_vibrational
+        definition: 存有或事物的振動頻率，與意識層次、能量狀態相關
+        preferred_translation: 頻率
+        notes: 本集中常見於「地球頻率」的討論
+        segments: [215, 337, 338, 345, 356, 582, 709]
+
+  - term: Earth frequency
+    senses:
+      - id: earth_frequency_limitation
+        definition: 地球層面的限制性頻率或信念模式
+        preferred_translation: 地球頻率
+        notes: 本集特有概念，指需要釋放的限制性能量模式
+        segments: [337]
+
+  - term: Vibration
+    senses:
+      - id: vibration_energetic
+        definition: 能量或意識的振動狀態
+        preferred_translation: 頻率
+        notes: 與 frequency 在靈性語境中互換使用，華語社群習慣統一譯為「頻率」
+        segments: [536]
+
+  - term: Energy
+    senses:
+      - id: energy_spiritual
+        definition: 非物質層面的振動力量或生命力
+        preferred_translation: 能量
+        segments: [79, 100, 102]
+
+  # ===== 實相與維度 =====
+  - term: Reality
+    senses:
+      - id: reality_subjective
+        definition: 個體或集體創造的經驗世界與存在狀態
+        preferred_translation: 實相
+        notes: 新時代語境，強調個人創造實相的概念
+        segments: [335, 343, 345, 363, 566, 568, 574]
+
+      - id: reality_external
+        definition: 外在的物質世界或客觀現象
+        preferred_translation: 外在實相
+        notes: 與內在意識相對的外部世界
+        segments: [9, 10, 341, 349, 350, 402]
+
+  - term: Physical Reality
+    senses:
+      - id: physical_reality_plane
+        definition: 可被感官觀察的物質世界層面
+        preferred_translation: 物質實相
+        segments: [311, 587]
+
+  - term: Dimension
+    senses:
+      - id: dimension_spiritual_plane
+        definition: 超越物理三度空間的存在層級或頻率
+        preferred_translation: 維度
+        segments: [566, 568, 569]
+
+  - term: dream dimension
+    senses:
+      - id: dream_dimension_reality
+        definition: 夢的維度，Bashar 教導中指稱真實實相的本質
+        preferred_translation: 夢境維度
+        notes: 本集關鍵概念，指實相如夢般可塑的本質
+        segments: [566, 568]
+
+  - term: parallel worlds
+    senses:
+      - id: parallel_worlds_shifting
+        definition: 平行存在的多重實相或世界
+        preferred_translation: 平行世界
+        segments: [573]
+
+  # ===== 社會結構轉型 =====
+  - term: pyramidal structure
+    senses:
+      - id: pyramidal_structure_hierarchy
+        definition: 金字塔型的階層社會結構，少數人在頂端控制多數人
+        preferred_translation: 金字塔結構
+        notes: 本集中對比舊有控制系統與新興平等模式
+        segments: [267, 271, 397]
+
+  - term: Yakuza Mind
+    senses:
+      - id: yakuza_mind_control
+        definition: 類似黑道的控制思維，強調階層、競爭與支配
+        preferred_translation: 黑幫階級思維
+        notes: 原文 "Yakuza Mind"（極道心態），Ayako 用來比喻金字塔式的社會控制模式：頂層壓榨、底層服從、暴力競爭。為了讓中文讀者易於理解，採用意譯
+        segments: [257, 398]
+
+  # ===== 跟隨興奮 =====
+  - term: follow your excitement
+    senses:
+      - id: follow_excitement_teaching
+        definition: Bashar 的核心教導，跟隨內在興奮作為人生指引
+        preferred_translation: 跟隨你的興奮
+        notes: 本集反覆討論的核心主題
+        segments: [42, 338, 375, 386, 402, 407]
+
+  - term: breadcrumbs
+    senses:
+      - id: breadcrumbs_guidance
+        definition: 未來自我留下的線索或指引，透過興奮感受引導現在的自己
+        preferred_translation: 麵包屑
+        notes: Ayako 用來比喻跟隨興奮的隱喻
+        segments: [375]
+
+  # ===== Ayako 的教學 =====
+  - term: Lessons from the Universe
+    senses:
+      - id: lessons_from_universe_class
+        definition: Ayako 開設的靈性課程名稱
+        preferred_translation: 宇宙課程
+        notes: 本集特有，Ayako 的教學品牌
+        segments: [329]
+
+  # ===== 銀河社群 =====
+  - term: Galactic Council
+    senses:
+      - id: galactic_council_collective
+        definition: 銀河議會，支援地球覺醒的星際文明集體
+        preferred_translation: 銀河議會
+        segments: [590]
+
+  - term: Galactic family
+    senses:
+      - id: galactic_family_support
+        definition: 銀河家族，指支持地球的外星文明群體
+        preferred_translation: 銀河家族
+        segments: [673]
+
+  - term: disclosure
+    senses:
+      - id: disclosure_et_revelation
+        definition: 外星存在與接觸的公開揭露
+        preferred_translation: 外星揭露
+        notes: 原文 "disclosure" 是 UFO 社群專有術語，指外星存在與接觸的公開揭露事件。為了讓中文讀者明確理解所指，採用「外星揭露」
+        segments: [651, 664, 676]
+
+  # ===== 其他特殊概念 =====
+  - term: grand transmission
+    senses:
+      - id: grand_transmission_event
+        definition: Ayako 與達瑞爾同台通靈時，與 Bashar 進行的強大能量與訊息傳遞事件
+        preferred_translation: 盛大的交流
+        notes: 原文 "grand transmission" 指兩位通靈管道同時與同一外星存有互動，能量在舞台上流動交換的罕見場景。採用「盛大的交流」讓讀者易於理解
+        segments: [512]
+
+  - term: sound of truth
+    senses:
+      - id: sound_of_truth_knowing
+        definition: 真理的聲音，內在深層的確知感受
+        preferred_translation: 真理之聲
+        notes: Ayako 用來對比「知識」與「真知」的概念
+        segments: [678, 682]

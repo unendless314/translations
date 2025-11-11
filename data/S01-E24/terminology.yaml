@@ -1,0 +1,487 @@
+episode_id: S01-E24
+terms:
+  # ===== A =====
+  - term: aliens
+    senses:
+      - id: aliens_extraterrestrial
+        definition: 外星生命或外星人的通稱
+        preferred_translation: 外星人
+        segments: [19, 24]
+
+  - term: Alpha Draconis
+    senses:
+      - id: alpha_draconis_star_system
+        definition: 天龍座α星系，爬蟲人族群的主要來源星系之一
+        preferred_translation: 天龍座α星系
+        segments: [128, 134]
+        notes: 本集中 Balthazar 自稱來自此星系；與 Dracos/Draconis 相關但更具體指星系位置
+
+  - term: Avatar
+    senses:
+      - id: avatar_film
+        definition: 2009年詹姆斯·卡麥隆執導的科幻電影
+        preferred_translation: 《阿凡達》
+        segments: [17]
+        notes: 主持人 Reuben 在製作此片期間目擊 UFO
+
+  - term: ayahuasca journey
+    senses:
+      - id: ayahuasca_journey_experience
+        definition: 使用死藤水（南美洲薩滿植物藥）進行的靈性體驗
+        preferred_translation: 死藤水儀式
+        segments: [527]
+        notes: Reuben 在死藤水體驗中感知到川普的「智慧龍」能量
+
+  # ===== B =====
+  - term: Balthazar
+    senses:
+      - id: balthazar_reptilian_guide
+        definition: Deete 的爬蟲人指導靈，來自天龍座α星系
+        preferred_translation: 巴爾薩澤
+        segments: [125]
+        notes: 首次以灰人形象出現，後顯現為爬蟲人真身；擔任保護者與指導者角色
+
+  - term: Being
+    senses:
+      - id: being_conscious
+        definition: 具意識或靈性的存在體（泛指人類、外星、靈體等有覺知的生命）
+        preferred_translation: 存有
+        segments: [104, 107, 163, 168, 176, 179, 183, 186, 197, 435, 548, 550, 551, 553, 556, 572]
+        notes: 強調主體性與意識狀態，視語境可譯為「生命體」、「存在」；外星語境常指「外星存有」。本集已排除動名詞 "being" 用法（如 "being a channeler"）
+
+  - term: Brigham Young
+    senses:
+      - id: brigham_young_mormon_leader
+        definition: 摩門教第二任先知與領袖，帶領教徒遷往猶他州
+        preferred_translation: 楊百翰
+        segments: [605, 634, 639]
+        notes: Deete 曾通靈此人，感受到其「黑暗能量」與控制意識的意圖
+
+  # ===== C =====
+  - term: chakras
+    senses:
+      - id: chakras_energy_centers
+        definition: 人體能量中心，與意識層次對應
+        preferred_translation: 脈輪
+        segments: [385]
+        notes: 本集討論密度層次與脈輪的對應關係
+
+  - term: channel
+    senses:
+      - id: channel_spiritual_noun
+        definition: 通靈管道、靈媒，指具備接收非物質訊息能力的個體
+        preferred_translation: 通靈管道
+        segments: [201]
+        notes: 視語境可譯為「靈媒」、「通靈者」、「管道」
+
+      - id: channel_spiritual_verb
+        definition: 透過靈性方法接收並傳遞非物質訊息的行為（動詞/動名詞）
+        preferred_translation: 通靈
+        segments: [229, 241]
+        notes: 涵蓋 "channeling" 的所有用法，如「他正在通靈」、「通靈訊息」
+
+  - term: channeler
+    senses:
+      - id: channeler_practitioner
+        definition: 進行通靈工作的人
+        preferred_translation: 通靈者
+        segments: [70]
+
+  - term: childlike state
+    senses:
+      - id: childlike_state_consciousness
+        definition: 意識被控制在幼稚、不成熟、缺乏批判思考的狀態
+        preferred_translation: 孩童狀態
+        segments: [630]
+        notes: 本集指宗教如何將人類意識控制在此狀態
+
+  - term: Conduit
+    senses:
+      - id: conduit_spiritual_channel
+        definition: 充當能量或訊息傳遞媒介的個體或工具
+        preferred_translation: 媒介
+        segments: [213, 214]
+        notes: 亦可譯為「渠道」，若語境涉及外星接觸可補充為「通訊管道」
+
+  - term: Consciousness
+    senses:
+      - id: consciousness_awareness
+        definition: 個體或集體的覺知狀態與意識層次
+        preferred_translation: 意識
+        segments: [364, 393, 413, 417, 626, 630]
+        notes: 常與「擴展意識」、「意識進化」、「集體意識」搭配
+
+  - term: contact experience
+    senses:
+      - id: contact_experience_et
+        definition: 與外星存有的接觸經驗
+        preferred_translation: 接觸經驗
+        segments: [334]
+
+  - term: Council of Beings
+    senses:
+      - id: council_of_beings_galactic
+        definition: 由多個星際族群組成的跨維度議會
+        preferred_translation: 存有議會
+        segments: [129]
+        notes: Balthazar 提到與此議會合作
+
+  - term: Council of Light
+    senses:
+      - id: council_of_light_healing
+        definition: Deete 連結的高維療癒集體
+        preferred_translation: 光之議會
+        segments: [437, 441]
+        notes: 主要用於療癒工作
+
+  # ===== D =====
+  - term: Density
+    senses:
+      - id: density_consciousness_level
+        definition: 意識振動層次的分級系統，不同於物理維度
+        preferred_translation: 密度
+        segments: [385, 394, 396, 398, 400]
+        notes: 與 Dimension（維度）有別；第三密度指當前人類意識狀態，第四密度為更高振動層次
+
+  - term: Dimension
+    senses:
+      - id: dimension_spiritual_plane
+        definition: 超越物理三度空間的存在層級或頻率
+        preferred_translation: 維度
+        segments: [198, 199, 381, 382, 387, 389]
+        notes: 視語境可譯為「次元」；本集中討論了第三/第四維度與密度的區別
+
+  - term: Draconis
+    senses:
+      - id: draconis_reptilian_race
+        definition: 來自天龍座的爬蟲類外星族群，包含多種亞型
+        preferred_translation: 天龍座人
+        segments: [163, 197, 451, 454]
+        notes: 包括蝙蝠型、經典爬蟲型等；有進化與未進化之分
+
+  # ===== E =====
+  - term: Energy
+    senses:
+      - id: energy_spiritual
+        definition: 非物質層面的振動力量或生命力
+        preferred_translation: 能量
+        segments: [213, 214, 218, 253, 338, 340, 347, 355, 396, 463, 532, 536, 539, 550, 553, 583, 601, 617, 619, 621]
+        notes: 靈性語境常指氣場、脈輪、療癒能量等
+
+      - id: energy_dark
+        definition: 負面或低振動的能量狀態
+        preferred_translation: 黑暗能量
+        segments: [174, 639]
+        notes: 本集中描述某些存有或經驗的能量品質
+
+  # ===== F =====
+  - term: Fall of Atlantis
+    senses:
+      - id: fall_of_atlantis_event
+        definition: 傳說中亞特蘭提斯文明的毀滅，象徵人類意識的墜落
+        preferred_translation: 亞特蘭提斯的隕落
+        segments: [421]
+        notes: 本集提及與人類墜入第三密度有關
+
+  - term: FLDS
+    senses:
+      - id: flds_mormon_sect
+        definition: 摩門教基本教義派（Fundamentalist Church of Jesus Christ of Latter-Day Saints）
+        preferred_translation: 摩門教基本教義派
+        segments: [316]
+        notes: 從主流摩門教分離出來，仍實行一夫多妻制
+
+  - term: Fourth Density
+    senses:
+      - id: fourth_density_consciousness
+        definition: 比第三密度更高的意識振動層次
+        preferred_translation: 第四密度
+        segments: [141, 394, 398, 400]
+        notes: 人類與地球正在朝此層次進化
+
+  # ===== G =====
+  - term: Gray
+    senses:
+      - id: gray_zeta_alien
+        definition: 典型的大頭灰膚外星人，常與網罟座澤塔星系連結
+        preferred_translation: 小灰人
+        segments: [113, 155, 156, 157]
+        notes: 本集中 Balthazar 最初以此形象出現；亦稱 Zeta
+
+  # ===== H =====
+  - term: Healing
+    senses:
+      - id: healing_spiritual
+        definition: 通過能量、意識或靈性方法促進整體療癒的過程
+        preferred_translation: 療癒
+        segments: [70, 437, 438, 448, 455]
+
+  - term: human consciousness
+    senses:
+      - id: human_consciousness_collective
+        definition: 人類集體意識場域
+        preferred_translation: 人類意識
+        segments: [364]
+
+  # ===== I =====
+  - term: Illuminati
+    senses:
+      - id: illuminati_conspiracy
+        definition: 陰謀論中的秘密組織，常與爬蟲人統治論連結
+        preferred_translation: 光明會
+        segments: [513]
+        notes: 本集討論對爬蟲人的負面制約包含此類陰謀論
+
+  - term: intelligent life
+    senses:
+      - id: intelligent_life_extraterrestrial
+        definition: 具有智慧的生命形式，通常指外星生命
+        preferred_translation: 智慧生命
+        segments: [13]
+
+  - term: Intention
+    senses:
+      - id: intention_manifestation
+        definition: 透過意念設定目標或能量方向
+        preferred_translation: 心念
+        segments: [209]
+        notes: 通靈時需要設定正確的意圖以避免負面實體
+
+  - term: intuitive body
+    senses:
+      - id: intuitive_body_perception
+        definition: 直覺感知系統，超越五感的內在知曉
+        preferred_translation: 直覺身體
+        segments: [8]
+
+  # ===== J =====
+  - term: Joseph Smith
+    senses:
+      - id: joseph_smith_mormon_founder
+        definition: 摩門教（耶穌基督後期聖徒教會）創始人
+        preferred_translation: 約瑟·斯密
+        segments: [632]
+        notes: Deete 提到他最初接收的訊息較為正面，後被扭曲
+
+  # ===== L =====
+  - term: Lyran
+    senses:
+      - id: lyran_feline_beings
+        definition: 來自天琴座的貓科外星族群
+        preferred_translation: 天琴座人
+        segments: [103]
+        notes: Deete 早期接觸經驗中見過此族群
+
+  # ===== M =====
+  - term: Mantis
+    senses:
+      - id: mantis_facilitator
+        definition: 螳螂型外星族群，常擔任溝通促進者角色
+        preferred_translation: 螳螂族
+        segments: [333, 341, 347, 352]
+        notes: 本集中與 Zeta 一同出現，協助提升 Deete 的振動以接收訊息
+
+  - term: Medium
+    senses:
+      - id: medium_spiritual
+        definition: 能與已逝靈魂溝通的靈媒
+        preferred_translation: 靈媒
+        segments: [70]
+        notes: Deete 從與祖母溝通開始發展此能力
+
+  - term: Mind
+    senses:
+      - id: mind_intellect
+        definition: 理性思維、邏輯分析的認知功能
+        preferred_translation: 心智
+        segments: [83, 91, 102]
+        notes: 常與 Heart（心）對比，強調頭腦層面的運作；本集討論「邏輯心智」如何質疑通靈經驗
+
+  - term: Mormon
+    senses:
+      - id: mormon_religion
+        definition: 耶穌基督後期聖徒教會（通稱摩門教）的成員或文化
+        preferred_translation: 摩門教
+        segments: [35, 45, 54]
+        notes: Deete 的成長背景；Salt Lake City 為其總部所在
+
+  - term: Mormon church
+    senses:
+      - id: mormon_church_institution
+        definition: 摩門教會組織
+        preferred_translation: 摩門教會
+        segments: [258, 308, 311, 323]
+
+  # ===== N =====
+  - term: New Age community
+    senses:
+      - id: new_age_community_spiritual
+        definition: 新時代靈性社群
+        preferred_translation: 新時代社群
+        segments: [512]
+        notes: 本集討論即使在此社群中，對爬蟲人的制約仍存在
+
+  # ===== O =====
+  - term: other-dimensional communication
+    senses:
+      - id: other_dimensional_communication
+        definition: 與其他維度存有的溝通
+        preferred_translation: 跨維度溝通
+        segments: [53]
+
+  # ===== P =====
+  - term: Pleiades
+    senses:
+      - id: pleiades_star_system
+        definition: 昴宿星團，多個外星族群的家園
+        preferred_translation: 昴宿星團
+        segments: [129]
+        notes: 本集中提及作為星系來源的例子
+
+  - term: polygamy
+    senses:
+      - id: polygamy_mormon_practice
+        definition: 一夫多妻制，早期摩門教實行的婚姻制度
+        preferred_translation: 一夫多妻制
+        segments: [322, 331]
+
+  - term: Princess Diana
+    senses:
+      - id: princess_diana_spirit
+        definition: 已故英國威爾斯王妃，Deete 首次公開通靈的對象
+        preferred_translation: 黛安娜王妃
+        segments: [229]
+        notes: 此通靈影片促使 Deete 決定公開分享能力
+
+  - term: private channelings
+    senses:
+      - id: private_channelings_sessions
+        definition: 私人通靈服務或場次
+        preferred_translation: 私人通靈
+        segments: [250, 650]
+        notes: 有時簡稱為 "private channel"
+
+  # ===== R =====
+  - term: Reality
+    senses:
+      - id: reality_subjective
+        definition: 個體或集體創造的經驗世界與存在狀態
+        preferred_translation: 實相
+        segments: [392, 504]
+        notes: 新時代語境常見於「創造你的實相」、「多重實相」
+
+  - term: red-haired giant
+    senses:
+      - id: red_haired_giant_beings
+        definition: 紅髮巨人族，傳說中的古代族群
+        preferred_translation: 紅髮巨人
+        segments: [588, 589]
+        notes: Deete 通靈時感受到奇異的動物性能量
+
+  - term: Reptilian
+    senses:
+      - id: reptilian_extraterrestrial
+        definition: 爬蟲類外星族群（單數或泛指）
+        preferred_translation: 爬蟲人
+        segments: [99, 107, 132, 140, 155, 157]
+        notes: 本集強調並非所有爬蟲人都是負面的，許多是進化的服務型存有
+
+  - term: Reptilians
+    senses:
+      - id: reptilians_plural
+        definition: 爬蟲人族群（複數）
+        preferred_translation: 爬蟲人
+        segments: [99, 126, 131, 461, 470, 475, 480, 487, 512, 513, 518]
+        notes: 本集核心主題之一，破除對爬蟲人的負面刻板印象
+
+  - term: Rob Gauthier
+    senses:
+      - id: rob_gauthier_channeler
+        definition: 另一位知名通靈者，通靈名為 Aridif 的天龍座存有
+        preferred_translation: 羅伯·高提耶
+        segments: [475]
+        notes: Reuben 提到他通靈的爬蟲人訊息
+
+  # ===== S =====
+  - term: Salt Lake City
+    senses:
+      - id: salt_lake_city_location
+        definition: 猶他州首府，摩門教總部所在地
+        preferred_translation: 鹽湖城
+        segments: [36, 37]
+        notes: Deete 的居住地與工作環境
+
+  - term: Surrender
+    senses:
+      - id: surrender_trust
+        definition: 放下控制，完全信任宇宙或高我安排
+        preferred_translation: 臣服
+        segments: [171]
+        notes: 蝙蝠型天龍座存有要求 Deete 臣服於靈性道路
+
+  # ===== T =====
+  - term: the other side
+    senses:
+      - id: the_other_side_spirit_realm
+        definition: 靈界、彼岸，指已逝靈魂所在的非物質層面
+        preferred_translation: 彼岸
+        segments: [72, 74]
+
+  - term: Third Density
+    senses:
+      - id: third_density_current_human
+        definition: 當前人類主要的意識振動層次，特徵為分離感與恐懼
+        preferred_translation: 第三密度
+        segments: [396]
+        notes: 本集討論人類如何墜入並正在提升出此密度
+
+  - term: Trance
+    senses:
+      - id: trance_channeling_state
+        definition: 進入意識改變、介於醒與睡之間的通靈狀態
+        preferred_translation: 出神
+        segments: [553, 558, 559, 574, 575, 576]
+        notes: Deete 採用「清醒通靈」而非深度出神狀態
+
+  - term: translating in real time
+    senses:
+      - id: translating_in_real_time_method
+        definition: Deete 的清醒通靈方式，保持部分意識即時翻譯訊息
+        preferred_translation: 即時翻譯
+        segments: [547]
+        notes: 與深度出神狀態不同，允許通靈者參與解釋
+
+  # ===== V =====
+  - term: Vibration
+    senses:
+      - id: vibration_energetic
+        definition: 能量或意識的振動狀態，描述個體或環境的能量層次
+        preferred_translation: 頻率
+        segments: [197, 289, 336]
+        notes: 本集三處用法皆指能量層次的高低，「頻率」比「振動」更符合中文語感
+
+  - term: Visitation
+    senses:
+      - id: visitation_spirit_contact
+        definition: 已逝靈魂或存有的拜訪或顯現
+        preferred_translation: 顯靈
+        segments: [44, 56]
+        notes: Deete 從祖母的顯靈開始發展通靈能力
+
+  # ===== Y =====
+  - term: YouTube
+    senses:
+      - id: youtube_platform
+        definition: 影片分享平台
+        preferred_translation: YouTube
+        segments: [229, 241]
+        notes: Deete 在此平台首次公開通靈黛安娜王妃
+
+  # ===== Z =====
+  - term: Zeta
+    senses:
+      - id: zeta_gray_alien
+        definition: 來自網罟座ζ星系的灰人族群
+        preferred_translation: 澤塔族
+        segments: [333, 341, 358]
+        notes: 與 Gray（小灰人）同義；本集中與螳螂族一同傳遞古代訊息

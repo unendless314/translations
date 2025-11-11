@@ -1,0 +1,702 @@
+episode_id: S01-E31
+
+terms:
+  # ===== 核心存有與族群（依字母順序） =====
+
+  - term: Ancient Pleiadians
+    senses:
+      - id: ancient_pleiadians
+        definition: Aridif 所屬的古老昴宿星族群
+        preferred_translation: 古昴宿星人
+        segments: [1214, 1307]
+
+  - term: Anunnaki
+    senses:
+      - id: anunnaki_mythology
+        definition: 美索不達米亞神話中的外星/神祇族群
+        preferred_translation: 阿努納奇
+        segments: [1414]
+
+  - term: Aridif
+    senses:
+      - id: aridif_guide
+        definition: 第六密度存有，TReb 的導師，來自天鵝座天津四星的古昴宿星人
+        preferred_translation: 阿里迪夫
+        notes: 又稱 Deneb Cygnus，曾與古埃及、南非文明互動
+        segments: [3, 7, 9, 13, 1158, 1164, 1167, 1180, 1181, 1182, 1195, 1197, 1199, 1202, 1209, 1210, 1211, 1213, 1214, 1224, 1232, 1233, 1238, 1239, 1240, 1242, 1256, 1261, 1271, 1272, 1296, 1303]
+
+  - term: Bashar
+    senses:
+      - id: bashar_entity
+        definition: 高頻率外星存有，以智慧與高能量聞名
+        preferred_translation: 巴夏
+        segments: [1178]
+
+  - term: Deneb Cygnus
+    senses:
+      - id: deneb_cygnus_star
+        definition: 天鵝座天津四星，Aridif 的名稱之一
+        preferred_translation: 天鵝座天津四
+        notes: TReb 使用此名稱介紹 Aridif
+        segments: [1206, 1208, 1239]
+
+  - term: Metatron
+    senses:
+      - id: metatron_archangel
+        definition: 高維度光之存有或大天使
+        preferred_translation: 梅塔特隆
+        segments: [1160, 1339, 1340]
+
+  - term: Nihal
+    senses:
+      - id: nihal_future_humans
+        definition: 未來人類的集體意識，TReb 族群的基因工程師
+        preferred_translation: 尼哈爾
+        notes: 時間迴圈中的未來人類，離開地球後成為 TReb 的創造者
+        segments: [1339, 1351, 1356, 1358, 1361, 1365, 1367, 1369, 1382, 1412]
+
+  - term: TReb
+    senses:
+      - id: treb_entity
+        definition: 7.5 呎高的藍綠色爬蟲族第五密度存有，Rob 的主要通靈對象
+        preferred_translation: 崔博
+        notes: 全名 Treb-BOR-yit-Ne，來自 Capellan 區域
+        segments: [348, 360, 361, 389, 391, 400, 402, 470]
+
+  # ===== 人名與角色 =====
+
+  - term: Avatar
+    senses:
+      - id: avatar_film
+        definition: 2009 年詹姆斯·卡麥隆執導的科幻電影
+        preferred_translation: 《阿凡達》
+        segments: [57]
+
+  - term: Carla Rueckert
+    senses:
+      - id: carla_rueckert_channeler
+        definition: Law of One / Ra Material 的主要通靈者
+        preferred_translation: 卡拉·魯克特
+        segments: [561, 848]
+
+  - term: Darryl Anka
+    senses:
+      - id: darryl_anka_channeler
+        definition: Bashar 的通靈者
+        preferred_translation: 達瑞爾·安卡
+        segments: [663, 987]
+
+  - term: David Icke
+    senses:
+      - id: david_icke_researcher
+        definition: 英國陰謀論研究者，關注爬蟲人議題
+        preferred_translation: 大衛·艾克
+        segments: [1395, 1417]
+
+  - term: Esther Hicks
+    senses:
+      - id: esther_hicks_channeler
+        definition: Abraham Hicks 集體意識的通靈者
+        preferred_translation: 伊絲特·希克斯
+        segments: [667]
+
+  - term: Abraham Hicks
+    senses:
+      - id: abraham_hicks_collective
+        definition: 通過 Esther Hicks 通靈的集體意識
+        preferred_translation: 亞伯拉罕希克斯
+        segments: [667]
+
+  - term: ET Whisperer
+    senses:
+      - id: et_whisperer_title
+        definition: Rob Gauthier 的稱號，意為「外星耳語者」
+        preferred_translation: 外星耳語者
+        segments: [1]
+
+  - term: Jane Roberts
+    senses:
+      - id: jane_roberts_channeler
+        definition: Seth Material 的通靈者
+        preferred_translation: 珍·羅伯茲
+        segments: [564]
+
+  - term: Kalina
+    senses:
+      - id: kalina_partner
+        definition: Rob Gauthier 的靈性伴侶
+        preferred_translation: 卡莉娜
+        segments: [1, 668, 669, 1012, 1083, 1088, 1089, 1122]
+
+  - term: Kryon
+    senses:
+      - id: kryon_entity
+        definition: 高維度存有，Lee Carroll 通靈對象
+        preferred_translation: 克里昂
+        segments: [664]
+
+  - term: Rob Gauthier
+    senses:
+      - id: rob_gauthier_channeler
+        definition: 本集主角，通靈者，能接觸 100+ 外星意識
+        preferred_translation: 羅伯·高希爾
+        segments: [69]
+
+  - term: Reuben Langdon
+    senses:
+      - id: reuben_langdon_host
+        definition: 本集主持人，演員與製片人
+        preferred_translation: 魯本·蘭登
+        segments: [55]
+
+  # ===== 靈性概念與技術（依字母順序） =====
+
+  - term: 21 state
+    senses:
+      - id: state_21_hemi_sync
+        definition: Gateway Experience 的最高階段，完全意識整合狀態
+        preferred_translation: 焦點 21
+        notes: 門羅研究所的正式術語為 "Focus 21"
+        segments: [373, 376]
+
+  - term: astral projection
+    senses:
+      - id: astral_projection_obe
+        definition: 意識離開肉身進入星光層的狀態
+        preferred_translation: 星光體投射
+        segments: [257]
+
+  - term: Astral
+    senses:
+      - id: astral_plane
+        definition: 非物質的星光層維度
+        preferred_translation: 星光層
+        segments: [257, 335]
+
+  - term: Being
+    senses:
+      - id: being_conscious
+        definition: 具意識的存在體（外星存有、靈體等）
+        preferred_translation: 存有
+        segments: [27, 92, 404, 499, 648, 816, 1029, 1043, 1178, 1181, 1185, 1191, 1196, 1197, 1206, 1226, 1250, 1284, 1366, 1367, 1372, 1373]
+
+  - term: binaural stuff
+    senses:
+      - id: binaural_beats
+        definition: 雙耳節拍音頻技術
+        preferred_translation: 雙耳節拍
+        segments: [252]
+
+  - term: building a bridge
+    senses:
+      - id: building_bridge_connection
+        definition: 通靈者與存有間建立的能量連結
+        preferred_translation: 建立橋樑
+        segments: [991]
+
+  - term: Cerebral palsy
+    senses:
+      - id: cerebral_palsy_capitalized
+        definition: 腦性麻痺，影響運動與協調的神經疾病
+        preferred_translation: 腦性麻痺
+        segments: [124]
+
+  - term: Christianity
+    senses:
+      - id: christianity_religion
+        definition: 基督教
+        preferred_translation: 基督教
+        segments: [76]
+
+  - term: chakras
+    senses:
+      - id: chakras_energy_centers
+        definition: 能量中心或脈輪
+        preferred_translation: 脈輪
+        segments: [300]
+
+  - term: Chakra's
+    senses:
+      - id: chakras_energy_centers
+        definition: 能量中心或脈輪
+        preferred_translation: 脈輪
+        notes: 原文拼寫有誤（Chakra's 應為 Chakras）
+        segments: [7]
+
+  - term: chakra systems
+    senses:
+      - id: chakra_systems_energy
+        definition: 脈輪系統，能量中心的整體結構
+        preferred_translation: 脈輪系統
+        segments: [930]
+
+  - term: channel
+    senses:
+      - id: channel_spiritual_verb
+        definition: 接收並傳遞非物質訊息的行為
+        preferred_translation: 通靈
+        segments: [70, 646, 661, 678, 682, 809, 814, 927, 992, 1020, 1022, 1052, 1158, 1161, 1261]
+
+  - term: channelers
+    senses:
+      - id: channelers_plural
+        definition: 通靈者（複數）
+        preferred_translation: 通靈者們
+        segments: [2]
+
+  - term: channeling
+    senses:
+      - id: channeling_practice
+        definition: 通靈的實踐與過程
+        preferred_translation: 通靈
+        segments: [35]
+
+  - term: channeling process
+    senses:
+      - id: channeling_process_method
+        definition: 通靈的具體方法與流程
+        preferred_translation: 通靈過程
+        segments: [72]
+
+  - term: closed-eye technique
+    senses:
+      - id: closed_eye_meditation
+        definition: Rob 使用的閉眼冥想技巧
+        preferred_translation: 閉眼技法
+        segments: [1118, 1123]
+
+  - term: co-creation
+    senses:
+      - id: co_creation_manifestation
+        definition: 與他人或宇宙共同創造實相
+        preferred_translation: 共同創造
+        segments: [16, 24, 25, 37, 39]
+
+  - term: Collective consciousness
+    senses:
+      - id: collective_consciousness_shared
+        definition: 群體共享的意識場域
+        preferred_translation: 集體意識
+        segments: [2, 18, 1217, 1353, 1355]
+
+  - term: conscious mindset
+    senses:
+      - id: conscious_mindset_awareness
+        definition: 有意識的心態或思維模式
+        preferred_translation: 有意識心態
+        segments: [23, 35]
+
+  - term: Consciousness
+    senses:
+      - id: consciousness_awareness
+        definition: 覺知狀態與意識層次
+        preferred_translation: 意識
+        segments: [8, 18, 46, 379, 444, 569, 816, 1073, 1217, 1353, 1355, 1380]
+
+  - term: Ego
+    senses:
+      - id: ego_lower_self
+        definition: 以自我為中心的心理結構
+        preferred_translation: 小我
+        segments: [648]
+
+  - term: energetic muscle memory
+    senses:
+      - id: energetic_muscle_memory
+        definition: 能量連結的記憶與慣性
+        preferred_translation: 能量肌肉記憶
+        segments: [979]
+
+  - term: Energy
+    senses:
+      - id: energy_spiritual
+        definition: 非物質層面的振動力量
+        preferred_translation: 能量
+        segments: [2, 9, 16, 24, 31, 47, 50, 435, 465, 929, 971, 972, 1000, 1015, 1069, 1076, 1079, 1089, 1178, 1194, 1198, 1203, 1218, 1224, 1225, 1263, 1377, 1385]
+
+  - term: Entity
+    senses:
+      - id: entity_non_physical
+        definition: 非物質或跨維度的意識存在
+        preferred_translation: 實體
+        segments: [47, 865, 874, 1208, 1214, 1276, 1387]
+
+  - term: ET consciousnesses
+    senses:
+      - id: et_consciousnesses_plural
+        definition: 外星意識體（複數）
+        preferred_translation: 外星意識們
+        segments: [1]
+
+  - term: Existence
+    senses:
+      - id: existence_state_of_being
+        definition: 存在本身或生命狀態
+        preferred_translation: 存在
+        segments: [33]
+
+  - term: Gateway Experience
+    senses:
+      - id: gateway_experience_program
+        definition: Monroe Institute 的進階冥想課程
+        preferred_translation: 門戶體驗
+        segments: [256, 323, 373]
+
+  - term: Healing
+    senses:
+      - id: healing_spiritual
+        definition: 靈性或能量層面的療癒
+        preferred_translation: 療癒
+        segments: [295]
+
+  - term: Hemi-Sync
+    senses:
+      - id: hemi_sync_technology
+        definition: Monroe Institute 的大腦半球同步音頻技術
+        preferred_translation: 半腦同步技術
+        segments: [253, 279, 281, 287, 290, 292, 308]
+
+  - term: Higher self
+    senses:
+      - id: higher_self_inner_guidance
+        definition: 個體更高維度的意識面向
+        preferred_translation: 高我
+        segments: [9, 377, 1145]
+
+  - term: Incarnation
+    senses:
+      - id: incarnation_cycle
+        definition: 靈魂進入肉身的轉世過程
+        preferred_translation: 轉世
+        segments: [1303]
+
+  - term: Komodo dragons
+    senses:
+      - id: komodo_dragons_creatures
+        definition: 科莫多巨蜥，用於類比 TReb 星球的生物
+        preferred_translation: 科莫多巨蜥
+        segments: [779]
+
+  - term: Law of One
+    senses:
+      - id: law_of_one_material
+        definition: 1980 年代的外星通靈資料，又稱 Ra Material
+        preferred_translation: 一的法則
+        segments: [559, 848]
+
+  - term: manifestations
+    senses:
+      - id: manifestations_creations
+        definition: 顯化、實現或創造出的事物
+        preferred_translation: 顯化
+        segments: [39]
+
+  - term: meditation
+    senses:
+      - id: meditation_practice
+        definition: 冥想修行
+        preferred_translation: 冥想
+        segments: [209, 256, 258, 259, 263, 270, 272, 276, 278]
+
+  - term: mediumship
+    senses:
+      - id: mediumship_practice
+        definition: 靈媒術、通靈實踐
+        preferred_translation: 靈媒術
+        segments: [550]
+
+  - term: meditative state
+    senses:
+      - id: meditative_state_trance
+        definition: 深度冥想的意識狀態
+        preferred_translation: 冥想狀態
+        segments: [645, 690]
+
+  - term: Mind
+    senses:
+      - id: mind_intellect
+        definition: 理性思維與認知功能
+        preferred_translation: 心智
+        segments: [40, 173, 380, 440, 468, 534, 866, 868, 933, 1231, 1295]
+
+  - term: Monroe Institute
+    senses:
+      - id: monroe_institute_org
+        definition: 研究意識狀態的美國組織，開發 Hemi-Sync 技術
+        preferred_translation: 門羅研究所
+        segments: [245, 251]
+
+  - term: Nature
+    senses:
+      - id: nature_essence
+        definition: 事物的本質或核心特質
+        preferred_translation: 本質
+        segments: [8, 185]
+
+  - term: non-physical entity
+    senses:
+      - id: non_physical_entity_being
+        definition: 非物質存在體
+        preferred_translation: 非物質實體
+        segments: [47]
+
+  - term: Oming sounds
+    senses:
+      - id: oming_sounds_technique
+        definition: Rob 使用的 Oming 發聲技術，用於共振調頻
+        preferred_translation: Oming 聲音
+        segments: [3, 4, 13]
+
+  - term: out of body experiences
+    senses:
+      - id: obe_astral_travel_no_hyphen
+        definition: 靈魂出體經驗（無連字符版本）
+        preferred_translation: 靈魂出竅體驗
+        notes: 與 "out-of-body experiences" 意義相同
+        segments: [258]
+
+  - term: out-of-body experiences
+    senses:
+      - id: obe_astral_travel
+        definition: 靈魂出體經驗
+        preferred_translation: 靈魂出竅體驗
+        notes: 原文中也有無連字符版本 "out of body experiences"
+        segments: [334]
+
+  - term: Oversoul
+    senses:
+      - id: oversoul_collective_self
+        definition: 統攝多個靈魂的更高層次意識
+        preferred_translation: 超靈
+        segments: [9, 1225]
+
+  - term: Physical
+    senses:
+      - id: physical_tangible
+        definition: 物質層面的、有形的
+        preferred_translation: 物質的
+        segments: [24, 47, 123, 138, 927, 1225, 1250, 1301, 1318, 1379, 1380]
+
+  - term: Physical Reality
+    senses:
+      - id: physical_reality_plane
+        definition: 物質世界或實相
+        preferred_translation: 物質實相
+        segments: [1225, 1318]
+
+  - term: Pleiadians
+    senses:
+      - id: pleiadians_extraterrestrial
+        definition: 昴宿星人
+        preferred_translation: 昴宿星人
+        segments: [1307]
+
+  - term: psychic ability
+    senses:
+      - id: psychic_ability_powers
+        definition: 超感官能力或靈通力
+        preferred_translation: 通靈能力
+        segments: [1081, 1097]
+
+  - term: psychic mediums
+    senses:
+      - id: psychic_mediums_practitioners
+        definition: 通靈媒介，連接靈界的實踐者
+        preferred_translation: 靈媒
+        segments: [847]
+
+  - term: queries
+    senses:
+      - id: queries_questions
+        definition: 提問、詢問
+        preferred_translation: 提問
+        segments: [15, 52]
+
+  - term: Reading
+    senses:
+      - id: reading_divination
+        definition: 透過直覺或工具解讀訊息的服務
+        preferred_translation: 靈性解讀
+        notes: 視語境可譯為「占卜」（強調預測）或「解讀」（強調訊息傳遞）
+        segments: [210]
+
+  - term: Ra Material
+    senses:
+      - id: ra_material_channeling
+        definition: 1980 年代的外星通靈資料，又稱 Law of One
+        preferred_translation: 一的法則
+        notes: 原文為 Ra Material，但「一的法則」是中文世界更通用的名稱
+        segments: [559, 568, 575]
+
+  - term: Reality
+    senses:
+      - id: reality_subjective
+        definition: 個體創造的經驗世界
+        preferred_translation: 實相
+        segments: [22, 23, 84, 221, 347, 443, 973, 1225, 1318, 1324, 1360]
+
+  - term: Reptilians
+    senses:
+      - id: reptilians_extraterrestrial
+        definition: 爬蟲類外星族群
+        preferred_translation: 爬蟲人
+        segments: [1390, 1391, 1396, 1402, 1413, 1414]
+
+  - term: Earth reptilians
+    senses:
+      - id: earth_reptilians_ancient
+        definition: 地球上的古老爬蟲人種族
+        preferred_translation: 地球爬蟲人
+        segments: [1414]
+
+  - term: second density life
+    senses:
+      - id: second_density_life_evolutionary
+        definition: 第二密度生命，動物層次的生命形式
+        preferred_translation: 第二密度生命
+        notes: 「密度」(Density) 在此指「意識層級」而非物理的「空間維度」。第二密度對應植物與動物的意識層次。
+        segments: [779]
+
+  - term: seizures
+    senses:
+      - id: seizures_medical
+        definition: 癲癇發作、痙攣
+        preferred_translation: 癲癇發作
+        segments: [134]
+
+  - term: fifth density being
+    senses:
+      - id: fifth_density_being
+        definition: 第五密度存有，如 TReb
+        preferred_translation: 第五密度存有
+        segments: [1196]
+
+  - term: sixth density being
+    senses:
+      - id: sixth_density_being
+        definition: 第六密度存有，如 Aridif
+        preferred_translation: 第六密度存有
+        segments: [1197]
+
+  - term: astral project
+    senses:
+      - id: astral_project_verb
+        definition: 星光體投射（動詞）
+        preferred_translation: 星光體投射
+        segments: [335]
+
+  - term: Type 1 extraterrestrial
+    senses:
+      - id: type_1_extraterrestrial
+        definition: 第一類型外星人，尊重自由意志
+        preferred_translation: 第一類型外星人
+        segments: [1274]
+
+  - term: resonant tuning
+    senses:
+      - id: resonant_tuning_oming
+        definition: 透過 Oming 聲音進行的共振調頻
+        preferred_translation: 共振調頻
+        segments: [4]
+
+  - term: Seth Material
+    senses:
+      - id: seth_material_books
+        definition: Jane Roberts 通靈的 Seth 系列書籍
+        preferred_translation: 賽斯資料
+        segments: [564, 568]
+
+  - term: Seth Speaks, the Eternal Validity of the Soul
+    senses:
+      - id: seth_speaks_book
+        definition: 賽斯資料的核心著作之一
+        preferred_translation: 《賽斯：靈魂永生》
+        notes: 官方繁體中文譯名。原文全名為 'Seth Speaks: The Eternal Validity of the Soul'。
+        segments: [603]
+
+  - term: Spiritual
+    senses:
+      - id: spiritual_adjective
+        definition: 與靈性、意識相關的
+        preferred_translation: 靈性的
+        segments: [167, 190, 196, 671, 1143]
+
+  - term: spiritual journey
+    senses:
+      - id: spiritual_journey_path
+        definition: 靈性探索與成長的旅程
+        preferred_translation: 靈性旅程
+        segments: [190, 1143]
+
+  - term: telepathy
+    senses:
+      - id: telepathy_communication
+        definition: 心電感應或心靈感應
+        preferred_translation: 心電感應
+        segments: [451]
+
+  - term: Trance
+    senses:
+      - id: trance_state
+        definition: 出神狀態，介於醒與睡之間
+        preferred_translation: 出神
+        segments: [1020, 1023]
+
+  - term: trance channeling
+    senses:
+      - id: trance_channeling_deep
+        definition: 深度出神狀態下的通靈
+        preferred_translation: 出神通靈
+        segments: [1020, 1023]
+
+  - term: Type 1
+    senses:
+      - id: type_1_et_classification
+        definition: 尊重自由意志、不干涉的外星存有類型
+        preferred_translation: 第一類型
+        segments: [1271, 1272, 1274, 1276]
+
+  - term: Type 2
+    senses:
+      - id: type_2_et_classification
+        definition: 具侵略性、干涉傾向的外星存有類型
+        preferred_translation: 第二類型
+        segments: [1271, 1283, 1284]
+
+  - term: UFO
+    senses:
+      - id: ufo_general
+        definition: 不明飛行物
+        preferred_translation: 不明飛行物
+        segments: [543]
+
+  - term: Vibration
+    senses:
+      - id: vibration_physical_sensation
+        definition: 由聲音或能量引發的身體感受或物理性震動
+        preferred_translation: 振動
+        segments: [285, 298]
+
+  - term: Vibration
+    senses:
+      - id: vibration_consciousness_level
+        definition: 個人或意識的能量狀態或頻率水平
+        preferred_translation: 頻率
+        notes: 可依語境譯為「能量狀態」或「振動頻率」
+        segments: [953, 1145]
+
+  - term: Yit ships
+    senses:
+      - id: yit_ships_spacecraft
+        definition: TReb 族群的飛船
+        preferred_translation: 伊特飛船
+        segments: [400]
+
+  # ===== 地理與星系位置 =====
+
+  - term: Capellan region
+    senses:
+      - id: capellan_region_space
+        definition: 五車二星區域，TReb 族群的來源地
+        preferred_translation: 五車二星域
+        segments: [1366]
