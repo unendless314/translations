@@ -1,0 +1,748 @@
+# Terminology for S01-E22
+#
+# 此檔案由 terminology_candidates.yaml 分類而成，將每個術語的出現段落
+# 分配到對應的語義項（sense）下。每個 sense 包含：
+#   - id: 語義識別碼（繼承自 template）
+#   - definition: 語義說明
+#   - preferred_translation: 優先譯法
+#   - notes: 補充說明
+#   - segments: 屬於此語義的段落 ID 陣列（精確定位）
+
+episode_id: S01-E22
+terms:
+  # ===== A =====
+  - term: Astral
+    senses:
+      - id: astral_plane
+        definition: 指星光層或非物質維度的形容詞
+        preferred_translation: 星光
+        notes: 搭配名詞時可譯為「星光界」、「星光層」
+        segments: [302, 423, 507]
+
+  # ===== B =====
+  - term: Being
+    senses:
+      - id: being_conscious
+        definition: 具意識或靈性的存在體（泛指人類、外星、靈體等有覺知的生命）
+        preferred_translation: 存有
+        notes: 強調主體性與意識狀態，視語境可譯為「生命體」、「存在」；外星語境可加註「外星存有」
+        segments: [228, 240, 269, 287, 288, 293, 316, 320]
+
+  # ===== C =====
+  - term: channel
+    senses:
+      - id: channel_spiritual_noun
+        definition: 通靈管道、靈媒，指具備接收非物質訊息能力的個體
+        preferred_translation: 通靈管道
+        notes: 視語境可譯為「靈媒」、「通靈者」、「管道」
+        segments: [48, 348]
+
+      - id: channel_spiritual_verb
+        definition: 透過靈性方法接收並傳遞非物質訊息的行為（動詞/動名詞）
+        preferred_translation: 通靈
+        notes: 涵蓋 "channeling" 的所有用法，如「他正在通靈」、「通靈訊息」
+        segments: [84, 652, 653]
+
+      - id: channel_broadcast
+        definition: 電視頻道或節目來源
+        preferred_translation: 頻道
+        notes: 用於介紹節目或平台時
+        segments: [577, 673]
+
+  # ===== D =====
+  - term: Dimension
+    senses:
+      - id: dimension_spiritual_plane
+        definition: 超越物理三度空間的存在層級或頻率
+        preferred_translation: 維度
+        notes: 視語境可譯為「次元」
+        segments: [579]
+
+  # ===== E =====
+  - term: Energy
+    senses:
+      - id: energy_spiritual
+        definition: 非物質層面的振動力量或生命力
+        preferred_translation: 能量
+        notes: 靈性語境常指氣場、脈輪、療癒能量等
+        segments: [32, 54, 114, 200, 301, 302, 307, 310, 320, 337, 392, 434]
+
+  # ===== F =====
+  - term: Frequency
+    senses:
+      - id: frequency_vibrational
+        definition: 存有或事物的振動頻率，與意識層次、能量狀態相關
+        preferred_translation: 頻率
+        notes: 常見於「提升頻率」、「頻率對齊」等新時代語境
+        segments: [299]
+
+  # ===== G =====
+  - term: Guides
+    senses:
+      - id: guides_spiritual
+        definition: 在靈性層面提供指引的存在
+        preferred_translation: 指導靈
+        segments: [347, 357, 358, 471]
+
+  # ===== H =====
+  - term: Healing
+    senses:
+      - id: healing_spiritual
+        definition: 通過能量、意識或靈性方法促進整體療癒的過程
+        preferred_translation: 療癒
+        segments: [55, 224, 290, 301, 302, 337, 371, 372, 373, 374, 375, 377, 379, 393, 447]
+
+  - term: Higher self
+    senses:
+      - id: higher_self_inner_guidance
+        definition: 個體更高維的意識、本質或導引面向
+        preferred_translation: 高我
+        segments: [2]
+
+  - term: Hybrid
+    senses:
+      - id: hybrid_starfamily
+        definition: 由人類與外星基因結合而成的族群
+        preferred_translation: 混種
+        notes: 星際家族脈絡常見
+        segments: [179]
+
+  # ===== I =====
+  - term: Interdimensional
+    senses:
+      - id: interdimensional_travel
+        definition: 涉及跨越不同維度或次元的形容詞
+        preferred_translation: 跨維度
+        segments: [32]
+
+  # ===== M =====
+  - term: Mind
+    senses:
+      - id: mind_intellect
+        definition: 理性思維、邏輯分析的認知功能
+        preferred_translation: 心智
+        notes: 常與 Heart（心）對比，強調頭腦層面的運作
+        segments: [2, 258, 330, 332, 378, 452, 641, 663]
+
+  # ===== N =====
+  - term: Nature
+    senses:
+      - id: nature_essence
+        definition: 事物的核心特質或本來面貌
+        preferred_translation: 本質
+        segments: [355]
+
+  # Note: segment 291 "connected to nature" refers to the natural world, not essence
+
+  # ===== P =====
+  - term: Pleiadians
+    senses:
+      - id: pleiadians_extraterrestrial
+        definition: 來自昴宿星團的外星族群
+        preferred_translation: 昴宿星人
+        segments: [195]
+
+  - term: Physical
+    senses:
+      - id: physical_tangible
+        definition: 涉及物質層面或肉身的形容詞
+        preferred_translation: 物質的
+        notes: 視語境亦可譯為「有形的」、「肉身的」
+        segments: [65, 304, 311, 447, 667]
+
+  # ===== R =====
+  - term: Reality
+    senses:
+      - id: reality_subjective
+        definition: 個體或集體創造的經驗世界與存在狀態
+        preferred_translation: 實相
+        notes: 新時代語境常見於「創造你的實相」、「多重實相」、「平行實相」等概念
+        segments: [378]
+
+      - id: reality_objective
+        definition: 獨立於觀察者的客觀事實或物質世界
+        preferred_translation: 現實
+        segments: [347, 373]
+
+  # ===== S =====
+  - term: Sirian
+    senses:
+      - id: sirian_starbeing
+        definition: 來自天狼星系的外星族群
+        preferred_translation: 天狼星人
+        segments: [287, 316]
+
+  - term: Spiritual
+    senses:
+      - id: spiritual_adjective
+        definition: 與靈性、意識、非物質層面相關的形容詞
+        preferred_translation: 靈性的
+        notes: 視語境可譯為「精神的」、「心靈的」
+        segments: [1]
+
+  - term: Surrender
+    senses:
+      - id: surrender_trust
+        definition: 放下控制，完全信任宇宙或高我安排
+        preferred_translation: 臣服
+        segments: [613, 660, 666]
+
+  # ===== T =====
+  - term: Trance
+    senses:
+      - id: trance_state
+        definition: 進入意識改變、介於醒與睡之間的狀態
+        preferred_translation: 出神
+        segments: [617]
+
+  # ===== U =====
+  - term: UFO
+    senses:
+      - id: ufo_general
+        definition: 不明飛行物或外星飛行器的通稱
+        preferred_translation: 不明飛行物
+        notes: 可視語境使用「UFO」或「不明飛行物」
+        segments: [153]
+
+  # ===== Y =====
+  - term: Yahyel
+    senses:
+      - id: yahyel_starbeing
+        definition: 新時代通訊中常見的混種外星族群
+        preferred_translation: 亞耶爾
+        notes: 原文發音 /ˈjɑːjeɪl/，部分文獻譯為「雅赫爾」或「雅葉」
+        segments: [50, 177, 188, 202, 233, 275, 421, 458, 486, 599]
+
+  # ===== Episode-specific terms (from topics.json) =====
+
+  - term: Arjun
+    senses:
+      - id: arjun_yahyel_guide
+        definition: 受訪者的主要星際指導靈，來自亞耶爾族群
+        preferred_translation: 阿瓊
+        notes: 音譯，荷蘭通靈者 Wieteke Koolhof 的主要通靈對象
+        segments: [50, 56, 177]
+
+  - term: Avatar
+    senses:
+      - id: avatar_film
+        definition: 詹姆斯·卡麥隆執導的科幻電影
+        preferred_translation: 阿凡達
+        notes: 2009年上映，主持人在拍攝期間目擊UFO
+        segments: [18]
+
+  - term: Mantid being
+    senses:
+      - id: mantid_extraterrestrial
+        definition: 類似螳螂形態的外星存有
+        preferred_translation: 螳螂人
+        notes: 常見於外星接觸經驗，通常負責醫療或科學工作
+        segments: [228, 240, 269, 293]
+
+  - term: Nanuk
+    senses:
+      - id: nanuk_sassani_guide
+        definition: 受訪者療癒團隊中的薩莎尼女性存有
+        preferred_translation: 納努克
+        notes: 專門負責平衡男性/女性能量
+        segments: [277, 278, 288]
+
+  - term: Rob Gauthier
+    senses:
+      - id: rob_gauthier_channeler
+        definition: 知名外星通靈者，通靈 TReb 等多個存有
+        preferred_translation: 羅伯·高提耶
+        notes: 人名保留英文或音譯皆可
+        segments: [246]
+
+  - term: Reuben Langdon
+    senses:
+      - id: reuben_langdon_host
+        definition: 本系列節目主持人，動作捕捉演員與UFO研究者
+        preferred_translation: 魯本·蘭登
+        notes: 曾參與《阿凡達》等電影製作
+        segments: [16]
+
+  - term: Sassani
+    senses:
+      - id: sassani_extraterrestrial
+        definition: 外星混種族群，與巴夏（Bashar）通訊相關
+        preferred_translation: 薩莎尼
+        notes: 常見於 Darryl Anka 的通靈訊息中
+        segments: [232, 277, 287, 288]
+
+  - term: Sedona
+    senses:
+      - id: sedona_location
+        definition: 亞利桑那州的城市，以靈性能量漩渦聞名
+        preferred_translation: 賽多納
+        notes: 知名的靈性朝聖地與UFO熱點
+        segments: [28]
+
+  - term: TReb
+    senses:
+      - id: treb_extraterrestrial_guide
+        definition: Rob Gauthier 通靈的主要外星存有
+        preferred_translation: TReb
+        notes: 作為Rob的「hub」連接其他存有
+        segments: [247, 251]
+
+  - term: Zetas
+    senses:
+      - id: zeta_reticuli_greys
+        definition: 來自網罟座ζ星系的灰人族群
+        preferred_translation: 齊塔人
+        notes: 與人類混種計畫相關，亞耶爾族群的祖先之一
+        segments: [182]
+
+  # ===== Conceptual terms from topics =====
+
+  - term: abduction
+    senses:
+      - id: abduction_et_experience
+        definition: 被外星存有帶走的經驗（帶有被動意涵）
+        preferred_translation: 綁架
+        notes: 與「接觸經驗」(contact experience) 形成對比
+        segments: [72]
+
+  - term: astral school
+    senses:
+      - id: astral_school_learning
+        definition: 在星光層面接受教導的非物質學習空間
+        preferred_translation: 星光學校
+        notes: 受訪者童年在睡眠中前往的學習場所
+        segments: [507]
+
+  - term: astral travel
+    senses:
+      - id: astral_travel_obe
+        definition: 意識離開肉身在星光層旅行的體驗
+        preferred_translation: 星光旅行
+        notes: 亦稱「出體經驗」(out-of-body experience)
+        segments: [423]
+
+  - term: belief system
+    senses:
+      - id: belief_system_paradigm
+        definition: 個體或群體持有的信念框架與世界觀
+        preferred_translation: 信念系統
+        notes: 常用於討論限制性信念或範式轉換
+        segments: [384, 385]
+
+  - term: bliss state
+    senses:
+      - id: bliss_state_consciousness
+        definition: 深度喜悅、平靜的意識狀態
+        preferred_translation: 極樂狀態
+        notes: 靈性體驗中常見的高頻意識狀態
+        segments: [424]
+
+  - term: channeling state
+    senses:
+      - id: channeling_state_altered
+        definition: 通靈時的意識改變狀態
+        preferred_translation: 通靈狀態
+        notes: 介於清醒與出神之間的流動狀態
+        segments: [615, 656]
+
+  - term: cosmic clan
+    senses:
+      - id: cosmic_clan_star_family
+        definition: 個體的星際家族或宇宙支援團隊
+        preferred_translation: 宇宙家族
+        notes: 亦可譯為「星際家族」「宇宙團隊」
+        segments: [337, 341, 342, 343]
+
+  - term: core energy
+    senses:
+      - id: core_energy_essence
+        definition: 個體的核心能量或本質振動
+        preferred_translation: 核心能量
+        notes: 指真實自我的能量頻率
+        segments: [114]
+
+  - term: deep trance
+    senses:
+      - id: deep_trance_channeling
+        definition: 深度出神狀態，意識完全退讓給通靈存有
+        preferred_translation: 深度出神
+        notes: 通靈者對通靈過程無記憶的狀態
+        segments: [617]
+
+  - term: divine synchronicity
+    senses:
+      - id: divine_synchronicity_meaningful
+        definition: 具有神聖意義的同步性事件
+        preferred_translation: 神聖同步性
+        notes: 強調靈性引導下的有意義巧合
+        segments: [423]
+
+  - term: energy healing
+    senses:
+      - id: energy_healing_modality
+        definition: 透過能量場調整促進療癒的方法
+        preferred_translation: 能量療癒
+        notes: 包含靈氣、氣功、水晶療癒等多種形式
+        segments: [337]
+
+  - term: ETs
+    senses:
+      - id: ets_extraterrestrials
+        definition: 外星存有或外星人的簡稱
+        preferred_translation: 外星存有
+        notes: ET = extraterrestrial，視語境可譯為「外星人」
+        segments: [7]
+
+  - term: facilitator
+    senses:
+      - id: facilitator_healing_guide
+        definition: 促進者，協助他人自我療癒的引導者
+        preferred_translation: 促進者
+        notes: 強調不是「治療者」而是協助者的角色
+        segments: [363]
+
+  - term: fear-based beliefs
+    senses:
+      - id: fear_based_beliefs_limiting
+        definition: 基於恐懼的限制性信念
+        preferred_translation: 恐懼導向的信念
+        notes: 阻礙靈性成長的負面信念模式
+        segments: [5]
+
+  - term: freak factor
+    senses:
+      - id: freak_factor_social_stigma
+        definition: 因與眾不同而被視為怪異的社會壓力
+        preferred_translation: 怪胎因素
+        notes: 口語化表達，指害怕被貼上「怪人」標籤
+        segments: [158]
+
+  - term: healer
+    senses:
+      - id: healer_practitioner
+        definition: 進行療癒工作的實踐者
+        preferred_translation: 療癒師
+        notes: 受訪者刻意避免使用此詞，因暗示外在權威
+        segments: [363, 371]
+
+  - term: here and now
+    senses:
+      - id: here_and_now_present
+        definition: 當下此刻，專注於現在的時空點
+        preferred_translation: 此時此地
+        notes: 亞耶爾哲學的核心概念
+        segments: [612, 613, 614]
+
+  - term: hybrid race
+    senses:
+      - id: hybrid_race_human_et
+        definition: 人類與外星基因混合的新族群
+        preferred_translation: 混種族群
+        notes: 如亞耶爾、薩莎尼等
+        segments: [179]
+
+  - term: interstellar channel
+    senses:
+      - id: interstellar_channel_medium
+        definition: 專門通靈星際存有的通靈者
+        preferred_translation: 星際通靈者
+        notes: 區別於通靈已故親人或天使的通靈者
+        segments: [48]
+
+  - term: life coach
+    senses:
+      - id: life_coach_profession
+        definition: 生命教練，協助他人達成目標的專業
+        preferred_translation: 生命教練
+        notes: 受訪者從生命教練轉型為通靈者
+        segments: [497]
+
+  - term: meditation
+    senses:
+      - id: meditation_practice
+        definition: 冥想、靜心的靈性修煉
+        preferred_translation: 冥想
+        notes: 清空心智、進入寧靜狀態的練習
+        segments: [663]
+
+  - term: multi-dimensionals
+    senses:
+      - id: multi_dimensionals_beings
+        definition: 多維度存有，能跨越多個維度的意識體
+        preferred_translation: 多維存有
+        notes: 比單一維度存有更高階的意識形態
+        segments: [7]
+
+  - term: new paradigm
+    senses:
+      - id: new_paradigm_worldview
+        definition: 新範式，超越舊有信念系統的新世界觀
+        preferred_translation: 新範式
+        notes: 常指整合靈性與科學的嶄新視角
+        segments: [393]
+
+  - term: open contact
+    senses:
+      - id: open_contact_et_public
+        definition: 公開的外星接觸，相對於秘密接觸
+        preferred_translation: 公開接觸
+        notes: 指外星存有與人類大規模公開互動
+        segments: [7]
+
+  - term: permission slip
+    senses:
+      - id: permission_slip_tool
+        definition: 允許自己相信某事的心理工具或藉口
+        preferred_translation: 許可證
+        notes: Bashar 通訊中的概念，指幫助自己突破限制的信念工具
+        segments: [376]
+
+  - term: pharmaceutical companies
+    senses:
+      - id: pharmaceutical_companies_industry
+        definition: 製藥公司，醫藥產業
+        preferred_translation: 製藥公司
+        notes: 語境中批判過度依賴藥物的醫療系統
+        segments: [386]
+
+  - term: Pleiadian
+    senses:
+      - id: pleiadian_starbeing
+        definition: 昴宿星人，來自昴宿星團的外星族群
+        preferred_translation: 昴宿星人
+        notes: 常被描述為金髮碧眼、類人形態
+        segments: [193, 196, 198]
+
+  - term: psychotherapist
+    senses:
+      - id: psychotherapist_mental_health
+        definition: 心理治療師
+        preferred_translation: 心理治療師
+        notes: 受訪者24歲時求助的專業人士
+        segments: [141, 142]
+
+  - term: hypnotherapist
+    senses:
+      - id: hypnotherapist_practitioner
+        definition: 催眠治療師
+        preferred_translation: 催眠治療師
+        notes: 受訪者遇到的心理治療師過去曾是催眠師
+        segments: [145]
+
+  - term: quantum fields
+    senses:
+      - id: quantum_fields_physics
+        definition: 量子場域，量子物理學中的能量場
+        preferred_translation: 量子場
+        notes: 新時代靈性常引用量子物理概念
+        segments: [549]
+
+  - term: realignment
+    senses:
+      - id: realignment_adjustment
+        definition: 重新校準、調整到正確位置
+        preferred_translation: 重新校準
+        notes: 能量療癒語境中指恢復平衡狀態
+        segments: [447]
+
+  - term: self-healing
+    senses:
+      - id: self_healing_innate
+        definition: 自我療癒，身體與心靈的內在修復能力
+        preferred_translation: 自我療癒
+        notes: 強調療癒力量來自內在而非外在
+        segments: [374, 375]
+
+  - term: self-healing abilities
+    senses:
+      - id: self_healing_abilities_innate
+        definition: 自我療癒能力
+        preferred_translation: 自我療癒能力
+        notes: 同 self-healing，強調能力面向
+        segments: [447]
+
+  - term: self-healing properties
+    senses:
+      - id: self_healing_properties_body
+        definition: 身體的自我療癒特性
+        preferred_translation: 自我療癒特性
+        notes: 指生物體與生俱來的修復機制
+        segments: [55]
+
+  - term: shamanism
+    senses:
+      - id: shamanism_practice
+        definition: 薩滿教，原住民靈性傳統
+        preferred_translation: 薩滿
+        notes: 透過altered states與靈界溝通的古老傳統
+        segments: [356]
+
+  - term: Sirius
+    senses:
+      - id: sirius_star_system
+        definition: 天狼星系，療癒團隊成員之一的來源
+        preferred_translation: 天狼星
+        notes: 天文學上最亮的恆星，靈性傳統中的重要星系
+        segments: [232]
+
+  - term: synchronicities
+    senses:
+      - id: synchronicities_meaningful_coincidence
+        definition: 同步性事件，有意義的巧合
+        preferred_translation: 同步性
+        notes: 榮格提出的概念，指無因果關係但有意義的巧合
+        segments: [601]
+
+  - term: temporary detainment
+    senses:
+      - id: temporary_detainment_et_experience
+        definition: 暫時拘留，指外星接觸中被短暫帶走的經驗
+        preferred_translation: 暫時拘留
+        notes: 比「綁架」更中性的描述方式
+        segments: [72]
+
+  - term: visitation experiences
+    senses:
+      - id: visitation_experiences_et_contact
+        definition: 被外星存有拜訪的經驗
+        preferred_translation: 探訪經驗
+        notes: 強調互動而非被動受害的接觸經驗
+        segments: [65]
+
+  - term: visitations
+    senses:
+      - id: visitations_et_visits
+        definition: 外星存有的拜訪
+        preferred_translation: 探訪
+        notes: 同 visitation experiences
+        segments: [129]
+
+  - term: vortex
+    senses:
+      - id: vortex_energy_spiral
+        definition: 能量漩渦，地球上能量特別強的地點
+        preferred_translation: 能量漩渦
+        notes: 賽多納以多處能量漩渦聞名
+        segments: [32]
+
+  - term: Yahyel philosophy
+    senses:
+      - id: yahyel_philosophy_teachings
+        definition: 亞耶爾族群的生活哲學與教導
+        preferred_translation: 亞耶爾哲學
+        notes: 強調活在當下、跟隨同步性
+        segments: [599]
+
+  # ===== Additional conceptual terms =====
+
+  - term: bohemian lifestyle
+    senses:
+      - id: bohemian_lifestyle_artistic
+        definition: 波希米亞生活方式，不拘傳統的藝術家生活
+        preferred_translation: 波希米亞式生活
+        notes: 社會對藝術家自由生活方式的刻板印象
+        segments: [121]
+
+  - term: Buddhist
+    senses:
+      - id: buddhist_practitioner
+        definition: 佛教徒或佛教修行者
+        preferred_translation: 佛教徒
+        notes: 受訪者曾短暫實踐佛教
+        segments: [664]
+
+  - term: chanting
+    senses:
+      - id: chanting_practice
+        definition: 誦唱、念誦，靈性修煉方法
+        preferred_translation: 誦唱
+        notes: 佛教與多種靈性傳統的修煉方式
+        segments: [664]
+
+  - term: eraser effect
+    senses:
+      - id: eraser_effect_quantum
+        definition: 量子擦除效應，現在的行動可影響過去的實驗
+        preferred_translation: 量子擦除效應
+        notes: 量子物理實驗，證明現在的觀察行為可以追溯影響過去發生的事件。受訪者據此理解「能從現在改變過去」，並實踐於重寫童年日記
+        segments: [555]
+
+  - term: Escher
+    senses:
+      - id: escher_artist
+        definition: M.C. Escher，荷蘭藝術家，以不可能圖形聞名
+        preferred_translation: 艾雪
+        notes: 探索維度與空間錯覺的藝術家
+        segments: [536, 537]
+
+  - term: ET channeler
+    senses:
+      - id: et_channeler_medium
+        definition: 外星通靈者，專門通靈外星存有的靈媒
+        preferred_translation: 外星通靈者
+        notes: 同 interstellar channel
+        segments: [443]
+
+  - term: extraterrestrial themes
+    senses:
+      - id: extraterrestrial_themes_art
+        definition: 外星主題，藝術作品中的外星元素
+        preferred_translation: 外星主題
+        notes: 受訪者藝術創作的主題之一
+        segments: [504]
+
+  - term: fractals
+    senses:
+      - id: fractals_mathematics
+        definition: 碎形、分形，自相似的數學結構
+        preferred_translation: 分形結構
+        notes: 數學與自然中的自相似模式（如樹枝、血管、海岸線），放大後與整體相似。受訪者提到「往外看與往內看一樣」即指此特性
+        segments: [521]
+
+  - term: Jung
+    senses:
+      - id: jung_psychologist
+        definition: 榮格，瑞士心理學家，分析心理學創始人
+        preferred_translation: 榮格
+        notes: 提出集體潛意識、原型、同步性等概念
+        segments: [524]
+
+  - term: Nietzsche
+    senses:
+      - id: nietzsche_philosopher
+        definition: 尼采，德國哲學家
+        preferred_translation: 尼采
+        notes: 受訪者青少年時期閱讀的哲學家
+        segments: [524]
+
+  - term: Nordic Forest cat
+    senses:
+      - id: nordic_forest_cat_breed
+        definition: 挪威森林貓，大型長毛貓品種
+        preferred_translation: 挪威森林貓
+        notes: 同步性故事中出現的貓品種
+        segments: [479]
+
+  - term: Salvador Dali
+    senses:
+      - id: salvador_dali_artist
+        definition: 薩爾瓦多·達利，超現實主義藝術家
+        preferred_translation: 達利
+        notes: 探索潛意識與夢境的藝術家
+        segments: [533]
+
+  - term: tapping
+    senses:
+      - id: tapping_eft
+        definition: 敲打療法，情緒釋放技巧（EFT）
+        preferred_translation: 敲打療法
+        notes: 透過敲打穴位釋放情緒創傷的技術
+        segments: [571, 573]
+
+  - term: autopilot
+    senses:
+      - id: autopilot_automatic
+        definition: 自動駕駛模式，無意識的自動行為
+        preferred_translation: 自動導航
+        notes: 語境中指半意識的通靈狀態
+        segments: [625]

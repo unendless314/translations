@@ -52,7 +52,7 @@
 → {"text": "好了，我們開始吧。", "confidence": "high", "notes": ""}
 
 69. We're with Rob Gauthier.
-→ {"text": "我們今天的嘉賓是羅伯·高希爾。", "confidence": "high", "notes": ""}
+→ {"text": "我們今天的嘉賓是羅伯·高提耶。", "confidence": "high", "notes": ""}
 
 70. And you channel a couple of amazing beings.
 → {"text": "你通靈了幾個很棒的存有。", "confidence": "high", "notes": ""}
