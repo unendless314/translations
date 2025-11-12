@@ -1,0 +1,305 @@
+episode_id: S01-E01
+terms:
+  # ===== A =====
+  - term: Alcyone
+    senses:
+      - id: alcyone_star
+        definition: 昴宿星團的中心恆星，被描述為第九維度昴宿星集體所對齊的星體
+        preferred_translation: 昂宿六
+        notes: 天文學正式譯名為「昂宿六」，靈性語境中亦可音譯為「愛爾昂」
+        segments: [7, 123]
+
+  - term: Align
+    senses:
+      - id: align_harmony
+        definition: 指身心或能量與特定頻率、目標保持一致
+        preferred_translation: 對齊
+        notes: 亦可視語境譯為「調準」、「對頻」、「同調」
+        segments: [6, 7, 123, 124]
+
+  - term: Arcturian
+    senses:
+      - id: arcturian_starbeing
+        definition: 來自大角星系的外星靈性族群
+        preferred_translation: 大角星人
+        segments: [10]
+
+  - term: automatic writing
+    senses:
+      - id: automatic_writing_channeling
+        definition: 一種通靈技術，讓靈性訊息透過書寫自動流出
+        preferred_translation: 自動書寫
+        notes: 亦稱「靈性書寫」，是通靈管道發展初期常用的練習方式
+        segments: [86]
+
+  - term: auric fields
+    senses:
+      - id: auric_fields_energy
+        definition: 圍繞在生物周圍的能量場或光暈（"aura" 的複數形式）
+        preferred_translation: 氣場
+        notes: 單數形式可譯為「光環」或「能量場」
+        segments: [165]
+
+  - term: Avatar
+    senses:
+      - id: avatar_film
+        definition: 2009年詹姆斯·卡麥隆執導的科幻電影
+        preferred_translation: 《阿凡達》
+        segments: [36]
+
+  # ===== B =====
+  - term: Being
+    senses:
+      - id: being_conscious
+        definition: 具意識或靈性的存在體（泛指人類、外星、靈體等有覺知的生命）
+        preferred_translation: 存有
+        notes: 強調主體性與意識狀態，視語境可譯為「生命體」、「存在」；外星語境可加註「外星存有」
+        segments: [234]
+
+  # ===== C =====
+  - term: cellular level
+    senses:
+      - id: cellular_level_healing
+        definition: 指能量或振動作用於身體細胞層面的深度影響
+        preferred_translation: 細胞層次
+        notes: 靈性療癒語境中常用，強調效果深入至生理基礎結構
+        segments: [103]
+
+  - term: channel
+    senses:
+      - id: channel_spiritual_verb
+        definition: 透過靈性方法接收並傳遞非物質訊息的行為（動詞/動名詞）
+        preferred_translation: 通靈
+        notes: 涵蓋 "channel" 和 "channeling" 的所有動詞用法，如「他正在通靈」、「通靈訊息」、「開始通靈」
+        segments: [1, 2, 69, 75, 90, 97]
+
+  - term: clairsentient
+    senses:
+      - id: clairsentient_empath
+        definition: 具備超感官感知，能透過身體感受能量和訊息的能力或個體
+        preferred_translation: 感知者
+        notes: 與 clairvoyant（靈視）相對，強調透過「感覺」而非「看見」來接收訊息
+        segments: [164]
+
+  - term: Clairvoyant
+    senses:
+      - id: clairvoyant_psychic
+        definition: 具備超感官視覺，能看見非物質訊息的人或能力
+        preferred_translation: 靈視者
+        notes: 可簡化為「靈視」、「透視」；作為形容詞時譯為「靈視的」
+        segments: [165, 166]
+
+  # ===== D =====
+  - term: Dimension
+    senses:
+      - id: dimension_spiritual_plane
+        definition: 超越物理三度空間的存在層級或頻率
+        preferred_translation: 維度
+        notes: 視語境可譯為「次元」
+        segments: [121]
+
+  # ===== E =====
+  - term: Energy
+    senses:
+      - id: energy_spiritual
+        definition: 非物質層面的振動力量或生命力
+        preferred_translation: 能量
+        notes: 靈性語境常指氣場、脈輪、療癒能量等
+        segments: [10, 11, 12, 18, 186, 192]
+
+  # ===== F =====
+  - term: Frequency
+    senses:
+      - id: frequency_vibrational
+        definition: 存有或事物的振動頻率，與意識層次、能量狀態相關
+        preferred_translation: 頻率
+        notes: 常見於「提升頻率」、「頻率對齊」等新時代語境
+        segments: [26, 177, 200, 246]
+
+  # ===== G =====
+  - term: geometric forms
+    senses:
+      - id: geometric_forms_vision
+        definition: 在靈視或冥想中看見的幾何圖形，通常代表特定能量或存有
+        preferred_translation: 幾何形態
+        notes: 常見於高維度存有的視覺呈現，如光之語言、神聖幾何等
+        segments: [172, 175]
+
+  - term: grays
+    senses:
+      - id: grays_extraterrestrial
+        definition: 灰色皮膚、大眼睛的外星族群，常見於接觸經驗描述
+        preferred_translation: 灰人
+        notes: 亦稱「小灰人」，與 Zetas（網罟座外星人）常被認為是相關或相同族群
+        segments: [226]
+
+  - term: Guides
+    senses:
+      - id: guides_spiritual
+        definition: 在靈性層面提供指引的存在
+        preferred_translation: 指導靈
+        segments: [29, 237, 238, 258, 274]
+
+  # ===== H =====
+  - term: harmonics
+    senses:
+      - id: harmonics_sound_healing
+        definition: 諧波、泛音，用於療癒或能量調頻的聲音振動
+        preferred_translation: 諧波
+        notes: 昴宿星人通訊中使用諧波進行能量調整與振動場校準，與 attunement（調頻）搭配使用
+        segments: [27]
+
+  - term: Healing
+    senses:
+      - id: healing_spiritual
+        definition: 通過能量、意識或靈性方法促進整體療癒的過程
+        preferred_translation: 療癒
+        segments: [17, 111]
+
+  # ===== I =====
+  - term: inner eye
+    senses:
+      - id: inner_eye_vision
+        definition: 內在視覺、第三眼，指非肉眼的靈性視覺能力
+        preferred_translation: 內在之眼
+        notes: 常與「心靈之眼」、「第三眼」互換使用
+        segments: [166, 169]
+
+  - term: insectoids
+    senses:
+      - id: insectoids_extraterrestrial
+        definition: 具有昆蟲特徵的外星族群
+        preferred_translation: 昆蟲人
+        notes: 接觸經驗中描述的一類非人形外星存有
+        segments: [221, 226]
+
+  # ===== L =====
+  - term: lucid dream
+    senses:
+      - id: lucid_dream_state
+        definition: 清醒夢，在夢中保持覺知並能主動控制的夢境狀態
+        preferred_translation: 清醒夢
+        notes: 通靈體驗有時被形容為類似清醒夢的意識狀態
+        segments: [92]
+
+  - term: Lyra
+    senses:
+      - id: lyra_constellation
+        definition: 天琴座，被認為是某些外星族群的起源星系
+        preferred_translation: 天琴座
+        segments: [9]
+
+  # ===== M =====
+  - term: meditation exercises
+    senses:
+      - id: meditation_exercises_practice
+        definition: 冥想練習，用於發展靈性能力或連結高我的技法
+        preferred_translation: 冥想練習
+        segments: [74]
+
+  - term: Mind
+    senses:
+      - id: mind_consciousness
+        definition: 涵蓋意識、感知與覺知的整體內在機制
+        preferred_translation: 心識
+        notes: 靈性或佛學語境使用，"mind's eye" 特指「心靈之眼」或「內在視覺」
+        segments: [169]
+
+  # ===== P =====
+  - term: Physical
+    senses:
+      - id: physical_tangible
+        definition: 涉及物質層面或肉身的形容詞
+        preferred_translation: 物質的
+        notes: 視語境亦可譯為「有形的」、「肉身的」、「實體的」
+        segments: [4, 122, 124, 161, 204, 207, 214, 225]
+
+  - term: Pleiadian Collective
+    senses:
+      - id: pleiadian_collective_9d
+        definition: 第九維度昴宿星集體，由約2500個光之存有組成的意識團體
+        preferred_translation: 昴宿星集體
+        notes: 與一般「昴宿星人」(Pleiadians) 的區別在於強調其集體意識特性
+        segments: [3, 19]
+
+  - term: Pleiadians
+    senses:
+      - id: pleiadians_extraterrestrial
+        definition: 來自昴宿星團的外星族群
+        preferred_translation: 昴宿星人
+        segments: [10, 11, 52, 95, 99, 161, 277]
+
+  # ===== R =====
+  - term: Reuben Langdon
+    senses:
+      - id: reuben_langdon_host
+        definition: 本節目主持人，動作捕捉演員與外星接觸研究者
+        preferred_translation: 魯本·蘭登
+        segments: [35]
+
+  # ===== S =====
+  - term: Sanaya Roman
+    senses:
+      - id: sanaya_roman_channel
+        definition: 知名通靈者，通靈存有 Orin 的管道
+        preferred_translation: 莎娜雅·羅曼
+        notes: 音譯名，著有《喜悅之道》等通靈書籍
+        segments: [70]
+
+  - term: Seth material
+    senses:
+      - id: seth_material_books
+        definition: 珍·羅伯茲通靈存有賽斯的系列著作
+        preferred_translation: 賽斯資料
+        notes: 1960-70年代重要的通靈文獻，對新時代運動影響深遠
+        segments: [70]
+
+  - term: Sirian
+    senses:
+      - id: sirian_starbeing
+        definition: 來自天狼星系的外星族群
+        preferred_translation: 天狼星人
+        segments: [210, 217]
+
+  # ===== T =====
+  - term: Telepathic
+    senses:
+      - id: telepathic_ability
+        definition: 具備心電感應或遠距溝通能力的形容詞
+        preferred_translation: 心電感應的
+        notes: 視語境亦可譯為「心靈感應的」；名詞 "telepathy" 則為「心電感應」
+        segments: [213]
+
+  - term: tone and sound
+    senses:
+      - id: tone_and_sound_healing
+        definition: 音調與聲音，特指用於療癒和能量傳遞的聲波振動
+        preferred_translation: 音調與聲音
+        notes: 昴宿星人主要透過音調和聲音進行通訊與療癒，而非語言文字
+        segments: [97, 103]
+
+  # ===== V =====
+  - term: vibrational field
+    senses:
+      - id: vibrational_field_energy
+        definition: 振動場域，指個體或空間的能量振動狀態
+        preferred_translation: 振動場
+        notes: 與「能量場」、「氣場」概念相關，強調其振動特性
+        segments: [28]
+
+  - term: vibrationally
+    senses:
+      - id: vibrationally_manner
+        definition: 以振動方式、在振動層面上（副詞）
+        preferred_translation: 透過振動
+        notes: 描述能量或療癒如何在振動頻率層面產生作用。翻譯建議：首選「透過振動」（簡潔自然），次選「以振動方式」（較正式），視句子節奏與上下文選擇
+        segments: [109]
+
+  # ===== Z =====
+  - term: Zetas
+    senses:
+      - id: zetas_extraterrestrial
+        definition: 來自網罟座ζ星系的灰人族群，常與綁架現象相關
+        preferred_translation: 網罟座人
+        notes: 亦稱「澤塔人」或「灰人」(Grays)，是最常被報告的外星接觸對象之一
+        segments: [9]

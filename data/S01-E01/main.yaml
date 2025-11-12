@@ -1,0 +1,5030 @@
+episode_id: S01-E01
+source_file: input/S01-E01/S01-E01.srt
+segments:
+- segment_id: 1
+  speaker_group: 1
+  timecode:
+    start: 00:00:01,459
+    end: 00:00:11,344
+  source_text: So I started channeling 20 years ago, it's crazy when I think that
+    it's been 20 years.
+  translation:
+    text: 我從二十年前開始通靈，想到已經過了二十年，真的很瘋狂。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_01
+    speaker_hint: null
+    source_entries:
+    - 1
+    - 2
+    truncated: false
+- segment_id: 2
+  speaker_group: 1
+  timecode:
+    start: 00:00:12,262
+    end: 00:00:15,140
+  source_text: And probably about eight or nine months after I started channeling.
+  translation:
+    text: 大約在我開始通靈後八、九個月。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_01
+    speaker_hint: null
+    source_entries:
+    - 3
+    - 4
+    truncated: false
+- segment_id: 3
+  speaker_group: 1
+  timecode:
+    start: 00:00:16,057
+    end: 00:00:22,147
+  source_text: I started getting information from this group called the Pleiadian
+    Collective and they’re 9th dimensional beings.
+  translation:
+    text: 我開始從一個叫做昴宿星集體的團體接收到訊息，他們是第九維度的存有。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_01
+    speaker_hint: null
+    source_entries:
+    - 5
+    - 6
+    - 7
+    truncated: false
+- segment_id: 4
+  speaker_group: 1
+  timecode:
+    start: 00:00:22,147
+    end: 00:00:24,566
+  source_text: They do not have physical form.
+  translation:
+    text: 他們沒有物質的形體。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_01
+    speaker_hint: null
+    source_entries:
+    - 8
+    truncated: false
+- segment_id: 5
+  speaker_group: 1
+  timecode:
+    start: 00:00:24,566
+    end: 00:00:29,154
+  source_text: They are beings of light and rather incarnating to a planetary body.
+  translation:
+    text: 他們是光之存有，不會投生到行星體。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_01
+    speaker_hint: null
+    source_entries:
+    - 9
+    truncated: false
+- segment_id: 6
+  speaker_group: 1
+  timecode:
+    start: 00:00:29,154
+    end: 00:00:31,740
+  source_text: They actually align with a stellar body.
+  translation:
+    text: 他們實際上是與恆星體對齊。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_01
+    speaker_hint: null
+    source_entries:
+    - 10
+    truncated: false
+- segment_id: 7
+  speaker_group: 1
+  timecode:
+    start: 00:00:31,740
+    end: 00:00:35,034
+  source_text: So they align with Alcyone the central sun and the Pleiades system.
+  translation:
+    text: 所以他們對齊的是昂宿六——昴宿星團的中心太陽。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_01
+    speaker_hint: null
+    source_entries:
+    - 11
+    - 12
+    truncated: false
+- segment_id: 8
+  speaker_group: 1
+  timecode:
+    start: 00:00:36,161
+    end: 00:00:41,916
+  source_text: And they are a little different than the other beings that I work with
+    because I actually do work with a lot of different beings.
+  translation:
+    text: 他們和我合作的其他存有有點不同，因為我確實和很多不同的存有一起工作。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_01
+    speaker_hint: null
+    source_entries:
+    - 13
+    - 14
+    - 15
+    truncated: false
+- segment_id: 9
+  speaker_group: 1
+  timecode:
+    start: 00:00:41,916
+    end: 00:00:46,671
+  source_text: I work with beings from Lyra, from Sirius, and Zetas.
+  translation:
+    text: 我與來自天琴座、天狼星、還有網罟座人的存有們一起工作。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_01
+    speaker_hint: null
+    source_entries:
+    - 16
+    truncated: false
+- segment_id: 10
+  speaker_group: 1
+  timecode:
+    start: 00:00:48,048
+    end: 00:01:00,060
+  source_text: Let's see,  Arcturians...so I do work with a number of beings but the
+    Pleiadians always come through first and foremost and sometimes these other beings
+    will show up and they may show up today and they will blend their energy with
+    the Pleiadians.
+  translation:
+    text: 還有⋯⋯大角星人，我與許多存有一起工作，但昴宿星人總是最先出現、最主要的，有時這些其他存有也會出現——他們今天可能也會出現——並將他們的能量與昴宿星人融合。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_01
+    speaker_hint: null
+    source_entries:
+    - 17
+    - 18
+    - 19
+    - 20
+    truncated: false
+- segment_id: 11
+  speaker_group: 1
+  timecode:
+    start: 00:01:00,060
+    end: 00:01:12,363
+  source_text: So you might notice that the energy shifts a little bit because these
+    beings have come in and they always take point because it's somewhat easier for
+    them to receive the... ...for you to receive the information from the Pleiadians.
+  translation:
+    text: 所以你可能會注意到能量有些微的轉變，因為這些存有進來了，而他們總是由昴宿星人帶頭，因為這樣會比較容易⋯⋯讓你們接收來自昴宿星人的訊息。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_01
+    speaker_hint: null
+    source_entries:
+    - 21
+    - 22
+    - 23
+    - 24
+    truncated: false
+- segment_id: 12
+  speaker_group: 1
+  timecode:
+    start: 00:01:12,363
+    end: 00:01:14,741
+  source_text: They have such heart-based energy.
+  translation:
+    text: 他們有著如此以心為本的能量。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_01
+    speaker_hint: null
+    source_entries:
+    - 25
+    truncated: false
+- segment_id: 13
+  speaker_group: 1
+  timecode:
+    start: 00:01:15,241
+    end: 00:01:19,245
+  source_text: And they're also a little different because they work with tone and
+    sound.
+  translation:
+    text: 而且他們也有點不同，因為他們透過音調與聲音工作。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_01
+    speaker_hint: null
+    source_entries:
+    - 26
+    - 27
+    truncated: false
+- segment_id: 14
+  speaker_group: 1
+  timecode:
+    start: 00:01:19,954
+    end: 00:01:22,957
+  source_text: So that's why they're dialect is different than my own.
+  translation:
+    text: 所以這就是為什麼他們的語調和我自己的不一樣。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_01
+    speaker_hint: null
+    source_entries:
+    - 28
+    truncated: false
+- segment_id: 15
+  speaker_group: 1
+  timecode:
+    start: 00:01:22,957
+    end: 00:01:25,210
+  source_text: It's not any one particular dialect.
+  translation:
+    text: 這不是任何一種特定的語調。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_01
+    speaker_hint: null
+    source_entries:
+    - 29
+    truncated: false
+- segment_id: 16
+  speaker_group: 1
+  timecode:
+    start: 00:01:25,210
+    end: 00:01:28,630
+  source_text: It's just tones and sounds that resonate with you at a cellular level.
+  translation:
+    text: 只是一些在細胞層次與你共鳴的音調與聲音。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_01
+    speaker_hint: null
+    source_entries:
+    - 30
+    truncated: false
+- segment_id: 17
+  speaker_group: 1
+  timecode:
+    start: 00:01:29,047
+    end: 00:01:38,598
+  source_text: So over the course of the next several days, they'll continue working
+    with you and in addition to getting the information it's as if you're getting
+    a healing as well, so you want to make sure you drink plenty of water.
+  translation:
+    text: 所以在接下來的幾天裡，他們會繼續與你們工作，而且除了獲得訊息之外，就好像你也同時在接受療癒一樣，所以記得要多喝水。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_01
+    speaker_hint: null
+    source_entries:
+    - 31
+    - 32
+    - 33
+    - 34
+    - 35
+    truncated: false
+- segment_id: 18
+  speaker_group: 1
+  timecode:
+    start: 00:01:38,598
+    end: 00:01:40,266
+  source_text: Just help move the energy through the body.
+  translation:
+    text: 幫助能量在身體中流動。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_01
+    speaker_hint: null
+    source_entries:
+    - 36
+    truncated: false
+- segment_id: 19
+  speaker_group: 1
+  timecode:
+    start: 00:01:40,850
+    end: 00:02:35,613
+  source_text: Ah yes hello dears. This is the 9th dimensional Pleiadian Collective
+    and it is a pleasure and an honor to have the opportunity to connect with you
+    all. because you're going through a phase right now where it is vital and in in
+    your development that you become more and more aware of the subtle frequencies
+    around you and as you become better able to perceive these subtle frequencies.
+  translation:
+    text: 啊，是的，親愛的們，你們好。我們是第九維度昴宿星集體，能有機會與你們所有人連結是我們的榮幸與喜悅。因為你們現在正經歷一個階段，在這個階段中，對你們的發展來說至關重要的是，你們要越來越覺察到周圍微妙的頻率，而當你們越能感知這些微妙的頻率時。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_01
+    speaker_hint: null
+    source_entries:
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44
+    - 45
+    truncated: false
+- segment_id: 20
+  speaker_group: 1
+  timecode:
+    start: 00:02:35,613
+    end: 00:03:01,431
+  source_text: It makes life a lot easier for you because you are learning how to
+    operate more from a state of being which will then guide you to your doing state
+    and if you're not conscious of the subtle frequencies, you can often miss those
+    breadcrumbs that the universe is providing you to take steps in a divinely guided
+    way to get you on your path of higher service.
+  translation:
+    text: 這會讓你們的生活變得容易許多，因為你們正在學習如何更多地從存在的狀態運作，這將引導你們進入行動的狀態，而如果你們對微妙的頻率沒有覺知，你們常常會錯過宇宙提供給你們的那些麵包屑——那些以神聖引導的方式邁出步伐、讓你們走上更高服務之路的指引。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_01
+    speaker_hint: null
+    source_entries:
+    - 46
+    - 47
+    - 48
+    - 49
+    - 50
+    - 51
+    - 52
+    - 53
+    - 54
+    truncated: false
+- segment_id: 21
+  speaker_group: 1
+  timecode:
+    start: 00:03:02,223
+    end: 00:03:07,687
+  source_text: Also know that we are working with all of you energetically and you
+    can connect with us at any time.
+  translation:
+    text: 同時也要知道，我們在能量上與你們所有人一起工作，你們隨時都可以與我們連結。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_01
+    speaker_hint: null
+    source_entries:
+    - 55
+    - 56
+    truncated: false
+- segment_id: 22
+  speaker_group: 1
+  timecode:
+    start: 00:03:07,687
+    end: 00:03:09,480
+  source_text: You don't need Wendy.
+  translation:
+    text: 你們不需要溫蒂。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_01
+    speaker_hint: null
+    source_entries:
+    - 57
+    truncated: false
+- segment_id: 23
+  speaker_group: 1
+  timecode:
+    start: 00:03:09,480
+    end: 00:03:11,524
+  source_text: All you have to do is put yourself in your heart center.
+  translation:
+    text: 你們只需要將自己置於心輪中心。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_01
+    speaker_hint: null
+    source_entries:
+    - 58
+    truncated: false
+- segment_id: 24
+  speaker_group: 1
+  timecode:
+    start: 00:03:11,524
+    end: 00:03:13,610
+  source_text: Think of something that makes you smile.
+  translation:
+    text: 想著某件讓你微笑的事情。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_01
+    speaker_hint: null
+    source_entries:
+    - 59
+    truncated: false
+- segment_id: 25
+  speaker_group: 1
+  timecode:
+    start: 00:03:14,402
+    end: 00:03:21,326
+  source_text: Ask for assistance and we will do our best to put the information in
+    your field until you get it or you no longer want it.
+  translation:
+    text: 請求協助，我們會盡力將訊息放入你們的場域中，直到你們接收到，或者不再需要它為止。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_01
+    speaker_hint: null
+    source_entries:
+    - 60
+    - 61
+    - 62
+    truncated: false
+- segment_id: 26
+  speaker_group: 1
+  timecode:
+    start: 00:03:22,201
+    end: 00:03:24,329
+  source_text: We are helping you to elevate your frequency.
+  translation:
+    text: 我們正在協助你們提升你們的頻率。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_01
+    speaker_hint: null
+    source_entries:
+    - 63
+    truncated: false
+- segment_id: 27
+  speaker_group: 1
+  timecode:
+    start: 00:03:24,913
+    end: 00:03:35,798
+  source_text: The one thing that we always do any time that we work with you, we
+    work with harmonics at the very beginning, in our opening greeting and we actually
+    do an attunement with you.
+  translation:
+    text: 有一件事是我們每次與你們工作時都會做的，就是在一開始、在我們的開場問候中運用諧波，我們實際上會與你們進行一次調頻。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_01
+    speaker_hint: null
+    source_entries:
+    - 64
+    - 65
+    - 66
+    - 67
+    truncated: false
+- segment_id: 28
+  speaker_group: 1
+  timecode:
+    start: 00:03:35,798
+    end: 00:03:49,896
+  source_text: We don't really talk about this a lot, but we help you to alter your
+    vibrational field and help you to realign anything that maybe misaligned or not
+    in in alignment with your true heart's desires.
+  translation:
+    text: 我們不常談論這件事，但我們協助你們改變你們的振動場，幫助你們重新對齊任何可能失衡的地方，或者與你們真正的內心渴望不一致的部分。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_01
+    speaker_hint: null
+    source_entries:
+    - 68
+    - 69
+    - 70
+    - 71
+    truncated: false
+- segment_id: 29
+  speaker_group: 1
+  timecode:
+    start: 00:03:50,939
+    end: 00:03:57,737
+  source_text: So your own guides are here feeding us information and what you need
+    we will say there are no silly questions.
+  translation:
+    text: 所以你們自己的指導靈正在這裡向我們提供訊息，告訴我們你們需要什麼，我們要說的是，沒有愚蠢的問題。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_01
+    speaker_hint: null
+    source_entries:
+    - 72
+    - 73
+    - 74
+    truncated: false
+- segment_id: 30
+  speaker_group: 1
+  timecode:
+    start: 00:03:58,529
+    end: 00:04:10,208
+  source_text: So just know that your curiosity your fearlessness is appreciated by
+    many.
+  translation:
+    text: 所以請知道，你們的好奇心、你們的無畏，受到許多存有的讚賞。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_01
+    speaker_hint: null
+    source_entries:
+    - 75
+    - 76
+    - 77
+    - 78
+    truncated: false
+- segment_id: 31
+  speaker_group: 1
+  timecode:
+    start: 00:04:11,125
+    end: 00:04:14,545
+  source_text: So we'll go ahead and dive in and see where you'd like to begin.
+  translation:
+    text: 所以我們現在就開始深入，看看你們想從哪裡開始。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_01
+    speaker_hint: null
+    source_entries:
+    - 79
+    truncated: false
+- segment_id: 32
+  speaker_group: 1
+  timecode:
+    start: 00:04:14,545
+    end: 00:04:16,631
+  source_text: How may we best be of service to you today?
+  translation:
+    text: 今天我們如何能最好地為你們服務呢？
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_01
+    speaker_hint: null
+    source_entries:
+    - 80
+    truncated: false
+- segment_id: 33
+  speaker_group: 1
+  timecode:
+    start: 00:04:19,217
+    end: 00:04:22,095
+  source_text: Ever wondered if their is intelligent life elsewhere in the universe?
+  translation:
+    text: 你曾經想過宇宙中其他地方是否存在智慧生命嗎？
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 81
+    - 82
+    truncated: false
+- segment_id: 34
+  speaker_group: 1
+  timecode:
+    start: 00:04:22,637
+    end: 00:04:25,974
+  source_text: Well, I have....I've been wondering since I was a kid.
+  translation:
+    text: 嗯，我想過⋯⋯我從小就一直在思考這個問題。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 83
+    truncated: false
+- segment_id: 35
+  speaker_group: 1
+  timecode:
+    start: 00:04:26,724
+    end: 00:04:36,818
+  source_text: My name is Reuben Langdon And on March 29th, 2007 in the middle of
+    the day, I saw a number of strange objects in the sky.
+  translation:
+    text: 我叫魯本·蘭登（Reuben Langdon），在2007年3月29日的白天，我在天空中看到了一些奇怪的物體。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 84
+    - 85
+    - 86
+    truncated: false
+- segment_id: 36
+  speaker_group: 1
+  timecode:
+    start: 00:04:36,818
+    end: 00:04:40,571
+  source_text: Coincidentally, I was working on the film Avatar at the time, playing
+    an alien.
+  translation:
+    text: 巧合的是，當時我正在《阿凡達》這部電影中工作，扮演一個外星人。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 87
+    - 88
+    truncated: false
+- segment_id: 37
+  speaker_group: 1
+  timecode:
+    start: 00:04:40,989
+    end: 00:04:43,908
+  source_text: And ever since then I've been on a quest...
+  translation:
+    text: 從那時起，我就踏上了一個探索之旅⋯⋯
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 89
+    truncated: false
+- segment_id: 38
+  speaker_group: 1
+  timecode:
+    start: 00:04:43,908
+    end: 00:04:49,580
+  source_text: To find out if aliens really do exist and if so... ...are they here
+    with us?
+  translation:
+    text: 去發現外星人是否真的存在，如果存在⋯⋯他們是否與我們同在？
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 90
+    - 91
+    truncated: false
+- segment_id: 39
+  speaker_group: 1
+  timecode:
+    start: 00:04:54,711
+    end: 00:04:58,923
+  source_text: If beings of higher intelligence are here... ...what is their purpose?
+  translation:
+    text: 如果更高智慧的存有在這裡⋯⋯他們的目的是什麼？
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 92
+    - 93
+    truncated: false
+- segment_id: 40
+  speaker_group: 1
+  timecode:
+    start: 00:04:58,923
+    end: 00:05:01,634
+  source_text: Why don't they make themselves more known?
+  translation:
+    text: 為什麼他們不讓自己更為人知？
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 94
+    truncated: false
+- segment_id: 41
+  speaker_group: 1
+  timecode:
+    start: 00:05:01,634
+    end: 00:05:03,845
+  source_text: Why the secrecy?
+  translation:
+    text: 為什麼要保密？
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 95
+    truncated: false
+- segment_id: 42
+  speaker_group: 1
+  timecode:
+    start: 00:05:03,845
+    end: 00:05:08,766
+  source_text: I've asked these questions to many experts, Yet, each seems to have
+    a different theory.
+  translation:
+    text: 我向許多專家問過這些問題，然而每個人似乎都有不同的理論。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 96
+    - 97
+    truncated: false
+- segment_id: 43
+  speaker_group: 1
+  timecode:
+    start: 00:05:09,058
+    end: 00:05:13,813
+  source_text: So I thought to myself, why not ask the aliens directly?
+  translation:
+    text: 所以我對自己說，為什麼不直接問外星人呢？
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 98
+    - 99
+    truncated: false
+- segment_id: 44
+  speaker_group: 1
+  timecode:
+    start: 00:05:13,813
+    end: 00:05:15,857
+  source_text: So that's what I've set out to do!
+  translation:
+    text: 所以這就是我開始做的事情！
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 100
+    truncated: false
+- segment_id: 45
+  speaker_group: 1
+  timecode:
+    start: 00:05:15,857
+    end: 00:05:17,233
+  source_text: Well, sort of...
+  translation:
+    text: 嗯，算是吧⋯⋯
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 101
+    truncated: false
+- segment_id: 46
+  speaker_group: 2
+  timecode:
+    start: 00:06:10,411
+    end: 00:06:11,913
+  source_text: So Wendy, welcome.
+  translation:
+    text: 那麼溫蒂，歡迎你。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: '>>'
+    source_entries:
+    - 102
+    truncated: false
+- segment_id: 47
+  speaker_group: 3
+  timecode:
+    start: 00:06:11,913
+    end: 00:06:12,705
+  source_text: Thank you--
+  translation:
+    text: 謝謝——
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: '>>'
+    source_entries:
+    - 103
+    truncated: false
+- segment_id: 48
+  speaker_group: 4
+  timecode:
+    start: 00:06:12,705
+    end: 00:06:13,539
+  source_text: Thank you for--
+  translation:
+    text: 謝謝你——
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: '>>'
+    source_entries:
+    - 104
+    truncated: false
+- segment_id: 49
+  speaker_group: 5
+  timecode:
+    start: 00:06:13,539
+    end: 00:06:14,332
+  source_text: --for having me.
+  translation:
+    text: ——邀請我來。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: '>>'
+    source_entries:
+    - 105
+    truncated: false
+- segment_id: 50
+  speaker_group: 6
+  timecode:
+    start: 00:06:14,332
+    end: 00:06:15,500
+  source_text: --being here and uh.
+  translation:
+    text: ——來到這裡，嗯。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: '>>'
+    source_entries:
+    - 106
+    truncated: false
+- segment_id: 51
+  speaker_group: 6
+  timecode:
+    start: 00:06:15,500
+    end: 00:06:25,843
+  source_text: Can you tell us, can you tell me, and tell us, I guess everybody that's
+    watching, first of all, how did you get into the channeling process?
+  translation:
+    text: 你能告訴我們，告訴我，以及所有正在觀看的人，首先，你是如何進入通靈過程的？
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 107
+    - 108
+    - 109
+    truncated: false
+- segment_id: 52
+  speaker_group: 6
+  timecode:
+    start: 00:06:25,843
+    end: 00:06:31,057
+  source_text: And how did you come into contact with the beings known as the Pleiadians?
+  translation:
+    text: 以及你是如何與這些被稱為昴宿星人的存有接觸的？
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 110
+    - 111
+    truncated: false
+- segment_id: 53
+  speaker_group: 7
+  timecode:
+    start: 00:06:31,057
+    end: 00:06:32,141
+  source_text: Oh, gosh.
+  translation:
+    text: 哦，天哪。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: '>>'
+    source_entries:
+    - 112
+    truncated: false
+- segment_id: 54
+  speaker_group: 7
+  timecode:
+    start: 00:06:32,141
+    end: 00:06:32,934
+  source_text: OK.
+  translation:
+    text: 好的。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 113
+    truncated: false
+- segment_id: 55
+  speaker_group: 7
+  timecode:
+    start: 00:06:32,934
+    end: 00:06:35,144
+  source_text: So, yeah, I think a couple different things there.
+  translation:
+    text: 那麼，是的，我想這裡有幾件不同的事情。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 114
+    truncated: false
+- segment_id: 56
+  speaker_group: 7
+  timecode:
+    start: 00:06:35,144
+    end: 00:06:40,525
+  source_text: So it was around 1994 and I started having some visions.
+  translation:
+    text: 大約在1994年，我開始有一些異象。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 115
+    truncated: false
+- segment_id: 57
+  speaker_group: 7
+  timecode:
+    start: 00:06:40,525
+    end: 00:06:42,985
+  source_text: And I didn't really know what they were.
+  translation:
+    text: 我真的不知道它們是什麼。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 116
+    truncated: false
+- segment_id: 58
+  speaker_group: 7
+  timecode:
+    start: 00:06:42,985
+    end: 00:06:47,824
+  source_text: They weren't the happiest of visions, but I wasn't frightened by them.
+  translation:
+    text: 它們不是最愉快的異象，但我並沒有被嚇到。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 117
+    - 118
+    truncated: false
+- segment_id: 59
+  speaker_group: 7
+  timecode:
+    start: 00:06:47,824
+    end: 00:06:54,247
+  source_text: And so I started doing some research for that to see if it was past-life
+    related, because that was what my instinct was.
+  translation:
+    text: 所以我開始做一些研究，看看這是否與前世有關，因為我的直覺就是這樣。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 119
+    - 120
+    - 121
+    truncated: false
+- segment_id: 60
+  speaker_group: 7
+  timecode:
+    start: 00:06:54,247
+    end: 00:07:00,420
+  source_text: And so as I started that research to find out more about past lives,
+    I came across channeling.
+  translation:
+    text: 所以當我開始研究以了解更多關於前世的事情時，我接觸到了通靈。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 122
+    - 123
+    - 124
+    truncated: false
+- segment_id: 61
+  speaker_group: 7
+  timecode:
+    start: 00:07:00,420
+    end: 00:07:02,296
+  source_text: And I didn't know what it was.
+  translation:
+    text: 我不知道那是什麼。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 125
+    truncated: false
+- segment_id: 62
+  speaker_group: 7
+  timecode:
+    start: 00:07:02,296
+    end: 00:07:03,714
+  source_text: I didn't know anybody who did it.
+  translation:
+    text: 我也不認識任何做這件事的人。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 126
+    truncated: false
+- segment_id: 63
+  speaker_group: 7
+  timecode:
+    start: 00:07:03,714
+    end: 00:07:06,968
+  source_text: But I just knew it was something that I was supposed to be doing.
+  translation:
+    text: 但我就是知道這是我應該做的事情。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 127
+    - 128
+    truncated: false
+- segment_id: 64
+  speaker_group: 7
+  timecode:
+    start: 00:07:06,968
+    end: 00:07:07,760
+  source_text: And so--
+  translation:
+    text: 所以——
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 129
+    truncated: false
+- segment_id: 65
+  speaker_group: 8
+  timecode:
+    start: 00:07:07,760
+    end: 00:07:11,722
+  source_text: When you came across it, you came across it as you saw somebody else
+    doing that?
+  translation:
+    text: 當你接觸到它時，是因為你看到別人在做那件事嗎？
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: '>>'
+    source_entries:
+    - 130
+    - 131
+    truncated: false
+- segment_id: 66
+  speaker_group: 9
+  timecode:
+    start: 00:07:11,722
+    end: 00:07:12,557
+  source_text: No.
+  translation:
+    text: 不是。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: '>>'
+    source_entries:
+    - 132
+    truncated: false
+- segment_id: 67
+  speaker_group: 9
+  timecode:
+    start: 00:07:12,557
+    end: 00:07:13,641
+  source_text: I came across it in books.
+  translation:
+    text: 我是在書中接觸到的。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 133
+    truncated: false
+- segment_id: 68
+  speaker_group: 10
+  timecode:
+    start: 00:07:13,641
+    end: 00:07:14,434
+  source_text: Oh, OK.
+  translation:
+    text: 哦，好的。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: '>>'
+    source_entries:
+    - 134
+    truncated: false
+- segment_id: 69
+  speaker_group: 11
+  timecode:
+    start: 00:07:14,434
+    end: 00:07:18,020
+  source_text: And there wasn't a lot of channel material out there at the time.
+  translation:
+    text: 而且當時沒有很多通靈資料。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: '>>'
+    source_entries:
+    - 135
+    - 136
+    truncated: false
+- segment_id: 70
+  speaker_group: 11
+  timecode:
+    start: 00:07:18,020
+    end: 00:07:24,527
+  source_text: There was the Seth material and Sanaya Roman had some books out.
+  translation:
+    text: 有賽斯資料，還有莎娜雅·羅曼出了一些書。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 137
+    - 138
+    truncated: false
+- segment_id: 71
+  speaker_group: 11
+  timecode:
+    start: 00:07:24,527
+    end: 00:07:26,529
+  source_text: But really, there wasn't a whole lot.
+  translation:
+    text: 但真的沒有很多。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 139
+    truncated: false
+- segment_id: 72
+  speaker_group: 11
+  timecode:
+    start: 00:07:26,529
+    end: 00:07:28,781
+  source_text: And it was very familiar.
+  translation:
+    text: 而且它非常熟悉。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 140
+    truncated: false
+- segment_id: 73
+  speaker_group: 11
+  timecode:
+    start: 00:07:28,781
+    end: 00:07:31,033
+  source_text: And I just knew it was something I was supposed to do.
+  translation:
+    text: 我就是知道這是我應該做的事情。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 141
+    truncated: false
+- segment_id: 74
+  speaker_group: 11
+  timecode:
+    start: 00:07:31,033
+    end: 00:07:39,375
+  source_text: So I found some books and I started doing some of the meditation exercises
+    and the visualization exercises.
+  translation:
+    text: 所以我找到了一些書，開始做一些冥想練習和視覺化練習。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 142
+    - 143
+    - 144
+    truncated: false
+- segment_id: 75
+  speaker_group: 11
+  timecode:
+    start: 00:07:39,375
+    end: 00:07:43,421
+  source_text: And I was trying to channel verbally, but it wasn't really happening
+    for me.
+  translation:
+    text: 我試圖用語言通靈，但對我來說真的沒有發生。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 145
+    - 146
+    truncated: false
+- segment_id: 76
+  speaker_group: 11
+  timecode:
+    start: 00:07:43,421
+    end: 00:07:49,051
+  source_text: I was having really visceral experiences, like my eyes would flutter
+    and water and my hands would tingle.
+  translation:
+    text: 我有非常真實的身體體驗，像是我的眼睛會顫動和流淚，我的手會刺痛。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 147
+    - 148
+    - 149
+    truncated: false
+- segment_id: 77
+  speaker_group: 11
+  timecode:
+    start: 00:07:49,051
+    end: 00:07:50,887
+  source_text: But I couldn't form the words.
+  translation:
+    text: 但我無法組織語言。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 150
+    truncated: false
+- segment_id: 78
+  speaker_group: 11
+  timecode:
+    start: 00:07:50,887
+    end: 00:07:52,722
+  source_text: I couldn't get the words out.
+  translation:
+    text: 我無法把話說出來。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 151
+    truncated: false
+- segment_id: 79
+  speaker_group: 11
+  timecode:
+    start: 00:07:52,722
+    end: 00:07:55,933
+  source_text: And so I'd put it aside and then I'd come back to it.
+  translation:
+    text: 所以我會把它放在一邊，然後再回來。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 152
+    truncated: false
+- segment_id: 80
+  speaker_group: 11
+  timecode:
+    start: 00:07:55,933
+    end: 00:07:58,352
+  source_text: And in the interim, I did a lot of work on myself.
+  translation:
+    text: 在這期間，我對自己做了很多功課。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 153
+    truncated: false
+- segment_id: 81
+  speaker_group: 11
+  timecode:
+    start: 00:07:58,352
+    end: 00:08:03,191
+  source_text: I studied meditation and did a lot of inner work.
+  translation:
+    text: 我學習冥想，做了很多內在的工作。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 154
+    truncated: false
+- segment_id: 82
+  speaker_group: 11
+  timecode:
+    start: 00:08:03,191
+    end: 00:08:04,942
+  source_text: And then I'd come back to it periodically.
+  translation:
+    text: 然後我會定期回來做這件事。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 155
+    truncated: false
+- segment_id: 83
+  speaker_group: 11
+  timecode:
+    start: 00:08:04,942
+    end: 00:08:06,694
+  source_text: And I'd have kind of the same experience.
+  translation:
+    text: 而且我會有類似的經驗。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 156
+    truncated: false
+- segment_id: 84
+  speaker_group: 11
+  timecode:
+    start: 00:08:06,694
+    end: 00:08:09,822
+  source_text: And then one day, I knew I was supposed to sit down with a pen and
+    paper--
+  translation:
+    text: 然後有一天，我知道我應該坐下來拿筆和紙——
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: null
+    source_entries:
+    - 157
+    - 158
+    truncated: false
+- segment_id: 85
+  speaker_group: 12
+  timecode:
+    start: 00:08:09,822
+    end: 00:08:10,615
+  source_text: OK.
+  translation:
+    text: 好的。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: '>>'
+    source_entries:
+    - 159
+    truncated: false
+- segment_id: 86
+  speaker_group: 13
+  timecode:
+    start: 00:08:10,615
+    end: 00:08:12,575
+  source_text: --and I started doing automatic writing.
+  translation:
+    text: ——然後我開始進行自動書寫。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: '>>'
+    source_entries:
+    - 160
+    truncated: false
+- segment_id: 87
+  speaker_group: 14
+  timecode:
+    start: 00:08:12,575
+    end: 00:08:13,367
+  source_text: Excellent.
+  translation:
+    text: 太好了。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_02
+    speaker_hint: '>>'
+    source_entries:
+    - 161
+    truncated: false
+- segment_id: 88
+  speaker_group: 15
+  timecode:
+    start: 00:08:13,367
+    end: 00:08:21,209
+  source_text: And that I did-- well, for the first two years, I wrote down every
+    single question and every answer.
+  translation:
+    text: 我確實這麼做了——嗯，在最初的兩年裡，我寫下了每一個問題和每一個答案。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: '>>'
+    source_entries:
+    - 162
+    - 163
+    - 164
+    truncated: false
+- segment_id: 89
+  speaker_group: 15
+  timecode:
+    start: 00:08:21,209
+    end: 00:08:27,006
+  source_text: And about nine months or so into it, it was becoming very cumbersome
+    to write.
+  translation:
+    text: 大約九個月左右之後，書寫變得非常繁瑣。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 165
+    - 166
+    truncated: false
+- segment_id: 90
+  speaker_group: 15
+  timecode:
+    start: 00:08:27,006
+    end: 00:08:34,555
+  source_text: And so I put down the pen and then just started to channel verbally,
+    because I was hearing it well before I was able to write it.
+  translation:
+    text: 所以我放下了筆，然後就開始用口語通靈，因為我在能夠寫出來之前就已經聽到了。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 167
+    - 168
+    - 169
+    truncated: false
+- segment_id: 91
+  speaker_group: 15
+  timecode:
+    start: 00:08:34,555
+    end: 00:08:40,061
+  source_text: And I still use automatic writing today because it's much easier for
+    me to remember the information.
+  translation:
+    text: 我今天仍然使用自動書寫，因為這樣我更容易記住資訊。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 170
+    - 171
+    truncated: false
+- segment_id: 92
+  speaker_group: 15
+  timecode:
+    start: 00:08:40,061
+    end: 00:08:42,104
+  source_text: It's a bit like a lucid dream for me.
+  translation:
+    text: 對我來說有點像清醒夢。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 172
+    truncated: false
+- segment_id: 93
+  speaker_group: 15
+  timecode:
+    start: 00:08:42,104
+    end: 00:08:44,690
+  source_text: So at least I have the written notes.
+  translation:
+    text: 所以至少我有書面記錄。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 173
+    truncated: false
+- segment_id: 94
+  speaker_group: 15
+  timecode:
+    start: 00:08:44,690
+    end: 00:08:46,067
+  source_text: And I can go back to it.
+  translation:
+    text: 我可以回頭查看。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 174
+    truncated: false
+- segment_id: 95
+  speaker_group: 15
+  timecode:
+    start: 00:08:46,067
+    end: 00:08:49,654
+  source_text: But about nine months in, that's when the Pleiadians showed up.
+  translation:
+    text: 但大約九個月後，昴宿星人就出現了。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 175
+    truncated: false
+- segment_id: 96
+  speaker_group: 16
+  timecode:
+    start: 00:08:49,654
+    end: 00:08:50,446
+  source_text: Interesting.
+  translation:
+    text: 有意思。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: '>>'
+    source_entries:
+    - 176
+    truncated: false
+- segment_id: 97
+  speaker_group: 17
+  timecode:
+    start: 00:08:50,446
+    end: 00:08:53,699
+  source_text: And they were waiting for me to channel verbally because they work
+    with tone and sound.
+  translation:
+    text: 他們一直在等我能夠用口語通靈，因為他們是透過音調與聲音來工作的。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: '>>'
+    source_entries:
+    - 177
+    - 178
+    truncated: false
+- segment_id: 98
+  speaker_group: 18
+  timecode:
+    start: 00:08:53,699
+    end: 00:08:54,533
+  source_text: OK.
+  translation:
+    text: 好。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: '>>'
+    source_entries:
+    - 179
+    truncated: false
+- segment_id: 99
+  speaker_group: 19
+  timecode:
+    start: 00:08:54,533
+    end: 00:09:02,375
+  source_text: And a lot of people will ask me where I'm from when they hear the Pleiadians,
+    especially at the beginning, they sounded a bit more British.
+  translation:
+    text: 很多人聽到昴宿星人說話時會問我來自哪裡，特別是在一開始的時候，他們聽起來有點英國腔。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: '>>'
+    source_entries:
+    - 180
+    - 181
+    - 182
+    truncated: false
+- segment_id: 100
+  speaker_group: 19
+  timecode:
+    start: 00:09:02,375
+    end: 00:09:07,338
+  source_text: And then they started working with new tones and then it sounded a
+    bit more Australian.
+  translation:
+    text: 後來他們開始運用新的音調，聽起來就變得有點澳洲腔了。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 183
+    - 184
+    truncated: false
+- segment_id: 101
+  speaker_group: 19
+  timecode:
+    start: 00:09:07,338
+    end: 00:09:08,839
+  source_text: And it's not any one dialect.
+  translation:
+    text: 但其實這不是任何一種方言。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 185
+    truncated: false
+- segment_id: 102
+  speaker_group: 20
+  timecode:
+    start: 00:09:08,839
+    end: 00:09:09,632
+  source_text: Right.
+  translation:
+    text: 對。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: '>>'
+    source_entries:
+    - 186
+    truncated: false
+- segment_id: 103
+  speaker_group: 21
+  timecode:
+    start: 00:09:09,632
+    end: 00:09:13,636
+  source_text: It's just tones and sounds that resonate with you at a cellular level.
+  translation:
+    text: 這只是在細胞層次與你共鳴的音調與聲音。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: '>>'
+    source_entries:
+    - 187
+    - 188
+    truncated: false
+- segment_id: 104
+  speaker_group: 21
+  timecode:
+    start: 00:09:13,636
+    end: 00:09:21,060
+  source_text: And it was really interesting for me because when they started channeling
+    and working with the new tones, it was using all different kinds of muscles.
+  translation:
+    text: 對我來說真的很有趣，因為當他們開始通靈並運用新的音調時，會用到各種不同的肌肉。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 189
+    - 190
+    - 191
+    truncated: false
+- segment_id: 105
+  speaker_group: 22
+  timecode:
+    start: 00:09:21,060
+    end: 00:09:22,019
+  source_text: Oh, wow.
+  translation:
+    text: 哇。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: '>>'
+    source_entries:
+    - 192
+    truncated: false
+- segment_id: 106
+  speaker_group: 23
+  timecode:
+    start: 00:09:22,019
+    end: 00:09:26,065
+  source_text: And I was like, OK, can we tone it back just a bit?
+  translation:
+    text: 我當時就想，好吧，我們能不能稍微「調」回來一點?
+    status: completed
+    confidence: high
+    notes: tone it back 雙關語,既指調整音調也指減弱程度
+  metadata:
+    topic_id: topic_03
+    speaker_hint: '>>'
+    source_entries:
+    - 193
+    truncated: false
+- segment_id: 107
+  speaker_group: 24
+  timecode:
+    start: 00:09:26,065
+    end: 00:09:26,857
+  source_text: Right.
+  translation:
+    text: 對。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: '>>'
+    source_entries:
+    - 194
+    truncated: false
+- segment_id: 108
+  speaker_group: 25
+  timecode:
+    start: 00:09:26,857
+    end: 00:09:28,359
+  source_text: Tone it, no pun intended.
+  translation:
+    text: 「調」回來，沒有雙關的意思。
+    status: completed
+    confidence: high
+    notes: 保留雙關語的自我解釋
+  metadata:
+    topic_id: topic_03
+    speaker_hint: '>>'
+    source_entries:
+    - 195
+    truncated: false
+- segment_id: 109
+  speaker_group: 25
+  timecode:
+    start: 00:09:28,359
+    end: 00:09:33,155
+  source_text: But it really affects us vibrationally.
+  translation:
+    text: 但這確實會透過振動影響我們。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 196
+    truncated: false
+- segment_id: 110
+  speaker_group: 25
+  timecode:
+    start: 00:09:33,155
+    end: 00:09:35,700
+  source_text: And I could tell that there was a big difference.
+  translation:
+    text: 我能感覺到有很大的差異。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 197
+    truncated: false
+- segment_id: 111
+  speaker_group: 25
+  timecode:
+    start: 00:09:35,700
+    end: 00:09:39,245
+  source_text: So we get a healing when we work with them.
+  translation:
+    text: 所以我們在與他們工作時會獲得療癒。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 198
+    truncated: false
+- segment_id: 112
+  speaker_group: 25
+  timecode:
+    start: 00:09:39,245
+    end: 00:09:44,125
+  source_text: Not only do we receive the information, but the tones and sounds help
+    to alter the cellular structure--
+  translation:
+    text: 我們不僅接收到訊息，這些音調與聲音還幫助改變細胞結構——
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 199
+    - 200
+    truncated: false
+- segment_id: 113
+  speaker_group: 26
+  timecode:
+    start: 00:09:44,125
+    end: 00:09:44,959
+  source_text: OK.
+  translation:
+    text: 好。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: '>>'
+    source_entries:
+    - 201
+    truncated: false
+- segment_id: 114
+  speaker_group: 27
+  timecode:
+    start: 00:09:44,959
+    end: 00:09:48,462
+  source_text: --and create more balance and harmony in the body.
+  translation:
+    text: ——並在身體中創造更多的平衡與和諧。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: '>>'
+    source_entries:
+    - 202
+    truncated: false
+- segment_id: 115
+  speaker_group: 27
+  timecode:
+    start: 00:09:48,462
+    end: 00:09:51,299
+  source_text: And how did I first meet them?
+  translation:
+    text: 我是怎麼第一次遇見他們的呢?
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 203
+    truncated: false
+- segment_id: 116
+  speaker_group: 27
+  timecode:
+    start: 00:09:51,299
+    end: 00:09:53,217
+  source_text: I think I've been working with them all along.
+  translation:
+    text: 我想我一直都在與他們合作。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 204
+    truncated: false
+- segment_id: 117
+  speaker_group: 28
+  timecode:
+    start: 00:09:53,217
+    end: 00:09:54,010
+  source_text: OK.
+  translation:
+    text: 好。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: '>>'
+    source_entries:
+    - 205
+    truncated: false
+- segment_id: 118
+  speaker_group: 29
+  timecode:
+    start: 00:09:54,010
+    end: 00:09:58,222
+  source_text: And I know that there's an aspect of me that is part of the Collective.
+  translation:
+    text: 我知道我有一個面向是屬於這個集體的。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: '>>'
+    source_entries:
+    - 206
+    - 207
+    truncated: false
+- segment_id: 119
+  speaker_group: 29
+  timecode:
+    start: 00:09:58,222
+    end: 00:10:01,600
+  source_text: There are about 2,500 beings in the group.
+  translation:
+    text: 這個團體中大約有 2500 個存有。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 208
+    truncated: false
+- segment_id: 120
+  speaker_group: 29
+  timecode:
+    start: 00:10:01,600
+    end: 00:10:03,978
+  source_text: And there is an aspect of me that is a part of that.
+  translation:
+    text: 我的某個面向是其中的一部分。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 209
+    truncated: false
+- segment_id: 121
+  speaker_group: 29
+  timecode:
+    start: 00:10:03,978
+    end: 00:10:05,438
+  source_text: And they're in the ninth dimension.
+  translation:
+    text: 他們在第九維度。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 210
+    truncated: false
+- segment_id: 122
+  speaker_group: 29
+  timecode:
+    start: 00:10:05,438
+    end: 00:10:09,191
+  source_text: And they don't have physical form, they're beings of light.
+  translation:
+    text: 他們沒有物質的形體，是光的存有。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 211
+    truncated: false
+- segment_id: 123
+  speaker_group: 29
+  timecode:
+    start: 00:10:09,191
+    end: 00:10:15,364
+  source_text: And they align with Alcyone, which is the central sun in the Pleiades
+    star system.
+  translation:
+    text: 他們對齊昂宿六，也就是昴宿星團的中心恆星。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 212
+    - 213
+    truncated: false
+- segment_id: 124
+  speaker_group: 29
+  timecode:
+    start: 00:10:15,364
+    end: 00:10:22,663
+  source_text: And because they don't have physical bodies, they don't incarnate,
+    but they align with a purpose, or a function.
+  translation:
+    text: 因為他們沒有物質的身體，所以不會投胎轉世，而是對齊一個目的或功能。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 214
+    - 215
+    - 216
+    truncated: false
+- segment_id: 125
+  speaker_group: 29
+  timecode:
+    start: 00:10:22,663
+    end: 00:10:35,217
+  source_text: And they're here to help us with records, and information, and to kind
+    of oversee what we're doing to help us along the way so that we can start taking
+    ownership and guardianship of the planet.
+  translation:
+    text: 他們來這裡是為了協助我們處理記錄和資訊，並在某種程度上監督我們正在做的事，一路幫助我們，讓我們能開始對地球承擔起擁有權與守護責任。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 217
+    - 218
+    - 219
+    - 220
+    - 221
+    truncated: false
+- segment_id: 126
+  speaker_group: 29
+  timecode:
+    start: 00:10:35,217
+    end: 00:10:40,097
+  source_text: And there's another role that we're about to step into at the galactic
+    level.
+  translation:
+    text: 而且在銀河層次上，我們即將要踏入另一個角色。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 222
+    - 223
+    truncated: false
+- segment_id: 127
+  speaker_group: 30
+  timecode:
+    start: 00:10:40,097
+    end: 00:10:46,187
+  source_text: Well, so you mentioned earlier that you formulated questions and answers.
+  translation:
+    text: 嗯，你剛才提到你構思問題和答案。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: '>>'
+    source_entries:
+    - 224
+    - 225
+    truncated: false
+- segment_id: 128
+  speaker_group: 30
+  timecode:
+    start: 00:10:46,187
+    end: 00:10:50,316
+  source_text: Were the questions also being channeled?
+  translation:
+    text: 問題也是通靈得來的嗎?
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 226
+    truncated: false
+- segment_id: 129
+  speaker_group: 31
+  timecode:
+    start: 00:10:50,316
+    end: 00:10:51,108
+  source_text: No.
+  translation:
+    text: 不是。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: '>>'
+    source_entries:
+    - 227
+    truncated: false
+- segment_id: 130
+  speaker_group: 31
+  timecode:
+    start: 00:10:51,108
+    end: 00:10:52,360
+  source_text: They were things that I wanted to know about--
+  translation:
+    text: 是我想知道的事情——
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 228
+    truncated: false
+- segment_id: 131
+  speaker_group: 32
+  timecode:
+    start: 00:10:52,360
+    end: 00:10:53,027
+  source_text: OK. Got you.
+  translation:
+    text: 好，我明白了。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: '>>'
+    source_entries:
+    - 229
+    truncated: false
+- segment_id: 132
+  speaker_group: 33
+  timecode:
+    start: 00:10:53,027
+    end: 00:10:54,403
+  source_text: --problems I was having in my life.
+  translation:
+    text: ——我生活中遇到的問題。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: '>>'
+    source_entries:
+    - 230
+    truncated: false
+- segment_id: 133
+  speaker_group: 33
+  timecode:
+    start: 00:10:54,403
+    end: 00:10:57,740
+  source_text: And I think, early on, everybody has the same couple questions.
+  translation:
+    text: 我想，在一開始的時候，每個人都會問那幾個相同的問題。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 231
+    - 232
+    truncated: false
+- segment_id: 134
+  speaker_group: 33
+  timecode:
+    start: 00:10:57,740
+    end: 00:10:58,532
+  source_text: Tell me about love.
+  translation:
+    text: 告訴我關於愛情的事。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 233
+    truncated: false
+- segment_id: 135
+  speaker_group: 33
+  timecode:
+    start: 00:10:58,532
+    end: 00:10:59,367
+  source_text: Tell me about money.
+  translation:
+    text: 告訴我關於金錢的事。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 234
+    truncated: false
+- segment_id: 136
+  speaker_group: 33
+  timecode:
+    start: 00:10:59,367
+    end: 00:11:00,034
+  source_text: Tell me about career.
+  translation:
+    text: 告訴我關於事業的事。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 235
+    truncated: false
+- segment_id: 137
+  speaker_group: 34
+  timecode:
+    start: 00:11:00,034
+    end: 00:11:00,868
+  source_text: Right.
+  translation:
+    text: 對。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: '>>'
+    source_entries:
+    - 236
+    truncated: false
+- segment_id: 138
+  speaker_group: 35
+  timecode:
+    start: 00:11:00,868
+    end: 00:11:04,538
+  source_text: And then it evolves from there.
+  translation:
+    text: 然後就會從那裡開始演進。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: '>>'
+    source_entries:
+    - 237
+    truncated: false
+- segment_id: 139
+  speaker_group: 35
+  timecode:
+    start: 00:11:04,538
+    end: 00:11:07,458
+  source_text: But they started helping me with my own stuff.
+  translation:
+    text: 但他們開始幫助我處理我自己的事情。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 238
+    truncated: false
+- segment_id: 140
+  speaker_group: 35
+  timecode:
+    start: 00:11:07,458
+    end: 00:11:12,338
+  source_text: And that's kind of like the carrot to get us to keep channeling.
+  translation:
+    text: 這有點像是吸引我們持續通靈的誘餌。
+    status: completed
+    confidence: high
+    notes: carrot 比喻為吸引力/誘因
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 239
+    - 240
+    truncated: false
+- segment_id: 141
+  speaker_group: 35
+  timecode:
+    start: 00:11:12,338
+    end: 00:11:15,716
+  source_text: And that's also one of the hardest things, I think, for people, what
+    do I want to know about?
+  translation:
+    text: 我認為這也是對人們來說最困難的事情之一，就是我想知道什麼?
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 241
+    - 242
+    truncated: false
+- segment_id: 142
+  speaker_group: 35
+  timecode:
+    start: 00:11:15,716
+    end: 00:11:17,718
+  source_text: We've forgotten how to formulate questions.
+  translation:
+    text: 我們已經忘記如何構思問題了。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 243
+    truncated: false
+- segment_id: 143
+  speaker_group: 35
+  timecode:
+    start: 00:11:17,718
+    end: 00:11:24,850
+  source_text: We've forgotten how to be curious, how to ask, because we're so conditioned
+    just to go along kind of mindlessly making our way through our day.
+  translation:
+    text: 我們已經忘記如何保持好奇、如何提問，因為我們已經習慣只是麻木地隨波逐流過日子。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 244
+    - 245
+    - 246
+    truncated: false
+- segment_id: 144
+  speaker_group: 36
+  timecode:
+    start: 00:11:24,850
+    end: 00:11:25,643
+  source_text: Yeah.
+  translation:
+    text: 是啊。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: '>>'
+    source_entries:
+    - 247
+    truncated: false
+- segment_id: 145
+  speaker_group: 37
+  timecode:
+    start: 00:11:25,643
+    end: 00:11:30,815
+  source_text: So that's a big step in working with them is formulating your questions.
+  translation:
+    text: 所以與他們工作的一大步就是構思你的問題。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: '>>'
+    source_entries:
+    - 248
+    - 249
+    truncated: false
+- segment_id: 146
+  speaker_group: 37
+  timecode:
+    start: 00:11:30,815
+    end: 00:11:32,525
+  source_text: Because if you don't ask, you don't get.
+  translation:
+    text: 因為如果你不問，就得不到答案。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 250
+    truncated: false
+- segment_id: 147
+  speaker_group: 38
+  timecode:
+    start: 00:11:32,525
+    end: 00:11:33,317
+  source_text: Right.
+  translation:
+    text: 對。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: '>>'
+    source_entries:
+    - 251
+    truncated: false
+- segment_id: 148
+  speaker_group: 39
+  timecode:
+    start: 00:11:33,317
+    end: 00:11:35,903
+  source_text: And it's one of those tricky things.
+  translation:
+    text: 這就是那種很微妙的事情。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: '>>'
+    source_entries:
+    - 252
+    truncated: false
+- segment_id: 149
+  speaker_group: 39
+  timecode:
+    start: 00:11:35,903
+    end: 00:11:38,823
+  source_text: It's like, well, I don't know what I don't know until I know it.
+  translation:
+    text: 就像是，嗯，在我知道之前，我不知道自己不知道什麼。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 253
+    - 254
+    truncated: false
+- segment_id: 150
+  speaker_group: 40
+  timecode:
+    start: 00:11:38,823
+    end: 00:11:39,657
+  source_text: Right.
+  translation:
+    text: 對。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: '>>'
+    source_entries:
+    - 255
+    truncated: false
+- segment_id: 151
+  speaker_group: 40
+  timecode:
+    start: 00:11:39,657
+    end: 00:11:40,449
+  source_text: Yeah.
+  translation:
+    text: 是啊。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 256
+    truncated: false
+- segment_id: 152
+  speaker_group: 41
+  timecode:
+    start: 00:11:40,449
+    end: 00:11:41,992
+  source_text: So where do I want to start?
+  translation:
+    text: 所以我想從哪裡開始?
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: '>>'
+    source_entries:
+    - 257
+    truncated: false
+- segment_id: 153
+  speaker_group: 41
+  timecode:
+    start: 00:11:41,992
+    end: 00:11:43,369
+  source_text: What questions do I want to ask?
+  translation:
+    text: 我想問什麼問題?
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 258
+    truncated: false
+- segment_id: 154
+  speaker_group: 41
+  timecode:
+    start: 00:11:43,369
+    end: 00:11:50,668
+  source_text: And what do I want to know more about, especially when you get to the
+    more complex questions, the bigger universal questions--
+  translation:
+    text: 我想更深入了解什麼，特別是當你開始涉及更複雜的問題、更宏大的宇宙問題時——
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 259
+    - 260
+    - 261
+    truncated: false
+- segment_id: 155
+  speaker_group: 42
+  timecode:
+    start: 00:11:50,668
+    end: 00:11:51,085
+  source_text: Sure.
+  translation:
+    text: 當然。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: '>>'
+    source_entries:
+    - 262
+    truncated: false
+- segment_id: 156
+  speaker_group: 43
+  timecode:
+    start: 00:11:51,085
+    end: 00:11:53,796
+  source_text: --because that can't be revealed until you're ready for it.
+  translation:
+    text: ——因為那些答案無法在你準備好之前被揭露。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: '>>'
+    source_entries:
+    - 263
+    - 264
+    truncated: false
+- segment_id: 157
+  speaker_group: 43
+  timecode:
+    start: 00:11:53,796
+    end: 00:11:59,677
+  source_text: And once you formulate the question, that's kind of their signal that
+    you're ready and they can give more information.
+  translation:
+    text: 而一旦你構思出問題，這某種程度上就是向他們發出你已經準備好的訊號，他們就能給予更多資訊。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 265
+    - 266
+    - 267
+    truncated: false
+- segment_id: 158
+  speaker_group: 44
+  timecode:
+    start: 00:11:59,677
+    end: 00:12:00,469
+  source_text: Excellent.
+  translation:
+    text: 太好了。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: '>>'
+    source_entries:
+    - 268
+    truncated: false
+- segment_id: 159
+  speaker_group: 44
+  timecode:
+    start: 00:12:00,469
+    end: 00:12:02,888
+  source_text: Well, that's what we want to get into today.
+  translation:
+    text: 嗯，這就是我們今天想深入探討的。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 269
+    truncated: false
+- segment_id: 160
+  speaker_group: 44
+  timecode:
+    start: 00:12:02,888
+    end: 00:12:13,691
+  source_text: We have lots of questions about the universal history and story.
+  translation:
+    text: 我們有很多關於宇宙歷史和故事的問題。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_03
+    speaker_hint: null
+    source_entries:
+    - 270
+    - 271
+    truncated: false
+- segment_id: 161
+  speaker_group: 44
+  timecode:
+    start: 00:12:13,691
+    end: 00:12:22,783
+  source_text: So right quick, before we introduce the Pleiadians, have you had any
+    physical contact in the light sense?
+  translation:
+    text: 那麼在我們介紹昴宿星人之前，先快速問一下，你有過任何物質層面的接觸嗎?在光的意義上?
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 272
+    - 273
+    truncated: false
+- segment_id: 162
+  speaker_group: 44
+  timecode:
+    start: 00:12:22,783
+    end: 00:12:24,952
+  source_text: I mean, have you seen these lights?
+  translation:
+    text: 我的意思是，你看過這些光嗎?
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 274
+    truncated: false
+- segment_id: 163
+  speaker_group: 44
+  timecode:
+    start: 00:12:24,952
+    end: 00:12:27,204
+  source_text: Have you had experiences in that level?
+  translation:
+    text: 你在那個層面有過體驗嗎?
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 275
+    truncated: false
+- segment_id: 164
+  speaker_group: 45
+  timecode:
+    start: 00:12:27,204
+    end: 00:12:35,963
+  source_text: With them, my strength is as a clairsentient, so I feel a lot of things
+    in my body.
+  translation:
+    text: 對他們而言，我的強項是作為感知者，所以我能在身體中感受到很多東西。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 276
+    - 277
+    truncated: false
+- segment_id: 165
+  speaker_group: 45
+  timecode:
+    start: 00:12:35,963
+    end: 00:12:43,095
+  source_text: I occasionally will see things, as a clairvoyant, literally seeing
+    lights, and auric fields, and that kind of thing.
+  translation:
+    text: 我偶爾會以靈視者的身份看見東西，實際看到光、氣場之類的。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 278
+    - 279
+    - 280
+    truncated: false
+- segment_id: 166
+  speaker_group: 45
+  timecode:
+    start: 00:12:43,095
+    end: 00:12:48,559
+  source_text: More of what I see in the clairvoyant sense is with my inner eye.
+  translation:
+    text: 我在靈視意義上看到的更多是透過我的內在之眼。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 281
+    - 282
+    truncated: false
+- segment_id: 167
+  speaker_group: 46
+  timecode:
+    start: 00:12:48,559
+    end: 00:12:49,393
+  source_text: OK.
+  translation:
+    text: 好。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 283
+    truncated: false
+- segment_id: 168
+  speaker_group: 46
+  timecode:
+    start: 00:12:49,393
+    end: 00:12:51,020
+  source_text: So like eyes closed and just--
+  translation:
+    text: 所以像是閉上眼睛，然後就——
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 284
+    truncated: false
+- segment_id: 169
+  speaker_group: 47
+  timecode:
+    start: 00:12:51,020
+    end: 00:12:53,022
+  source_text: Yeah, what I would see in my mind's eye.
+  translation:
+    text: 對，就是我在心識之眼中看到的。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 285
+    truncated: false
+- segment_id: 170
+  speaker_group: 48
+  timecode:
+    start: 00:12:53,022
+    end: 00:12:53,856
+  source_text: OK.
+  translation:
+    text: 好。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 286
+    truncated: false
+- segment_id: 171
+  speaker_group: 49
+  timecode:
+    start: 00:12:53,856
+    end: 00:12:57,526
+  source_text: So when I do see them, they're usually blue, blue light.
+  translation:
+    text: 所以當我真的看到他們時，他們通常是藍色的，藍光。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 287
+    - 288
+    truncated: false
+- segment_id: 172
+  speaker_group: 49
+  timecode:
+    start: 00:12:57,526
+    end: 00:12:59,028
+  source_text: Sometimes they have geometric forms.
+  translation:
+    text: 有時候他們會呈現幾何形態。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 289
+    truncated: false
+- segment_id: 173
+  speaker_group: 49
+  timecode:
+    start: 00:12:59,028
+    end: 00:13:00,821
+  source_text: Sometimes triangles.
+  translation:
+    text: 有時是三角形。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 290
+    truncated: false
+- segment_id: 174
+  speaker_group: 50
+  timecode:
+    start: 00:13:00,821
+    end: 00:13:02,031
+  source_text: Hmm.
+  translation:
+    text: 嗯。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 291
+    truncated: false
+- segment_id: 175
+  speaker_group: 50
+  timecode:
+    start: 00:13:02,031
+    end: 00:13:13,667
+  source_text: And so let me clarify, so you can see the geometric forms and the lights,
+    but you feel a-- almost like a human presence or something like that?
+  translation:
+    text: 那讓我釐清一下，所以你能看到幾何形態和光，但你感受到的是——幾乎像是一種人的存在，或類似的東西?
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 292
+    - 293
+    - 294
+    truncated: false
+- segment_id: 176
+  speaker_group: 50
+  timecode:
+    start: 00:13:13,667
+    end: 00:13:14,001
+  source_text: How could you describe it?
+  translation:
+    text: 你會怎麼描述它?
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 295
+    truncated: false
+- segment_id: 177
+  speaker_group: 51
+  timecode:
+    start: 00:13:14,001
+    end: 00:13:14,960
+  source_text: I feel a frequency.
+  translation:
+    text: 我感覺到一種頻率。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 296
+    truncated: false
+- segment_id: 178
+  speaker_group: 52
+  timecode:
+    start: 00:13:14,960
+    end: 00:13:15,836
+  source_text: OK.
+  translation:
+    text: 好。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 297
+    truncated: false
+- segment_id: 179
+  speaker_group: 53
+  timecode:
+    start: 00:13:15,836
+    end: 00:13:18,130
+  source_text: And yet, you could say it's like a human presence.
+  translation:
+    text: 但你也可以說這就像是人的存在。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 298
+    truncated: false
+- segment_id: 180
+  speaker_group: 54
+  timecode:
+    start: 00:13:18,130
+    end: 00:13:18,923
+  source_text: OK.
+  translation:
+    text: 好。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 299
+    truncated: false
+- segment_id: 181
+  speaker_group: 55
+  timecode:
+    start: 00:13:18,923
+    end: 00:13:20,799
+  source_text: It's like, well, let's see, how can I--
+  translation:
+    text: 這就像是，嗯，讓我想想，我該怎麼——
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 300
+    truncated: false
+- segment_id: 182
+  speaker_group: 56
+  timecode:
+    start: 00:13:20,799
+    end: 00:13:24,803
+  source_text: Like I know my cameraman here is standing here.
+  translation:
+    text: 就像我知道這裡的攝影師站在這裡。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 301
+    truncated: false
+- segment_id: 183
+  speaker_group: 56
+  timecode:
+    start: 00:13:24,803
+    end: 00:13:25,638
+  source_text: Is that--
+  translation:
+    text: 這樣——
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 302
+    truncated: false
+- segment_id: 184
+  speaker_group: 57
+  timecode:
+    start: 00:13:25,638
+    end: 00:13:26,055
+  source_text: Yes.
+  translation:
+    text: 對。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 303
+    truncated: false
+- segment_id: 185
+  speaker_group: 58
+  timecode:
+    start: 00:13:26,055
+    end: 00:13:26,722
+  source_text: Is that a good analogy?
+  translation:
+    text: 這是個好的類比嗎?
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 304
+    truncated: false
+- segment_id: 186
+  speaker_group: 59
+  timecode:
+    start: 00:13:26,722
+    end: 00:13:28,057
+  source_text: So you know what his energy feels like.
+  translation:
+    text: 所以你知道他的能量感覺起來是什麼樣子。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 305
+    truncated: false
+- segment_id: 187
+  speaker_group: 60
+  timecode:
+    start: 00:13:28,057
+    end: 00:13:28,849
+  source_text: Right.
+  translation:
+    text: 對。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 306
+    truncated: false
+- segment_id: 188
+  speaker_group: 61
+  timecode:
+    start: 00:13:28,849
+    end: 00:13:32,686
+  source_text: And you wouldn't necessarily have to turn around just to know that
+    that person is standing--
+  translation:
+    text: 而且你不一定要回頭，就能知道那個人站在——
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 307
+    - 308
+    truncated: false
+- segment_id: 189
+  speaker_group: 62
+  timecode:
+    start: 00:13:32,686
+    end: 00:13:33,020
+  source_text: Sure.
+  translation:
+    text: 當然。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 309
+    truncated: false
+- segment_id: 190
+  speaker_group: 63
+  timecode:
+    start: 00:13:33,020
+    end: 00:13:33,812
+  source_text: --behind you.
+  translation:
+    text: ——你身後。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 310
+    truncated: false
+- segment_id: 191
+  speaker_group: 63
+  timecode:
+    start: 00:13:33,812
+    end: 00:13:38,067
+  source_text: And they often describe it as it's like hearing somebody's footsteps
+    coming down the hall.
+  translation:
+    text: 他們常常形容這就像是聽到某人的腳步聲從走廊傳來。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 311
+    - 312
+    truncated: false
+- segment_id: 192
+  speaker_group: 63
+  timecode:
+    start: 00:13:38,067
+    end: 00:13:46,033
+  source_text: After a while, once you begin to know what that person's energy is
+    like, what their patterns are like, you know who it is by the sound of--
+  translation:
+    text: 過了一陣子，一旦你開始了解那個人的能量是什麼樣子，他們的模式是什麼樣子，你就能從聲音認出那是誰——
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 313
+    - 314
+    - 315
+    truncated: false
+- segment_id: 193
+  speaker_group: 64
+  timecode:
+    start: 00:13:46,033
+    end: 00:13:46,867
+  source_text: Of the footsteps.
+  translation:
+    text: 從腳步聲。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 316
+    truncated: false
+- segment_id: 194
+  speaker_group: 65
+  timecode:
+    start: 00:13:46,867
+    end: 00:13:47,284
+  source_text: --the footsteps,
+  translation:
+    text: ——腳步聲，
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 317
+    truncated: false
+- segment_id: 195
+  speaker_group: 66
+  timecode:
+    start: 00:13:47,284
+    end: 00:13:48,077
+  source_text: Interesting.
+  translation:
+    text: 有意思。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 318
+    truncated: false
+- segment_id: 196
+  speaker_group: 67
+  timecode:
+    start: 00:13:48,077
+    end: 00:13:49,328
+  source_text: --what the gait's like.
+  translation:
+    text: ——步態是什麼樣子。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 319
+    truncated: false
+- segment_id: 197
+  speaker_group: 67
+  timecode:
+    start: 00:13:49,328
+    end: 00:13:51,747
+  source_text: So it's kind of the same thing with them.
+  translation:
+    text: 所以對他們來說也是類似的。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 320
+    truncated: false
+- segment_id: 198
+  speaker_group: 67
+  timecode:
+    start: 00:13:51,747
+    end: 00:13:53,791
+  source_text: I know it's them when they show up.
+  translation:
+    text: 當他們出現時，我知道是他們。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 321
+    truncated: false
+- segment_id: 199
+  speaker_group: 67
+  timecode:
+    start: 00:13:53,791
+    end: 00:13:56,001
+  source_text: Sometimes they show up with other people.
+  translation:
+    text: 有時候他們會和其他存有一起出現。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 322
+    truncated: false
+- segment_id: 200
+  speaker_group: 67
+  timecode:
+    start: 00:13:56,001
+    end: 00:14:00,798
+  source_text: And I can feel them, but I know that they brought other people along
+    because the frequency's different.
+  translation:
+    text: 我能感覺到他們，但我知道他們帶了其他存有來，因為頻率不同。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 323
+    - 324
+    - 325
+    truncated: false
+- segment_id: 201
+  speaker_group: 67
+  timecode:
+    start: 00:14:00,798
+    end: 00:14:04,802
+  source_text: And sometimes they're making an introduction, so they're beings that
+    I haven't worked with before.
+  translation:
+    text: 有時他們是在做介紹，所以是我之前沒有合作過的存有。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 326
+    - 327
+    truncated: false
+- segment_id: 202
+  speaker_group: 68
+  timecode:
+    start: 00:14:04,802
+    end: 00:14:08,597
+  source_text: And so when we say people, we're talking about other light beings?
+  translation:
+    text: 所以當我們說存有的時候，我們是在談論其他光之存有嗎?
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 328
+    - 329
+    truncated: false
+- segment_id: 203
+  speaker_group: 69
+  timecode:
+    start: 00:14:08,597
+    end: 00:14:10,558
+  source_text: Sometimes they're light beings.
+  translation:
+    text: 有時候他們是光之存有。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 330
+    truncated: false
+- segment_id: 204
+  speaker_group: 69
+  timecode:
+    start: 00:14:10,558
+    end: 00:14:11,767
+  source_text: Sometimes they're physical.
+  translation:
+    text: 有時候他們是物質的。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 331
+    truncated: false
+- segment_id: 205
+  speaker_group: 69
+  timecode:
+    start: 00:14:11,767
+    end: 00:14:16,230
+  source_text: Sometimes they're fifth dimensional, sixth dimensional, seventh dimensional.
+  translation:
+    text: 有時是第五維度、第六維度、第七維度的。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 332
+    - 333
+    truncated: false
+- segment_id: 206
+  speaker_group: 69
+  timecode:
+    start: 00:14:16,230
+    end: 00:14:18,524
+  source_text: And they do have bodies.
+  translation:
+    text: 他們確實有身體。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 334
+    truncated: false
+- segment_id: 207
+  speaker_group: 69
+  timecode:
+    start: 00:14:18,524
+    end: 00:14:21,110
+  source_text: They're not as dense as ours, but they do have physical form.
+  translation:
+    text: 他們的身體不像我們的這麼稠密，但他們確實有物質的形體。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 335
+    truncated: false
+- segment_id: 208
+  speaker_group: 70
+  timecode:
+    start: 00:14:21,110
+    end: 00:14:21,902
+  source_text: OK.
+  translation:
+    text: 好。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 336
+    truncated: false
+- segment_id: 209
+  speaker_group: 71
+  timecode:
+    start: 00:14:21,902
+    end: 00:14:24,154
+  source_text: And I do work with a variety of beings.
+  translation:
+    text: 我確實與各式各樣的存有一起工作。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 337
+    truncated: false
+- segment_id: 210
+  speaker_group: 71
+  timecode:
+    start: 00:14:24,154
+    end: 00:14:26,490
+  source_text: The Sirians that I work with, they're physicals.
+  translation:
+    text: 我合作的天狼星人，他們是物質的。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 338
+    truncated: false
+- segment_id: 211
+  speaker_group: 71
+  timecode:
+    start: 00:14:26,490
+    end: 00:14:27,950
+  source_text: They're fifth dimensional.
+  translation:
+    text: 他們是第五維度的。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 339
+    truncated: false
+- segment_id: 212
+  speaker_group: 71
+  timecode:
+    start: 00:14:27,950
+    end: 00:14:35,291
+  source_text: But I don't necessarily work with them in a conscious way where they're
+    standing physically in front of me.
+  translation:
+    text: 但我不一定是以有意識的方式與他們工作，就是那種他們實際站在我面前的方式。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 340
+    - 341
+    - 342
+    truncated: false
+- segment_id: 213
+  speaker_group: 71
+  timecode:
+    start: 00:14:35,291
+    end: 00:14:40,546
+  source_text: It's more telepathic communication that I have with them, at least
+    in my waking hours.
+  translation:
+    text: 更多是心電感應的溝通，至少在我清醒的時候是這樣。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 343
+    - 344
+    truncated: false
+- segment_id: 214
+  speaker_group: 72
+  timecode:
+    start: 00:14:40,546
+    end: 00:14:48,596
+  source_text: And have you had physical contact then with other beings, non-light
+    beings, body--
+  translation:
+    text: 那你有和其他存有有過物質接觸嗎，非光之存有，有身體的——
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 345
+    - 346
+    truncated: false
+- segment_id: 215
+  speaker_group: 73
+  timecode:
+    start: 00:14:48,596
+    end: 00:14:49,138
+  source_text: Yes. >> OK.
+  translation:
+    text: 有的。>> 好。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 347
+    truncated: false
+- segment_id: 216
+  speaker_group: 74
+  timecode:
+    start: 00:14:49,138
+    end: 00:14:50,139
+  source_text: Yes. So--
+  translation:
+    text: 有的。所以——
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 348
+    truncated: false
+- segment_id: 217
+  speaker_group: 75
+  timecode:
+    start: 00:14:50,139
+    end: 00:14:51,056
+  source_text: Sirians?
+  translation:
+    text: 天狼星人?
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 349
+    truncated: false
+- segment_id: 218
+  speaker_group: 75
+  timecode:
+    start: 00:14:51,056
+    end: 00:14:51,849
+  source_text: Or--
+  translation:
+    text: 還是——
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 350
+    truncated: false
+- segment_id: 219
+  speaker_group: 76
+  timecode:
+    start: 00:14:51,849
+    end: 00:14:52,725
+  source_text: No.
+  translation:
+    text: 不是。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 351
+    truncated: false
+- segment_id: 220
+  speaker_group: 76
+  timecode:
+    start: 00:14:52,725
+    end: 00:14:54,310
+  source_text: Different beings.
+  translation:
+    text: 不同的存有。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 352
+    truncated: false
+- segment_id: 221
+  speaker_group: 76
+  timecode:
+    start: 00:14:54,310
+    end: 00:14:56,895
+  source_text: Some of them are insectoids.
+  translation:
+    text: 其中有些是昆蟲人。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 353
+    truncated: false
+- segment_id: 222
+  speaker_group: 77
+  timecode:
+    start: 00:14:56,895
+    end: 00:14:57,855
+  source_text: Oh, interesting.
+  translation:
+    text: 哦，有意思。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 354
+    truncated: false
+- segment_id: 223
+  speaker_group: 78
+  timecode:
+    start: 00:14:57,855
+    end: 00:14:59,690
+  source_text: And then the Zetas as well.
+  translation:
+    text: 還有網罟座人。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 355
+    truncated: false
+- segment_id: 224
+  speaker_group: 79
+  timecode:
+    start: 00:14:59,690
+    end: 00:15:00,482
+  source_text: OK.
+  translation:
+    text: 好。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 356
+    truncated: false
+- segment_id: 225
+  speaker_group: 80
+  timecode:
+    start: 00:15:00,482
+    end: 00:15:04,194
+  source_text: And those are my physical experiences.
+  translation:
+    text: 這些就是我的物質接觸經驗。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 357
+    truncated: false
+- segment_id: 226
+  speaker_group: 80
+  timecode:
+    start: 00:15:04,194
+    end: 00:15:20,628
+  source_text: And another group who I just recently had an introduction to, I don't
+    have all the bits and pieces as to who they are, exactly, but they're kind of
+    a cross between the insectoids and what we would traditionally call the grays.
+  translation:
+    text: 還有另一個群體，我最近才剛被介紹認識，我還沒有掌握他們到底是誰的所有細節，但他們有點像是昆蟲人和我們傳統上稱為灰人之間的混合體。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 358
+    - 359
+    - 360
+    - 361
+    - 362
+    truncated: false
+- segment_id: 227
+  speaker_group: 80
+  timecode:
+    start: 00:15:20,628
+    end: 00:15:21,754
+  source_text: They look different.
+  translation:
+    text: 他們看起來不一樣。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 363
+    truncated: false
+- segment_id: 228
+  speaker_group: 80
+  timecode:
+    start: 00:15:21,754
+    end: 00:15:23,213
+  source_text: And it's not the same species.
+  translation:
+    text: 而且不是同一個物種。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 364
+    truncated: false
+- segment_id: 229
+  speaker_group: 80
+  timecode:
+    start: 00:15:23,213
+    end: 00:15:26,342
+  source_text: But they've shown up for me.
+  translation:
+    text: 但他們已經在我面前出現過了。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 365
+    truncated: false
+- segment_id: 230
+  speaker_group: 81
+  timecode:
+    start: 00:15:26,342
+    end: 00:15:28,510
+  source_text: Interesting.
+  translation:
+    text: 有意思。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 366
+    truncated: false
+- segment_id: 231
+  speaker_group: 81
+  timecode:
+    start: 00:15:28,510
+    end: 00:15:38,896
+  source_text: Do you find once you've opened yourself up to, let's say, this channeling
+    experience back in the '90s-- was it '94 you said?
+  translation:
+    text: 你有沒有發現，一旦你向這個通靈體驗敞開自己——就是回到90年代——你說是94年嗎?
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 367
+    - 368
+    - 369
+    truncated: false
+- segment_id: 232
+  speaker_group: 82
+  timecode:
+    start: 00:15:38,896
+    end: 00:15:40,814
+  source_text: When I started, it was in '94.
+  translation:
+    text: 我開始的時候，是在94年。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 370
+    truncated: false
+- segment_id: 233
+  speaker_group: 82
+  timecode:
+    start: 00:15:40,814
+    end: 00:15:43,484
+  source_text: And I had kind of my breakthrough in '95.
+  translation:
+    text: 然後我在95年有了突破。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 371
+    truncated: false
+- segment_id: 234
+  speaker_group: 83
+  timecode:
+    start: 00:15:43,484
+    end: 00:15:49,156
+  source_text: Do you think that has opened the door to other being experiences?
+  translation:
+    text: 你認為這打開了通往其他存有體驗的大門嗎?
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 372
+    - 373
+    truncated: false
+- segment_id: 235
+  speaker_group: 83
+  timecode:
+    start: 00:15:49,156
+    end: 00:15:53,869
+  source_text: Or do you think we're all getting these experiences and we're just
+    not tuned into it?
+  translation:
+    text: 還是你認為我們都在經歷這些體驗，只是我們沒有調頻進去?
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 374
+    - 375
+    truncated: false
+- segment_id: 236
+  speaker_group: 84
+  timecode:
+    start: 00:15:53,869
+    end: 00:15:55,245
+  source_text: Well, both.
+  translation:
+    text: 嗯，兩者都是。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 376
+    truncated: false
+- segment_id: 237
+  speaker_group: 84
+  timecode:
+    start: 00:15:55,245
+    end: 00:15:59,541
+  source_text: I think we're all connected to our guides.
+  translation:
+    text: 我認為我們都與我們的指導靈連結著。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 377
+    truncated: false
+- segment_id: 238
+  speaker_group: 84
+  timecode:
+    start: 00:15:59,541
+    end: 00:16:04,338
+  source_text: We've got two guides that are with us 24 hours a day, 7 days a week,
+    who are helping us.
+  translation:
+    text: 我們有兩位指導靈每天24小時、每週7天與我們同在，在幫助我們。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 378
+    - 379
+    truncated: false
+- segment_id: 239
+  speaker_group: 84
+  timecode:
+    start: 00:16:04,338
+    end: 00:16:06,215
+  source_text: And then we've got our solicited friends--
+  translation:
+    text: 然後我們還有我們召喚來的朋友——
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 380
+    truncated: false
+- segment_id: 240
+  speaker_group: 85
+  timecode:
+    start: 00:16:06,215
+    end: 00:16:06,548
+  source_text: Everybody?
+  translation:
+    text: 每個人?
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 381
+    truncated: false
+- segment_id: 241
+  speaker_group: 86
+  timecode:
+    start: 00:16:06,548
+    end: 00:16:06,966
+  source_text: Everybody.
+  translation:
+    text: 每個人。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 382
+    truncated: false
+- segment_id: 242
+  speaker_group: 87
+  timecode:
+    start: 00:16:06,966
+    end: 00:16:07,800
+  source_text: Oh, OK.
+  translation:
+    text: 哦，好。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 383
+    truncated: false
+- segment_id: 243
+  speaker_group: 88
+  timecode:
+    start: 00:16:07,800
+    end: 00:16:12,304
+  source_text: And I laugh because people think that channeling is just something
+    that a few people do.
+  translation:
+    text: 我會笑，因為人們以為通靈只是少數人做的事。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 384
+    - 385
+    truncated: false
+- segment_id: 244
+  speaker_group: 88
+  timecode:
+    start: 00:16:12,304
+    end: 00:16:14,723
+  source_text: But everybody does it.
+  translation:
+    text: 但其實每個人都會。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 386
+    truncated: false
+- segment_id: 245
+  speaker_group: 88
+  timecode:
+    start: 00:16:14,723
+    end: 00:16:17,726
+  source_text: And to me, it's like being an interpreter.
+  translation:
+    text: 對我來說，這就像是當個翻譯。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 387
+    truncated: false
+- segment_id: 246
+  speaker_group: 88
+  timecode:
+    start: 00:16:17,726
+    end: 00:16:25,651
+  source_text: I recognize frequency and I translate it into a recognizable form,
+    whether that's writing or whether it's speaking.
+  translation:
+    text: 我辨識頻率，然後把它轉譯成可識別的形式，不管是書寫還是口說。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 388
+    - 389
+    - 390
+    truncated: false
+- segment_id: 247
+  speaker_group: 88
+  timecode:
+    start: 00:16:25,651
+    end: 00:16:30,489
+  source_text: But I think any form of creative expression can be a form of channeling.
+  translation:
+    text: 但我認為任何形式的創意表達都可以是一種通靈。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 391
+    - 392
+    truncated: false
+- segment_id: 248
+  speaker_group: 88
+  timecode:
+    start: 00:16:30,489
+    end: 00:16:35,744
+  source_text: And my own experiences with beings, I think, started much younger.
+  translation:
+    text: 而我自己與存有們的體驗，我認為開始得更早。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 393
+    - 394
+    truncated: false
+- segment_id: 249
+  speaker_group: 88
+  timecode:
+    start: 00:16:35,744
+    end: 00:16:36,995
+  source_text: I think it started in childhood.
+  translation:
+    text: 我認為是從童年就開始了。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 395
+    truncated: false
+- segment_id: 250
+  speaker_group: 89
+  timecode:
+    start: 00:16:36,995
+    end: 00:16:37,871
+  source_text: OK.
+  translation:
+    text: 好。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 396
+    truncated: false
+- segment_id: 251
+  speaker_group: 90
+  timecode:
+    start: 00:16:37,871
+    end: 00:16:45,838
+  source_text: But I didn't really have an awareness, a conscious awareness of that
+    until I started opening up in my early 20s.
+  translation:
+    text: 但我並沒有真正意識到，沒有有意識地覺察到這一點，直到我在二十歲出頭開始敞開。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 397
+    - 398
+    - 399
+    truncated: false
+- segment_id: 252
+  speaker_group: 90
+  timecode:
+    start: 00:16:45,838
+    end: 00:16:48,257
+  source_text: And I started having some past-life experiences.
+  translation:
+    text: 然後我開始有一些前世體驗。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 400
+    truncated: false
+- segment_id: 253
+  speaker_group: 90
+  timecode:
+    start: 00:16:48,257
+    end: 00:16:51,093
+  source_text: And at the time, I didn't really understand that's what was going on.
+  translation:
+    text: 當時我並不真正理解那是怎麼回事。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 401
+    - 402
+    truncated: false
+- segment_id: 254
+  speaker_group: 90
+  timecode:
+    start: 00:16:51,093
+    end: 00:16:53,846
+  source_text: I was accessing some of that information.
+  translation:
+    text: 我正在接取那些資訊。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 403
+    truncated: false
+- segment_id: 255
+  speaker_group: 90
+  timecode:
+    start: 00:16:53,846
+    end: 00:17:00,310
+  source_text: So once I made conscious contact, then some of the things that had
+    happened earlier in my life made a lot more sense.
+  translation:
+    text: 所以一旦我建立了有意識的接觸，那麼我生命早期發生的一些事情就變得更有意義了。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 404
+    - 405
+    - 406
+    truncated: false
+- segment_id: 256
+  speaker_group: 90
+  timecode:
+    start: 00:17:00,310
+    end: 00:17:02,438
+  source_text: I understood, oh, that's what that was.
+  translation:
+    text: 我明白了，哦，原來那就是那回事。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 407
+    truncated: false
+- segment_id: 257
+  speaker_group: 91
+  timecode:
+    start: 00:17:02,438
+    end: 00:17:03,522
+  source_text: I see.
+  translation:
+    text: 我明白了。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 408
+    truncated: false
+- segment_id: 258
+  speaker_group: 91
+  timecode:
+    start: 00:17:03,522
+    end: 00:17:15,784
+  source_text: So you think if we all could tap into this, then this channeling experience,
+    or our guides, humanity would be a little less hectic or frantic maybe?
+  translation:
+    text: 所以你認為如果我們都能接通這個，那麼這個通靈體驗，或者我們的指導靈，人類會不會就比較不那麼忙亂或慌張了?
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 409
+    - 410
+    - 411
+    truncated: false
+- segment_id: 259
+  speaker_group: 92
+  timecode:
+    start: 00:17:15,784
+    end: 00:17:16,577
+  source_text: I think so.
+  translation:
+    text: 我覺得是的。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 412
+    truncated: false
+- segment_id: 260
+  speaker_group: 93
+  timecode:
+    start: 00:17:16,577
+    end: 00:17:20,706
+  source_text: Or more because now there's so much more out there that we're not aware
+    of.
+  translation:
+    text: 還是會更多，因為現在外面有這麼多我們不知道的東西。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 413
+    - 414
+    truncated: false
+- segment_id: 261
+  speaker_group: 93
+  timecode:
+    start: 00:17:20,706
+    end: 00:17:35,637
+  source_text: How about in your life-- I'm sure this could go on into a much deeper
+    conversation which, hopefully, we can have later-- but quickly, by opening yourself
+    up to this channeling experiences, has it been a positive influence in your life?
+  translation:
+    text: 那在你的生活中呢——我確信這可以延伸成一場更深入的對話，希望我們之後可以聊——但快速問一下，向這些通靈體驗敞開自己，對你的生活是正面的影響嗎?
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 415
+    - 416
+    - 417
+    - 418
+    - 419
+    truncated: false
+- segment_id: 262
+  speaker_group: 94
+  timecode:
+    start: 00:17:35,637
+    end: 00:17:36,430
+  source_text: Oh, definitely.
+  translation:
+    text: 哦，絕對是。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 420
+    truncated: false
+- segment_id: 263
+  speaker_group: 95
+  timecode:
+    start: 00:17:36,430
+    end: 00:17:36,764
+  source_text: OK.
+  translation:
+    text: 好。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 421
+    truncated: false
+- segment_id: 264
+  speaker_group: 96
+  timecode:
+    start: 00:17:36,764
+    end: 00:17:37,181
+  source_text: Yeah.
+  translation:
+    text: 對。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 422
+    truncated: false
+- segment_id: 265
+  speaker_group: 96
+  timecode:
+    start: 00:17:37,181
+    end: 00:17:37,973
+  source_text: Yeah.
+  translation:
+    text: 對。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 423
+    truncated: false
+- segment_id: 266
+  speaker_group: 96
+  timecode:
+    start: 00:17:37,973
+    end: 00:17:39,475
+  source_text: I can't imagine not doing it.
+  translation:
+    text: 我無法想像不做這件事。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 424
+    truncated: false
+- segment_id: 267
+  speaker_group: 96
+  timecode:
+    start: 00:17:39,475
+    end: 00:17:40,809
+  source_text: To me, it's normal.
+  translation:
+    text: 對我來說，這是正常的。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 425
+    truncated: false
+- segment_id: 268
+  speaker_group: 97
+  timecode:
+    start: 00:17:40,809
+    end: 00:17:41,685
+  source_text: Got you.
+  translation:
+    text: 了解。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 426
+    truncated: false
+- segment_id: 269
+  speaker_group: 98
+  timecode:
+    start: 00:17:41,685
+    end: 00:17:43,771
+  source_text: And I always say it's going to be the new normal--
+  translation:
+    text: 而且我總是說這將會成為新常態——
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 427
+    truncated: false
+- segment_id: 270
+  speaker_group: 99
+  timecode:
+    start: 00:17:43,771
+    end: 00:17:44,563
+  source_text: Sure.
+  translation:
+    text: 當然。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 428
+    truncated: false
+- segment_id: 271
+  speaker_group: 100
+  timecode:
+    start: 00:17:44,563
+    end: 00:17:48,484
+  source_text: --because it's just expanding the connection that's already there.
+  translation:
+    text: ——因為這只是在擴展已經存在的連結。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 429
+    - 430
+    truncated: false
+- segment_id: 272
+  speaker_group: 100
+  timecode:
+    start: 00:17:48,484
+    end: 00:17:50,944
+  source_text: We're never disconnected from anyone or anything.
+  translation:
+    text: 我們從來沒有與任何人或任何事物斷開連結。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 431
+    truncated: false
+- segment_id: 273
+  speaker_group: 100
+  timecode:
+    start: 00:17:50,944
+    end: 00:18:00,037
+  source_text: So it's just kind of opening up to what's already around us and using
+    what's available to us, the tools.
+  translation:
+    text: 所以這只是向已經在我們周圍的東西敞開，並使用我們可以使用的工具。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 432
+    - 433
+    truncated: false
+- segment_id: 274
+  speaker_group: 100
+  timecode:
+    start: 00:18:00,037
+    end: 00:18:10,464
+  source_text: And I think the guides are going to get into it-- and I'm already hearing
+    they are-- but part of it's understanding why we're here in 3D, the purpose of
+    3D, the playground.
+  translation:
+    text: 而且我認為指導靈會深入探討這個——我已經聽到他們在說了——但其中一部分是理解我們為什麼在三維空間，三維的目的，這個遊樂場。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 434
+    - 435
+    - 436
+    - 437
+    truncated: false
+- segment_id: 275
+  speaker_group: 100
+  timecode:
+    start: 00:18:10,464
+    end: 00:18:17,096
+  source_text: And its opening back up to other potentials and other games that we
+    can also participate in.
+  translation:
+    text: 以及重新敞開通往其他潛能和其他我們也可以參與的遊戲。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 438
+    - 439
+    truncated: false
+- segment_id: 276
+  speaker_group: 101
+  timecode:
+    start: 00:18:17,096
+    end: 00:18:17,888
+  source_text: Excellent.
+  translation:
+    text: 太好了。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 440
+    truncated: false
+- segment_id: 277
+  speaker_group: 101
+  timecode:
+    start: 00:18:17,888
+    end: 00:18:22,017
+  source_text: Well, with that said, can we introduce the Pleiadians?
+  translation:
+    text: 那麼，說到這裡，我們可以介紹昴宿星人了嗎?
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: null
+    source_entries:
+    - 441
+    truncated: false
+- segment_id: 278
+  speaker_group: 102
+  timecode:
+    start: 00:18:22,017
+    end: 00:18:22,851
+  source_text: Sure.
+  translation:
+    text: 當然。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 442
+    truncated: false
+- segment_id: 279
+  speaker_group: 103
+  timecode:
+    start: 00:18:22,851
+    end: 00:18:25,229
+  source_text: And can we start asking some of those questions?
+  translation:
+    text: 那我們可以開始問那些問題了嗎?
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 443
+    truncated: false
+- segment_id: 280
+  speaker_group: 104
+  timecode:
+    start: 00:18:25,229
+    end: 00:18:26,021
+  source_text: Sure.
+  translation:
+    text: 當然。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 444
+    truncated: false
+- segment_id: 281
+  speaker_group: 105
+  timecode:
+    start: 00:18:26,021
+    end: 00:18:26,814
+  source_text: Excellent.
+  translation:
+    text: 太好了。
+    status: completed
+    confidence: high
+    notes: null
+  metadata:
+    topic_id: topic_04
+    speaker_hint: '>>'
+    source_entries:
+    - 445
+    truncated: false
