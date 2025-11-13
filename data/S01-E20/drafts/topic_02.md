@@ -1,67 +1,67 @@
 ## Speaker Group 2
 
 21. Um, we have...
-→ {"text": "", "confidence": "", "notes": ""}
+→ {"text": "嗯，我們有⋯⋯", "confidence": "high", "notes": ""}
 
 22. I feel like, you know, again, looking in our sky we have, you know, we have the Draconian way of doing things, we have the Pleiadian way of doing things, the Sirian way of doing things, the Sassani,  the Yahyel, the ... You know, all of these different ways.  And, and ,
-→ {"text": "", "confidence": "", "notes": ""}
+→ {"text": "我覺得，你知道，再次審視我們的天空，我們有天龍座的做事方式、昴宿星的做事方式、天狼星的做事方式、薩莎尼、亞耶爾⋯⋯你知道，所有這些不同的方式。而且，而且，", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 3
 
 23. Because you know, when you're, when you're looking at consciousness as it is expressed in 3rd density or even early 4th density, you can still see the idea of separate paths - the Draconian way or the Pleiadian way or the Sirian way.
-→ {"text": "", "confidence": "", "notes": ""}
+→ {"text": "因為你知道，當你在觀察意識在第三密度、甚至第四密度早期的表現時，你仍然可以看到分離路徑的概念——天龍座的方式、昴宿星的方式、或天狼星的方式。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 4
 
 24. Right.
-→ {"text": "", "confidence": "", "notes": ""}
+→ {"text": "對。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 5
 
 25. But actually as you move farther and farther into 4th density, the paths become a big... a much wider road that contains them all, and that's when you start to see the path has always been the same, it just was shaped and smelled differently, so to speak... but it's always been the same path.
-→ {"text": "", "confidence": "", "notes": ""}
+→ {"text": "但實際上，當你越來越深入第四密度時，這些路徑會變成一條⋯⋯一條更寬廣的大道，包含了所有這些路徑，那時你就會開始看到，路徑一直都是相同的，只是形狀和氣味不同，可以這麼說⋯⋯但它一直都是同一條路徑。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 6
 
 26. So in your guys' evolution.... state right now, you sort of just are maybe more awoken to that idea, that the path is the same and therefore it...
-→ {"text": "", "confidence": "", "notes": ""}
+→ {"text": "所以在你們的進化⋯⋯現在的狀態中，你們某種程度上只是更加覺醒到這個想法，也就是路徑是相同的，因此它⋯⋯", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 7
 
 27. It doesn't matter...
-→ {"text": "", "confidence": "", "notes": ""}
+→ {"text": "並不重要⋯⋯", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 8
 
 28. And our perception it may look like we have all these choices...
-→ {"text": "", "confidence": "", "notes": ""}
+→ {"text": "在我們的認知中，可能看起來我們有所有這些選擇⋯⋯", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 9
 
 29. Exactly...
-→ {"text": "", "confidence": "", "notes": ""}
+→ {"text": "正是如此⋯⋯", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 10
 
 30. but in reality we're just going to end up going the one that we're gonna feel excited about.
-→ {"text": "", "confidence": "", "notes": ""}
+→ {"text": "但現實中，我們最終只會走上那條讓我們感到興奮的道路。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 11
 
 31. Exactly, and of course my reality structure is very different, so when children are born in my world we know right away what their path is, what their highest excitement is, as you've said.
-→ {"text": "", "confidence": "", "notes": ""}
+→ {"text": "正是如此，當然我的實相結構非常不同，所以當孩子在我的世界出生時，我們立刻就知道他們的路徑是什麼，他們最高的興奮點是什麼，就像你所說的。", "confidence": "high", "notes": ""}
 
 32. And that is nurtured, and the child is taught from a very young age to express that, and this is one of the reasons why in the contact work we do, we often bring children for the contact work with humans, because those in our society who will be the future ambassadors of contact on many worlds, display those talents and those joys very early on.
-→ {"text": "", "confidence": "", "notes": ""}
+→ {"text": "而這會被培養，孩子從很小的時候就被教導去表達這一點，這也是我們在接觸工作中經常帶孩子來與人類進行接觸工作的原因之一，因為在我們社會中，那些將來會成為多個世界接觸大使的人，會很早就展現出這些天賦和這些喜悅。", "confidence": "high", "notes": ""}
 
 
 ## Speaker Group 12
