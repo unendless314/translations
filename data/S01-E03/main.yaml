@@ -1,0 +1,3522 @@
+episode_id: S01-E03
+source_file: input/S01-E03/source.srt
+segments:
+- segment_id: 1
+  speaker_group: 1
+  timecode:
+    start: 00:00:30,905
+    end: 00:00:46,379
+  source_text: So I'm Nora Herold. I know a lot of you are familiar with my work. For those of you who are meeting me for the first time, I've been channeling consciously for about 20 years.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    truncated: false
+- segment_id: 2
+  speaker_group: 1
+  timecode:
+    start: 00:00:48,089
+    end: 00:00:59,768
+  source_text: Um, but for all of my life, I was hearing things and feeling things and seeing things and knowing things and I didn't have a context for it.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 6
+    - 7
+    - 8
+    - 9
+    truncated: false
+- segment_id: 3
+  speaker_group: 1
+  timecode:
+    start: 00:00:59,768
+    end: 00:01:01,519
+  source_text: I didn't understand it.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 10
+    truncated: false
+- segment_id: 4
+  speaker_group: 1
+  timecode:
+    start: 00:01:02,145
+    end: 00:01:06,483
+  source_text: Oftentimes it felt distracting and overwhelming.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 11
+    truncated: false
+- segment_id: 5
+  speaker_group: 1
+  timecode:
+    start: 00:01:06,691
+    end: 00:01:13,990
+  source_text: I didn't really understand that it could be an experience that would support or contribute to my reality.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 12
+    - 13
+    - 14
+    truncated: false
+- segment_id: 6
+  speaker_group: 1
+  timecode:
+    start: 00:01:14,157
+    end: 00:01:19,329
+  source_text: And then in 1996 I found myself in a ball on the floor.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 15
+    - 16
+    truncated: false
+- segment_id: 7
+  speaker_group: 1
+  timecode:
+    start: 00:01:19,412
+    end: 00:01:26,628
+  source_text: At the age of 29 years old, going through my Saturn return, my first Saturn return.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 17
+    - 18
+    truncated: false
+- segment_id: 8
+  speaker_group: 1
+  timecode:
+    start: 00:01:26,628
+    end: 00:01:37,388
+  source_text: And I was depressed and had gone through a very dramatic breakup and felt brokenhearted.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 19
+    - 20
+    - 21
+    truncated: false
+- segment_id: 9
+  speaker_group: 1
+  timecode:
+    start: 00:01:38,473
+    end: 00:01:45,480
+  source_text: And you know the beautiful thing about heartbreak is it opens us all up.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 22
+    - 23
+    truncated: false
+- segment_id: 10
+  speaker_group: 1
+  timecode:
+    start: 00:01:45,480
+    end: 00:01:55,156
+  source_text: And in that very open space I was hanging out with a dear friend one night who read tarot cards as I also read tarot cards.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 24
+    - 25
+    - 26
+    truncated: false
+- segment_id: 11
+  speaker_group: 1
+  timecode:
+    start: 00:01:55,156
+    end: 00:02:04,374
+  source_text: I'd read tarot cards for years. I'd played with crystals. You know, I'd started to tune in consciously at about the age of 20.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 27
+    - 28
+    - 29
+    truncated: false
+- segment_id: 12
+  speaker_group: 1
+  timecode:
+    start: 00:02:04,374
+    end: 00:02:10,505
+  source_text: She mentions that she had met a woman recently who channeled her spirit guides.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 30
+    - 31
+    truncated: false
+- segment_id: 13
+  speaker_group: 1
+  timecode:
+    start: 00:02:10,547
+    end: 00:02:33,778
+  source_text: And that woman was Wendy Kennedy. So this is back in Chicago back in 1996. And I said oh I think that's what I'm looking for. And why don't we try? And she said great, I've been trying and she'd had some luck, feeling something. But when the two of us sat down together that night with the intention to connect it happened almost immediately.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 32
+    - 33
+    - 34
+    - 35
+    - 36
+    - 37
+    - 38
+    truncated: false
+- segment_id: 14
+  speaker_group: 1
+  timecode:
+    start: 00:02:33,945
+    end: 00:02:52,881
+  source_text: I felt the presence of a being that was so loving, so calming, and so nurturing to me. It was unlike anything I had ever experienced as Nora before.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44
+    truncated: false
+- segment_id: 15
+  speaker_group: 1
+  timecode:
+    start: 00:02:54,966
+    end: 00:03:02,974
+  source_text: And it was very quick moment. I felt his love. I felt his energy as male and I knew his name started with an M.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 45
+    - 46
+    - 47
+    truncated: false
+- segment_id: 16
+  speaker_group: 1
+  timecode:
+    start: 00:03:04,976
+    end: 00:03:09,063
+  source_text: And then the tube on Amy's television blew out.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 48
+    - 49
+    truncated: false
+- segment_id: 17
+  speaker_group: 1
+  timecode:
+    start: 00:03:11,983
+    end: 00:03:42,472
+  source_text: As Amy was also having her own connection experience. And then very shortly afterwards, she and I got together with Wendy, and that was my first meeting with Wendy Kennedy. And Wendy, Amy, and I channeled together for play, for fun, for quite some time. That was how we spent our evenings was hanging out channeling for each other, channeling for our friends, you know, we didn't go to bars and get drunk. We stayed in my apartment, my little basement apartment in Chicago and ate cookies and channeled.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 50
+    - 51
+    - 52
+    - 53
+    - 54
+    - 55
+    - 56
+    - 57
+    - 58
+    - 59
+    truncated: true
+- segment_id: 18
+  speaker_group: 1
+  timecode:
+    start: 00:03:44,265
+    end: 00:03:51,898
+  source_text: And then at some point it became clear that this was the service work that I was here to do.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 60
+    - 61
+    - 62
+    truncated: false
+- segment_id: 19
+  speaker_group: 1
+  timecode:
+    start: 00:03:52,899
+    end: 00:04:25,098
+  source_text: So it is now what I do. It's what I've done for a very long time and my work has evolved over the years. I channel many different beings. The Pleiadian Collective is primary right now in my channeling work and then Yeshua and Calliandra are close behind, and then behind them the Lyrans and the archangels and all the other beings. And so many beings participate when we channel, you know, it's funny, you know listening to Shelley bring through Gabriel and I could feel all the other energies braiding in
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 63
+    - 64
+    - 65
+    - 66
+    - 67
+    - 68
+    - 69
+    - 70
+    - 71
+    - 72
+    truncated: true
+- segment_id: 20
+  speaker_group: 1
+  timecode:
+    start: 00:04:25,098
+    end: 00:04:26,432
+  source_text: and working through her as well.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 73
+    truncated: false
+- segment_id: 21
+  speaker_group: 1
+  timecode:
+    start: 00:04:26,432
+    end: 00:04:44,951
+  source_text: It's true for everyone I listened to yesterday, so the same will happen today. What I recommend for all of you is that you really... allow yourselves to recognize your own experience of channeling while I'm channeling today.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 74
+    - 75
+    - 76
+    - 77
+    - 78
+    - 79
+    - 80
+    truncated: false
+- segment_id: 22
+  speaker_group: 1
+  timecode:
+    start: 00:04:45,159
+    end: 00:04:51,582
+  source_text: Because to be able to receive channeled information in any format means that your channeling.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 81
+    - 82
+    truncated: false
+- segment_id: 23
+  speaker_group: 1
+  timecode:
+    start: 00:04:52,667
+    end: 00:04:54,168
+  source_text: Doesn't matter that's coming out of my mouth.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 83
+    truncated: false
+- segment_id: 24
+  speaker_group: 1
+  timecode:
+    start: 00:04:55,461
+    end: 00:05:00,174
+  source_text: You're acting as the receivers for the information as well. Okay, I'm going to sit down now.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 84
+    - 85
+    truncated: false
+- segment_id: 25
+  speaker_group: 1
+  timecode:
+    start: 00:05:03,261
+    end: 00:05:16,482
+  source_text: I'm gonna straighten myself out here. How's my hair? Okay. Now now Nora will quiet down. I'll tell you that when I channel. I'm very present.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 86
+    - 87
+    - 88
+    truncated: false
+- segment_id: 26
+  speaker_group: 1
+  timecode:
+    start: 00:05:17,358
+    end: 00:05:20,987
+  source_text: So you may hear from me again during the channeling portion. Okay?
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 89
+    truncated: false
+- segment_id: 27
+  speaker_group: 1
+  timecode:
+    start: 00:05:24,699
+    end: 00:05:35,960
+  source_text: (Oming sounds) Ahhhhh.....
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 90
+    - 91
+    truncated: false
+- segment_id: 28
+  speaker_group: 1
+  timecode:
+    start: 00:05:40,131
+    end: 00:05:41,299
+  source_text: Fantastic!
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 92
+    truncated: false
+- segment_id: 29
+  speaker_group: 1
+  timecode:
+    start: 00:05:42,884
+    end: 00:05:55,688
+  source_text: Greetings, this is the Pleiadian Collective and as always it is so wonderful to connect with all of you beautiful universal beings of light and love, look at you all.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 93
+    - 94
+    - 95
+    - 96
+    truncated: false
+- segment_id: 30
+  speaker_group: 1
+  timecode:
+    start: 00:05:56,481
+    end: 00:05:57,398
+  source_text: Look at your beauty!
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 97
+    truncated: false
+- segment_id: 31
+  speaker_group: 1
+  timecode:
+    start: 00:05:58,066
+    end: 00:05:59,067
+  source_text: Look at your light!
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 98
+    truncated: false
+- segment_id: 32
+  speaker_group: 1
+  timecode:
+    start: 00:06:00,068
+    end: 00:06:15,625
+  source_text: Look at the beauty in the projection of your light bodies into your physical reality, see yourselves right now as the beautiful beings you are.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 99
+    - 100
+    - 101
+    - 102
+    truncated: false
+- segment_id: 33
+  speaker_group: 1
+  timecode:
+    start: 00:06:15,625
+    end: 00:06:23,883
+  source_text: Both beings of light, beings holding physical density. Feel your bodies, put your hands on your body.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 103
+    - 104
+    - 105
+    truncated: false
+- segment_id: 34
+  speaker_group: 1
+  timecode:
+    start: 00:06:25,343
+    end: 00:06:25,885
+  source_text: Yeah.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 106
+    truncated: false
+- segment_id: 35
+  speaker_group: 1
+  timecode:
+    start: 00:06:27,387
+    end: 00:06:30,473
+  source_text: Put your hands somewhere that particularly you don't like.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 107
+    truncated: false
+- segment_id: 36
+  speaker_group: 1
+  timecode:
+    start: 00:06:30,973
+    end: 00:06:39,273
+  source_text: Alright, find a find a place on your body that you perhaps might not think is so beautiful. Alright, and just breathe.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 108
+    - 109
+    - 110
+    truncated: false
+- segment_id: 37
+  speaker_group: 1
+  timecode:
+    start: 00:06:41,692
+    end: 00:06:42,485
+  source_text: And connect.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 111
+    truncated: false
+- segment_id: 38
+  speaker_group: 1
+  timecode:
+    start: 00:06:46,656
+    end: 00:06:47,949
+  source_text: This is your light!
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 112
+    truncated: false
+- segment_id: 39
+  speaker_group: 1
+  timecode:
+    start: 00:06:50,576
+    end: 00:06:57,750
+  source_text: What you're touching right now is you, your light.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 113
+    - 114
+    - 115
+    truncated: false
+- segment_id: 40
+  speaker_group: 1
+  timecode:
+    start: 00:06:59,961
+    end: 00:07:03,047
+  source_text: You are love incarnate.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 116
+    - 117
+    truncated: false
+- segment_id: 41
+  speaker_group: 1
+  timecode:
+    start: 00:07:04,549
+    end: 00:07:05,466
+  source_text: You are nothing else.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 118
+    truncated: false
+- segment_id: 42
+  speaker_group: 1
+  timecode:
+    start: 00:07:07,677
+    end: 00:07:13,558
+  source_text: All around you is love incarnate, nothing else.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 119
+    - 120
+    truncated: false
+- segment_id: 43
+  speaker_group: 1
+  timecode:
+    start: 00:07:14,767
+    end: 00:07:20,648
+  source_text: Doesn't matter what it looks like, feels like, the costume it's wearing.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 121
+    - 122
+    truncated: false
+- segment_id: 44
+  speaker_group: 1
+  timecode:
+    start: 00:07:21,774
+    end: 00:07:36,456
+  source_text: Love incarnate, the table, the chair, the ceiling, the walls, the air, the atmosphere, the Republican, the Democrat, the Illuminati.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 123
+    - 124
+    - 125
+    - 126
+    truncated: false
+- segment_id: 45
+  speaker_group: 1
+  timecode:
+    start: 00:07:38,374
+    end: 00:07:42,170
+  source_text: Yeshua, us, you, love incarnate.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 127
+    truncated: false
+- segment_id: 46
+  speaker_group: 1
+  timecode:
+    start: 00:07:43,379
+    end: 00:07:45,882
+  source_text: Love playing a game. That's all this is.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 128
+    truncated: false
+- segment_id: 47
+  speaker_group: 1
+  timecode:
+    start: 00:07:46,966
+    end: 00:07:51,971
+  source_text: And that's all there is to the idea of awakening from within.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 129
+    - 130
+    truncated: false
+- segment_id: 48
+  speaker_group: 1
+  timecode:
+    start: 00:07:53,681
+    end: 00:08:06,944
+  source_text: 'And as we look at all of you, what we see: all of you here in this room, all of you listening in, all of you tuning in at a later date, is you''re already awake.'
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 131
+    - 132
+    - 133
+    - 134
+    - 135
+    truncated: false
+- segment_id: 49
+  speaker_group: 1
+  timecode:
+    start: 00:08:08,571
+    end: 00:08:11,449
+  source_text: Right?  Who in the room feels awake?
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 136
+    truncated: false
+- segment_id: 50
+  speaker_group: 1
+  timecode:
+    start: 00:08:13,576
+    end: 00:08:14,076
+  source_text: Yes.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 137
+    truncated: false
+- segment_id: 51
+  speaker_group: 1
+  timecode:
+    start: 00:08:15,286
+    end: 00:08:18,873
+  source_text: And yet you continue to awaken.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 138
+    truncated: false
+- segment_id: 52
+  speaker_group: 1
+  timecode:
+    start: 00:08:20,291
+    end: 00:08:21,459
+  source_text: Because this is the game.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 139
+    truncated: false
+- segment_id: 53
+  speaker_group: 1
+  timecode:
+    start: 00:08:23,586
+    end: 00:08:51,072
+  source_text: You wake up, you remember right? You all remember that? Yes, remember when you woke up? Everyone here had some sort of an awakening moment. It may have been very small. It may have been gigantic. It really doesn't matter, every single one of you at some point came in awake, went back to sleep, because that's what happened, for all of you. Most of the children coming in now, they don't have to go through this, you know.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 140
+    - 141
+    - 142
+    - 143
+    - 144
+    - 145
+    - 146
+    - 147
+    - 148
+    truncated: false
+- segment_id: 54
+  speaker_group: 1
+  timecode:
+    start: 00:08:51,864
+    end: 00:08:55,159
+  source_text: They're not going back to sleep as you all did.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 149
+    truncated: false
+- segment_id: 55
+  speaker_group: 1
+  timecode:
+    start: 00:08:55,868
+    end: 00:08:58,871
+  source_text: Sometimes they take little naps, alright?
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 150
+    truncated: false
+- segment_id: 56
+  speaker_group: 1
+  timecode:
+    start: 00:08:58,871
+    end: 00:09:25,982
+  source_text: They forget for a bit of time who they are and then it's very easy for them to wake themselves up and remember. But you all, you came into an incredibly dense environment awake and then went back to sleep because that was the game plan. That's the program. You weren't supposed to remember throughout the totality of this incarnation that you are love incarnate.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 151
+    - 152
+    - 153
+    - 154
+    - 155
+    - 156
+    - 157
+    - 158
+    - 159
+    truncated: false
+- segment_id: 57
+  speaker_group: 1
+  timecode:
+    start: 00:09:26,566
+    end: 00:09:43,582
+  source_text: You were supposed to come in, forget that, throw on a costume, create a whole bunch of drama for yourselves, work through a myriad of issues, traumas, most of which have nothing to do with this incarnation.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 160
+    - 161
+    - 162
+    - 163
+    - 164
+    - 165
+    truncated: false
+- segment_id: 58
+  speaker_group: 1
+  timecode:
+    start: 00:09:44,583
+    end: 00:10:11,777
+  source_text: Alright so think about that piece right now. Anytime you've given yourself something to work on in this lifetime, what you've also been doing and the main reason you gave yourselves those things to work on, is you've been clearing up with yourselves all of these unhealed traumas from all of these other lifetimes, that didn't happen in the past, that are happening right now, because all is now, right?
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 166
+    - 167
+    - 168
+    - 169
+    - 170
+    - 171
+    - 172
+    - 173
+    - 174
+    truncated: false
+- segment_id: 59
+  speaker_group: 1
+  timecode:
+    start: 00:10:12,570
+    end: 00:10:41,682
+  source_text: Every version of you that you see is a past life version of you, is truly existing right now in a moment in time, currently experiencing whatever pain, whatever loss, whatever grief, whatever anger, whatever hurt, whatever anguish, etc. And throughout this incarnation you have picked up again and again and again and again these pieces of your oversoul that are sitting in distress. You have interacted with them,
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 175
+    - 176
+    - 177
+    - 178
+    - 179
+    - 180
+    - 181
+    - 182
+    - 183
+    - 184
+    truncated: true
+- segment_id: 60
+  speaker_group: 1
+  timecode:
+    start: 00:10:42,683
+    end: 00:10:49,273
+  source_text: sent them transmissions of unconditional love as you have worked on your own stuff.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 185
+    - 186
+    truncated: false
+- segment_id: 61
+  speaker_group: 1
+  timecode:
+    start: 00:10:50,274
+    end: 00:10:56,072
+  source_text: And suddenly you find yourself then to be a much more powerful, clear, and sovereign being.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 187
+    - 188
+    truncated: false
+- segment_id: 62
+  speaker_group: 1
+  timecode:
+    start: 00:10:58,741
+    end: 00:11:01,619
+  source_text: Ever wonder if there's intelligent life elsewhere in the universe?
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 189
+    - 190
+    truncated: false
+- segment_id: 63
+  speaker_group: 1
+  timecode:
+    start: 00:11:02,161
+    end: 00:11:05,498
+  source_text: Well, I have....I've been wondering since I was a kid.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 191
+    truncated: false
+- segment_id: 64
+  speaker_group: 1
+  timecode:
+    start: 00:11:06,248
+    end: 00:11:07,833
+  source_text: My name is Reuben Langdon.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 192
+    truncated: false
+- segment_id: 65
+  speaker_group: 1
+  timecode:
+    start: 00:11:07,833
+    end: 00:11:16,342
+  source_text: And on March 29th, 2007, in the middle of the day, I saw a number of strange objects in the sky.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 193
+    - 194
+    truncated: false
+- segment_id: 66
+  speaker_group: 1
+  timecode:
+    start: 00:11:16,342
+    end: 00:11:20,096
+  source_text: Coincidentally, I was working on the film Avatar at the time, playing an alien.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 195
+    - 196
+    truncated: false
+- segment_id: 67
+  speaker_group: 1
+  timecode:
+    start: 00:11:20,513
+    end: 00:11:23,432
+  source_text: And ever since then I've been on a quest...
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 197
+    truncated: false
+- segment_id: 68
+  speaker_group: 1
+  timecode:
+    start: 00:11:23,432
+    end: 00:11:29,105
+  source_text: A quest to find out if aliens really do exist and if so... ...are they here with us?
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 198
+    - 199
+    truncated: false
+- segment_id: 69
+  speaker_group: 1
+  timecode:
+    start: 00:11:34,235
+    end: 00:11:38,447
+  source_text: If beings of higher intelligence are here... ...what is their purpose?
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 200
+    - 201
+    truncated: false
+- segment_id: 70
+  speaker_group: 1
+  timecode:
+    start: 00:11:38,447
+    end: 00:11:41,158
+  source_text: Why don't they make themselves more known?
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 202
+    truncated: false
+- segment_id: 71
+  speaker_group: 1
+  timecode:
+    start: 00:11:41,158
+    end: 00:11:43,369
+  source_text: Why the secrecy?
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 203
+    truncated: false
+- segment_id: 72
+  speaker_group: 1
+  timecode:
+    start: 00:11:43,369
+    end: 00:11:48,290
+  source_text: I've asked these questions to many experts, yet, each seems to have a different theory.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 204
+    - 205
+    truncated: false
+- segment_id: 73
+  speaker_group: 1
+  timecode:
+    start: 00:11:48,582
+    end: 00:11:53,337
+  source_text: So I thought to myself, why not ask the aliens directly?
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 206
+    - 207
+    truncated: false
+- segment_id: 74
+  speaker_group: 1
+  timecode:
+    start: 00:11:53,337
+    end: 00:11:55,381
+  source_text: So that's what I set out to do!
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 208
+    truncated: false
+- segment_id: 75
+  speaker_group: 1
+  timecode:
+    start: 00:11:55,381
+    end: 00:11:56,757
+  source_text: Well, sort of...
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 209
+    truncated: false
+- segment_id: 76
+  speaker_group: 1
+  timecode:
+    start: 00:12:50,561
+    end: 00:12:51,312
+  source_text: Nora.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 210
+    truncated: false
+- segment_id: 77
+  speaker_group: 1
+  timecode:
+    start: 00:12:51,353
+    end: 00:12:52,229
+  source_text: Reuben.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 211
+    truncated: false
+- segment_id: 78
+  speaker_group: 1
+  timecode:
+    start: 00:12:52,229
+    end: 00:13:00,112
+  source_text: Here we are, thank you for doing this second time, sort of.  We've been filming you on and off here.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 212
+    - 213
+    truncated: false
+- segment_id: 79
+  speaker_group: 1
+  timecode:
+    start: 00:13:00,863
+    end: 00:13:01,530
+  source_text: Um.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 214
+    truncated: false
+- segment_id: 80
+  speaker_group: 1
+  timecode:
+    start: 00:13:01,530
+    end: 00:13:14,084
+  source_text: Can you describe to me the process of what do you do and what kind of energies do you tap into and then hopefully we can tap into them today?
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 215
+    - 216
+    - 217
+    - 218
+    truncated: false
+- segment_id: 81
+  speaker_group: 1
+  timecode:
+    start: 00:13:14,210
+    end: 00:13:19,173
+  source_text: Sure. So I do what's called direct voice channeling.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 219
+    truncated: false
+- segment_id: 82
+  speaker_group: 1
+  timecode:
+    start: 00:13:19,215
+    end: 00:13:23,302
+  source_text: I also translate, so there are two different versions of channeling work.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 220
+    - 221
+    truncated: false
+- segment_id: 83
+  speaker_group: 1
+  timecode:
+    start: 00:13:23,302
+    end: 00:13:48,869
+  source_text: Translation is, I listen and receive and then tell you in my own voice the information I'm getting and what I hear and often do that when I work privately in one-on-one sessions I'll do some translation work and I'll use my own voice and they've expressed the importance of us, all of us, accessing information in a variety of ways.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 222
+    - 223
+    - 224
+    - 225
+    - 226
+    - 227
+    - 228
+    - 229
+    truncated: false
+- segment_id: 84
+  speaker_group: 1
+  timecode:
+    start: 00:13:48,869
+    end: 00:13:53,582
+  source_text: So that's one of the ways I access information, but then I also direct voice channel.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 230
+    - 231
+    truncated: false
+- segment_id: 85
+  speaker_group: 1
+  timecode:
+    start: 00:13:53,582
+    end: 00:14:19,191
+  source_text: So direct voice channel means I raise my personal vibration to a point where I can connect up with beings who exist in a higher dimension, another vibration, another frequency. They interact with me telepathically, move through me energetically, I allow them to alter my vocal cords, speak directly through me.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 232
+    - 233
+    - 234
+    - 235
+    - 236
+    - 237
+    - 238
+    - 239
+    truncated: false
+- segment_id: 86
+  speaker_group: 1
+  timecode:
+    start: 00:14:19,525
+    end: 00:14:40,129
+  source_text: The beings I work with are the Pleiadian Collective. So they're a twelfth dimensional collective of beings that, if we were going to assign them a location in our third dimensional version of reality -- Twelfth dimension - how do you even have that? I mean that's even so far out of Earthly terms, but...
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 240
+    - 241
+    - 242
+    - 243
+    - 244
+    - 245
+    - 246
+    - 247
+    truncated: false
+- segment_id: 87
+  speaker_group: 1
+  timecode:
+    start: 00:14:40,546
+    end: 00:14:49,263
+  source_text: It's different experience, different flavors along with that comes different abilities, different awareness.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 248
+    - 249
+    truncated: false
+- segment_id: 88
+  speaker_group: 1
+  timecode:
+    start: 00:14:49,597
+    end: 00:15:13,913
+  source_text: So when I say twelfth dimensional Pleiadian Collective - they are a gigantic being of love and light, that knows themselves to be one, and yet understands that they are comprised of many ones, but they do not each individuate themselves like we do here on Earth.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 250
+    - 251
+    - 252
+    - 253
+    - 254
+    - 255
+    - 256
+    truncated: false
+- segment_id: 89
+  speaker_group: 1
+  timecode:
+    start: 00:15:13,954
+    end: 00:15:19,877
+  source_text: Hence the term 'collective'. So it's not a specific being in particular.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 257
+    - 258
+    truncated: false
+- segment_id: 90
+  speaker_group: 1
+  timecode:
+    start: 00:15:19,918
+    end: 00:15:41,857
+  source_text: That's correct, but there are specific beings I work with as well. So the Pleiadians are one of many groups and beings I work with. A specific being would be Calliandra, she's a fifth dimensional fairy, so we'll call her a fairy, that's how she presented herself to me. I also work with Yeshua.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 259
+    - 260
+    - 261
+    - 262
+    - 263
+    - 264
+    - 265
+    - 266
+    truncated: false
+- segment_id: 91
+  speaker_group: 1
+  timecode:
+    start: 00:15:41,899
+    end: 00:15:54,453
+  source_text: I see Yeshua to be a collective being, but we know that being to be an individual entity that we call Jesus on this planet. But I know that energy to be a collective energy.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 267
+    - 268
+    - 269
+    - 270
+    - 271
+    truncated: false
+- segment_id: 92
+  speaker_group: 1
+  timecode:
+    start: 00:15:54,453
+    end: 00:16:15,557
+  source_text: Or the Archangel Michael at times will come through me, the Lyrans, beings from Lemuria, the Zeta's have made contact with me. It's a very in-the-moment process for me, but the majority of the information I'm accessing at this time is coming from the Pleiadians, Yeshua, and Calliandra, those are kind of the big three for me.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 272
+    - 273
+    - 274
+    - 275
+    - 276
+    - 277
+    - 278
+    - 279
+    truncated: false
+- segment_id: 93
+  speaker_group: 1
+  timecode:
+    start: 00:16:16,809
+    end: 00:16:33,117
+  source_text: And are you, you're present in your awareness when this happens, it's not like you conk out and then and then you wake up and I go, what happened? I've seen that, I've seen people who have channeled and that's taking place.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 280
+    - 281
+    - 282
+    - 283
+    - 284
+    - 285
+    - 286
+    truncated: false
+- segment_id: 94
+  speaker_group: 1
+  timecode:
+    start: 00:16:33,117
+    end: 00:16:47,131
+  source_text: Yes, so what you're talking about there is trance channeling. Trance channeling? Yes. What I do is called conscious channeling and/or semi-conscious channeling. And you can even see a difference in me when I'm fully conscious and then when I'm semi-conscious.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 287
+    - 288
+    - 289
+    - 290
+    - 291
+    - 292
+    truncated: false
+- segment_id: 95
+  speaker_group: 1
+  timecode:
+    start: 00:16:47,881
+    end: 00:16:49,967
+  source_text: So has that happened to you in the past?
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 293
+    truncated: false
+- segment_id: 96
+  speaker_group: 1
+  timecode:
+    start: 00:16:50,175
+    end: 00:16:58,350
+  source_text: 'Yes. So the fully conscious channeling is more that, okay, I''m accessing the information, I''m gonna give it to you right now: Reuben, they''re telling me: blah blah blah blah blah blah.'
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 294
+    - 295
+    - 296
+    - 297
+    truncated: false
+- segment_id: 97
+  speaker_group: 1
+  timecode:
+    start: 00:16:59,101
+    end: 00:17:01,729
+  source_text: So that's almost like, when you work with clients -- Yes.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 298
+    - 299
+    truncated: false
+- segment_id: 98
+  speaker_group: 1
+  timecode:
+    start: 00:17:01,937
+    end: 00:17:14,658
+  source_text: Hearing it and kind of translating it -- And then I will go into a semi-conscious state with clients as well where then I allow the Pleiadians, Yeshua, whomever in the moment to directly work through my body.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 300
+    - 301
+    - 302
+    - 303
+    - 304
+    truncated: false
+- segment_id: 99
+  speaker_group: 1
+  timecode:
+    start: 00:17:16,160
+    end: 00:17:24,126
+  source_text: Is there...you must resonate with all the different frequencies otherwise they wouldn't be coming through. Do you have a favorite?
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 305
+    - 306
+    - 307
+    truncated: false
+- segment_id: 100
+  speaker_group: 1
+  timecode:
+    start: 00:17:26,545
+    end: 00:17:29,506
+  source_text: Or can you not say?
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 308
+    truncated: false
+- segment_id: 101
+  speaker_group: 1
+  timecode:
+    start: 00:17:29,757
+    end: 00:17:32,676
+  source_text: Do I have a favorite? Depends on the day?
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 309
+    truncated: false
+- segment_id: 102
+  speaker_group: 1
+  timecode:
+    start: 00:17:32,676
+    end: 00:17:40,434
+  source_text: Yeah, it's really, it's the Pleiadians, Calliandra, and Yeshua. I could not pick one of those out of the three.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 310
+    - 311
+    - 312
+    truncated: false
+- segment_id: 103
+  speaker_group: 1
+  timecode:
+    start: 00:17:40,434
+    end: 00:17:46,857
+  source_text: However, I'm aware that I have a very specific contract with the Pleiadians.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 313
+    - 314
+    truncated: false
+- segment_id: 104
+  speaker_group: 1
+  timecode:
+    start: 00:17:46,899
+    end: 00:18:12,090
+  source_text: And I believe that's why they're predominantly coming through right now and I've really noticed that over the last year especially when I go into the semi-conscious direct voice channeling state, it's mostly the Pleiadians transmitting and then occasionally Yeshua, Calliandra, the others, the Lyrans, Lemurians. In the past there used to be more of a variety in my work, so I'm
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 315
+    - 316
+    - 317
+    - 318
+    - 319
+    - 320
+    - 321
+    - 322
+    - 323
+    - 324
+    truncated: true
+- segment_id: 105
+  speaker_group: 1
+  timecode:
+    start: 00:18:12,132
+    end: 00:18:18,096
+  source_text: very aware that for now, maybe we'll say the Pleiadians are my favorite.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 325
+    - 326
+    truncated: false
+- segment_id: 106
+  speaker_group: 1
+  timecode:
+    start: 00:18:18,096
+    end: 00:18:26,271
+  source_text: Sorry, Calliandra. Sure she understands. Oh she understands, but she's like this right now.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 327
+    - 328
+    truncated: false
+- segment_id: 107
+  speaker_group: 1
+  timecode:
+    start: 00:18:28,732
+    end: 00:18:32,653
+  source_text: Well, maybe we can give her some time to voice as well.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 329
+    truncated: false
+- segment_id: 108
+  speaker_group: 1
+  timecode:
+    start: 00:18:34,488
+    end: 00:18:45,958
+  source_text: Well, in addition to being a channeler, or maybe this goes hand in hand, because you're also clairvoyant or a clairaudient or is that kind of one and the same?
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 330
+    - 331
+    - 332
+    - 333
+    truncated: false
+- segment_id: 109
+  speaker_group: 1
+  timecode:
+    start: 00:18:48,168
+    end: 00:18:59,137
+  source_text: So language is very interesting because we use it to help us understand and label and then we can often then limit and categorize.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 334
+    - 335
+    - 336
+    truncated: false
+- segment_id: 110
+  speaker_group: 1
+  timecode:
+    start: 00:18:59,137
+    end: 00:19:16,572
+  source_text: Channels will use their clairvoyant, their clairaudient, they're clairsentient abilities to help them access information. Yes, I am also as Nora however, very intuitive, psychic, clairvoyant, clairaudient, clairsentient.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 337
+    - 338
+    - 339
+    - 340
+    - 341
+    - 342
+    truncated: false
+- segment_id: 111
+  speaker_group: 1
+  timecode:
+    start: 00:19:16,572
+    end: 00:19:18,740
+  source_text: That's a little bit different from channeling.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 343
+    truncated: false
+- segment_id: 112
+  speaker_group: 1
+  timecode:
+    start: 00:19:18,740
+    end: 00:19:22,995
+  source_text: Yes, that's me using my own operating system.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 344
+    truncated: false
+- segment_id: 113
+  speaker_group: 1
+  timecode:
+    start: 00:19:23,453
+    end: 00:19:26,164
+  source_text: So and you have those abilities as well. Awesome.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 345
+    truncated: false
+- segment_id: 114
+  speaker_group: 1
+  timecode:
+    start: 00:19:26,206
+    end: 00:19:40,762
+  source_text: Because I've talked with other, I guess, intuitive people, in quotes, where to me and after hearing the process, it sounds like they were just tapping into like more channel type you know.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 346
+    - 347
+    - 348
+    - 349
+    - 350
+    truncated: false
+- segment_id: 115
+  speaker_group: 1
+  timecode:
+    start: 00:19:41,054
+    end: 00:19:52,858
+  source_text: Well, it wasn't me, it was I heard a voice and this is this is what I'm getting, and you know, most the time it's accurate so.. But I just wondered how your operating system works?
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 351
+    - 352
+    - 353
+    - 354
+    truncated: false
+- segment_id: 116
+  speaker_group: 1
+  timecode:
+    start: 00:19:53,150
+    end: 00:20:15,380
+  source_text: Yes, and really when it comes down to it, it's all information coming from source energy. Whether you access it directly in your own body or you access it from a vibration or a frequency outside of you. We are all source, we are all that love energy incarnate. It's just fun to get to do it different ways. That's one of the gifts of being here on planet Earth, we get the
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 355
+    - 356
+    - 357
+    - 358
+    - 359
+    - 360
+    - 361
+    - 362
+    - 363
+    - 364
+    truncated: true
+- segment_id: 117
+  speaker_group: 1
+  timecode:
+    start: 00:20:15,422
+    end: 00:20:17,132
+  source_text: variety and the selection.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 365
+    truncated: false
+- segment_id: 118
+  speaker_group: 1
+  timecode:
+    start: 00:20:18,217
+    end: 00:20:43,367
+  source_text: And you know and yeah getting to that and maybe this is a question later for the Pleiadians, but by giving it these labels, is that just more because I've noticed some people who are new to the intuitive side of things they're feeling energies, they're hearing it, but they don't, maybe they don't know how to categorize them right or is it even appropriate to categorize it?
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 366
+    - 367
+    - 368
+    - 369
+    - 370
+    - 371
+    - 372
+    - 373
+    - 374
+    - 375
+    truncated: true
+- segment_id: 119
+  speaker_group: 1
+  timecode:
+    start: 00:20:43,784
+    end: 00:20:53,251
+  source_text: How does that, you know how does that all-- when ultimately we're trying to get to a place where we're not labeling anything at all. How does that help us and does that serve us?
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 376
+    - 377
+    - 378
+    - 379
+    - 380
+    truncated: false
+- segment_id: 120
+  speaker_group: 1
+  timecode:
+    start: 00:20:53,460
+    end: 00:21:14,106
+  source_text: I think it helps initially to label, categorize, to help the mental body catch up and understand what it is you're already doing in your emotional and energetic and physical bodies and then once you achieve that level of understanding, it's very important to release the labels and the attachments and just be in the moment.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 381
+    - 382
+    - 383
+    - 384
+    - 385
+    - 386
+    - 387
+    - 388
+    truncated: false
+- segment_id: 121
+  speaker_group: 1
+  timecode:
+    start: 00:21:14,147
+    end: 00:21:26,576
+  source_text: Because then your mind has relaxed. So the mental body was really set up to filter out the third dimensional mental body. Was set up to filter out all of this input, all of this information.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 389
+    - 390
+    - 391
+    - 392
+    - 393
+    truncated: false
+- segment_id: 122
+  speaker_group: 1
+  timecode:
+    start: 00:21:27,744
+    end: 00:21:29,329
+  source_text: Zoe, you're now part of the movie, officially.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 394
+    truncated: false
+- segment_id: 123
+  speaker_group: 1
+  timecode:
+    start: 00:21:30,372
+    end: 00:21:46,596
+  source_text: So this is Zoe. Zoe is an elf and a unicorn. We like to call Zoe the Alphacorn because she brings through the elfin and the unicorn energies strongly in our space.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 395
+    - 396
+    - 397
+    - 398
+    - 399
+    truncated: false
+- segment_id: 124
+  speaker_group: 1
+  timecode:
+    start: 00:21:49,516
+    end: 00:22:19,629
+  source_text: We have a couple of cats, one is bringing through the fairy vibration and the other Pleiadian frequency and vibration. Animals, they are definitely helping us here on so many levels. We've had Zoe now for just a little over a year and she has brought with her such an amazing transmission of unconditional love and fun and play, our entire reality has shifted with her presence.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 400
+    - 401
+    - 402
+    - 403
+    - 404
+    - 405
+    - 406
+    - 407
+    - 408
+    - 409
+    truncated: true
+- segment_id: 125
+  speaker_group: 1
+  timecode:
+    start: 00:22:19,629
+    end: 00:22:44,946
+  source_text: 'I''ve noticed that with animals, if humans could operate on an animal level in so many ways that you know where we... it''s like they do something and we''re mad at them but then they''re in the doghouse so to say, but two minutes later they''re: oh I didn''t do anything, or I forgive you or whatever. You know they can''t, even if you are physically angry with them or something, they''ll you know:'
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 410
+    - 411
+    - 412
+    - 413
+    - 414
+    - 415
+    - 416
+    - 417
+    - 418
+    - 419
+    truncated: true
+- segment_id: 126
+  speaker_group: 1
+  timecode:
+    start: 00:22:44,946
+    end: 00:22:47,699
+  source_text: it's okay, the ultimate show of how to forgive.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 420
+    truncated: false
+- segment_id: 127
+  speaker_group: 1
+  timecode:
+    start: 00:22:47,699
+    end: 00:22:49,993
+  source_text: Yes. And also how to be present.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 421
+    truncated: false
+- segment_id: 128
+  speaker_group: 1
+  timecode:
+    start: 00:22:50,035
+    end: 00:23:13,600
+  source_text: They're extremely in the moment, they don't tie their moments together in the way that we do and they also don't filter out the information that our mental bodies filter out. Coming back to, back around to that -- thank you, Zoe -- so I'm aware that Zoey and Izzy and Ursula the Smurf, our cats, are always interacting with the beings that are present in our space.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 422
+    - 423
+    - 424
+    - 425
+    - 426
+    - 427
+    - 428
+    - 429
+    - 430
+    - 431
+    truncated: true
+- segment_id: 129
+  speaker_group: 1
+  timecode:
+    start: 00:23:13,600
+    end: 00:23:19,314
+  source_text: I see them watching the beings and seeing things that I can't access in the moment.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 432
+    - 433
+    truncated: false
+- segment_id: 130
+  speaker_group: 1
+  timecode:
+    start: 00:23:19,356
+    end: 00:23:24,319
+  source_text: Excellent. Well thanks guys, let us know if something pops in here, maybe we'll catch it on film.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 434
+    - 435
+    truncated: false
+- segment_id: 131
+  speaker_group: 1
+  timecode:
+    start: 00:23:24,319
+    end: 00:23:55,267
+  source_text: 'Well, I guess the last question before we move in is: when you were trying to find labels I guess, or if you weren''t even trying but did they present themselves and say I am such and such, I am Pleiadian Collective, I am Calliandra. Is that how it happened or were you able to... how did that come to you, for each? So initially it wasn''t that easy. Okay yeah, that''s what I figured,'
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 436
+    - 437
+    - 438
+    - 439
+    - 440
+    - 441
+    - 442
+    - 443
+    - 444
+    - 445
+    truncated: true
+- segment_id: 132
+  speaker_group: 1
+  timecode:
+    start: 00:23:55,267
+    end: 00:24:06,987
+  source_text: I knew there'd be a story to this. With the Pleiadians it was easy. Immediately I recognized that the transmission from the Pleiadians as a Pleiadian transmission.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 446
+    - 447
+    - 448
+    - 449
+    truncated: false
+- segment_id: 133
+  speaker_group: 1
+  timecode:
+    start: 00:24:07,028
+    end: 00:24:33,180
+  source_text: I recognized it in my body, in a visceral way. It was very clear to me that's who I was in contact with, and I'd been aware of the Pleiadian energy so my mental body had already accepted the truth of the Pleiadian Collective and their work with us here on Earth. So when they made direct contact with me, my mental body didn't freak out and try to screen out that piece of information, it
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 450
+    - 451
+    - 452
+    - 453
+    - 454
+    - 455
+    - 456
+    - 457
+    - 458
+    - 459
+    truncated: true
+- segment_id: 134
+  speaker_group: 1
+  timecode:
+    start: 00:24:33,180
+    end: 00:24:55,493
+  source_text: was clear to me. Now many of the other beings that I've worked with, it's taken me some time to kind of work my way into discerning who it was I was connecting with. Now when I say time, I mean perhaps a matter of minutes or hours, yes. It's never been longer than that and that's just I guess part of my operating system.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 460
+    - 461
+    - 462
+    - 463
+    - 464
+    - 465
+    - 466
+    - 467
+    truncated: false
+- segment_id: 135
+  speaker_group: 1
+  timecode:
+    start: 00:24:55,535
+    end: 00:25:25,523
+  source_text: Calliandra, for instance, when she first made herself known to me, I felt a new being link up with me -- I was preparing for radio interview that night -- I could feel this really wonderful playful presence, and immediately I knew it to be fairy. So again Nora had accepted fairies, that was easy, ah I know this vibration to be fairy. So I asked for a name and I got the name initially Calliana. So I was
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 468
+    - 469
+    - 470
+    - 471
+    - 472
+    - 473
+    - 474
+    - 475
+    - 476
+    - 477
+    truncated: true
+- segment_id: 136
+  speaker_group: 1
+  timecode:
+    start: 00:25:25,565
+    end: 00:25:33,615
+  source_text: playing with Calliana, I was like okay, and I thought no, that's not quite right, and then I got Calliandra -- got it.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 478
+    - 479
+    - 480
+    truncated: false
+- segment_id: 137
+  speaker_group: 1
+  timecode:
+    start: 00:25:33,615
+    end: 00:26:03,937
+  source_text: As soon as I heard, felt, that's really predominantly how I access information when I'm not in the semi-conscious direct voice channeling state, ok? So when Nora is conscious and awake, and when I choose to seek out information as Nora, meaning information I can't just read from a book or you know, I feel it and I hear it. I hear the words. I see it.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 481
+    - 482
+    - 483
+    - 484
+    - 485
+    - 486
+    - 487
+    - 488
+    - 489
+    - 490
+    truncated: true
+- segment_id: 138
+  speaker_group: 1
+  timecode:
+    start: 00:26:03,937
+    end: 00:26:30,422
+  source_text: I see it sometimes like words on the paper. I see the story. Very occasionally I access more of my clairvoyant abilities, meaning I will see an image, I'll see some light, I'll see a story playing out in my mind's eye. So I felt, heard, the name Calliandra and thought okay her name is Calliandra. And then I had to go outside and ground myself because I was working with a new vibration, a new
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 491
+    - 492
+    - 493
+    - 494
+    - 495
+    - 496
+    - 497
+    - 498
+    - 499
+    - 500
+    truncated: true
+- segment_id: 139
+  speaker_group: 1
+  timecode:
+    start: 00:26:30,463
+    end: 00:26:56,698
+  source_text: frequency and I found it actually really powerful and intense to work with a fifth dimensional being. So I was used to working with these very, very high vibrations and high frequencies which were in some ways easier to work with because it's so... well, any of you listening right now, if you just take a breath, you can tune into that light high, high vibration. Imagine it's
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 501
+    - 502
+    - 503
+    - 504
+    - 505
+    - 506
+    - 507
+    - 508
+    - 509
+    - 510
+    truncated: true
+- segment_id: 140
+  speaker_group: 1
+  timecode:
+    start: 00:26:56,740
+    end: 00:27:21,806
+  source_text: like interacting with a cloud, yes, gentle easy, right. Calliandra was like interacting with a sledgehammer, her energy was so powerful because she has more density to her vibration as a fifth dimensional being. So I had to go outside and stand on the ground. And then I came in and sat in front of my computer and I thought I'm gonna look up the word Calliandra and see what I find, because I
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 511
+    - 512
+    - 513
+    - 514
+    - 515
+    - 516
+    - 517
+    - 518
+    - 519
+    - 520
+    truncated: true
+- segment_id: 141
+  speaker_group: 1
+  timecode:
+    start: 00:27:21,848
+    end: 00:27:45,413
+  source_text: like to also, if I can, back up my other dimensional information with third dimensional information and I googled the word Calliandra, and it's a plant called Fairy Duster and I'd not ever heard that word before and it was such a moment of validation for me, which was great. I was gonna go on the radio that night and introduce a new being, so how wonderful that I got that.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 521
+    - 522
+    - 523
+    - 524
+    - 525
+    - 526
+    - 527
+    - 528
+    - 529
+    - 530
+    truncated: true
+- segment_id: 142
+  speaker_group: 1
+  timecode:
+    start: 00:27:45,413
+    end: 00:27:53,922
+  source_text: So the information you got was Calliandra the fairy and then the validation was caught under the name...
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 531
+    - 532
+    - 533
+    truncated: false
+- segment_id: 143
+  speaker_group: 1
+  timecode:
+    start: 00:27:53,963
+    end: 00:28:16,152
+  source_text: So that took me a couple of hours to answer that question and discerning frequencies and vibrations. Sometimes when I'm working with a client and someone who's passed, connects up with me, you know sometimes I'll feel immediately like oh this is their mother whose passed. And that's work that I don't do a lot of but I do do it occasionally when it's necessary. They will present themselves
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 534
+    - 535
+    - 536
+    - 537
+    - 538
+    - 539
+    - 540
+    - 541
+    - 542
+    - 543
+    truncated: true
+- segment_id: 144
+  speaker_group: 1
+  timecode:
+    start: 00:28:16,194
+    end: 00:28:30,959
+  source_text: to me and then typically I'll just ask them questions of the client you know where's your mother is usually how I'll start, as opposed to I've made contact with your mother, because that can be startling for somebody who's lost...
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 544
+    - 545
+    - 546
+    - 547
+    - 548
+    - 549
+    truncated: false
+- segment_id: 145
+  speaker_group: 1
+  timecode:
+    start: 00:28:30,959
+    end: 00:28:45,807
+  source_text: But how about so-called dark energies or even manipulating tricksters or these kinds of, you know, what we see typically in the movies...
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 550
+    - 551
+    - 552
+    - 553
+    truncated: false
+- segment_id: 146
+  speaker_group: 1
+  timecode:
+    start: 00:28:45,849
+    end: 00:29:13,877
+  source_text: Actually this whole experience, you know, channeling, has kind of been made quite negative in our media and with you know, like "The Exorcist" and these kinds of things. So I've interacted especially when I first started channeling, had a couple of interactions with energies that felt, that seemed to be wanting to guide, and seemed to be wanting to give information and so initially it
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 554
+    - 555
+    - 556
+    - 557
+    - 558
+    - 559
+    - 560
+    - 561
+    - 562
+    - 563
+    truncated: true
+- segment_id: 147
+  speaker_group: 1
+  timecode:
+    start: 00:29:13,877
+    end: 00:29:19,382
+  source_text: was interesting and then, what I found happening was I started feeling afraid.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 564
+    - 565
+    truncated: false
+- segment_id: 148
+  speaker_group: 1
+  timecode:
+    start: 00:29:19,382
+    end: 00:29:42,405
+  source_text: Not of the being itself but of the information they were giving me, it was causing me to feel afraid. Afraid that I wasn't going to have what I wanted in my life, afraid that I wasn't really powerful. So that's.. then I become aware, oh I'm accessing another vibrational energy that I don't want to be playing with. And then I would just.. And that's how you could kind of discern
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 566
+    - 567
+    - 568
+    - 569
+    - 570
+    - 571
+    - 572
+    - 573
+    - 574
+    - 575
+    truncated: true
+- segment_id: 149
+  speaker_group: 1
+  timecode:
+    start: 00:29:42,405
+    end: 00:30:05,220
+  source_text: which energy is there, just if it's doing some..., if it's putting you in a fear-based state. If you're accessing an energy and you start to feel bad in your body, it's not really an energy you want to be playing with. So the thing to do then is to just send a big transmission of unconditional love to that being, and raise your own vibration. That clears the being out of
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 576
+    - 577
+    - 578
+    - 579
+    - 580
+    - 581
+    - 582
+    - 583
+    - 584
+    - 585
+    truncated: true
+- segment_id: 150
+  speaker_group: 1
+  timecode:
+    start: 00:30:05,220
+    end: 00:30:27,742
+  source_text: your space, it raises your energy. Then you're able to reconnect with those higher vibrational beings, and then you can always - as well, if you're already channeling, so if you're familiar with the process, you can call on a being that you know to be of a higher vibrational nature that you're familiar with, to kind of reconnect, solidify those connections.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 586
+    - 587
+    - 588
+    - 589
+    - 590
+    - 591
+    - 592
+    - 593
+    - 594
+    truncated: false
+- segment_id: 151
+  speaker_group: 1
+  timecode:
+    start: 00:30:27,784
+    end: 00:30:53,768
+  source_text: I've heard of cases where energies start out good, it's almost like almost like the church, you know start out good, with good love and light messages and get people in and then somewhere down the path the message can kind of turn and then start putting people in a fear-based situation and then usually after they get a bunch of people kind of already in, and you know
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 595
+    - 596
+    - 597
+    - 598
+    - 599
+    - 600
+    - 601
+    - 602
+    - 603
+    - 604
+    truncated: true
+- segment_id: 152
+  speaker_group: 1
+  timecode:
+    start: 00:30:53,768
+    end: 00:30:56,521
+  source_text: very much like a church type scenario.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 605
+    truncated: false
+- segment_id: 153
+  speaker_group: 1
+  timecode:
+    start: 00:30:56,521
+    end: 00:31:16,624
+  source_text: Well the other issue that you're touching on here is, you know as a channel, you still have an ego. So often what will happen is, in those situations, the energy itself stays in that high vibrational state - it's the filter that alters, meaning the channel.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 606
+    - 607
+    - 608
+    - 609
+    - 610
+    - 611
+    - 612
+    truncated: false
+- segment_id: 154
+  speaker_group: 1
+  timecode:
+    start: 00:31:16,666
+    end: 00:31:43,318
+  source_text: So I'm constantly checking my filter. I'm constantly having to disengage from any personal intention or attachment to anything personally for Nora, while channeling, or the person I'm channeling for. So if I were channeling for you, Reuben, in a private session and I had a particular desire for you, for your success let's say? If I was attached to that, that would cloud my ability to
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 613
+    - 614
+    - 615
+    - 616
+    - 617
+    - 618
+    - 619
+    - 620
+    - 621
+    - 622
+    truncated: true
+- segment_id: 155
+  speaker_group: 1
+  timecode:
+    start: 00:31:43,359
+    end: 00:31:46,654
+  source_text: clearly discern the information that's coming through and I'd put my own spin on it.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 623
+    - 624
+    truncated: false
+- segment_id: 156
+  speaker_group: 1
+  timecode:
+    start: 00:31:47,739
+    end: 00:32:03,671
+  source_text: So what you're talking about I think are those cults that have come up around channels and things like that, it's, you know, there's an imperative underneath that the channel was running for a prosperity issue or relationship issue or sexual issue or whatever it is.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 625
+    - 626
+    - 627
+    - 628
+    - 629
+    - 630
+    - 631
+    truncated: false
+- segment_id: 157
+  speaker_group: 1
+  timecode:
+    start: 00:32:03,671
+    end: 00:32:16,392
+  source_text: And suddenly 'the being' is recommending everyone hand over their money, when really, it's the channel speaking and the being has no control over that.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 632
+    - 633
+    - 634
+    - 635
+    truncated: false
+- segment_id: 158
+  speaker_group: 1
+  timecode:
+    start: 00:32:16,392
+    end: 00:32:21,981
+  source_text: So that's the other wonderful thing about this co-creative work in channeling.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 636
+    - 637
+    truncated: false
+- segment_id: 159
+  speaker_group: 1
+  timecode:
+    start: 00:32:23,107
+    end: 00:32:40,083
+  source_text: I can only bring through what I allow myself to bring through. They can't force me to do anything. So I can alter the message, really, any time I want.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 638
+    - 639
+    - 640
+    - 641
+    truncated: false
+- segment_id: 160
+  speaker_group: 1
+  timecode:
+    start: 00:32:40,833
+    end: 00:32:42,877
+  source_text: You really have to keep yourself in check though?
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 642
+    truncated: false
+- segment_id: 161
+  speaker_group: 1
+  timecode:
+    start: 00:32:43,878
+    end: 00:32:51,135
+  source_text: Yeah - and I have a lot of lessons that I've experienced in this lifetime to remind me to keep myself in check.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 643
+    - 644
+    - 645
+    truncated: false
+- segment_id: 162
+  speaker_group: 1
+  timecode:
+    start: 00:32:52,220
+    end: 00:32:55,932
+  source_text: I'm sure they're guiding and helping you do that.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 646
+    truncated: false
+- segment_id: 163
+  speaker_group: 1
+  timecode:
+    start: 00:32:56,265
+    end: 00:32:57,058
+  source_text: Yes, yes.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 647
+    truncated: false
+- segment_id: 164
+  speaker_group: 1
+  timecode:
+    start: 00:32:57,934
+    end: 00:32:58,768
+  source_text: As long as you're paying attention.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 648
+    truncated: false
+- segment_id: 165
+  speaker_group: 1
+  timecode:
+    start: 00:32:58,768
+    end: 00:33:13,616
+  source_text: And I guess when those others, that we talked about, probably aren't paying attention or you know they're not, I'm sure those higher beings are probably screaming at them and then the ego kicks in and tunes them out.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 649
+    - 650
+    - 651
+    - 652
+    - 653
+    - 654
+    truncated: false
+- segment_id: 166
+  speaker_group: 1
+  timecode:
+    start: 00:33:13,658
+    end: 00:33:26,129
+  source_text: I think those things happen for karmic reasons or because they've got trauma they haven't resolved, and that trauma begins to spin this tale.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 655
+    - 656
+    - 657
+    - 658
+    truncated: false
+- segment_id: 167
+  speaker_group: 1
+  timecode:
+    start: 00:33:26,129
+    end: 00:33:33,469
+  source_text: But the other thing you've got to look at here is anybody who gets pulled in by something like that, they are a co-creator in that experience as well.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 659
+    - 660
+    - 661
+    - 662
+    truncated: false
+- segment_id: 168
+  speaker_group: 1
+  timecode:
+    start: 00:33:33,511
+    end: 00:33:56,492
+  source_text: They are willingly handing over their free will to that entity or that higher being and that's their lesson as well. So then the channel who's bringing through the information in that way with their own, perhaps, distorted filter is suddenly serving to offer this lesson to anybody who wants to hand over their free will and forget they're sovereign.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 663
+    - 664
+    - 665
+    - 666
+    - 667
+    - 668
+    - 669
+    - 670
+    - 671
+    truncated: false
+- segment_id: 169
+  speaker_group: 1
+  timecode:
+    start: 00:33:56,492
+    end: 00:33:58,703
+  source_text: Man, so many people hand over that free will so easily.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 672
+    truncated: false
+- segment_id: 170
+  speaker_group: 1
+  timecode:
+    start: 00:33:59,412
+    end: 00:34:03,249
+  source_text: Well, we're also programmed to be enslaved, so we really...
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 673
+    - 674
+    truncated: false
+- segment_id: 171
+  speaker_group: 1
+  timecode:
+    start: 00:34:03,291
+    end: 00:34:05,126
+  source_text: Is that a DNA programming, you think, or is that..?
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 675
+    truncated: false
+- segment_id: 172
+  speaker_group: 1
+  timecode:
+    start: 00:34:05,168
+    end: 00:34:20,641
+  source_text: It's in our genetic code and it's something that we're in the process of rewriting as we integrate our higher selves because our higher selves don't have that imperative to run the enslavement games.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 676
+    - 677
+    - 678
+    - 679
+    - 680
+    - 681
+    truncated: false
+- segment_id: 173
+  speaker_group: 1
+  timecode:
+    start: 00:34:21,768
+    end: 00:34:26,189
+  source_text: They don't have genetics, do they?
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 682
+    truncated: false
+- segment_id: 174
+  speaker_group: 1
+  timecode:
+    start: 00:34:26,189
+    end: 00:34:48,503
+  source_text: Well, they don't but, as we're integrating our higher selves into our third dimensional chakra system, our higher selves are interacting with our physical genetic structure.  Now I'm a bit going into the channeling state, so I'm not fully direct voice channeling, but if you're paying attention to me you're going to see I look a little different right now because my eyes are starting
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 683
+    - 684
+    - 685
+    - 686
+    - 687
+    - 688
+    - 689
+    - 690
+    - 691
+    - 692
+    truncated: true
+- segment_id: 175
+  speaker_group: 1
+  timecode:
+    start: 00:34:48,503
+    end: 00:35:05,686
+  source_text: to get a, have a different focus, so the Pleiadians are just reminding us right now that as we integrate our higher selves we are altering ourselves from the inside out physically, genetically as well and we're breaking down... Greetings!
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 693
+    - 694
+    - 695
+    - 696
+    - 697
+    - 698
+    truncated: false
+- segment_id: 176
+  speaker_group: 1
+  timecode:
+    start: 00:35:05,686
+    end: 00:35:16,948
+  source_text: This is the Pleiadians Collective as always, it's wonderful to have the opportunity to link up with you in this way, and we'll give you back Nora if you need her again? No this is a good transition.
+  translation:
+    text: null
+    status: pending
+    confidence: null
+    notes: null
+  metadata:
+    topic_id: null
+    speaker_hint: null
+    source_entries:
+    - 699
+    - 700
+    - 701
+    - 702
+    - 703
+    truncated: false

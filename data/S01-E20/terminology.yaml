@@ -1,0 +1,807 @@
+episode_id: S01-E20
+terms:
+  # ===== A =====
+  - term: Anunnaki
+    senses:
+      - id: anunnaki_mythology
+        definition: 美索不達米亞神話中的外星/神祇族群
+        preferred_translation: 阿努納奇
+        segments:
+          - 151  # collective of races
+
+  - term: Arcturian
+    senses:
+      - id: arcturian_starbeing
+        definition: 來自大角星系的外星靈性族群
+        preferred_translation: 大角星人
+        segments:
+          - 465  # Arcturian system
+          - 467  # high Arcturian civilization
+
+  - term: Ascension
+    senses:
+      - id: ascension_spiritual_evolution
+        definition: 靈性層次提升或集體意識振動上升的過程
+        preferred_translation: 揚升
+        notes: 常見於新時代靈性語境
+        segments:
+          - 171  # ascension process here
+          - 470  # their ascension process
+
+  # ===== B =====
+  - term: Being
+    senses:
+      - id: being_conscious
+        definition: 具意識或靈性的存在體（泛指人類、外星、靈體等有覺知的生命）
+        preferred_translation: 存有
+        notes: 強調主體性與意識狀態，視語境可譯為「生命體」、「存在」；外星語境可加註「外星存有」
+        segments:
+          - 80   # 6th-7th density Draconian being
+          - 90   # Mantis being visitation
+          - 133  # Mantis being with Pleiadian
+          - 138  # manifesting as "a being"
+          - 289  # celestial being with consciousness
+          - 335  # new celestial being
+
+  # ===== C =====
+  - term: channel
+    senses:
+      - id: channel_spiritual_verb
+        definition: 透過靈性方法接收並傳遞非物質訊息的行為（動詞/動名詞）
+        preferred_translation: 通靈
+        notes: 涵蓋 "channeling" 的所有用法，如「他正在通靈」、「通靈訊息」
+        segments:
+          - 138  # "channel through" more physical beings
+
+  - term: Collective consciousness
+    senses:
+      - id: collective_consciousness_shared
+        definition: 群體或物種共享的意識場域與記憶庫
+        preferred_translation: 集體意識
+        notes: 常與阿卡西記錄、形態場、共同潛意識等概念相關
+        segments:
+          - 515  # Earth's collective consciousness (question)
+          - 516  # Earth's collective consciousness (answer)
+          - 519  # permission from collective consciousness
+
+  - term: Consciousness
+    senses:
+      - id: consciousness_awareness
+        definition: 個體或集體的覺知狀態與意識層次
+        preferred_translation: 意識
+        notes: 常與「擴展意識」、「意識進化」、「集體意識」搭配
+        segments:
+          - 2    # consciousness staying in this level
+          - 23   # consciousness expressed in 3rd density
+          - 78   # higher-level Draconian consciousness
+          - 102  # move consciousness into non-physical reality
+          - 110  # one consciousness fragmentation
+          - 147  # inner earth beings in consciousness
+          - 180  # space in your consciousness
+          - 289  # celestial being with consciousness
+          - 297  # part of that consciousness
+          - 307  # idea of what consciousness is
+          - 308  # consciousness permeates everything
+          - 315  # celestial bodies have consciousness
+          - 316  # consciousness of creation breathes
+          - 342  # limitation of human consciousness
+          - 343  # human consciousness tied to gravitational field
+          - 515  # Earth's collective consciousness (question)
+          - 516  # Earth's collective consciousness (answer)
+          - 517  # every planet has its own consciousness
+          - 519  # permission from collective consciousness
+          - 522  # planet as living consciousness
+
+  # ===== D =====
+  - term: Dracos
+    senses:
+      - id: dracos_extraterrestrial
+        definition: 類蜥蜴人或天龍座外星族群
+        preferred_translation: 天龍座人
+        segments:
+          - 121  # the Dracos did (called Founders)
+
+  - term: Draconian
+    senses:
+      - id: draconian_extraterrestrial
+        definition: 天龍座族群或其相關特質
+        preferred_translation: 天龍座
+        notes: 與 Dracos 相關但更常用作形容詞
+        segments:
+          - 22   # Draconian way of doing things
+          - 23   # Draconian way (consciousness)
+          - 53   # higher density Draconian
+          - 71   # Draconian energy versions
+          - 78   # higher-level Draconian consciousness
+          - 80   # 6th-7th density Draconian being
+
+  # ===== E =====
+  - term: Ego
+    senses:
+      - id: ego_lower_self
+        definition: 為本我之外、強調自我意識與分離感的心理結構
+        preferred_translation: 小我
+        notes: 若語境偏心理學可譯為「自我」
+        segments:
+          - 165  # ego gets involved
+          - 344  # ego is the anchor
+          - 346  # ego is like a black hole
+          - 348  # anchor that is ego
+
+  - term: Energy
+    senses:
+      - id: energy_spiritual
+        definition: 非物質層面的振動力量或生命力
+        preferred_translation: 能量
+        notes: 靈性語境常指氣場、脈輪、療癒能量等
+        segments:
+          - 68   # archetypal energy
+          - 71   # Draconian energy versions
+          - 92   # Draconian energy archetype
+          - 101  # Draconian energy resistance
+          - 102  # that energy (Draconian)
+          - 113  # perceive their energy (Mantis)
+          - 126  # intense energy of mentality
+          - 139  # perceiving the energy
+          - 151  # light energy
+          - 335  # energy downloads from celestial being
+          - 372  # planets represent energy of chakra
+          - 427  # energy healing Reiki
+          - 431  # cosmic energy
+          - 441  # Venus energy
+          - 442  # cosmic energy portal
+          - 443  # Reiki energy/Arcturist energy
+          - 454  # energy humans can tap into
+          - 481  # Sirius energy
+          - 511  # ayahuasca spirit energy
+          - 513  # interact with that energy
+          - 525  # tapping into that energy
+          - 526  # working with this energy
+          - 531  # talk to this energy
+          - 533  # collective energy interacting
+          - 603  # thank you for your energy
+
+  - term: Existence
+    senses:
+      - id: existence_state_of_being
+        definition: 存在本身或萬物實存的狀態
+        preferred_translation: 存在
+        notes: 靈性語境常與「存有」互換
+        segments:
+          - 92   # version of existence
+
+  # ===== F =====
+  - term: Founders
+    senses:
+      - id: founders_cosmic_architects
+        definition: 最早從源頭分化的集體意識，作為宇宙的建築師
+        preferred_translation: 創始者
+        notes: 與螳螂存有相關聯
+        segments:
+          - 108  # We call them Founders
+          - 111  # first fragments from Source
+
+  # ===== H =====
+  - term: Healing
+    senses:
+      - id: healing_spiritual
+        definition: 通過能量、意識或靈性方法促進整體療癒的過程
+        preferred_translation: 療癒
+        segments:
+          - 427  # energy healing Reiki
+
+  - term: Hybrid
+    senses:
+      - id: hybrid_starfamily
+        definition: 由人類與外星基因結合而成的族群
+        preferred_translation: 混種
+        notes: 星際家族脈絡常見
+        segments:
+          - 359  # hybrid programs for Zetas
+
+  # ===== I =====
+  - term: inner earth beings
+    senses:
+      - id: inner_earth_beings_collective
+        definition: 居住在地球內部的多種族集合體，主要為 4-5 維度存在
+        preferred_translation: 地心存有
+        segments:
+          - 147  # talk about inner earth beings
+
+  # ===== M =====
+  - term: Mantis being
+    senses:
+      - id: mantis_being_founder
+        definition: 螳螂形態的高維度存有，通常與創始者（Founders）相關
+        preferred_translation: 螳螂存有
+        segments:
+          - 90   # visitation from Mantis being
+          - 102  # Mantis beings help design
+          - 106  # calling them Mantis beings
+          - 130  # Mantis beings in abduction scenarios
+          - 133  # Mantis being with Pleiadian
+
+  # ===== P =====
+  - term: Physical
+    senses:
+      - id: physical_tangible
+        definition: 涉及物質層面或肉身的形容詞
+        preferred_translation: 物質的
+        notes: 視語境亦可譯為「有形的」、「肉身的」
+        segments:
+          - 6    # physical reality definitions
+          - 92   # grasping onto physical form
+          - 95   # no longer physical bodies
+          - 97   # cling to physicality
+          - 101  # non-physical reality
+          - 102  # non-physical reality evolution
+          - 119  # physical stage play
+          - 138  # cannot manifest physically / more physical beings
+          - 140  # not physical interaction
+          - 223  # physically speaking
+          - 235  # physical civilizations
+          - 461  # not physical in that way
+          - 478  # physical version to visit
+
+  - term: Physical Reality
+    senses:
+      - id: physical_reality_plane
+        definition: 可被感官觀察的物質世界
+        preferred_translation: 物質實相
+        segments:
+          - 6    # definitions of physical reality
+          - 101  # non-physical reality (contrast)
+          - 102  # non-physical reality evolution (contrast)
+
+  - term: Pleiadian
+    senses:
+      - id: pleiadians_extraterrestrial
+        definition: 來自昴宿星團的外星族群
+        preferred_translation: 昴宿星人
+        segments:
+          - 22   # Pleiadian way of doing things
+          - 23   # Pleiadian way
+          - 87   # Pleiadian perspective
+
+  # ===== R =====
+  - term: Reality
+    senses:
+      - id: reality_subjective
+        definition: 個體或集體創造的經驗世界與存在狀態
+        preferred_translation: 實相
+        notes: 新時代語境常見於「創造你的實相」、「多重實相」、「平行實相」等概念
+        segments:
+          - 5    # expanded reality
+          - 31   # my reality structure
+          - 101  # non-physical reality
+          - 102  # non-physical reality
+          - 175  # specific density reality
+          - 216  # 3rd density reality
+      - id: reality_objective
+        definition: 獨立於觀察者的客觀事實或物質世界
+        preferred_translation: 現實
+        segments:
+          - 6    # physical reality
+          - 30   # in reality we're just going to
+
+  - term: Reiki
+    senses:
+      - id: reiki_healing_modality
+        definition: 源於日本的能量療癒法
+        preferred_translation: 靈氣
+        segments:
+          - 427  # Japanese energy healing Reiki
+          - 441  # founder of Reiki
+          - 443  # Reiki energy
+
+  # ===== S =====
+  - term: Sassani
+    senses:
+      - id: sassani_hybrid_race
+        definition: 人類與灰人的混種族群
+        preferred_translation: 薩莎尼
+        segments:
+          - 22   # the Sassani
+
+  - term: Sirian
+    senses:
+      - id: sirian_starbeing
+        definition: 來自天狼星系的外星族群
+        preferred_translation: 天狼星人
+        segments:
+          - 22   # Sirian way of doing things
+          - 23   # Sirian way
+          - 190  # Sirian beings from Vega lineage
+          - 533  # Sirian collectives
+
+  - term: Source
+    senses:
+      - id: source_prime_creator
+        definition: 萬物最初的統一意識狀態，所有存在的根本來源
+        preferred_translation: 本源
+        segments:
+          - 111  # first fragments from Source
+
+  - term: Spiritual
+    senses:
+      - id: spiritual_adjective
+        definition: 與靈性、意識、非物質層面相關的形容詞
+        preferred_translation: 靈性的
+        notes: 視語境可譯為「精神的」、「心靈的」
+        segments:
+          - 1    # spiritual experience
+
+  - term: Spirituality
+    senses:
+      - id: spirituality_worldview
+        definition: 關於靈性、意識與存在意義的價值觀或生活方式
+        preferred_translation: 靈性
+        segments:
+          - 198  # school of spirituality (Vegan Mysticism)
+
+  # ===== T =====
+  - term: Trance
+    senses:
+      - id: trance_state
+        definition: 進入意識改變、介於醒與睡之間的狀態
+        preferred_translation: 出神
+        segments:
+          - 493  # psychedelic trance state
+
+  # ===== U =====
+  - term: UFO
+    senses:
+      - id: ufo_general
+        definition: 不明飛行物或外星飛行器的通稱
+        preferred_translation: 不明飛行物
+        notes: 可視語境使用「UFO」或「不明飛行物」
+        segments:
+          - 3    # UFO hunters
+
+  # ===== V =====
+  - term: Vega lineage
+    senses:
+      - id: vega_lineage_galactic
+        definition: 起源於織女星系的星際族群血統
+        preferred_translation: 織女星血統
+        segments:
+          - 190  # come from Vega lineage
+
+  - term: Vegan Mysticism
+    senses:
+      - id: vegan_mysticism_teaching
+        definition: 起源於織女星的古老靈性教學體系
+        preferred_translation: 織女星神秘學
+        segments:
+          - 198  # school of spirituality
+          - 201  # quite prolific, Vegan Mysticism
+          - 245  # came from Vegan mysticism
+
+  - term: Venus
+    senses:
+      - id: venus_portal
+        definition: 金星，作為宇宙能量的門戶
+        preferred_translation: 金星
+        segments:
+          - 438  # Beings from Venus
+          - 441  # tap into Venus energy
+          - 442  # Venus is a portal
+
+  # ===== Y =====
+  - term: Yahyel
+    senses:
+      - id: yahyel_starbeing
+        definition: 新時代通訊中常見的混種外星族群
+        preferred_translation: 亞耶爾
+        notes: 原文發音 /ˈjɑːjeɪl/，部分文獻譯為「雅赫爾」或「雅葉」
+        segments:
+          - 22   # the Yahyel
+
+  # ===== Z =====
+  - term: Zetas
+    senses:
+      - id: zetas_grey_aliens
+        definition: 灰人族群，來自網罟座ζ星系
+        preferred_translation: 齊塔人
+        segments:
+          - 121  # the Zetas did
+          - 122  # the Zetas, I got that
+          - 123  # Did the Zetas have technology
+          - 126  # Zetas are unique
+          - 139  # Zetas accompanied by Mantis
+
+  # ===== Topic-specific terms =====
+  # 以下術語來自 topics.json 但未在 terminology_template.yaml 中定義
+  # 根據實際使用情況添加定義
+
+  - term: 3rd density
+    senses:
+      - id: third_density_consciousness
+        definition: 物質化、二元對立、分離意識為主的存在密度層級
+        preferred_translation: 第三密度
+        segments:
+          - 23   # 3rd density or early 4th density
+          - 51   # still in 3rd density
+          - 60   # all 3rd density species
+          - 61   # primarily 3rd density event
+          - 63   # 3rd density event
+          - 71   # familiar with in 3rd density
+          - 82   # 3rd density version
+
+  - term: 4th density
+    senses:
+      - id: fourth_density_consciousness
+        definition: 開始超越二元對立、趨向合一的過渡密度層級
+        preferred_translation: 第四密度
+        segments:
+          - 23   # early 4th density
+          - 25   # farther into 4th density
+          - 63   # beginning phases of 4th density
+          - 76   # early phases of 4th density
+
+  - term: 7th density
+    senses:
+      - id: seventh_density_consciousness
+        definition: 接近源頭的高維度意識狀態，通常無實體形式
+        preferred_translation: 第七密度
+        segments:
+          - 92   # past 6th or 7th density
+          - 138  # primarily 7th density
+
+  - term: abduction scenarios
+    senses:
+      - id: abduction_et_contact
+        definition: 外星存有與人類的強制性接觸經驗
+        preferred_translation: 綁架情境
+        segments:
+          - 130  # in abduction scenarios
+
+  - term: Admiral Bird
+    senses:
+      - id: admiral_byrd_explorer
+        definition: 探險家理查德·伯德將軍，與地心探索相關
+        preferred_translation: 伯德將軍
+        notes: 原名 Richard E. Byrd
+        segments:
+          - 158  # Admiral Bird flew over North Pole
+
+  - term: angelic realm
+    senses:
+      - id: angelic_realm_dimension
+        definition: 天使層級或天使維度
+        preferred_translation: 天使界
+        segments:
+          - 449  # termed it the angelic realm
+
+  - term: Arcturist energy
+    senses:
+      - id: arcturist_energy_healing
+        definition: 大角星的療癒振動能量
+        preferred_translation: 大角星能量
+        segments:
+          - 443  # connected to Arcturist energy
+
+  - term: Association of Worlds
+    senses:
+      - id: association_of_worlds_federation
+        definition: 已進化超越衝突的星際文明合作組織
+        preferred_translation: 諸世界聯盟
+        notes: 由已進化到足以共振和諧的多個星際文明組成，非地球組織
+        segments:
+          - 38   # Association of Worlds
+          - 54   # Association of Worlds exist
+
+  - term: Atlantis
+    senses:
+      - id: atlantis_civilization
+        definition: 古代先進文明，為人類重要的進化關鍵點
+        preferred_translation: 亞特蘭提斯
+        segments:
+          - 203  # time of Atlantis
+          - 206  # Atlantis was
+
+  - term: Avatar
+    senses:
+      - id: avatar_film
+        definition: 2009 年科幻電影《阿凡達》
+        preferred_translation: 《阿凡達》
+        segments:
+          - 11   # working on film Avatar
+
+  - term: ayahuasca
+    senses:
+      - id: ayahuasca_plant_medicine
+        definition: 亞馬遜雨林的神聖植物藥
+        preferred_translation: 死藤水
+        segments:
+          - 492  # Amazonian medicine, ayahuasca
+          - 497  # ayahuasca is the booster rocket
+          - 498  # ayahuasca is booster rocket
+          - 511  # energy of ayahuasca spirit
+
+  - term: black hole
+    senses:
+      - id: black_hole_metaphor
+        definition: 黑洞，此處作為小我錨定機制的隱喻
+        preferred_translation: 黑洞
+        segments:
+          - 346  # ego is like a black hole
+
+  - term: breakaway civilization
+    senses:
+      - id: breakaway_civilization_secret
+        definition: 脫離主流社會、掌握先進科技的秘密人類文明
+        preferred_translation: 脫離文明
+        notes: 指源於地球但已脫離地表文明、掌握星際旅行技術的秘密人類群體
+        segments:
+          - 397  # humanity has breakaway civilization
+
+  - term: celestial being
+    senses:
+      - id: celestial_being_conscious
+        definition: 具有意識的天體存在
+        preferred_translation: 天體存有
+        segments:
+          - 289  # its own celestial being
+
+  - term: celestial bodies
+    senses:
+      - id: celestial_bodies_conscious
+        definition: 具有意識的天體
+        preferred_translation: 天體
+        segments:
+          - 315  # celestial bodies have consciousness
+
+  - term: colonization
+    senses:
+      - id: colonization_space
+        definition: 星際殖民行為
+        preferred_translation: 殖民
+        segments:
+          - 361  # better than colonization
+          - 366  # Colonization not comfortable
+
+  - term: DMT
+    senses:
+      - id: dmt_compound
+        definition: 二甲基色胺，天然致幻化合物
+        preferred_translation: DMT（二甲基色胺）
+        notes: 首次出現使用完整標註，後續可簡稱 DMT
+        segments:
+          - 493  # DMT, dimethyltryptamine
+
+  - term: Earth's collective consciousness
+    senses:
+      - id: earth_collective_consciousness
+        definition: 地球的整體意識場域
+        preferred_translation: 地球集體意識
+        segments:
+          - 515  # Earth's collective consciousness (question)
+          - 516  # Earth's collective consciousness (answer)
+
+  - term: egoic anchor
+    senses:
+      - id: egoic_anchor_metaphor
+        definition: 小我作為錨定意識於特定實相的機制
+        preferred_translation: 小我之錨
+        segments:
+          - 357  # egoic anchor was lighter
+
+  - term: ET influence
+    senses:
+      - id: et_influence_cultural
+        definition: 外星文明對地球文化的影響
+        preferred_translation: 外星影響
+        segments:
+          - 244  # because of ET influence
+
+  - term: expanded reality
+    senses:
+      - id: expanded_reality_consciousness
+        definition: 超越日常物質感知的擴展實相體驗
+        preferred_translation: 擴展實相
+        segments:
+          - 5    # move into expanded reality
+
+  - term: flamboyant
+    senses:
+      - id: flamboyant_personality
+        definition: 華麗誇張的、炫目的性格特質
+        preferred_translation: 浮誇的
+        segments:
+          - 558  # much more flamboyant
+          - 560  # Flamboyant?
+          - 561  # Flamboyant, actually
+
+  - term: Grandmother Earth energy
+    senses:
+      - id: grandmother_earth_spirit
+        definition: 地球母親的靈性能量，常見於薩滿傳統
+        preferred_translation: 大地祖母能量
+        segments:
+          - 511  # Grandmother Earth energy
+
+  - term: gravitational field
+    senses:
+      - id: gravitational_field_metaphor
+        definition: 重力場，此處也作為意識錨定的隱喻
+        preferred_translation: 重力場
+        segments:
+          - 319  # slight gravitational field
+          - 343  # tied to gravitational field
+          - 348  # escape gravitational field
+
+  - term: gregarious
+    senses:
+      - id: gregarious_personality
+        definition: 善於社交的、外向的性格特質
+        preferred_translation: 善於交際的
+        segments:
+          - 566  # excited and gregarious
+
+  - term: HARUKI
+    senses:
+      - id: haruki_name
+        definition: 日文名字「春樹」，Reuben 在平行時間線的名字
+        preferred_translation: ハルキ
+        notes: 保留日文原文，可加註中文「春樹」
+        segments:
+          - 590  # HARUKI
+
+  - term: hybridization
+    senses:
+      - id: hybridization_genetic
+        definition: 跨種族基因融合計畫
+        preferred_translation: 混種化
+        segments:
+          - 361  # hybridization better than colonization
+          - 365  # create that hybridization
+
+  - term: indigenous races
+    senses:
+      - id: indigenous_races_earth
+        definition: 地球原住民族群
+        preferred_translation: 原住民族
+        segments:
+          - 240  # indigenous races on planet
+
+  - term: insectoid
+    senses:
+      - id: insectoid_appearance
+        definition: 昆蟲形態的外觀特徵
+        preferred_translation: 昆蟲形態
+        segments:
+          - 113  # see them as Mantis or insectoid
+
+  - term: Kuiper Belt
+    senses:
+      - id: kuiper_belt_astronomy
+        definition: 古柏帶，海王星軌道外的小天體區域
+        preferred_translation: 古柏帶
+        segments:
+          - 265  # now makes up Kuiper Belt
+
+  - term: Maldek
+    senses:
+      - id: maldek_lost_planet
+        definition: 太陽系中已毀滅的古代行星
+        preferred_translation: 馬爾德克
+        segments:
+          - 265  # Maldek being a planet
+          - 273  # from Maldek civilization
+
+  - term: Mars
+    senses:
+      - id: mars_colonized
+        definition: 火星，曾被織女星人殖民
+        preferred_translation: 火星
+        segments:
+          - 245  # came to Earth from Mars
+          - 251  # colonize Mars
+          - 253  # colonized Mars
+          - 254  # colonized Mars well before
+          - 256  # destruction of Mars
+          - 267  # Similar history to Mars
+          - 269  # did Mars come after
+
+  - term: Mount Kurama
+    senses:
+      - id: mount_kurama_portal
+        definition: 日本鞍馬山，靈氣能量的下載地點
+        preferred_translation: 鞍馬山
+        segments:
+          - 435  # legends of Mount Kurama
+
+  - term: Orion wars
+    senses:
+      - id: orion_wars_conflict
+        definition: 獵戶座星系的古代星際戰爭
+        preferred_translation: 獵戶座戰爭
+        segments:
+          - 54   # during Orion wars
+          - 57   # Orion wars were long ago
+          - 61   # was Orion wars primarily
+
+  - term: Reuben Langdon
+    senses:
+      - id: reuben_langdon_host
+        definition: 節目主持人名字
+        preferred_translation: 魯本·蘭登
+        segments:
+          - 9    # My name is Reuben Langdon
+
+  - term: Sasha
+    senses:
+      - id: sasha_channel_entity
+        definition: 被通靈的外星存有名字
+        preferred_translation: 莎夏
+        segments:
+          - 551  # if Sasha wants to share
+          - 593  # Sasha is not my name
+
+  - term: secret space program
+    senses:
+      - id: secret_space_program_classified
+        definition: 秘密太空計畫，人類的機密星際探索項目
+        preferred_translation: 秘密太空計畫
+        segments:
+          - 397  # secret space program
+          - 417  # yes, secret space programs
+
+  - term: simultaneous lifetimes
+    senses:
+      - id: simultaneous_lifetimes_reincarnation
+        definition: 同時存在於不同時空軌道的多個轉世生命
+        preferred_translation: 平行生命
+        notes: 超譯但更符合中文語境，與「平行實相」「平行時間線」概念一致
+        segments:
+          - 210  # simultaneous lifetimes there
+
+  - term: Sirius energy
+    senses:
+      - id: sirius_energy_evolution
+        definition: 天狼星的進化路徑能量特質
+        preferred_translation: 天狼星能量
+        segments:
+          - 481  # Sirius energy evolution
+
+  - term: temporary detainment scenarios
+    senses:
+      - id: temporary_detainment_et
+        definition: 外星存有的臨時拘留情境（較中性的說法，相對於「綁架」）
+        preferred_translation: 臨時拘留情境
+        segments:
+          - 130  # temporary detainment scenarios
+
+  - term: terraformed
+    senses:
+      - id: terraformed_planetary
+        definition: 經過地球化改造的天體
+        preferred_translation: 地球化改造
+        segments:
+          - 275  # been terraformed
+          - 276  # Terraformed
+
+  - term: time stream
+    senses:
+      - id: time_stream_timeline
+        definition: 時間流或時間線
+        preferred_translation: 時間流
+        segments:
+          - 557  # in my time stream
+
+  - term: UFO hunters
+    senses:
+      - id: ufo_hunters_seekers
+        definition: 尋找 UFO 的人
+        preferred_translation: UFO 獵人
+        segments:
+          - 3    # lots of UFO hunters
+
+  - term: unconditional love
+    senses:
+      - id: unconditional_love_spiritual
+        definition: 無條件的愛，高密度意識的核心特質
+        preferred_translation: 無條件的愛
+        segments:
+          - 78   # deep unconditional love

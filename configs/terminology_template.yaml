@@ -58,6 +58,13 @@ terms:
         preferred_translation: 揚升
         notes: 常見於新時代靈性語境
 
+  - term: Association of Worlds
+    senses:
+      - id: association_of_worlds_federation
+        definition: 已進化超越衝突的星際文明合作組織
+        preferred_translation: 諸世界聯盟
+        notes: 由已進化到足以共振和諧的多個星際文明組成，透過共鳴而非規則運作
+
   - term: Astral
     senses:
       - id: astral_plane
@@ -79,6 +86,13 @@ terms:
         definition: 具意識或靈性的存在體（泛指人類、外星、靈體等有覺知的生命）
         preferred_translation: 存有
         notes: 強調主體性與意識狀態，視語境可譯為「生命體」、「存在」；外星語境可加註「外星存有」
+
+  - term: Breakaway civilization
+    senses:
+      - id: breakaway_civilization_secret
+        definition: 脫離主流社會、掌握先進科技的秘密人類文明
+        preferred_translation: 脫離文明
+        notes: 指源於地球但已脫離地表文明、掌握星際旅行技術的秘密人類群體
 
   # ===== C =====
   - term: channel
@@ -146,6 +160,13 @@ terms:
         definition: 超越物理三度空間的存在層級或頻率
         preferred_translation: 維度
         notes: 視語境可譯為「次元」
+
+  - term: DMT
+    senses:
+      - id: dmt_compound
+        definition: 二甲基色胺，天然致幻化合物
+        preferred_translation: DMT（二甲基色胺）
+        notes: 首次出現使用完整標註，後續可簡稱 DMT
 
   # ===== E =====
   - term: Earthbound spirits
@@ -399,6 +420,13 @@ terms:
         preferred_translation: 陰影
         notes: 靈性語境常指需整合的潛意識內容或未療癒創傷
 
+  - term: Source
+    senses:
+      - id: source_prime_creator
+        definition: 萬物最初的統一意識狀態，所有存在的根本來源
+        preferred_translation: 本源
+        notes: 常見於新時代靈性語境，指稱造物者、一切萬有、神聖本源等概念
+
   - term: Shalanaya
     senses:
       - id: shalanaya_race
@@ -411,6 +439,13 @@ terms:
       - id: sirian_starbeing
         definition: 來自天狼星系的外星族群
         preferred_translation: 天狼星人
+
+  - term: Simultaneous lifetimes
+    senses:
+      - id: simultaneous_lifetimes_reincarnation
+        definition: 同時存在於不同時空軌道的多個轉世生命
+        preferred_translation: 平行生命
+        notes: 超譯但更符合中文語境，與「平行實相」「平行時間線」概念一致
 
   - term: Spirit Guides
     senses:

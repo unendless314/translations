@@ -1,0 +1,698 @@
+# Terminology Classification for S01-E19
+#
+# 此檔案由 terminology_candidates.yaml 分類而成，將每個術語的出現位置（segment_id）
+# 按照語義分配到對應的 sense。
+#
+# 結構：
+#   - term: 英文詞彙
+#   - senses: 多義項陣列
+#     - id: sense 識別碼（來自 template）
+#     - definition: 語義說明
+#     - preferred_translation: 優先譯法
+#     - segments: 適用的 segment_id 陣列（本集特定）
+#     - notes: 補充說明（選填）
+
+episode_id: S01-E19
+
+terms:
+  # ===== A =====
+  - term: Anunnaki
+    senses:
+      - id: anunnaki_mythology
+        definition: 美索不達米亞神話中的外星/神祇族群
+        preferred_translation: 阿努納奇
+        segments: [329, 334, 336, 347]
+        notes: 本集中 Sasha 解釋 Anunnaki 一詞在蘇美爾語中意為「從天而降者」，泛指多個外星種族，而非單一混種族群
+
+  - term: Arcturian
+    senses:
+      - id: arcturian_starbeing
+        definition: 來自大角星系的外星靈性族群
+        preferred_translation: 大角星人
+        segments: [386]
+
+  - term: Being
+    senses:
+      - id: being_conscious
+        definition: 具意識或靈性的存在體（泛指人類、外星、靈體等有覺知的生命）
+        preferred_translation: 存有
+        segments: [141]
+        notes: 大部分 "being" 的出現是動詞用法（being as a verb），只有 segment 141 "a first density being" 是名詞用法，指稱存在體
+
+  # ===== C =====
+  - term: Consciousness
+    senses:
+      - id: consciousness_awareness
+        definition: 個體或集體的覺知狀態與意識層次
+        preferred_translation: 意識
+        segments: [1, 3, 5, 51, 74, 80, 90, 101, 135, 144, 149, 151, 186, 241, 286, 326, 404, 412, 508, 601, 603]
+        notes: 本集頻繁討論意識進化、密度意識、集體意識等概念
+
+  # ===== E =====
+  - term: Ego
+    senses:
+      - id: ego_lower_self
+        definition: 為本我之外、強調自我意識與分離感的心理結構
+        preferred_translation: 小我
+        segments: [83, 102, 103, 104, 105, 224, 227, 232, 237, 522, 523, 525, 529, 567, 568, 573, 630]
+        notes: 本集中 Sasha 強調小我是中性機制，用於將意識固定於分離經驗中，但無法主導意識進化或時間線跳躍
+
+  - term: Energy
+    senses:
+      - id: energy_spiritual
+        definition: 非物質層面的振動力量或生命力
+        preferred_translation: 能量
+        segments: [135, 302, 305, 320, 324, 325, 477, 514, 622, 623, 624]
+        notes: 本集主要討論陰性能量、原型能量、天狼星能量等靈性能量概念
+
+  # ===== F =====
+  - term: Frequency
+    senses:
+      - id: frequency_vibrational
+        definition: 存有或事物的振動頻率，與意識層次、能量狀態相關
+        preferred_translation: 頻率
+        segments: [222, 459, 469, 473, 549, 551, 558, 608, 616]
+        notes: 本集中頻繁討論振動頻率如何決定時間線經驗、ET 接觸類型等
+
+  # ===== G =====
+  - term: Guides
+    senses:
+      - id: guides_spiritual
+        definition: 在靈性層面提供指引的存在
+        preferred_translation: 指導靈
+        segments: [181]
+        notes: Sasha 提到昴宿星人在瘟疫危機時連結指導靈（天使、守護者）以找到療癒之道
+
+  # ===== H =====
+  - term: Healing
+    senses:
+      - id: healing_spiritual
+        definition: 通過能量、意識或靈性方法促進整體療癒的過程
+        preferred_translation: 療癒
+        segments: [311, 405, 424]
+        notes: 本集討論昴宿星人的整合療癒期、人類需通過受害者/施害者極性的療癒門檻
+
+  - term: Hybrid
+    senses:
+      - id: hybrid_starfamily
+        definition: 由人類與外星基因結合而成的族群
+        preferred_translation: 混種
+        segments: [329, 585, 596, 620]
+        notes: 本集討論 Zeta-人類混種（Essassani）、混種族群在煉金術整合中的角色
+
+  # ===== M =====
+  - term: Mind
+    senses:
+      - id: mind_intellect
+        definition: 理性思維、邏輯分析的認知功能
+        preferred_translation: 心智
+        segments: [232]
+        notes: Sasha 提到小我是意識心智層面的一部分
+
+  # ===== N =====
+  - term: Nature
+    senses:
+      - id: nature_essence
+        definition: 事物的核心特質或本來面貌
+        preferred_translation: 本質
+        segments: [39, 51, 283, 323]
+        notes: 出現於 "plasmic in nature"、"true nature"、"by its very nature" 等表述
+
+  # ===== O =====
+  - term: Oneness
+    senses:
+      - id: oneness_unity_consciousness
+        definition: 萬物彼此一體、無分離的意識狀態
+        preferred_translation: 合一
+        segments: [49, 80]
+        notes: Sasha 用金色湖泊比喻合一狀態，意識從合一狀態碎裂化為不同密度表達
+
+  # ===== P =====
+  - term: Physical
+    senses:
+      - id: physical_tangible
+        definition: 涉及物質層面或肉身的形容詞
+        preferred_translation: 物質的
+        segments: [30, 162, 205, 220, 498, 593, 618, 624]
+        notes: 第四密度是最後一個以獨立肉身表達的密度，第五密度開始轉為電漿態
+
+  - term: Pleiadians
+    senses:
+      - id: pleiadians_extraterrestrial
+        definition: 來自昴宿星團的外星族群
+        preferred_translation: 昴宿星人
+        segments: [261, 276, 615]
+        notes: Sasha 澄清「昴宿星人」並非昴宿星團原住民，而是殖民者，有兩條主要基因線（Lyra + Lyra-Earth 混合）
+
+  # ===== R =====
+  - term: Reality
+    senses:
+      - id: reality_subjective
+        definition: 個體或集體創造的經驗世界與存在狀態
+        preferred_translation: 實相
+        segments: [5, 44, 83, 151, 217, 398, 608]
+        notes: 本集中所有 reality 的使用都偏向主觀創造的實相概念，而非客觀現實
+
+  # ===== S =====
+  - term: Shadow
+    senses:
+      - id: shadow_psychology
+        definition: 個體壓抑、否認或未覺察的內在面向（源自榮格心理學）
+        preferred_translation: 陰影
+        segments: [182, 185, 317]
+        notes: Sasha 分享昴宿星人曾拒絕整合陰影，導致免疫瘟疫，最終學會整合陰影與光明
+
+  - term: Sirian
+    senses:
+      - id: sirian_starbeing
+        definition: 來自天狼星系的外星族群
+        preferred_translation: 天狼星人
+        segments: [624, 625, 627]
+        notes: Essassani 的未來化身傾向演化為更高非物質的天狼星振動；人類也可能朝天狼星方向演化
+
+  - term: Spiritual
+    senses:
+      - id: spiritual_adjective
+        definition: 與靈性、意識、非物質層面相關的形容詞
+        preferred_translation: 靈性的
+        segments: [5, 318, 404, 568]
+        notes: 出現於 "spiritual practices"、"spiritual bubble"、"spiritual passages" 等表述
+
+  - term: Spiritual Practice
+    senses:
+      - id: spiritual_practice_routine
+        definition: 為提升靈性覺察而進行的固定修煉
+        preferred_translation: 靈修
+        segments: [5]
+        notes: 與 "Spiritual" 術語的 segment 5 相同，指冥想等靈性修行
+
+  # ===== U =====
+  - term: UFO
+    senses:
+      - id: ufo_general
+        definition: 不明飛行物或外星飛行器的通稱
+        preferred_translation: 不明飛行物
+        segments: [618]
+        notes: 出現於 "UFO lore" 表述，指 1960-70年代的 Billy Meier 昴宿星接觸案例
+
+  # ===== V =====
+  - term: Vibration
+    senses:
+      - id: vibration_energetic
+        definition: 能量或意識的振動狀態，常與頻率互換使用
+        preferred_translation: 振動
+        segments: [624]
+        notes: segment 624 的 "Sirian vibration" 為名詞化用法，應譯為「天狼星頻率」而非「天狼星振動」
+
+  # ===== Y =====
+  - term: Yahyel
+    senses:
+      - id: yahyel_starbeing
+        definition: 新時代通訊中常見的混種外星族群
+        preferred_translation: 亞耶爾
+        segments: [606, 613]
+        notes: 與 Essassani 類似，屬於人類正在連結的未來混種文明
+
+  # ===== 本集特定術語（topics keywords, 不在 template 中）=====
+  # 以下術語來自 topics.json 的 keywords，但不在 terminology_template.yaml 中定義
+  # 這些通常是專有名詞或本集特定的概念術語
+
+  - term: density
+    senses:
+      - id: density_consciousness_level
+        definition: 意識存在的層級或頻率階段，共七個密度，從物質到非物質的光譜
+        preferred_translation: 密度
+        segments: [27, 28, 33, 34, 37, 39, 43, 44, 45, 50, 56, 62, 64, 70, 73, 81]
+        notes: 本集核心概念之一，Sasha 解釋密度如同彩虹光譜，第四密度是最後有獨立肉身的階段
+
+  - term: fourth density
+    senses:
+      - id: fourth_density_transition
+        definition: 第四密度，最後一個以獨立肉身表達的密度階段，人類正在轉入此階段
+        preferred_translation: 第四密度
+        segments: [28, 34, 37]
+        notes: Sasha 位於第四密度的高階層級，仍有物質身體但接近電漿態
+
+  - term: fifth density
+    senses:
+      - id: fifth_density_plasmic
+        definition: 第五密度，開始轉為電漿態或光之存有的階段，個體性減弱、趨向集體
+        preferred_translation: 第五密度
+        segments: [39, 43, 44]
+        notes: 夢境狀態不屬於單獨密度，而是意識重連合一的特殊表達
+
+  - term: third density
+    senses:
+      - id: third_density_ego
+        definition: 第三密度，以小我為基礎、分離感最強的密度，人類正在離開此階段
+        preferred_translation: 第三密度
+        segments: [81]
+        notes: 本集中描述為人類當前正在轉出的密度階段
+
+  - term: second density
+    senses:
+      - id: second_density_plant_animal
+        definition: 第二密度，植物與動物王國所在的意識層級
+        preferred_translation: 第二密度
+        segments: [90, 102, 144]
+        notes: 高階第二密度物種（靈長類、鳥類等）正在轉入第三密度，開始發展小我
+
+  - term: first density
+    senses:
+      - id: first_density_elements
+        definition: 第一密度，分離實相的基礎構成元素，如週期表元素、礦物王國
+        preferred_translation: 第一密度
+        segments: [141, 145, 149, 151, 156]
+        notes: 是創造的基石，與其他密度的演化模式略有不同
+
+  - term: plasmic
+    senses:
+      - id: plasmic_light_form
+        definition: 電漿態的，介於固態與純光之間的存在狀態
+        preferred_translation: 電漿態
+        segments: [39]
+        notes: 第五密度存有開始轉為電漿態本質
+
+  - term: light beings
+    senses:
+      - id: light_beings_fifth_density
+        definition: 光之存有，第五密度的電漿態生命形式
+        preferred_translation: 光之存有
+        segments: [41]
+
+  - term: seven density scale
+    senses:
+      - id: seven_density_system
+        definition: 七密度系統，Sasha 使用的意識演化框架
+        preferred_translation: 七密度量表
+        segments: [62]
+        notes: 類似脈輪系統與彩虹光譜的七色結構
+
+  - term: angelic realm
+    senses:
+      - id: angelic_realm_sixth_density
+        definition: 天使領域，Sasha 系統中對應第六密度
+        preferred_translation: 天使界
+        segments: [55, 56, 64]
+
+  - term: rainbow
+    senses:
+      - id: rainbow_density_metaphor
+        definition: 彩虹，用於比喻密度光譜的隱喻
+        preferred_translation: 彩虹
+        segments: [73, 74, 75, 85]
+        notes: 白光通過稜鏡分為七色彩虹，象徵意識從合一碎裂為七個密度
+
+  - term: chakra system
+    senses:
+      - id: chakra_density_analogy
+        definition: 脈輪系統，與密度系統的類比
+        preferred_translation: 脈輪系統
+        segments: [85]
+
+  - term: linearity
+    senses:
+      - id: linearity_perspective
+        definition: 線性觀點，將演化視為時間序列的視角
+        preferred_translation: 線性
+        segments: [99]
+        notes: 與全息觀點並列的兩種理解演化的方式之一
+
+  - term: holographic principle
+    senses:
+      - id: holographic_simultaneous
+        definition: 全息原理，意識同時存在於所有密度，只是焦點不同
+        preferred_translation: 全息原理
+        segments: [111]
+        notes: 用套疊的日本盒子或柏拉圖立體比喻，每個部分包含整體
+
+  - term: platonic solids
+    senses:
+      - id: platonic_solids_geometry
+        definition: 柏拉圖立體，用於比喻密度結構的神聖幾何
+        preferred_translation: 柏拉圖立體
+        segments: [128, 131, 135, 136]
+        notes: Sasha 有工作坊將每個密度對應到不同的柏拉圖立體
+
+  - term: mineral kingdom
+    senses:
+      - id: mineral_kingdom_high_first
+        definition: 礦物王國，高階第一密度的表達
+        preferred_translation: 礦物界
+        segments: [156]
+
+  - term: periodic table of the elements
+    senses:
+      - id: periodic_table_building_blocks
+        definition: 元素週期表，第一密度意識的創造基石
+        preferred_translation: 元素週期表
+        segments: [152]
+
+  - term: egoic anchor
+    senses:
+      - id: egoic_anchor_weight
+        definition: 小我錨點，將意識固定於分離體驗的機制，早期第四密度重、晚期第四密度輕
+        preferred_translation: 小我錨點
+        segments: [171]
+
+  - term: linear evolution
+    senses:
+      - id: linear_evolution_timeframe
+        definition: 線性演化，從時間尺度觀察的物種演化過程
+        preferred_translation: 線性演化
+        segments: [174]
+
+  - term: self-forgiveness
+    senses:
+      - id: self_forgiveness_healing
+        definition: 自我寬恕，昴宿星人的主要演化挑戰之一
+        preferred_translation: 自我寬恕
+        segments: [176]
+
+  - term: plague
+    senses:
+      - id: plague_immune_crisis
+        definition: 瘟疫，昴宿星人因拒絕整合陰影而顯化的免疫系統疾病
+        preferred_translation: 瘟疫
+        segments: [177, 178, 179, 180, 186]
+
+  - term: the shadow
+    senses:
+      - id: the_shadow_integration
+        definition: 陰影，需要整合的情緒面向與壓抑內容（與 Shadow 術語重複但用法更特定）
+        preferred_translation: 陰影
+        segments: [182, 185, 317]
+        notes: 與 "Shadow" 術語相同，指榮格心理學概念在外星演化中的應用
+
+  - term: nexus point
+    senses:
+      - id: nexus_point_turning
+        definition: 關鍵轉折點，演化歷程中的重大突破時刻
+        preferred_translation: 關鍵節點
+        segments: [185]
+
+  - term: timelines
+    senses:
+      - id: timelines_parallel
+        definition: 時間線，平行存在的多重實相軌道
+        preferred_translation: 時間線
+        segments: [191, 200, 214, 223]
+        notes: 本集討論時間線無法對齊、跳躍時間線、曼德拉效應等概念
+
+  - term: quantum map
+    senses:
+      - id: quantum_map_blink
+        definition: 量子地圖，Sasha 描述實相流如眨眼般閃現的框架
+        preferred_translation: 量子地圖
+        segments: [217]
+
+  - term: Pleiades
+    senses:
+      - id: pleiades_star_cluster
+        definition: 昴宿星團（七姊妹星團），昴宿星人殖民地所在區域
+        preferred_translation: 昴宿星團
+        segments: [250, 251, 261, 269]
+        notes: Sasha 澄清昴宿星人並非此處原住民，只是殖民者
+
+  - term: Seven Sisters
+    senses:
+      - id: seven_sisters_pleiades
+        definition: 七姊妹星團，昴宿星團的別稱
+        preferred_translation: 七姊妹
+        segments: [254, 255, 256, 270]
+
+  - term: Lyra
+    senses:
+      - id: lyra_ancient_origin
+        definition: 天琴座，昴宿星人兩條基因線的古老起源地之一
+        preferred_translation: 天琴座
+        segments: [265, 267]
+
+  - term: Earth genetics
+    senses:
+      - id: earth_genetics_hybrid
+        definition: 地球基因，昴宿星人第二條基因線中混合的地球 DNA
+        preferred_translation: 地球基因
+        segments: [267]
+
+  - term: holographic film
+    senses:
+      - id: holographic_film_metaphor
+        definition: 全息底片，用於說明意識碎形本質的比喻（每小片都包含完整影像）
+        preferred_translation: 全息底片
+        segments: [283]
+
+  - term: fractal
+    senses:
+      - id: fractal_consciousness
+        definition: 碎形，意識的分形特性，部分包含整體
+        preferred_translation: 碎形
+        segments: [286]
+        notes: 數學上指自相似、部分包含整體信息的結構；Sasha 用此概念配合全息底片比喻，說明每個個體意識都包含整體意識的完整信息，呼應「意識從合一碎裂化為不同密度」的演化觀
+
+  - term: feminine energy
+    senses:
+      - id: feminine_energy_integration
+        definition: 陰性能量，包容、整合、向內的能量特質
+        preferred_translation: 陰性能量
+        segments: [302, 305, 320, 324]
+        notes: 昴宿星人的三個時代都展現不同層次的陰性能量
+
+  - term: archetypal energy
+    senses:
+      - id: archetypal_energy_pattern
+        definition: 原型能量，超越二元的根本能量模式
+        preferred_translation: 原型能量
+        segments: [305]
+
+  - term: Draconian
+    senses:
+      - id: draconian_extraterrestrial
+        definition: 天龍座族群，與昴宿星人有關聯的外星種族
+        preferred_translation: 天龍座人
+        segments: [329]
+        notes: 曾有說法認為 Anunnaki 是昴宿星與天龍座的混種，但 Sasha 澄清 Anunnaki 泛指多個種族
+
+  - term: wild, wild west
+    senses:
+      - id: wild_west_metaphor
+        definition: 蠻荒西部，比喻古代地球太陽系的混亂狀態
+        preferred_translation: 蠻荒西部
+        segments: [370]
+
+  - term: victim-perpetrator idea
+    senses:
+      - id: victim_perpetrator_polarity
+        definition: 受害者-施害者概念，第三密度物種必須超越的極性門檻
+        preferred_translation: 受害者-加害者概念
+        segments: [396]
+
+  - term: Zetas
+    senses:
+      - id: zetas_grey_aliens
+        definition: 網罟座灰人族群
+        preferred_translation: 網罟座灰人
+        segments: [409]
+        notes: 本集討論 Zeta 綁架現象作為人類療癒受害者意識的催化劑
+
+  - term: abductions
+    senses:
+      - id: abductions_et_contact
+        definition: 綁架，外星接觸經驗（特別是 Zeta 相關）
+        preferred_translation: 綁架
+        segments: [409]
+
+  - term: Orion civilization
+    senses:
+      - id: orion_civilization_ancient
+        definition: 獵戶座文明，古代銀河衝突的參與者
+        preferred_translation: 獵戶座文明
+        segments: [424]
+
+  - term: Orion Wars
+    senses:
+      - id: orion_wars_galactic_conflict
+        definition: 獵戶座戰爭，昴宿星人「青少年期」參與的古代銀河戰爭
+        preferred_translation: 獵戶座戰爭
+        segments: [427, 444, 451, 456, 459]
+        notes: Sasha 說明此戰爭在某些振動頻率的時間線上仍在發生
+
+  - term: vibrational frequency
+    senses:
+      - id: vibrational_frequency_state
+        definition: 振動頻率，決定存有經驗何種實相的能量狀態（與 Frequency 術語相同）
+        preferred_translation: 振動頻率
+        segments: [459, 469, 473, 549, 551, 558, 608]
+        notes: 與 "Frequency" 術語語義重疊，本集中可能混用
+
+  - term: frequency soup
+    senses:
+      - id: frequency_soup_metaphor
+        definition: 頻率湯，比喻混雜多種振動頻率的實相場域
+        preferred_translation: 頻率湯
+        segments: [473]
+
+  - term: Mandela Effect
+    senses:
+      - id: mandela_effect_timeline_shift
+        definition: 曼德拉效應，集體記憶與當前實相不一致的現象，時間線流動性的證據
+        preferred_translation: 曼德拉效應
+        segments: [492]
+
+  - term: shifting of timelines
+    senses:
+      - id: shifting_timelines_jump
+        definition: 時間線轉換，意識跳躍到不同平行實相的過程
+        preferred_translation: 時間線轉換
+        segments: [492, 500]
+
+  - term: quantum state
+    senses:
+      - id: quantum_state_possibilities
+        definition: 量子狀態，所有可能性同時存在的意識狀態
+        preferred_translation: 量子狀態
+        segments: [508]
+
+  - term: parallel timelines
+    senses:
+      - id: parallel_timelines_multiple
+        definition: 平行時間線，同時存在的多重實相軌道（與 timelines 相關）
+        preferred_translation: 平行時間線
+        segments: []
+        notes: 概念在 topics.json 中提及但 candidates.yaml 中未單獨列出出現位置
+
+  - term: manifestation
+    senses:
+      - id: manifestation_creation
+        definition: 顯化，透過意識創造實相的過程
+        preferred_translation: 顯化
+        segments: [527]
+
+  - term: power of now
+    senses:
+      - id: power_of_now_present
+        definition: 當下的力量，改變實相的關鍵在於當下時刻而非過去或未來
+        preferred_translation: 當下的力量
+        segments: []
+        notes: 概念在 topics.json 中提及但 candidates.yaml 中未單獨列出
+
+  - term: emotional body
+    senses:
+      - id: emotional_body_feeling
+        definition: 情緒體，個體的情感感知與體驗系統
+        preferred_translation: 情緒體
+        segments: [567]
+
+  - term: Zeta race
+    senses:
+      - id: zeta_race_species
+        definition: 網罟座灰人種族（與 Zetas 相同）
+        preferred_translation: 網罟座灰人種族
+        segments: [585]
+
+  - term: hybrid species
+    senses:
+      - id: hybrid_species_multiple
+        definition: 混種物種，複數的人類-外星混種族群（與 Hybrid 相關但更廣義）
+        preferred_translation: 混種族群
+        segments: [596, 620]
+
+  - term: three eras
+    senses:
+      - id: three_eras_development
+        definition: 三個時代，物質物種演化的三階段模式（危機期、整合期、覺醒期）
+        preferred_translation: 三個時代
+        segments: [593]
+
+  - term: Essassani
+    senses:
+      - id: essassani_hybrid_race
+        definition: 艾莎莎尼，Zeta-人類混種文明，成功煉金術整合的代表
+        preferred_translation: 艾莎莎尼
+        segments: [606, 613, 620, 622, 623, 624]
+
+  - term: Bashar
+    senses:
+      - id: bashar_entity
+        definition: 巴夏，Essassani 文明的通靈實體
+        preferred_translation: 巴夏
+        segments: [606, 623, 624]
+
+  - term: Billy Meier
+    senses:
+      - id: billy_meier_contactee
+        definition: 比利·麥爾，1960-70年代著名的昴宿星接觸者
+        preferred_translation: 比利·麥爾
+        segments: [618]
+
+  - term: Semjase
+    senses:
+      - id: semjase_pleiadian
+        definition: 瑟姆雅榭，比利·麥爾接觸的昴宿星女性存有
+        preferred_translation: 瑟姆雅榭
+        segments: [618]
+
+  - term: alchemy
+    senses:
+      - id: alchemy_integration
+        definition: 煉金術，將兩種看似衝突的元素（如心智體與情緒體）整合的過程
+        preferred_translation: 煉金術
+        segments: [620, 622]
+
+  - term: Sirian vibration
+    senses:
+      - id: sirian_vibration_frequency
+        definition: 天狼星頻率，天狼星族群的能量頻率特徵
+        preferred_translation: 天狼星頻率
+        segments: [624]
+
+  # ===== 專有名詞（僅記錄出現位置，不需 sense 分類）=====
+  - term: contact work
+    senses:
+      - id: contact_work_field
+        definition: 接觸工作，與外星存有互動的實踐領域
+        preferred_translation: 接觸工作
+        segments: [1]
+
+  - term: evolution of consciousness
+    senses:
+      - id: evolution_consciousness_process
+        definition: 意識進化，意識從分離到重新整合的演化過程
+        preferred_translation: 意識進化
+        segments: [1]
+
+  - term: reintegration
+    senses:
+      - id: reintegration_return
+        definition: 重新整合，意識從分離經驗回歸合一的過程
+        preferred_translation: 重新整合
+        segments: [3]
+
+  - term: spiritual practices
+    senses:
+      - id: spiritual_practices_plural
+        definition: 靈性修行（複數），包括冥想等覺察練習
+        preferred_translation: 靈性修行
+        segments: [5]
+        notes: 與 "Spiritual Practice" 術語相同但為複數形式
+
+  - term: Reuben Langdon
+    senses:
+      - id: reuben_langdon_host
+        definition: 魯本·蘭登，本節目主持人
+        preferred_translation: 魯本·蘭登
+        segments: [8]
+
+  - term: Avatar
+    senses:
+      - id: avatar_film
+        definition: 《阿凡達》電影
+        preferred_translation: 《阿凡達》
+        segments: [10]
+
+  - term: Sasha
+    senses:
+      - id: sasha_pleiadian_entity
+        definition: 莎夏，受訪的昴宿星通靈實體
+        preferred_translation: 莎夏
+        segments: [21, 22]

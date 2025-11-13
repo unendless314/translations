@@ -1,0 +1,505 @@
+# Terminology for S01-E03
+# 此檔案由 terminology_candidates.yaml 經語境分析後生成
+# 每個術語的 segments 欄位列出該義項適用的段落 ID
+
+episode_id: S01-E03
+
+terms:
+  # ===== Template 術語（從 configs/terminology_template.yaml 繼承定義）=====
+
+  - term: Being
+    senses:
+      - id: being_conscious
+        definition: 具意識或靈性的存在體（泛指人類、外星、靈體等有覺知的生命）
+        preferred_translation: 存有
+        notes: 強調主體性與意識狀態，視語境可譯為「生命體」、「存在」；外星語境可加註「外星存有」
+        segments: [14, 61, 88, 89, 90, 91, 108, 116, 135, 139, 140, 141, 148, 149, 150, 157, 168]
+
+  - term: channel
+    senses:
+      - id: channel_spiritual_noun
+        definition: 通靈管道、靈媒，指具備接收非物質訊息能力的個體
+        preferred_translation: 通靈管道
+        notes: 視語境可譯為「靈媒」、「通靈者」、「管道」
+        segments: [114, 153, 156, 157, 168]
+
+      - id: channel_spiritual_verb
+        definition: 透過靈性方法接收並傳遞非物質訊息的行為（動詞/動名詞）
+        preferred_translation: 通靈
+        notes: 涵蓋 "channeling" 的所有用法，如「他正在通靈」、「通靈訊息」
+        segments: [19, 25, 84, 85]
+
+  - term: Clairvoyant
+    senses:
+      - id: clairvoyant_psychic
+        definition: 具備超感官視覺，能看見非物質訊息的人
+        preferred_translation: 靈視者
+        notes: 可簡化為「靈視」、「透視」
+        segments: [108, 110, 138]
+
+  - term: Dimension
+    senses:
+      - id: dimension_spiritual_plane
+        definition: 超越物理三度空間的存在層級或頻率
+        preferred_translation: 維度
+        notes: 視語境可譯為「次元」
+        segments: [85, 86]
+
+  - term: Ego
+    senses:
+      - id: ego_lower_self
+        definition: 為本我之外、強調自我意識與分離感的心理結構
+        preferred_translation: 小我
+        notes: 若語境偏心理學可譯為「自我」
+        segments: [153, 165]
+
+  - term: Energy
+    senses:
+      - id: energy_spiritual
+        definition: 非物質層面的振動力量或生命力
+        preferred_translation: 能量
+        notes: 靈性語境常指氣場、脈輪、療癒能量等
+        segments: [15, 91, 116, 133, 140, 148, 149, 150, 153]
+
+  - term: Entity
+    senses:
+      - id: entity_non_physical
+        definition: 非物質或低維度的意識存在（如靈體、能量體、跨維度存在）
+        preferred_translation: 實體
+        notes: 與 Being 的區別在於 Entity 更強調非肉身形式或未知屬性的存在，常見於描述神秘現象或跨維度接觸
+        segments: [91, 168]
+
+  - term: Frequency
+    senses:
+      - id: frequency_vibrational
+        definition: 存有或事物的振動頻率，與意識層次、能量狀態相關
+        preferred_translation: 頻率
+        notes: 常見於「提升頻率」、「頻率對齊」等新時代語境
+        segments: [85, 116, 124, 139]
+
+  - term: Guides
+    senses:
+      - id: guides_spiritual
+        definition: 在靈性層面提供指引的存在
+        preferred_translation: 指導靈
+        segments: [12]
+
+  - term: Incarnation
+    senses:
+      - id: incarnation_cycle
+        definition: 靈魂進入肉身展開生命的過程
+        preferred_translation: 轉世
+        notes: 若語境強調化身可改譯為「化身」
+        segments: [56, 57, 59]
+
+  - term: Intention
+    senses:
+      - id: intention_positive
+        definition: 正面的意向或心願，尤其在靈性實踐中的內在準備狀態
+        preferred_translation: 意念
+        notes: 強調柔和的內在意向，常見於靈性準備或冥想語境
+        segments: [13]
+
+      - id: intention_attachment
+        definition: 個人的企圖或欲望，常與執著並列，指需要覺察與放下的個人意圖
+        preferred_translation: 意圖
+        notes: 偏向需要警惕的個人欲望或企圖心，與 attachment（執著）並列使用
+        segments: [154]
+
+  - term: Mind
+    senses:
+      - id: mind_intellect
+        definition: 理性思維、邏輯分析的認知功能
+        preferred_translation: 心智
+        notes: 常與 Heart（心）對比，強調頭腦層面的運作
+        segments: [121, 138]
+
+  - term: Nature
+    senses:
+      - id: nature_essence
+        definition: 事物的核心特質或本來面貌
+        preferred_translation: 本質
+        segments: [150]
+
+  - term: Oversoul
+    senses:
+      - id: oversoul_collective_self
+        definition: 統攝多個靈魂投射的更高層次意識
+        preferred_translation: 超靈
+        segments: [59]
+
+  - term: Pleiadians
+    senses:
+      - id: pleiadians_extraterrestrial
+        definition: 來自昴宿星團的外星族群
+        preferred_translation: 昴宿星人
+        segments: [90, 92, 98, 102, 103, 104, 105, 118, 132, 175, 176]
+
+  - term: Physical
+    senses:
+      - id: physical_tangible
+        definition: 涉及物質層面或肉身的形容詞
+        preferred_translation: 物質的
+        notes: 視語境亦可譯為「有形的」、「肉身的」
+        segments: [32, 33, 120, 174]
+
+  - term: Physical Reality
+    senses:
+      - id: physical_reality_plane
+        definition: 可被感官觀察的物質世界
+        preferred_translation: 物質實相
+        segments: [32]
+
+  - term: Reality
+    senses:
+      - id: reality_subjective
+        definition: 個體或集體創造的經驗世界與存在狀態
+        preferred_translation: 實相
+        notes: 新時代語境常見於「創造你的實相」、「多重實相」、「平行實相」等概念
+        segments: [5, 32, 86, 124]
+
+  - term: Spirit Guides
+    senses:
+      - id: spirit_guides_multiple
+        definition: 提供保護或指引的一組靈性存在
+        preferred_translation: 指導靈
+        segments: [12]
+
+  - term: Trance
+    senses:
+      - id: trance_state
+        definition: 進入意識改變、介於醒與睡之間的狀態
+        preferred_translation: 出神
+        segments: [94]
+
+  - term: Vibration
+    senses:
+      - id: vibration_with_frequency
+        definition: 與 frequency 並列使用時的振動狀態，強調能量的波動特質
+        preferred_translation: 振動
+        notes: 當與 frequency（頻率）並列出現時，保留「振動」以區別兩者
+        segments: [116, 124, 139]
+
+      - id: vibration_as_frequency
+        definition: 單獨使用時指稱能量層級或意識狀態
+        preferred_translation: 頻率
+        notes: 單獨出現時譯為「頻率」，如「提升頻率」「認出這個頻率」，更符合中文靈性語境習慣
+        segments: [85, 135, 138, 140, 149]
+
+  # ===== 專有名詞（S01-E03 特定術語）=====
+
+  - term: Nora Herold
+    senses:
+      - id: nora_herold_channeler
+        definition: 本集主角，資深通靈者，主要通靈昴宿星集體、Yeshua 和 Calliandra
+        preferred_translation: 諾拉·赫羅德
+        notes: 從事通靈工作超過 20 年
+        segments: [1]
+
+  - term: channeling
+    senses:
+      - id: channeling_practice
+        definition: 通靈的實踐與過程（名詞形式，指整體活動）
+        preferred_translation: 通靈
+        notes: 作為名詞使用時，指通靈這項活動本身
+        segments: [1, 17, 19, 21, 22, 26]
+
+  - term: Saturn return
+    senses:
+      - id: saturn_return_astrology
+        definition: 占星學中土星回歸本命位置的週期（約29.5年），常伴隨人生重大轉變
+        preferred_translation: 土星回歸
+        notes: Nora 在第一次土星回歸（29歲）時經歷靈性覺醒
+        segments: [7]
+
+  - term: Wendy Kennedy
+    senses:
+      - id: wendy_kennedy_channeler
+        definition: Nora 的通靈導師與合作夥伴，引導 Nora 進入通靈領域
+        preferred_translation: 溫蒂·甘迺迪
+        segments: [13, 17]
+
+  - term: Pleiadian Collective
+    senses:
+      - id: pleiadian_collective_entity
+        definition: 來自昴宿星的第十二維度集體意識，Nora 主要通靈的存有
+        preferred_translation: 昴宿星集體
+        notes: 以統一意識運作，同時理解自己由多個個體組成
+        segments: [19, 29]
+
+  - term: Yeshua
+    senses:
+      - id: yeshua_entity
+        definition: 耶穌的希伯來文名字，被視為集體存有的個體化能量
+        preferred_translation: 耶書亞
+        notes: Nora 認為 Yeshua 既是個體實體也是集體能量
+        segments: [19, 90, 91, 92, 98, 102, 104]
+
+  - term: Calliandra
+    senses:
+      - id: calliandra_fairy
+        definition: 第五維度的仙子存有，Nora 通靈的主要存有之一
+        preferred_translation: 卡莉安德拉
+        notes: 名字來源是一種植物「仙女撣子」（Fairy Duster），能量強大且密度較高
+        segments: [19, 90, 92, 102, 104, 106]
+
+  - term: Lyrans
+    senses:
+      - id: lyrans_extraterrestrial
+        definition: 來自天琴座的外星族群
+        preferred_translation: 天琴座人
+        segments: [19, 92, 104]
+
+  - term: archangels
+    senses:
+      - id: archangels_spiritual
+        definition: 高階天使存有，提供靈性指引與保護
+        preferred_translation: 大天使
+        segments: [19]
+
+  - term: light bodies
+    senses:
+      - id: light_bodies_energy
+        definition: 靈性的光體或能量體，超越物質肉身的存在形式
+        preferred_translation: 光體
+        notes: 昴宿星人強調人類是光體投射到物質實相中
+        segments: [32]
+
+  - term: love incarnate
+    senses:
+      - id: love_incarnate_concept
+        definition: 愛的化身或具體化，指一切存在本質上都是愛的顯化
+        preferred_translation: 愛的化身
+        notes: 昴宿星人的核心教導，強調萬物皆為愛的顯化
+        segments: [40, 42, 44, 45, 56]
+
+  - term: awakening
+    senses:
+      - id: awakening_spiritual
+        definition: 靈性覺醒，記起自己真實本質的過程
+        preferred_translation: 覺醒
+        notes: 本集強調覺醒是「記起」而非「學習」新事物
+        segments: [47, 53]
+
+  - term: unconditional love
+    senses:
+      - id: unconditional_love_spiritual
+        definition: 無條件的愛，不帶評判或期待的純粹慈愛能量
+        preferred_translation: 無條件的愛
+        segments: [60]
+
+  - term: Reuben Langdon
+    senses:
+      - id: reuben_langdon_interviewer
+        definition: 本集訪談者，演員兼導演，因 2007 年 UFO 目擊經驗而開始探索外星智慧
+        preferred_translation: 魯本·蘭登
+        notes: 曾參與電影《阿凡達》演出
+        segments: [64]
+
+  - term: Avatar
+    senses:
+      - id: avatar_film
+        definition: 詹姆斯·卡麥隆執導的科幻電影（2009）
+        preferred_translation: 《阿凡達》
+        notes: Reuben 在此片中飾演外星角色
+        segments: [66]
+
+  - term: direct voice channeling
+    senses:
+      - id: direct_voice_channeling_method
+        definition: 直接聲音通靈，通靈者提升振動讓高維存有直接透過其聲帶說話
+        preferred_translation: 直接聲音通靈
+        notes: 與「翻譯」(translation) 形成對比，後者是通靈者用自己的聲音轉述
+        segments: [81]
+
+  - term: translation
+    senses:
+      - id: translation_channeling
+        definition: 通靈中的「翻譯」模式，通靈者接收訊息後用自己的聲音轉述
+        preferred_translation: 翻譯
+        notes: 與「直接聲音通靈」相對，保持通靈者自己的聲音
+        segments: [83]
+
+  - term: telepathically
+    senses:
+      - id: telepathically_communication
+        definition: 透過心電感應或心靈感應的方式
+        preferred_translation: 以心電感應
+        notes: 形容詞形式，描述非語言的直接意識交流
+        segments: [85]
+
+  - term: twelfth dimensional
+    senses:
+      - id: twelfth_dimensional_plane
+        definition: 第十二維度，極高的靈性存在層級
+        preferred_translation: 第十二維度
+        notes: 昴宿星集體存在於此維度，遠超地球的三維物質實相
+        segments: [86, 88]
+
+  - term: fifth dimensional fairy
+    senses:
+      - id: fifth_dimensional_fairy_being
+        definition: 第五維度的仙子存有，比第十二維度更接近物質層，能量密度較高
+        preferred_translation: 第五維度仙子
+        notes: Calliandra 的存在形式，其能量比高維存有更強烈且具密度
+        segments: [90]
+
+  - term: Lemuria
+    senses:
+      - id: lemuria_civilization
+        definition: 傳說中的古文明或靈性層面的集體意識
+        preferred_translation: 雷姆利亞
+        notes: 亦稱「姆大陸」或「列木里亞」，與亞特蘭提斯並列的古代文明
+        segments: [92]
+
+  - term: Zetas
+    senses:
+      - id: zetas_extraterrestrial
+        definition: 來自網罟座的外星族群，常稱為「灰人」(Greys)
+        preferred_translation: 齊塔人
+        notes: 全名 Zeta Reticuli，是接觸經驗中常見的外星種族
+        segments: [92]
+
+  - term: trance channeling
+    senses:
+      - id: trance_channeling_method
+        definition: 出神通靈，通靈者完全失去意識，事後無記憶
+        preferred_translation: 出神通靈
+        notes: 與 Nora 的「清醒通靈」或「半清醒通靈」相對
+        segments: [94]
+
+  - term: conscious channeling
+    senses:
+      - id: conscious_channeling_method
+        definition: 清醒通靈，通靈者保持完全清醒覺知，能記得整個過程
+        preferred_translation: 清醒通靈
+        notes: Nora 的主要通靈方式之一，與「出神通靈」和「半清醒通靈」形成對比
+        segments: [94, 96]
+
+  - term: semi-conscious channeling
+    senses:
+      - id: semi_conscious_channeling_method
+        definition: 半清醒通靈，通靈者部分保持覺知但意識狀態改變
+        preferred_translation: 半清醒通靈
+        notes: Nora 的另一種通靈方式，介於完全清醒與出神之間
+        segments: [94]
+
+  - term: clairaudient
+    senses:
+      - id: clairaudient_ability
+        definition: 靈聽能力，能聽見非物質層面的聲音或訊息
+        preferred_translation: 靈聽者
+        notes: 可簡化為「靈聽」，與「靈視」(clairvoyant) 並列
+        segments: [108, 110]
+
+  - term: clairsentient
+    senses:
+      - id: clairsentient_ability
+        definition: 靈感能力，能感知非物質層面的能量或情緒
+        preferred_translation: 靈感者
+        notes: 可簡化為「靈感」或「直覺感知」
+        segments: [110]
+
+  - term: source energy
+    senses:
+      - id: source_energy_origin
+        definition: 源頭能量，萬物的根源與本質
+        preferred_translation: 源頭能量
+        notes: 新時代靈性中指稱宇宙最初始的創造力量
+        segments: [116]
+
+  - term: Zoe
+    senses:
+      - id: zoe_dog
+        definition: Nora 的狗，被認為帶來精靈與獨角獸能量
+        preferred_translation: 佐伊
+        notes: 本集中短暫入鏡，Nora 稱其為「Alphacorn」（精靈獨角獸）
+        segments: [122, 123, 124, 128]
+
+  - term: Alphacorn
+    senses:
+      - id: alphacorn_nickname
+        definition: Nora 為狗 Zoe 取的暱稱，結合「elf」(精靈) 與「unicorn」(獨角獸)
+        preferred_translation: 精靈獨角獸
+        notes: 創意混成詞，形容 Zoe 帶來的能量特質
+        segments: [123]
+
+  - term: Fairy Duster
+    senses:
+      - id: fairy_duster_plant
+        definition: 植物 Calliandra 屬的英文俗名，中文稱朱纓花或粉撲花
+        preferred_translation: 仙女撣子（朱纓花）
+        notes: 保留「仙女撣子」直譯以呈現 Fairy 的語境邏輯，括號補充正式植物學名稱。Nora 正是因為 Fairy Duster 名稱中的 "Fairy" 而得到驗證
+        segments: [141]
+
+  - term: third dimensional information
+    senses:
+      - id: third_dimensional_info
+        definition: 第三維度（物質界）的可驗證資訊
+        preferred_translation: 三維資訊
+        notes: Nora 用此驗證高維訊息的準確性（如 Google 搜尋結果）
+        segments: [141]
+
+  - term: dark energies
+    senses:
+      - id: dark_energies_negative
+        definition: 負面或低振動的能量或存有
+        preferred_translation: 黑暗能量
+        notes: 訪談中討論如何辨識與應對低振動能量
+        segments: [145]
+
+  - term: tricksters
+    senses:
+      - id: tricksters_entities
+        definition: 會干擾、誤導通靈者或接觸者的靈體或存有
+        preferred_translation: 干擾靈體
+        notes: 原文 trickster 指會搗亂、欺騙的靈體，常見於靈性實踐的警告中
+        segments: [145]
+
+  - term: fear-based state
+    senses:
+      - id: fear_based_state_emotion
+        definition: 基於恐懼的情緒狀態
+        preferred_translation: 恐懼狀態
+        notes: Nora 強調這是辨識低振動能量的關鍵指標
+        segments: [149]
+
+  - term: channel's filter
+    senses:
+      - id: channels_filter_distortion
+        definition: 通靈者的個人濾鏡，可能因小我、創傷或執著而扭曲訊息
+        preferred_translation: 通靈者的濾鏡
+        notes: 本集重點探討小我如何扭曲高振動訊息，導致操控性情況
+        segments: [153]
+
+  - term: free will
+    senses:
+      - id: free_will_choice
+        definition: 自由意志，個體自主選擇的能力
+        preferred_translation: 自由意志
+        notes: 本集強調不應將自由意志交給任何外在存有或權威
+        segments: [168, 169]
+
+  - term: enslavement games
+    senses:
+      - id: enslavement_games_pattern
+        definition: 奴役遊戲，人類基因中編碼的控制與被控制模式
+        preferred_translation: 奴役遊戲
+        notes: Nora 提到這是人類正在透過整合高我而重寫的基因程式
+        segments: [172]
+
+  - term: genetic code
+    senses:
+      - id: genetic_code_spiritual
+        definition: 基因編碼，不僅指物質 DNA，也包含靈性與意識層面的程式
+        preferred_translation: 基因編碼
+        notes: 本集語境中指可透過整合高我而改變的多維度程式
+        segments: [172]
+
+  - term: higher selves
+    senses:
+      - id: higher_selves_plural
+        definition: 高我（複數形式），個體更高維度的意識面向
+        preferred_translation: 高我們
+        notes: 複數形式，指整合過程涉及多個面向或多人的高我
+        segments: [172, 174, 175]
