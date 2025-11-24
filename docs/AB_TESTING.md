@@ -7,10 +7,10 @@
 ## 支援的 Provider
 
 ### 1. **Gemini** (Google)
-- **推薦模型**：`gemini-2.5-pro`
+- **推薦模型**：`gemini-3-pro-preview`
 - **優勢**：
   - 大上下文窗口（1M+ tokens）
-  - 成本較低（$1.25/M input, $5/M output）
+  - 新版模型品質提升；預覽階段仍支援長文本
   - 處理長文本效果好
 - **適用場景**：處理大量 segments（1000+）
 
@@ -58,7 +58,7 @@ OPENAI_API_KEY=sk-proj-...你的OpenAI key...
    ```yaml
    topic_analysis:
      provider: gemini
-     model: gemini-2.5-pro
+     model: gemini-3-pro-preview
      temperature: 1
      max_output_tokens: 8192
    ```
@@ -120,7 +120,7 @@ episode_id: S01-E12
 # ... 其他設定 ...
 topic_analysis:
   provider: gemini
-  model: gemini-2.5-pro
+  model: gemini-3-pro-preview
   temperature: 1
   max_output_tokens: 8192
 output:
@@ -160,7 +160,7 @@ python3 tools/topics_analysis_driver.py --config configs/S01-E12-openai.yaml
 ```
 
 計算成本：
-- **Gemini 2.5 Pro**: (52345 × $1.25 + 3210 × $5) / 1,000,000 = **$0.081**
+- **Gemini 3 Pro (preview, ≤200k tokens)**: (52345 × $2 + 3210 × $12) / 1,000,000 = **$0.143**
 - **GPT-5-mini**: (52345 × $0.15 + 3210 × $0.60) / 1,000,000 = **$0.010**
 - **GPT-5**: (52345 × $2.50 + 3210 × $10) / 1,000,000 = **$0.163**
 
@@ -203,7 +203,7 @@ topic_analysis:
 ```yaml
 topic_analysis:
   provider: gemini
-  model: gemini-2.5-pro    # 平衡成本與品質
+  model: gemini-3-pro-preview    # 品質升級（預覽）
   temperature: 1
   max_output_tokens: 8192
 ```
@@ -225,7 +225,7 @@ topic_analysis:
 **A**: `gpt-5-mini` 約為 Gemini 的 1/8 成本。
 
 ### Q2: 哪個模型品質最好？
-**A**: 取決於任務。建議先用 `gpt-5-mini` 測試，再用 `gemini-2.5-pro` 對比。
+**A**: 取決於任務。建議先用 `gpt-5-mini` 測試，再用 `gemini-3-pro-preview` 對比。
 
 ### Q3: 可以混用不同 provider 嗎？
 **A**: 可以！例如：
@@ -236,7 +236,7 @@ topic_analysis:
 ```yaml
 topic_analysis:
   provider: gemini
-  model: gemini-2.5-pro
+  model: gemini-3-pro-preview
 
 translation:
   provider: openai
@@ -307,7 +307,7 @@ chmod +x ab_test.sh
 
 - ✅ **最簡單**：直接修改 `configs/S01-E12.yaml` 的 `provider`
 - ✅ **最便宜**：使用 `gpt-5-mini` 測試
-- ✅ **最推薦**：Gemini 2.5 Pro（平衡成本與品質）
+- ✅ **最推薦**：Gemini 3 Pro（preview，品質升級）
 - ✅ **最高品質**：GPT-5 或 o1-mini
 
 根據你的需求選擇合適的策略！

@@ -400,7 +400,7 @@ python3 tools/split_srt.py \
   # 扁平結構：所有 model 參數直接放在 topic_analysis 下
   topic_analysis:
     provider: gemini                # gemini, openai, anthropic
-    model: gemini-2.5-pro           # 模型識別符
+    model: gemini-3-pro-preview     # 模型識別符
     temperature: 1                  # 0.0-2.0
     max_output_tokens: 8192
     timeout: 120
@@ -650,7 +650,7 @@ $ python3 tools/fix_chinese_punctuation.py --config configs/S01-E27.yaml --verbo
     batch_size: 10                    # 每批處理的段落數
     model:
       provider: gemini                # gemini, openai, anthropic
-      model: gemini-2.5-flash
+      model: gemini-3-pro-preview
       temperature: 0.7
       max_output_tokens: 4096
   ```

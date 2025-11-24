@@ -46,7 +46,7 @@ prompts:
 # Adjust provider/model/settings here if the defaults suit all episodes.
 topic_analysis:
   provider: gemini
-  model: gemini-2.5-pro
+  model: gemini-3-pro-preview
   temperature: 1
   max_output_tokens: 8192
   timeout: 180
@@ -57,7 +57,7 @@ topic_analysis:
 # ----- LLM configuration: translation --------------------------------------
 translation:
   provider: gemini
-  model: gemini-2.5-pro
+  model: gemini-3-pro-preview
   temperature: 1
   max_output_tokens: 16384
   timeout: 180

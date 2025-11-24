@@ -188,7 +188,7 @@
 - 統一返回 `APIResponse` 格式
 
 **支援的 Provider**：
-- **Gemini**：使用最新 `google-genai` SDK (0.1.0+)，支援 Gemini 2.0/2.5 系列
+- **Gemini**：使用最新 `google-genai` SDK (0.1.0+)，支援 Gemini 3 Pro（含 preview）系列
 - **OpenAI**：支援 GPT-4o、o1 系列
 - **Anthropic**：支援 Claude 3.5 系列，適合大型上下文
 

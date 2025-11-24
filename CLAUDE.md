@@ -82,7 +82,7 @@ When converting SRT to main.yaml:
 
 ### Topics Generation Flow
 1. Export `main.yaml` to JSON with segment markers (`segment_id`, `speaker_group`, `source_text`)
-2. Feed to large-context LLM (e.g., Gemini 2.5 Pro) using `prompts/topic_analysis_system.txt`
+2. Feed to large-context LLM (e.g., Gemini 3 Pro) using `prompts/topic_analysis_system.txt`
 3. Parse LLM output to extract segment ranges, summaries, keywords
 4. Generate `topics.json` structure with validation (no gaps, no overlaps, sequential ranges)
 

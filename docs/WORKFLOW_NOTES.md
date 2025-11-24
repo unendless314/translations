@@ -139,7 +139,7 @@
    - 模型翻譯時只修改第二行的 JSON 值；完成後再用轉換工具寫回 `main.yaml`
 
 3. **調用 LLM 翻譯**
-   - 使用適合的模型（Gemini 2.5 Flash / GPT-4o 等）
+   - 使用適合的模型（Gemini 3 Pro（preview）/ GPT-4o 等）
    - 要求模型以結構化格式回傳（YAML/JSON）
 
 4. **更新草稿 (`data/<episode>/drafts/`)**

@@ -230,7 +230,7 @@ When `srt_to_main_yaml.py` runs, it automatically finds the lone `.srt` file ins
 
 **Analysis:**
 - **main_yaml_to_json.py** — Export minimal segments for LLM topic analysis (`--pretty` optional)
-- **topics_analysis_driver.py** — Generate topic structure using large-context LLM (Gemini 2.5 Pro)
+- **topics_analysis_driver.py** — Generate topic structure using large-context LLM (Gemini 3 Pro)
 - **terminology_mapper.py** — Auto-populate term occurrences from template and topics → `terminology_candidates.yaml`
 
 **Translation Workflow:**
@@ -272,7 +272,7 @@ This project is under active development. Current status:
   - Episode configuration system
 
 - ✅ **Phase 2: LLM-powered analysis** (complete)
-  - Topic analysis with large-context models (Gemini 2.5 Pro)
+  - Topic analysis with large-context models (Gemini 3 Pro)
   - Automated terminology candidate generation
   - Multi-sense terminology classification workflow
 

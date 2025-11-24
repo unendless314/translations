@@ -3,7 +3,7 @@
 ## Project Structure & Module Organization
 - `src/` hosts runtime modules; `src/clients/` wraps LLM providers via `base_client`, and shared models live in `src/models.py`.
 - `tools/` contains the CLI entry points (`srt_to_main_yaml.py`, `main_yaml_to_json.py`, `topics_analysis_driver.py`, `terminology_mapper.py`, `sbv_to_srt.py`) that drive the pipeline; scripts like `translation_driver.py`/`qa_checker.py` remain planned until the docs graduate them.
-- `configs/` wires episode YAML across `input/`, `data/`, and `output/`; shared defaults live in `configs/default.yaml`, while per-episode overrides usually just set `episode_id` (and occasionally `input.srt`).
+- `configs/` wires episode YAML across `input/`, `data/`, and `output/`; shared defaults live in `configs/default.yaml`, while per-episode overrides usually just set `episode_id` (and occasionally `input.srt`). Default LLMs now use Gemini 3 Pro (`gemini-3-pro-preview`) for topic analysis and translation; override per-episode if you need a different model.
 - `input/`, `data/`, and `output/` mirror the workflow; keep `data/<episode>/main.yaml`, `topics.json`, and terminology assets (`terminology_candidates.yaml`, `terminology.yaml`, `guidelines.md`) tidy because other scripts read them directly.
 - `docs/` and `prompts/` house workflow specs and prompt templates—edit alongside code that changes payload structures.
 
