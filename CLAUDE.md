@@ -233,6 +233,7 @@ PYTHONPATH=. python3 tools/split_srt.py \
 - `tools/prepare_topic_drafts.py` - Generate topic-based translation work files (topic_XX.md) ✅
 - `tools/backfill_translations.py` - Read completed topic_XX.md files and update main.yaml with translations ✅
 - `tools/fix_chinese_punctuation.py` - QA tool to fix English punctuation in Chinese translations ✅
+- `tools/topic_timestamps.py` - 列出每個 episode 的 topics.json 內段落與 main.yaml timecode，直接在終端輸出 `HH:MM:SS ~ HH:MM:SS | Title`，方便製作 YouTube 卡片（`--summary` 才會顯示詳細摘要）。
 - `tools/export_srt.py` - Convert main.yaml back to SRT format ✅
 - `tools/split_srt.py` - Split long SRT subtitles for better readability ✅
 - `tools/sbv_to_srt.py` - Convert YouTube SBV captions into standard SRT before entering the pipeline ✅

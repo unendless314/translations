@@ -258,6 +258,7 @@ When `srt_to_main_yaml.py` runs, it automatically finds the lone `.srt` file ins
   - Reports remaining long segments and suggests re-running if needed
 
 **Utilities:**
+- **topic_timestamps.py** — 列出 `data/<episode>/topics.json` 及 `main.yaml` 中每個 topic 的起訖時間與標題（可加 `--episode` 指定一集，`--summary` 顯示 AI 摘要），方便產生 YouTube 章節卡片。
 - **convert_zh_tw_to_zh_cn.py** — 利用 OpenCC 將 `output/<episode>` 中的 `zh-TW` SRT 批次轉成 `zh-CN`（支援 `--config` / `--episode` / `--files`，可指定 `--mode` 和 `--target-tag`，預設寫回原目錄或搭配 `--output-root`）。
 
 **Infrastructure:**
