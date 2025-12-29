@@ -51,6 +51,7 @@ export PYTHONPATH=.
 # Optional Step 0: Convert YouTube SBV to SRT (if source is .sbv)
 python3 tools/sbv_to_srt.py --input sbv/captions.sbv --output input/S01-E12/source.srt
 
+
 # Step 1: Convert SRT to structured YAML
 python3 tools/srt_to_main_yaml.py --config configs/S01-E12.yaml --verbose
 
@@ -95,6 +96,15 @@ python3 tools/split_srt.py \
 #   -i output/S01-E12/S01-E12.zh-TW.split.srt \
 #   -o output/S01-E12/S01-E12.zh-TW.split2.srt \
 #   --max-chars 35 --verbose
+
+# Step 11: 繁體字幕轉簡體（字形轉換）
+python3 tools/convert_zh_tw_to_zh_cn.py \
+  --episode S01-E12 \
+  --input-root output \
+  --mode t2s \
+  --target-tag zh-CN \
+  --verbose
+# 預設寫回原目錄，想集中輸出可加 `--output-root simplified_output`。請先 `pip install -r requirements.txt`（含 opencc-python-reimplemented）或讓系統 `opencc` 可用。
 ```
 
 ## Project Structure
@@ -246,6 +256,9 @@ When `srt_to_main_yaml.py` runs, it automatically finds the lone `.srt` file ins
   - Splits at punctuation marks, redistributes timecodes proportionally
   - **Iterative process:** Each run splits once per segment; long segments need 2-3 runs for convergence
   - Reports remaining long segments and suggests re-running if needed
+
+**Utilities:**
+- **convert_zh_tw_to_zh_cn.py** — 利用 OpenCC 將 `output/<episode>` 中的 `zh-TW` SRT 批次轉成 `zh-CN`（支援 `--config` / `--episode` / `--files`，可指定 `--mode` 和 `--target-tag`，預設寫回原目錄或搭配 `--output-root`）。
 
 **Infrastructure:**
 - **src/clients/** — Unified LLM client abstraction (Gemini, OpenAI with Responses API)

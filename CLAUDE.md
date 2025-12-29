@@ -136,6 +136,7 @@ tools/                 # CLI tool scripts
 ├── srt_to_main_yaml.py       ✅
 ├── main_yaml_to_json.py      ✅
 ├── topics_analysis_driver.py ✅
+├── convert_zh_tw_to_zh_cn.py ✅  # OpenCC batch tool for zh-TW → zh-CN SRTs
 └── ...                       (planned)
 ```
 

@@ -14,6 +14,7 @@ requests>=2.31.0
 
 # SRT subtitle processing
 pysrt>=1.1.2                # SRT file parsing and generation
+opencc-python-reimplemented>=0.1.7
 
 # Testing (optional)
 pytest>=7.0.0
